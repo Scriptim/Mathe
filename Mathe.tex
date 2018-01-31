@@ -1937,5 +1937,49 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
   Die Steigung der Wendetangente gibt an, wie sich die Temperaturänderung ändert (Beschleunigung).
 \end{exercise}
 
+\section{Optimieren unter Nebenbedingungen}
+Tunnelquerschnitt:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/tunnelquerschnitt.png}
+\end{figure}
+Länge der Randline (Umfang) ist $5m$; $A$ ist maximal
+\begin{gather*}
+  \text{Hauptbedingung HB} \\
+  A(r, h) = 2rh + \frac{1}{2}\pi r^2 \\
+  \text{($A(r)$ heißt Zielfunktion ZF)} \\\\
+  \text{Nebenbedingung NB} \\
+  U = 5 = 2h + 2r + \pi r \equ -2r - \pi r \\
+  h = \frac{5}{2} - r - \frac{1}{2}\pi r \\\\
+  \text{setze $h$ in $A(r, h)$ ein} \\
+  A(r) = 2r(\frac{5}{2} - r - \frac{1}{2}\pi r) + \frac{1}{2}\pi r^2 \\
+  \;= 5r - 2r^2 - \pi r^2 + \frac{1}{2}\pi r^2 \\
+  \;= (-\frac{1}{2}\pi - 2) \cdot r^2 + 5r \\\\
+  A'(r) = 5 - 7.14159r \\
+  A'(r) = 0 \gap\gap\gap L = \{0.7\} \\
+  h = 0.7 \gap fuer \; r = 0.7 \\
+  A(r) = 1.75m^2
+\end{gather*}
+\begin{exercise}{114/3}
+  \begin{gather*}
+    A(l, b) = l \cdot b \\
+    U = 50 = 2(l + b) \Rightarrow b = 25 - l \\
+    A(l) = 2l \cdot (25 - l) = -2l^2 + 50l \\
+    A'(l) = -4l + 50 \\
+    A'(l) = 0 \gap\gap\gap L = \{12.5\} \\
+    l = b = 12.5cm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{114/4}
+  \begin{gather*}
+    U(l, b) = 2(l + b) \\
+    A = 400 = l \cdot b \Rightarrow b = \frac{400}{l} \\
+    U(l) = 2l + \frac{800}{l} \\
+    U'(l) = 2 - 800l^{-2} \\
+    U'(l) = 0 \gap\gap\gap L = \{\pm 20\} \\
+    l = b = 20cm
+  \end{gather*}
+\end{exercise}
+
 
 \end{document}
