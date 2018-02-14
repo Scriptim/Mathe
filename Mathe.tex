@@ -2044,5 +2044,60 @@ Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
   \end{gather*}
 \end{exercise}
 
+\newpage
+\section{Numerisches Verfahren zur Nullstellenbestimmung}
+\begin{gather*}
+  \text{z. B. } f(x) = x^3 + 5x - 10 \\
+  \text{probeweise: } \\
+  \gap\gap f(1) = -4 \\
+  \gap\gap f(2) = 8 \\
+  \gap\gap \Rightarrow \text{Nullstelle zwischen 1 und 2} \\
+  \text{Vermutung } x_0 = 1.5
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{/fakepath/newton_verfahren.png}
+\end{figure}
+\begin{gather*}
+  \text{Zum Rechenverfahren} \\
+  \text{Tangentengleichung } t(x) = f'(x_0)(x - x_0) + f(x_0) \\
+  t(x_1) = 0 \gap\gap\gap x_1 = x_0 - \frac{f(x_0)}{f'(x_0)} \\
+  \rightarrow x_2 = x_1 - \frac{f(x_1)}{f'(x_1)} \\\\
+  %t(x) = (3x_0^2 + 5) \cdot (x - x_0) + x_0^3 + 5x_0 - 10 = 11.75x - 16.75 \\
+  \text{allgemeine Näherungsformel nach Newton (und Raphson)} \\
+  x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)} \\
+  n \text{ beginnend bei 0}
+\end{gather*}
+Abbruchbedingung: Nullstelle auf 3 Dezimalen genau. Das bedeutet dass beim nächsten Schritt sich die 3. Dezimale nicht mehr ändern darf
+\begin{gather*}
+  \text{Beispiel } f(x) = x^3 + 5x - 10 \\
+  f'(x) = 3x^2 + 5 \\
+  x_0 = 1.5 \\
+  x_1 = 1.5 - \frac{1.5 + 5 \cdot 1.5 - 10}{3 \cdot 1.5^2 + 5} \approx 1.4255 \\
+  x_2 = ... \approx 1.4233 \\
+  x_3 = ... \approx 1.42331 \\
+  \text{Nullstelle auf 3 Dezimalen genau: } x = 1.423
+\end{gather*}
+\begin{onepage}
+  \begin{exercise}{118/1}
+    \item [a]
+    \begin{gather*}
+      x^3 + 2x - 1 = 0 \\
+      f'(x) = 3x^2 + 2 \\
+      x_0 = 0 \\
+      x_1 = 0 - \frac{-1}{2} = 0.5 \\
+      x_2 = \frac{5}{11} = 0.\overline{45} \\
+      x_3 = \frac{1581}{3487} \approx 0.453398... \\
+      x_4 = \frac{50302634185}{110945952227} \approx 0.453397...\\
+      x^\ast = 0.453
+    \end{gather*}
+  \end{exercise}
+\end{onepage}
 
 \end{document}
+
+
+
+
+
+
