@@ -2266,5 +2266,61 @@ Mögliche Fragestellungen: \\
     R_3 = \sqrt{r^2 - \frac{h_3^2}{4}} \approx 3.87
   \end{gather*}
 \end{exercise}
+\newpage
+\subsubsection{AB Kurvenuntersuchungen}
+\begin{exercise}{AB/1}
+  \item [a]
+  \begin{gather*}
+    f_a(x) = x^2 - 2ax + 1 \\
+    a \in \mathbb{R}, a > 0 \\
+    \textbf{Symmetrie} \\
+    f_a(-x) = x^2 + 2ax + 1 \neq f_a(x) \\
+    -f_a(x) = -x^2 + 2ax - 1 \neq f_a(-x) \\
+    \Rightarrow \text{ keine Symmetrie erkennbar} \\
+    \textbf{Nullstellen} \\
+    x^2 - 2ax + 1 = 0 \\
+    x_{1/2} = \frac{2a \pm \sqrt{(-2a)^2 - 4 \cdot 1 \cdot 1}}{2 \cdot 1} = a \pm \sqrt{a^2 - 1} \\
+    \textbf{Extrema} \\
+    f_a'(x) = 2x - 2a = 0 \gap L = \{a\} \\
+    f_a''(x) = 2 > 0 \gap \Rightarrow TP(a|f_a(a) = -a^2 + 1) \\
+    \textbf{Wendepunkte} \\
+    f_a''(x) = 0 \gap L = \{\}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \begin{tikzpicture}
+    \begin{axis}[
+      scale only axis,
+      axis lines=middle,
+      ]
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=red
+      ]{x^2 - 2 * 1 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=blue
+      ]{x^2 - 2 * 1.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=green
+      ]{x^2 - 2 * 0.5 * x + 1};
+    \end{axis}
+  \end{tikzpicture} \\
+  a = {\color{red}1},\; {\color{blue}1.5},\; {\color{green}0.5}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f_a'(4) = 2 \cdot 4 - 2a = 1 \gap\Rightarrow a = 3.5
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \text{keine Nullstellen: } -1 < x < 1 \\
+    \text{eine Nullstelle: } x \in \{-1; 1\}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
