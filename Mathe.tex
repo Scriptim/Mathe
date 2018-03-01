@@ -2324,5 +2324,131 @@ Mögliche Fragestellungen: \\
     a^2 - 1 > 0 \gap fuer \; a > 1 \gap \Rightarrow \text{ 2 Nullstellen}
   \end{gather*}
 \end{exercise}
+\newpage
+\subsubsection{Ortslinie}
+Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortslinie der Tiefpunkte: \\
+\begin{gather*}
+  T(a|-a^2 + 1) \\
+  x = a \\
+  y = -a^2 + 1 \\
+  \text{setze $a$ aus $x$-Koordinate in $y$ ein} \\
+  f(x) = y = -x^2 + 1 \\
+  \text{Funktionsgleichung der Ortskurve der Tiefpunkte}
+\end{gather*}
+\begin{gather*}
+    \begin{tikzpicture}
+    \begin{axis}[
+      scale only axis,
+      axis lines=middle,
+      ymin=-30,
+      ymax=40,
+      ]
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 0.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 1 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 1.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 2 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 2.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 3 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 3.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 4 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=red
+      ]{-x^2 + 1};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\newpage
+\begin{exercise}{AB/5}
+  \item [a]
+  \begin{gather*}
+    f_a(x) = \frac{1}{2}x^4 - ax^2 \\
+    a > 0 \\
+    \textbf{Symmetrie} \\
+    f_a(-x) = \frac{1}{2}x^4 - ax^2 = f_a(x) \\
+    \Rightarrow \text{Achsensymmetrie} \\
+    -f_a(x) = -\frac{1}{2}x^4 + ax^2 \neq f_a(-x) \\
+    \Rightarrow \text{keine Punktsymmetrie erkennbar} \\
+    \textbf{Nullstellen} \\
+    \frac{1}{2}x^4 - ax^2 = 0 \equ :x^2 \\
+    \frac{1}{2}x^2 - a = 0 \\
+    L = \{0; \pm\sqrt{2a}\} \\
+    \textbf{Extrema} \\
+    f_a'(x) = 2x^3 - 2ax = 0 \equ :x \\
+    2x^2 - 2a = 0 \\
+    x = \pm\sqrt{a} \\
+    f_a''(x) = 6x^2 - 2a \\
+    f_a''(\pm\sqrt{a}) = 4a > 0 \Rightarrow TP \\
+    f_a''(0) = -2a < 0 \Rightarrow HP \\
+    \textbf{Wendepunkte} \\
+    f_a''(x) = 0 \gap L = \{\pm\sqrt{\frac{a}{3}}\} \\
+    f_a'''(x) = 12x \\
+    f_a'''(\sqrt{\frac{a}{3}}) = 12\sqrt{\frac{a}{3}} > 0 \Rightarrow RLWP \\
+    f_a'''(-\sqrt{\frac{a}{3}}) = -12\sqrt{\frac{a}{3}} < 0 \Rightarrow LRWP
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    T(\pm\sqrt{a}|-\frac{1}{2}a^2) \\
+    f_T(x) = -\frac{1}{2}x^4 \\\\
+    W(\pm|\sqrt{\frac{a}{3}}|-\frac{a^2}{18}) \\
+    f_W(x) = -\frac{9}{2}x^4
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        scale only axis,
+        axis lines=middle,
+        ymin=-30,
+        ymax=10
+        ]
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 1 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 3 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 5 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 7 * x^2};
+        \addplot[
+        samples=40,
+        color=red
+        ]{-1/2 * x^4};
+        \addplot[
+        samples=40,
+        color=red
+        ]{-9/2 * x^4};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
