@@ -2267,7 +2267,7 @@ Mögliche Fragestellungen: \\
   \end{gather*}
 \end{exercise}
 \newpage
-\subsubsection{AB Kurvenuntersuchungen}
+\section{AB Kurvenuntersuchungen}
 \begin{exercise}{AB/1}
   \item [a]
   \begin{gather*}
@@ -2415,8 +2415,8 @@ Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortsl
   \begin{gather*}
     T(\pm\sqrt{a}|-\frac{1}{2}a^2) \\
     f_T(x) = -\frac{1}{2}x^4 \\\\
-    W(\pm|\sqrt{\frac{a}{3}}|-\frac{a^2}{18}) \\
-    f_W(x) = -\frac{9}{2}x^4
+    W(\pm\sqrt{\frac{a}{3}}|-\frac{5a^2}{18}) \\
+    f_W(x) = -\frac{5}{2}x^4
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -2445,7 +2445,7 @@ Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortsl
         \addplot[
         samples=40,
         color=red
-        ]{-9/2 * x^4};
+        ]{-5/2 * x^4};
       \end{axis}
     \end{tikzpicture}
   \end{gather*}
@@ -2465,6 +2465,29 @@ Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortsl
     t_1(x) = -\frac{a}{3}\sqrt{\frac{a}{6}}x + \frac{a^2}{48} \\
     t_2(x) = \frac{a}{3}\sqrt{\frac{a}{6}}x + \frac{a^2}{48}
   \end{gather*}
+\end{exercise}
+\section{Wiederholung}
+\begin{exercise}{115/9}
+  \begin{gather*}
+    O(a, h) = a^2 + 4ah \\
+    V(a, h) = a^2 \cdot h = 40dm^3 \gap\Rightarrow h = \frac{40dm^3}{a^2} \\
+    O(a) = a^2 + 160dm^3 \cdot a^{-1} \\
+    O'(a) = 2a - 160dcm^3 \cdot a^{-2} \\
+    a = \sqrt[3]{80dm^3} \approx 4.309dm \\
+    h = \frac{40dm^3}{\sqrt[3]{80dm^3}^2} = \sqrt[3]{10} \approx 2.154dm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{119/8}
+  \begin{gather*}
+    h(0) = 400m \\
+    h(370) = 0
+  \end{gather*}
+  \item [a]
+  $h'$ beschreibt das Gefälle des Flusses und gibt den Höhenverlust des Wassers pro Kilometer an
+  \item [b]
+  ein Stausee hat einen waagerechten Abschnitt des Graphen zur Folge, ein Wasserfall eine Sprungstelle
+  \item [c]
+  $h'$ ist nicht positiv, da das Wasser ausschließlich nach unten fließt; die Einheit ist $\frac{m}{km}$
 \end{exercise}
 
 \end{document}
