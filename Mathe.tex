@@ -1537,49 +1537,43 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \polylongdiv[style=C]{x^4 + 2 * x^3 - 4 * x^2 - 9 * x - 2}{x + 2}
 \end{exercise}
 \begin{exercise}{98/4}
-  \begin{onepage}
-    \item [a]
-    $x_1 = 1$ \\
-    \polylongdiv[style=C]{x^3 - 6 * x^2 + 11 * x - 6}{x - 1}
-    \begin{gather*}
-      x_{2/3} = \frac{5 \pm 1}{2} \\
-      x_2 = 2 \\
-      x_3 = 3 \\
-      f(x) = (x - 1)(x - 2)(x - 3)
-    \end{gather*}
-  \end{onepage}
-  \begin{onepage}
-    \item [b]
-    $x_1 = 2$ \\
-    \polylongdiv[style=C]{x^3 + x^2 - 4 * x - 4}{x - 2}
-    \begin{gather*}
-      x_{2/3} = \frac{-3 \pm 1}{2} \\
-      x_2 = -2 \\
-      x_3 = -1 \\
-      f(x) = (x - 2)(x + 2)(x + 1)  
-    \end{gather*}
-  \end{onepage}
-  \begin{onepage}
-    \item [c]
-    $x_1 = -2$ \\
-    \polylongdiv[style=C]{4 * x^3 - 13 * x + 6}{x + 2}
-    \begin{gather*}
-      x_{2/3} = \frac{8 \pm 4}{8} \\
-      x_2 = \frac{1}{2} \\
-      x_3 = \frac{3}{2} \\
-      f(x) = (x + 2)(x - \frac{1}{2})(x - \frac{3}{2})
-    \end{gather*}
-  \end{onepage}
-  \begin{onepage}
-    \item [d]
-    $x_1 = 3$ \\
-    \polylongdiv[style=C]{4 * x^3 - 8 * x^2 - 11 * x - 3}{x - 3}
-    \begin{gather*}
-      x_{2/3} = \frac{-4 \pm 0}{8} \\
-      x_{2/3} = -\frac{1}{2} \\
-      f(x) = (x - 3)(x + \frac{1}{2})
-    \end{gather*}
-  \end{onepage}
+  \item [a]
+  $x_1 = 1$ \\
+  \polylongdiv[style=C]{x^3 - 6 * x^2 + 11 * x - 6}{x - 1}
+  \begin{gather*}
+    x_{2/3} = \frac{5 \pm 1}{2} \\
+    x_2 = 2 \\
+    x_3 = 3 \\
+    f(x) = (x - 1)(x - 2)(x - 3)
+  \end{gather*}
+  \newpage
+  \item [b]
+  $x_1 = 2$ \\
+  \polylongdiv[style=C]{x^3 + x^2 - 4 * x - 4}{x - 2}
+  \begin{gather*}
+    x_{2/3} = \frac{-3 \pm 1}{2} \\
+    x_2 = -2 \\
+    x_3 = -1 \\
+    f(x) = (x - 2)(x + 2)(x + 1)  
+  \end{gather*}
+  \item [c]
+  $x_1 = -2$ \\
+  \polylongdiv[style=C]{4 * x^3 - 13 * x + 6}{x + 2}
+  \begin{gather*}
+    x_{2/3} = \frac{8 \pm 4}{8} \\
+    x_2 = \frac{1}{2} \\
+    x_3 = \frac{3}{2} \\
+    f(x) = (x + 2)(x - \frac{1}{2})(x - \frac{3}{2})
+  \end{gather*}
+  \newpage
+  \item [d]
+  $x_1 = 3$ \\
+  \polylongdiv[style=C]{4 * x^3 - 8 * x^2 - 11 * x - 3}{x - 3}
+  \begin{gather*}
+    x_{2/3} = \frac{-4 \pm 0}{8} \\
+    x_{2/3} = -\frac{1}{2} \\
+    f(x) = (x - 3)(x + \frac{1}{2})
+  \end{gather*}
 \end{exercise}
 \begin{exercise}{98/11}
   $f(x) = x^3 - 2x^2 - 3x + 10 \gap\gap S(-2|0) \Rightarrow x_1 = -2$
@@ -2115,7 +2109,7 @@ Mögliche Fragestellungen: \\
     x_3 = 1.8794 \\
     x_4 = 1.8794 \\
     x_1^\ast = 1.879 \\
-    ...
+    ...\\
     x_2^\ast = -1.532 \\
     x_3^\ast = -0.347
   \end{gather*}
@@ -2129,7 +2123,7 @@ Mögliche Fragestellungen: \\
     x_3 = 0.8794 \\
     x_4 = 0.8794 \\
     x_1^\ast = 0.879 \\
-    ...
+    ...\\
     x_2^\ast = -2.532 \\
     x_3^\ast = -1.347
   \end{gather*}
@@ -2143,7 +2137,7 @@ Mögliche Fragestellungen: \\
     x_3 = 0.4204 \\
     x_4 = 0.4204 \\
     x_1^\ast = 0.420 \\
-    ...
+    ... \\
     x_2^\ast = -1.332 \\
     x_3^\ast = -0.521 \\
     x_4^\ast = 3.432
@@ -2157,7 +2151,7 @@ Mögliche Fragestellungen: \\
     x_2 = 0.6030 \\
     x_3 = 0.6030 \\
     x_1^\ast = 0.603 \\
-    ...
+    ... \\
     x_2^\ast = -2.635 \\
     x_3^\ast = -0.246 \\
     x_4^\ast = 1.278
@@ -2195,6 +2189,7 @@ Mögliche Fragestellungen: \\
     x^\ast = 0.848
   \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{118/5}
   \item [a]
   \begin{gather*}
