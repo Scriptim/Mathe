@@ -2620,5 +2620,73 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
   \item [b]
   $$f(x) = a \cdot sin(\frac{\pi}{12} \cdot (x - 6))$$
 \end{exercise}
+\subsection{Ableitung der Sinusfunktion}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymax=1.1
+      ]
+      \addplot[
+      domain=0:1.7,
+      samples=30
+      ]{sin(deg(x))};
+      \addplot[
+      domain=0:1.6,
+      samples=30,
+      color=red
+      ]{cos(deg(x))};
+    \end{axis}
+  \end{tikzpicture} \\
+  sin(x),\; {\color{red}cos(x)}
+\end{gather*}
+\subsubsection{Annäherung mit Taylorreihe}
+\begin{gather*}
+  f(x) = f(a) + \frac{f'(a)}{1!}(x - a)^1 + \frac{f''(a)}{2!}(x - a)^2 + \frac{f'''(a)}{3!}(x - a)^3 + ... \\
+  a = x_0 = 0 \\
+  f(x_0) = f(0) + \frac{f'(0)}{1!}x^1 + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + ... \\
+  sin(x) = 0 + x^1 - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...\\
+  (sin(x))' = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} = ... = cos(x)
+\end{gather*}
+\begin{gather*}
+  f(x) = sin(x) \\
+  f'(x) = cos(x) \\
+  f''(x) = -sin(x) \\
+  f'''(x) = -cos(x) \\
+  f''''(x) = sin(x) \\
+  ...
+\end{gather*}
+\begin{exercise}{130/1}
+  \item[a]
+  \begin{gather*}
+    f(x) = 12 \cdot sin(x) \\
+    f'(x) = 12 \cdot cos(x) \\
+  \end{gather*}
+  \item[b]
+  \begin{gather*}
+    f(x) = -2 \cdot cos(x) \\
+    f'(x) = -2 \cdot (-sin(x)) \\
+  \end{gather*}
+  \item[c]
+  \begin{gather*}
+    f(x) = \sqrt{5} \cdot cos(x) \\
+    f'(x) = \sqrt{5} \cdot (-sin(x)) \\
+  \end{gather*}
+  \item[d]
+  \begin{gather*}
+    f(x) = \frac{1}{\pi} \cdot sin(x) \\
+    f'(x) = \frac{1}{\pi} \cdot cos(x) \\
+  \end{gather*}
+  \item[e]
+  \begin{gather*}
+    f(x) = 5x^3 - sin(x) \\
+    f'(x) = 15x^2 - cos(x) \\
+  \end{gather*}
+  \item[f]
+  \begin{gather*}
+    f(x) = 2 \cdot cos(x) - sin(x) \\
+    f'(x) = 2 \cdot (-sin(x)) - cos(x) \\
+  \end{gather*}
+\end{exercise}
 
 \end{document}
