@@ -2700,5 +2700,51 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
     t(x) = 1.5x - 10.452
   \end{gather*}
 \end{exercise}
+\newpage
+\begin{exercise}{130/4}
+  \item [c]
+  \begin{gather*}
+    f(x) = 2 \cdot sin(x) - cos(x); \gap x \in \left[0; 2\pi\right] \\
+    f'(x) = 2 \cdot cos(x) + sin(x) \\\\
+    f'(x) = 0 = 2 \cdot cos(x) + sin(x) \\
+    2 = -\frac{sin(x)}{cos(x)} = -tan(x) \gap\Rightarrow\gap x = atan(-2) \\
+    L = \{atan(-2) + n\pi\} \gap n \in \{1; 2\} \\\\
+    f''(x) = -2 \cdot sin(x) - cos(x) \\
+    f''(atan(-2) + \pi) \approx -1.34 < 0 \\
+    HP(atan(-2) + \pi|f(atan(-2) + \pi)) = HP(2.034|2.236) \\
+    f''(atan(-2) + 2\pi) \approx 1.34 > 0 \\
+    TP(atan(-2) + 2\pi|f(atan(-2) + 2\pi)) = TP(5.176|-2.236)
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = 4 \cdot cos(x) + 2x; \gap x \in \left[0; 2\pi\right] \\
+    f'(x) = -4 \cdot sin(x) + 2 \\\\
+    f'(x) = 0 = -4 \cdot sin(x) + 2 \\
+    0.5 = sin(x) \gap\Rightarrow\gap x = asin(0.5) \\
+    L = \{asin(0.5); \pi - asin(0.5)\} \\\\
+    f''(x) = -4 \cdot cos(x) \\
+    f''(asin(0.5)) \approx -3.46 < 0 \\
+    HP(asin(0.5)|f(asin(0.5))) = HP(0.524|4.51) \\
+    f''(\pi - asin(0.5)) \approx 3.46 > 0 \\
+    TP(\pi - asin(0.5)|f(\pi - asin(0.5))) = TP(2.618|1.772)
+  \end{gather*}
+\end{exercise}
+\section{Neue Funktionen aus alten Funktionen}
+\begin{gather*}
+  \text{gegeben sind} \\
+  f(x) = sin(x) \\
+  g(x) = \sqrt{x} \\
+  h(x) = x^2 + 5 \\\\
+  \text{Produkt} \\
+  i(x) = f(x) \cdot g(x) = sin(x) \cdot \sqrt{x} \\
+  j(x) = h(x) \cdot f(x) = (x^2 + 5) \cdot sin(x) \\\\
+  \text{Quotient} \\
+  k(x) = \frac{g(x)}{f(x)} = \frac{\sqrt{x}}{sin(x)} \\
+  l(x) = \frac{h(x)}{g(x)} = \frac{x^2 + 5}{\sqrt{x}} \\\\
+  \text{Verkettung} \\
+  m(x) = f(g(x)) = sin(\sqrt{x}) \\
+  n(x) = g(f(x)) = \sqrt{sin(x)} \\
+  o(x) = f(g(h(x))) = sin(\sqrt{x^2 + 5})
+\end{gather*}
 
 \end{document}
