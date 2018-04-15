@@ -2746,5 +2746,107 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
   n(x) = g(f(x)) = \sqrt{sin(x)} \\
   o(x) = f(g(h(x))) = sin(\sqrt{x^2 + 5})
 \end{gather*}
+\subsection{Ableitungsregeln}
+\begin{gather*}
+  \text{Produktregel} \\
+  k(x) = f(x) \cdot g(x) \\
+  k'(x) = \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x)}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) {\color{red}- f(x \cdot g(x + h) + f(x) \cdot g(x + h)} - f(x) \cdot g(x)}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{{\color{blue}[f(x + h) - f(x)]} \cdot g(x + h) + f(x) \cdot {\color{violet}[g(x + h) - g(x)]}}{h} \\
+  \;= \boldsymbol{{\color{blue}f'(x)} \cdot g(x) + f(x) \cdot {\color{violet}g'(x)}}
+\end{gather*}
+\begin{gather*}
+  \text{Kettenregel} \\
+  k(x) = f(g(x)) \\
+  k'(x) = \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{{\color{red}g(x + h) - g(x)}} \cdot \frac{{\color{red}g(x + h) - g(x)}}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(z + i) - f(z)}{i} \cdot g'(x) \\
+  \;= f'(z) \cdot g'(x) \\
+  \;= \boldsymbol{f'(g(x)) \cdot g'(x)} \\\\
+  g(x) = z \gap\gap g(x + h) = z + i
+\end{gather*}
+\begin{gather*}
+  \textbf{Beispiele} \\
+  k(x) = (x^2 + 2x - 7) \cdot sin(x) \\
+  k'(x) = (2x + 2) \cdot sin(x) + (x^2 + 2x - 7) \cdot cos(x) \\\\
+  k(x) = sin(x^3 - 5x) \\
+  k'(x) = cos(x^3 - 5x) \cdot (3x^2 - 5)
+\end{gather*}
+\begin{exercise}{135/1}
+  \item [a]
+  \begin{gather*}
+    f(x) = (x + 2)^4 \\
+    f'(x) = 4(x + 2)^3
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = (8x + 2)^3 \\
+    f'(x) = 3(8x + 2)^2 \cdot 8 = 24(8x + 2)^2
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = (\frac{1}{2} - 5x)^3 \\
+    f'(x) = 3(\frac{1}{2} - 5x)^2 \cdot (-5) = -15(\frac{1}{2} - 5x)^2
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \frac{1}{4}(x^2 - 5)^2 \\
+    f'(x) = \frac{1}{2}(x^2 - 5) \cdot 2x = x^3 - 5x
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{135/2}
+  \item [a]
+  \begin{gather*}
+    f(x) = \frac{1}{(x - 1)^2} \\
+    f'(x) = -2(x - 1)^{-3}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{1}{(3x - 1)^2} \\
+    f'(x) = -2(3x - 1)^{-3} \cdot 3 = -6(3x - 1)^{-3}
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = sin(2x) \\
+    f'(x) = cos(2x) \cdot 2 = 2cos(2x)
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = sin(2x + \pi) \\
+    f'(x) = cos(2x + \pi) \cdot 2 = 2cos(2x + \pi) = -2cos(2x)
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{138/1}
+  \item [g]
+  \begin{gather*}
+    f(x) = \frac{2}{x} \cdot cos(x) \\
+    f'(x) = -2x^{-2} \cdot cos(x) - \frac{2}{x} \cdot sin(x)
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = sin(x) \cdot cos(x) \\
+    f'(x) = (cos(x))^2 - (sin(x))^2 = cos(2x)
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = x^2 \cdot sin(x) \\
+    f'(x) = 2x \cdot sin(x) + x^2 \cdot cos(x)
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = \frac{1}{\sqrt{x}} \cdot cos(x) \\
+    f'(x) = -\frac{cos(x)}{2\sqrt{x^3}} - \frac{sin(x)}{\sqrt{x}}
+  \end{gather*}
+  \item [k]
+  \begin{gather*}
+    f(x) = \frac{\pi}{4} \cdot sin(x) \cdot (2 - x) \\
+    f'(x) = \frac{\pi}{4} \cdot cos(x) \cdot (2 - x) - \frac{\pi}{4} \cdot sin(x)
+  \end{gather*}
+  \item [l]
+  \begin{gather*}
+    f(x) = \sqrt{3} \cdot \sqrt{x} \\
+    f'(x) = -\frac{\sqrt{3}}{2\sqrt{x}}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
