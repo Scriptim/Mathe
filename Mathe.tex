@@ -2747,16 +2747,16 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
   o(x) = f(g(h(x))) = sin(\sqrt{x^2 + 5})
 \end{gather*}
 \subsection{Ableitungsregeln}
+\subsubsection{Produktregel}
 \begin{gather*}
-  \text{Produktregel} \\
   k(x) = f(x) \cdot g(x) \\
   k'(x) = \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x)}{h} \\
   \;= \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) {\color{red}- f(x \cdot g(x + h) + f(x) \cdot g(x + h)} - f(x) \cdot g(x)}{h} \\
   \;= \lim\limits_{h \to 0} \frac{{\color{blue}[f(x + h) - f(x)]} \cdot g(x + h) + f(x) \cdot {\color{violet}[g(x + h) - g(x)]}}{h} \\
   \;= \boldsymbol{{\color{blue}f'(x)} \cdot g(x) + f(x) \cdot {\color{violet}g'(x)}}
 \end{gather*}
+\subsubsection{Kettenregel}
 \begin{gather*}
-  \text{Kettenregel} \\
   k(x) = f(g(x)) \\
   k'(x) = \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{h} \\
   \;= \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{{\color{red}g(x + h) - g(x)}} \cdot \frac{{\color{red}g(x + h) - g(x)}}{h} \\
