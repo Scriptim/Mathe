@@ -2973,5 +2973,55 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
     \;= 1 + (tan(x))^2
   \end{gather*}
 \end{exercise}
+\section{Exponentialfunktionen - Ableitung}
+\begin{gather*}
+  {\color{blue}f(x) = 2^x} \gap\gap {\color{cyan}f'(x)} \gap\gap\gap\gap\gap {\color{red}g(x) = 4^x} \gap\gap {\color{purple}g'(x)}\\
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ]
+      \addplot[
+      domain=-2:3,
+      samples=30,
+      color=blue
+      ]{2^x};
+      \addplot[
+      domain=-2:3,
+      samples=30,
+      color=cyan
+      ]{2^x * ln(2)};
+      \addplot[
+      domain=-2:1.7,
+      samples=30,
+      color=red
+      ]{4^x};
+      \addplot[
+      domain=-2:1.5,
+      samples=30,
+      color=purple
+      ]{4^x * ln(4)};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+Zwischen $2^x$ und $4^x$ liegt eine Exponentialfunktion, deren Ableitungsfunktion genau der Ursprungsfunktion entspricht. Sie wird natürliche Exponentialfunktion genannt.
+$$f(x) = e^x$$
+$$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \approx 2.71828$$
+\begin{gather*}
+  f(x) = e^x \\
+  f'(x) = e^x \\
+  f''(x) = e^x \\
+  ... \\\\
+  e^x \leftrightarrow log_e(x) = ln(x) \\
+  \Rightarrow e^{ln(x)} = ln(e^x) = x \\\\
+  2^x = 5^{x \cdot \frac{log(2)}{log(5)}} = 5^{x \cdot log_5(2)} \\
+  2^x = e^{x \cdot ln(2)} \\
+  10^x = e^{x \cdot ln(10)} \\\\
+  f(x) = e^{x \cdot ln(2)} = 2^x \\
+  f'(x) = e^{x \cdot ln(2)} \cdot ln(2) = 2^x \cdot ln(2) \approx 2^x \cdot 0.7 \\\\
+  f(x) = e^{x \cdot ln(4)} = 4^x \\
+  f'(x) = e^{x \cdot ln(4)} \cdot ln(4) = 4^x \cdot ln(4) \approx 4^x \cdot 1.4
+\end{gather*}
 
 \end{document}
