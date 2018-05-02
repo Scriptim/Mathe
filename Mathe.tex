@@ -3085,5 +3085,73 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     f'(x) = 1 \cdot e^{2x^2 + 1} + x \cdot e^{2x^2 + 1} \cdot 4x = e^{2x^2 + 1} \cdot (4x^2 + 1)
   \end{gather*}
 \end{exercise}
+\subsection{Basis $\neq e$}
+\begin{gather*}
+  f(x) = 10^x = (e^z)^x = e^{ln(10) \cdot x} \\
+  e^z = 10 \gap\Rightarrow\gap z = ln(10) \\
+  \Rightarrow\gap b^x = e^{ln(b) \cdot x} \\\\
+  f'(x) = e^{ln(10) \cdot x} \cdot ln(10) \\
+  \;= 10^x \cdot ln(10) \\
+  \Rightarrow\gap b^x \cdot ln(b)
+\end{gather*}
+\begin{exercise}{145/8}
+  \item [f]
+  \begin{gather*}
+    e^{2x} + 10 = 6.5 \cdot e^x \equ \text{subst. } e^x = z \\
+    z^2 + 10 = 6.5z \equ - 6.5z \\
+    z^2 - 6.5z + 10 = 0 \\
+    z_{1/2} = \frac{6.5 \pm \sqrt{42.25 - 40}}{2} \\
+    z_1 = 4 \gap z_2 = 2.5 \equ \text{resubst.} \\\\
+    z_1 = 4 = e^x \equ ln \\
+    x_1 = ln(4) \approx 1.386 \\\\
+    z_2 = 2.5 = e^x \equ ln \\
+    x_2 = ln(2.5) \approx 0.916
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    e^{2x} - 6 \cdot e^x + 8 = 0 \equ \text{subst. } e^x = z \\
+    z^2 - 6z + 8 = 0 \\
+    z_{1/2} = \frac{6 \pm \sqrt{36 - 32}}{2} \\
+    z_1 = 4 \gap z_2 = 2 \equ \text{resubst.} \\\\
+    z_1 = 4 = e^x \equ ln \\
+    x_1 = ln(4) \approx 1.386 \\\\
+    z_2 = 2 \equ ln \\
+    x_2 = ln(2) \approx 0.693
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    e^x - 2 - \frac{15}{e^x} = 0 \equ \text{subst. } e^x = z \\
+    z - 2 - \frac{15}{z} = 0 \equ \cdot z \\
+    z^2 - 2z - 15 = 0 \\
+    z_{1/2} = \frac{2 \pm \sqrt{4 + 60}}{2} \\
+    z_1 = 5 \gap (z_2 = -3) \equ \text{resubst.} \\\\
+    z_1 = 5 = e^x \equ ln \\
+    x_1 = ln(5) \approx 1.609
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    (e^{2x} - 6) \cdot (5 - e^{3x}) = 0 \equ \text{subst. } e^x = z \\
+    (z^2 - 6) \cdot (5 - z^3) = 0 \\\\
+    z^2 - 6 = 0 \equ \sqrt{} \\
+    z_1 = \sqrt{6} \approx 2.449 \equ \text{resubst.} \\
+    z_1 = \sqrt{6} = e^x \equ ln \\
+    x_1 = ln(\sqrt{6}) \approx 0.896 \\\\
+    5 - z^3 = 0 \equ \sqrt[3]{} \\
+    z_2 = \sqrt[3]{5} \approx 1.710 \equ \text{resubst.} \\
+    z_2 = \sqrt[3]{5} = e^x \equ ln \\
+    x_2 = ln(\sqrt[3]{5}) \approx 0.536 
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    2 \cdot e^x + 15 = 8 \cdot e^{-x} \equ \text{subst. } e^x = z \\
+    2z + 15 = \frac{8}{z} \equ -\frac{8}{z} \\
+    2z + 15 - \frac{8}{z} = 0 \equ \cdot z \\
+    2z^2 + 15z - 8 = 0 \\
+    z_{1/2} = \frac{-15 \pm \sqrt{225 + 64}}{4} \\
+    z_1 = 0.5 \gap (z_2 = -8) \equ \text{resubst.} \\\\
+    z_1 = 0.5 = e^x \equ ln \\
+    x = ln(0.5) \approx -0.693
+  \end{gather*}
+\end{exercise}
 
 \end{document}
