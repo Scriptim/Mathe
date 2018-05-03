@@ -3216,5 +3216,44 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     t \approx \frac{ln(0.152)}{-0.175} \approx 10.765
   \end{gather*}
 \end{exercise}
+\newpage
+\section{Sinusfunktionen}
+\begin{exercise}{130/8}
+  \begin{gather*}
+    P(x_0|f(x_0)) \gap\gap Q(x_0|g(x_0)) \gap\gap 0 \leq x \leq 2\pi
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    f(x) = 2 \cdot sin(x) \gap\gap g(x) = x^2 \\
+    f'(x) = 2 \cdot cos(x) \gap\gap g'(x) = 2x \\
+    h(x) = f'(x) - g'(x) = 2 \cdot cos(x) - 2x = 0 \\
+    h'(x) = -2 \cdot sin(x) - 2 \\\\
+    x_0 = 0 \\
+    x_1 = x_0 - \frac{h(x_0)}{h'(x_0)} = 1 \\
+    x_2 = x_1 - \frac{h(x_1)}{h'(x_1)} \approx 0.75036 \\
+    x_3 = x_2 - \frac{h(x_2)}{h'(x_2)} \approx 0.73911 \\
+    x_4 = x_3 - \frac{h(x_3)}{h'(x_3)} \approx 0.73908 \\
+    x_5 = x_4 - \frac{h(x_4)}{h'(x_4)} \approx 0.73909 \\
+    x^\ast \approx 0.7391 \\\\
+    P(x^\ast|f(x^\ast)) \approx P(0.7391|1.3472) \\
+    Q(x^\ast|g(x^\ast)) \approx Q(0.7391|0.5463)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = sin(x) + 2 \cdot cos(x) \gap\gap g(x) = x^3 \\
+    f'(x) = cos(x) - 2 \cdot sin(x) \gap\gap g'(x) = 3x^2 \\
+    h(x) = f'(x) - g'(x) = cos(x) - 2 \cdot sin(x) - 3x^2 = 0 \\
+    h'(x) = -sin(x) - 2 \cdot cos(x) - 6x \\\\
+    x_0 = 0 \\
+    x_1 = x_0 - \frac{h(x_0)}{h'(x_0)} = 0.5 \\
+    x_2 = x_1 - \frac{h(x_1)}{h'(x_1)} \approx 0.34120 \\
+    x_3 = x_2 - \frac{h(x_2)}{h'(x_2)} \approx 0.32336 \\
+    x_4 = x_3 - \frac{h(x_3)}{h'(x_3)} \approx 0.32311 \\
+    x_5 = x_4 - \frac{h(x_4)}{h'(x_4)} \approx 0.32311 \\
+    x^\ast \approx 0.3231 \\\\
+    P(x^\ast|f(x^\ast)) \approx P(0.3231|2.2140) \\
+    Q(x^\ast|g(x^\ast)) \approx Q(0.3231|0.0337)
+  \end{gather*}
+\end{exercise}
 
 \end{document}
