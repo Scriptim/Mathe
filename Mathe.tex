@@ -3313,5 +3313,58 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     f'(x) = -\frac{2}{(sin(x))^2}
   \end{gather*}
 \end{exercise}
+\begin{exercise}{146/13}
+  \begin{gather*}
+    f(x) = 80000 \cdot e^{0.002x} \\
+    0 \estim 01.10.2002
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    92 \estim 01.01.2003 \\
+    f(92) = 80000 \cdot e^{0.002 \cdot 92} \approx 96161.27 \\
+    457 \estim 01.01.2004 \\
+    f(457) = 80000 \cdot e^{0.002 \cdot 457} \approx 199542.38 \\
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = 80000 \cdot e^{0.002x} = 1000000 \\
+    e^{0.002x} = 12.5 \\
+    x = \frac{ln(12.5)}{0.002} \approx 1262.86 \estim 17.03.2006 \\\\
+    f(x) = 80000 \cdot e^{0.002x} = 1000000000 \\
+    e^{0.002x} = 12500 \\
+    x = \frac{ln(12500)}{0.002} \approx 4716.74 \estim 31.08.2015
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    2 \cdot f(x_1) = f(x_2) \\
+    2 \cdot 80000 \cdot e^{0.002x_1} = 80000 \cdot e^{0.002x_2} \\
+    2 \cdot e^{0.002x_1} = e^{0.002x_2} \\
+    ln(2) + 0.002x_1 = 0.002x_2 \\
+    x_2 - x_1 = \frac{ln(2)}{0.002} \approx 346.57
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    p \cdot f(x_1) = f(x_1 + 365) \\
+    p \cdot 80000 \cdot e^{0.002x_1} = 80000 \cdot e^{0.002 \cdot (x_1 + 365)} \\
+    p \cdot e^{0.002x_1} = e^{0.002x_1} \cdot e^{0.002 \cdot 365} \\
+    p = e^{0.002 \cdot 365} \approx 2.08 = 208\%
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    365 \estim 01.10.2003 \\
+    f(365) - f(364) = 80000 \cdot e^{0.002 \cdot 365} - 80000 \cdot e^{0.002 \cdot 364} \approx 331.68 \\\\
+    f'(x) = 80000 \cdot 0.002 \cdot e^{0.002x} = 160 \cdot e^{0.002x} \\
+    f(364.5) \approx 331.68
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x + 1) - f(x) = 400 \\
+    80000 \cdot e^{0.002 \cdot (x + 1)} - 80000 \cdot e^{0.002x} = 400 \\
+    80000 \cdot e^{0.002x} \cdot (e^{0.002} - 1) = 400 \\
+    x = ln(\frac{400}{80000 \cdot (e^{0.002} - 1)}) \cdot \frac{1}{0.002} \approx 457.65 \estim 02.01.2004 \\\\
+    f'(x) = 160 \cdot e^{0.002x} = 400 \\
+    x = ln(\frac{400}{160}) \cdot \frac{1}{0.002} \approx 458.15 \estim 03.01.2004
+  \end{gather*}
+\end{exercise}
 
 \end{document}
