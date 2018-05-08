@@ -3313,6 +3313,7 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     f'(x) = -\frac{2}{(sin(x))^2}
   \end{gather*}
 \end{exercise}
+\subsection{Kurvendiskussion}
 \begin{exercise}{146/13}
   \begin{gather*}
     f(x) = 80000 \cdot e^{0.002x} \\
@@ -3365,6 +3366,62 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     f'(x) = 160 \cdot e^{0.002x} = 400 \\
     x = ln(\frac{400}{160}) \cdot \frac{1}{0.002} \approx 458.15 \estim 03.01.2004
   \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{146/10}
+  \begin{gather*}
+    v(t) = 2.5 \cdot (1 - e^{-0.1t})
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    v(0) = 0 \\
+    v(10) \approx 1.58
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle
+        ]
+        \addplot[
+        domain=0:20,
+        samples=100
+        ]{2.5 * (1 - e^(-0.1 * x))};
+      \end{axis}
+    \end{tikzpicture}    
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    v(t) = 2 \\
+    t = -\frac{ln(0.2)}{0.1} \approx 16.09
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \lim\limits_{t \to \infty} v(t) = 2.5 
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    v(t) = 2.5 \cdot (1 - e^{-0.1t}) \\
+    v(t + 1) = 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \\\\
+    v(t) < v(t + 1) \\
+    2.5 \cdot (1 - e^{-0.1t}) < 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \equ : 2.5 \\
+    1 - e^{-0.1t} < 1 - e^{-0.1 \cdot (t + 1)} \equ - 1; \cdot (-1) \\
+    e^{-0.1t} > e^{-0.1 \cdot (t + 1)} \equ ln() \\
+    -0.1t > -0.1 \cdot (t + 1) \equ \cdot (-10) \\
+    t < t + 1
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    \Delta v = v(t_2) - v(t_1) \\
+    \;= v(5) - v(2) \approx 0.98 - 0.45 = 0.53
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    v'(t) = 0.25 \cdot e^{-0.1t} \\
+    v'(2) = 0.20
+  \end{gather*}
+  \item [h]
+  Die Beschleunigung ist bei $t = 0$ am größten, da sie ständig kleiner wird.
 \end{exercise}
 
 \end{document}
