@@ -3424,4 +3424,80 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
   Die Beschleunigung ist bei $t = 0$ am größten, da sie ständig kleiner wird.
 \end{exercise}
 
+\newpage
+\subsection{Lineare Gleichungssysteme (LGS)}
+\begin{gather*}
+  \text{z. B.} \gap
+  \begin{vmatrix}
+    3x_1 & + & 2x_2 & - & 3x_3 & = 5 \\
+    -x_1 & - & x_2 & + & 5x_3 & = 15
+  \end{vmatrix}
+  \gap \text{2x3 LGS}
+\end{gather*}
+\subsubsection{LGS in Stufenform}
+\begin{gather*}
+  \begin{vmatrix}
+    -x_2 & + & 4x_1 & + & 3x_3 & = 2 \\
+    3x_2 & + & x_1 &&&  = 5 \\
+    4x_2 &&&&& = 8
+  \end{vmatrix} \\
+  \Rightarrow \text{ einfach zu lösen} \\
+  \text{\Rmnum{3}} \gap 4x_2 = 8 \rightarrow x_2 = 2 \\
+  \text{eingesetzt in \Rmnum{2}} \\
+  x_1 + 3 \cdot 2 = 5 \rightarrow x_1 = -1 \\
+  \text{eingesetzt in \Rmnum{1}} \\
+  4 \cdot (-1) -2 + 3x_3 = 2 \rightarrow x_3 = \frac{8}{3} \\
+  L = \{(-1|2|\frac{8}{3})\}
+\end{gather*}
+\subsection{Gauß-Verfahren}
+Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann zu lösen.
+\begin{exercise}{256/4}
+  \item [a]
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      3x_1 & + & 3x_2 & + & 7x_3 & = & 13 \\
+      4x_1 & - & 2x_2 & - & 3x_3 & = & -1
+    \end{vmatrix}
+  \end{gather*}
+  Eliminiere $x_1$ aus 2 der 3 Gleichungen
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      3x_1 & + & 3x_2 & + & 7x_3 & = & 13 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap \Rmnum{3} - 2 \cdot \Rmnum{1} \\
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      {\color{red}0}x_1 & + & 18x_2 & - & 1x_3 & = & 17 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap 2 \cdot \Rmnum{2} - 3 \cdot \Rmnum{1}
+  \end{gather*}
+  Eliminiere $x_2$ aus 1 der 2 Gleichungen
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      {\color{red}0}x_1 & + & {\color{red}0}x_2 & + & 38x_3 & = & 38 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap \Rmnum{2} - 3 \cdot \Rmnum{3}
+  \end{gather*}
+  Löse LGS in Stufenform
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      &&&& 38x_3 & = & 38 \\
+      && 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix} \\
+    \text{\Rmnum{2}} \gap 38x_3 = 38 \rightarrow x_3 = 1 \\
+    \text{eingesetzt in \Rmnum{3}} \\
+    6x_2 - 13 \cdot 1 = -7 \rightarrow x_2 = 1 \\
+    \text{eingesetzt in \Rmnum{1}} \\
+    2x_1 - 4 \cdot 1 + 5 \cdot 1 = 3 \rightarrow x_1 = 1 \\
+    L = \{(1|1|1)\}
+  \end{gather*}
+\end{exercise}
+
 \end{document}
