@@ -3585,5 +3585,59 @@ Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann z
   \end{pmatrix} \\
   \text{Geradengleichung im $\mathbb{R}^3$}
 \end{gather*}
+\subsection{Steckbriefaufgaben}
+\textbf{Beispiel} Gesucht ist die Funktionsgleichung einer Funktion zweiten Grades \\
+$y = ax^2 + bx + c$ \\
+Merkmale:
+\begin{enumerate}
+  \item verläuft durch $P(2|5)$
+  \begin{gather*}
+    f(2) = 5 \\
+    5 = a \cdot 2^2 + b \cdot 2 + c
+    5 = 4a + 2b + c
+  \end{gather*}
+  \item hat bei $x=3$ die Steigung $10$
+  \begin{gather*}
+    f'(x) = 2ax + b = 10 \\
+    10 = 6a + b
+  \end{gather*}
+  \item schneidet die y-Achse bei $5$
+  \begin{gather*}
+    f(0) = 5 \\
+    5 = a \cdot 0^2 + b \cdot 0 + c \\
+    5 = c
+  \end{gather*}
+\end{enumerate}
+\begin{gather*}
+  c = 5 \\
+  10 = 6a + b \gap\Rightarrow\gap b = 10 - 6a \\
+  5 = 4a + 2(10 - 6a) + 5 \gap\Rightarrow\gap a = 2.5 \\
+  b = 10 - 6 \cdot 2.5 = -5
+\end{gather*}
+Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
+\subsubsection{Beispiele für Bedingungen}
+\begin{itemize}
+  \item hat bei $P(1|3)$ einen Wendepunkt
+  \begin{gather*}
+    f(1) = 3 \\
+    f''(1) = 0
+  \end{gather*}
+  \item verläuft bei $P(-2|3)$ parallel zur Geraden $g(x) = 4x - 1$
+  \begin{gather*}
+    f'(-2) = 4
+  \end{gather*}
+  \item hat an der Stelle $x = 3$ einen Sattelpunkt
+  \begin{gather*}
+    f'(3) = 0 \\
+    f''(3) = 0
+  \end{gather*}
+  \item ist eine achsensymmetrische Funktion 4. Grades / punktsymmetrische Funktion 5. Grades
+  \begin{gather*}
+    f(x) = ax^4 + bx^3 + cx^2 + dx + e \\
+    \Rightarrow\gap b = d = 0 \\
+    g(x) = ax^5 + bx^4 + cx^3 + dx^2 + ex + f \\
+    \Rightarrow\gap b = d = f = 0
+  \end{gather*}
+\end{itemize}
 
 \end{document}
