@@ -3669,6 +3669,42 @@ Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
     y = -x^3 + x^2 - x + 1    
   \end{gather*}
 \end{exercise}
-
+\subsection{Funktionenschar}
+\begin{exercise}{262/3}
+  \item [b]
+  \begin{gather*}
+    f(x) = ax^2 + bx + c \\
+    A(2|0) \gap\gap B(-2|0) \\
+    \begin{vmatrix}
+      4a & + & 2b & + & c & = & 0 \\
+      4a & - & 2b & + & c & = & 0
+    \end{vmatrix} \\
+    \text{2x3 LGS unterbestimmt $\Rightarrow$ eine Variable ist frei wählbar} \\
+    \begin{vmatrix}
+      4a & + & 2b & + & c & = & 0 \\
+      4b &&&&& = & 0
+    \end{vmatrix}
+    \gap\gap \Rmnum{1} - \Rmnum{2} \\
+    \Rightarrow\gap b = 0 \\
+    4a + c = 0 \\\\
+    \text{setze } a = k \\
+    4k + c = 0 \gap\Rightarrow\gap c = -4k \\\\
+    f_k(x) = kx^2 - 4k \gap\gap \text{Funktionenschar, Parameterfunktion}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = ax^2 + bx + c \\
+    A(-4|0) \gap\gap B(0|-4) \\
+    \begin{vmatrix}
+      16a & - & 4b & + & c & = & 0 \\
+      &&&& c & = & -4
+    \end{vmatrix} \\
+    \Rightarrow\gap c = -4 \\
+    16a - 4b - 4 = 0 \\\\
+    a = k \\
+    16k - 4b = 4 \gap\Rightarrow\gap b = 4k - 1 \\\\
+    f_k(x) = kx^2 + 4kx - x - 4
+  \end{gather*}
+\end{exercise}
 
 \end{document}
