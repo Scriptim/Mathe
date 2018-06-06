@@ -3785,6 +3785,59 @@ Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
     \frac{3}{8} - \frac{5}{4} + c = 1 \gap\Rightarrow\gap \frac{15}{8} \\\\
     f(x) = \frac{3}{8}x^5 - \frac{5}{4}x^3 + \frac{15}{8}x
   \end{gather*}
-  \end{exercise}
-  
+\end{exercise}
+
+\section{Integralrechnung}
+\begin{gather*}
+  s = v \cdot t \gap\gap\text{fuer } v = const. \\
+  \text{Rechtecksfläche } A = 5s \cdot 15\frac{m}{s} = 75m \\
+  \text{Es gilt } A = s = \text{ zurückgelegter Weg}  
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/integral_tv1.png}
+\end{figure}
+\begin{gather*}
+  s(t) = v(t) \cdot t \\
+  s = \text{ Summe von Rechtecksstreifen als Näherung für den Flächeninhalt}
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/integral_tv2.png}
+\end{figure}
+Durch Grenzwertbildung erhält man
+\begin{gather*}
+  s = \int_0^5 v(t) \cdot dt
+\end{gather*}
+\subsection{Untersumme - Obersumme}
+\begin{gather*}
+  \text{Beispiel } f(x) = y = x^2 \gap\gap x \in \left[0; 1\right]
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.1\textwidth]{/fakepath/untersumme_obersumme.png}
+\end{figure}
+\subsubsection{Untersumme}
+\begin{gather*}
+  U_5 = 0.2 \cdot (0 + 0.04 + 0.16 + 0.36 + 0.64) = 0.24FE
+  \text{Der wahre Flächeninhalt ist sicher größer als } 0.24FE
+\end{gather*}
+\subsubsection{Obersumme}
+\begin{gather*}
+  O_5 = 0.2 \cdot (0.04 + 0.16 + 0.36 + 0.64 + 1) = 0.44FE
+  \text{Der wahre Flächeninhalt ist sicher größer als} 0.44FE
+\end{gather*} \\
+\begin{gather*}
+  5 \rightarrow \text{ Intervall in $5$ gleiche Abschnitte: } \\
+  \gap\gap\gap I = \left[0; 1\right] \Rightarrow \text{ Intervallbreite } 0.2 \rightarrow \text{ Breite der Rechtecke} \\
+  (0 + ... + 0.64) \text{ bzw. } (0.04 + ... + 1) \rightarrow \text{ Höhen der Rechtecke} \\
+  FE \rightarrow \text{ Flächeneinheiten}
+\end{gather*} \\
+\begin{gather*}
+  U_{10} = 0.1 \cdot (0 + 0.01 + 0.04 + 0.09 + 0.16 + 0.25 + 0.36 + 0.49 + 0.64 + 0.81) \\
+  \;= 0.285FE \\
+  O_{10} = 0.1 \cdot (0.01 + 0.04 + 0.09 + 0.16 + 0.25 + 0.36 + 0.49 + 0.64 + 0.81 + 1) \\
+  \;= 0.385FE
+\end{gather*}
+
 \end{document}
