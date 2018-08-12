@@ -4010,6 +4010,64 @@ $F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
   \int \frac{5}{(3x - 2)^5} \cdot dx = -\frac{5}{4 \cdot 3} \cdot (3x - 2)^{-4} + c \\\\
   \int \frac{1}{5} \cdot e^{2x} \cdot dx = \frac{1}{5 \cdot 2} \cdot e^{2x} + c
 \end{gather*}
+\subsection{bestimmtes Integral, Integralfunktion, unbestimmtes Integral}
+\begin{gather*}
+  \int_a^b \frac{1}{x} \cdot dx = \left[ln(|x|)\right]_a^b \\\\
+  \text{sofern } a, b > 0 \text{ oder } a, b < 0 \text{ kein Problem} \\
+  \text{wenn eines größer und eines kleiner $0$ ist, dann muss man genauer untersuchen (Polstelle!)} \\\\
+  a = -1 \gap\gap b = 2 \\
+  \int_a^b \frac{1}{2x - 5} \cdot dx = \left[\frac{1}{2} \cdot ln(|2x - 5|)\right]_a^b
+\end{gather*}
+\begin{exercise}{171/3}
+  \item [a]
+  \begin{gather*}
+    \int_0^2 (2 + x)^3 \cdot dx = \left[\frac{1}{4} \cdot (2 + x)^4\right]_0^2 = \frac{1}{4} \cdot ((2 + 2)^4 - (2 + 0)^4) = 60
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \int_2^3 (1 + \frac{1}{x^2}) \cdot dx = \left[x - \frac{1}{x}\right]_2^3 = (3 - \frac{1}{3}) - (2 - \frac{1}{2}) = \frac{7}{6}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \int_0^2 \frac{1}{(x + 1)^2} \cdot dx = \left[-(x + 1)^{-1}\right]_0^2 = -(2 + 1)^{-1} + (0 + 1)^{-1} = \frac{2}{3}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \int_0^9 \frac{2}{5} \cdot \sqrt{x} \cdot dx = [\frac{4}{15} \cdot x^{\frac{3}{2}}]_0^9 = \frac{4}{15} \cdot 9^{\frac{3}{2}} - \frac{4}{15} \cdot 0^{\frac{3}{2}} = 7.2
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    \int_{-0.5}^0 e^{2x + 1} \cdot dx = \left[\frac{1}{2}e^{2x + 1}\right]_{-0.5}^0 = \frac{1}{2}e^{2 \cdot 0 + 1} - \frac{1}{2}e^{2 \cdot (-0.5) + 1} \approx 0.8591
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    \int_0^\pi sin(3x - \pi) \cdot dx = \left[-\frac{1}{3} \cdot cos(3x - \pi)\right]_0^\pi = \\ -\frac{1}{3} \cdot cos(3\pi - \pi) + \frac{1}{3} \cdot cos(3 \cdot 0 - \pi) = -\frac{2}{3}
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    \int_{-1}^1 \frac{1}{5} \cdot e^{\frac{1}{2}x} \cdot dx = \left[\frac{2}{5}e^{\frac{1}{2}x}\right]_{-1}^1 = \frac{2}{5}e^{\frac{1}{2} \cdot 1} - \frac{2}{5}e^{\frac{1}{2} \cdot (-1)} = \frac{2e - 2}{5 \cdot \sqrt{e}} \approx 0.4169
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    \int_{-\pi}^\pi cos(3x) \cdot dx = \left[-3 \cdot sin(3x)\right]_{-\pi}^\pi = -3 \cdot sin(3\pi) + 3 \cdot sin(3 \cdot (-\pi)) = 0
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{171/4}
+  \item [c]
+  \begin{gather*}
+    \int_3^4 \frac{1}{2(x + 1)} \cdot dx = \left[\frac{ln(x + 1)}{2}\right]_3^4 = \frac{ln(4 + 1)}{2} - \frac{ln(3 + 1)}{2} \approx 0.1116
+  \end{gather*}
+\end{exercise}
+\subsubsection{Integralfunktion}
+\begin{gather*}
+  \gap\gap\gap\gap \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a) = J \\
+  J_a(x) = \int_a^x f(x) \cdot dx = \left[F(x)\right]_a^x = F(x) - F(a)
+\end{gather*}
+Integralfunktion zur unteren (linken) Grenze $a$. Sie gibt zu jedem später eingesetzten Wert $x$ ($= b$) den bestimmten Integralwert an.
+\begin{gather*}
+  \int f(x) \cdot dx = \left[F(x)\right]^x = F(x) + c
+\end{gather*}
+unbestimmtes Integral
 
 \part{Anhang}
 \section{Abbildungsverzeichnis}
