@@ -4123,6 +4123,36 @@ unbestimmtes Integral
   \end{gather*}
   Die Anzahl der Anrufer in der Warteschleife ist zu dem Zeitpunkt am höchsten, an dem die Anrufer pro Minute wieder unter $200$ sinken (bei $t \approx 5$).
 \end{exercise}
+\begin{exercise}{176/9}
+  \begin{gather*}
+    f(t) = cos(\frac{2\pi}{24}(t - 12)) \\
+    g(t) = cos(\frac{2\pi}{24}(t - 6))
+  \end{gather*}
+  \item [a]
+  Zunahme ($f(t) > 0$) zwischen $6$ und $18$ Uhr \\
+  Abnahme ($f(t) < 0$) zwischen $18$ und $6$ Uhr \\\\
+  Zunahme ($g(t) > 0$) zwischen $0$ und $12$ Uhr \\
+  Abnahme ($g(t) < 0$) zwischen $12$ und $24$ Uhr
+  \item [b]
+  Am schnellsten um $12$ Uhr (Hochpunkt) \\
+  Am langsamsten um $0$/$24$ Uhr (Tiefpunkt) \\\\
+  Am schnellsten um $6$ Uhr (Hochpunkt) \\
+  Am langsamsten um $18$ Uhr (Tiefpunkt)
+  \item [c]
+  Maximal um $18$ Uhr (Rechts-Links-Wendepunkt) \\
+  Minimal um $6$ Uhr (Links-Rechts-Wendepunkt) \\\\
+  Maximal um $12$ Uhr (Rechts-Links-Wendepunkt) \\
+  Minimal um $0/24$ Uhr (Links-Rechts-Wendepunkt)
+  \item [d]
+  \begin{gather*}
+    F(t) = -\frac{12}{\pi} \cdot sin(\frac{\pi}{12}t) + c \\
+    c = 20 - F_{c=0}(12) = 20 \\
+    F(18) \approx 23.82 \gap\gap F(6) \approx 16.18 \\\\
+    G(t) = -\frac{12}{\pi} \cdot cos(\frac{\pi}{12}t) + c \\
+    c = 20 - G_{c=0}(12) \approx 16.1803 \\
+    G(12) = 20 \gap\gap G(0) = G(24) \approx 12.36
+  \end{gather*}
+\end{exercise}
 
 \part{Anhang}
 \section{Abbildungsverzeichnis}
