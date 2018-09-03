@@ -4277,6 +4277,32 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     \;= |[-1.25x^2 + 5.25x + 1/x]_{0.5}^2| \approx 1.7FE
   \end{gather*}
 \end{exercise}
+\subsection{Flächeninhalt, uneigentliche Integrale}
+\begin{exercise}{180/8}
+  \begin{gather*}
+    f_t(x) = \frac{t}{x^2} \gap\gap \left[1; 2\right] \\
+    F_t(x) = -\frac{t}{x} \\
+    A(t) = \int_1^2 -\frac{t}{x} \cdot dx = \frac{t}{2} \\
+    A(16) = 8
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{180/10}
+  \begin{gather*}
+    f_a(x) = a \cdot sin(x) \gap\gap g_a(x) = -\frac{1}{a} \cdot sin(x) \gap\gap x \in \left[0; \pi\right] \\
+    f_a(x) - g_a(x) = sin(x) \cdot (a + \frac{1}{a}) \\
+    A(a) = \int_0^\pi sin(x) \cdot (a + \frac{1}{a}) \cdot dx = (a + \frac{1}{a}) \cdot \left[-cos(x)\right]_0^\pi = (a + \frac{1}{a}) \cdot 2 \\\\
+    A'(a) = -\frac{2}{a^2} + 2 \\
+    A''(a) = \frac{4}{a^3} \\
+    A'(a) = 0 \gap\gap L = \{\pm1\} \\
+    A''(1) = 4 > 0 \gap\Rightarrow\gap TP \\
+    \text{Minimaler Flächeninhalt: } A(1) = 4FE
+  \end{gather*}
+\end{exercise}
+\begin{gather*}
+  \text{Beispiel } f(x) = \frac{1}{x^2} \gap\gap \left[3; \infty\right[ \\
+  A = \lim\limits_{z \to \infty} \int_3^z \frac{1}{x^2} \cdot dx = \lim\limits_{z \to \infty} \left[-x^{-1}\right]_3^z \\
+  \;= \lim\limits_{z \to \infty} (-\frac{1}{z} + \frac{1}{3}) = \frac{1}{3}FE
+\end{gather*}
 
 \part{Anhang}
 \section{Abbildungsverzeichnis}
