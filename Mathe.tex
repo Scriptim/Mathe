@@ -4392,5 +4392,36 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     \;= \frac{1}{3}a^3
   \end{gather*}
 \end{exercise}
+\subsection{Integration von Produkten: partielle Integration}
+Ableitungs-Produktregel: $(u \cdot v)' = u' \cdot v + u \cdot v'$
+\begin{gather*}
+  (u \cdot v)' = u' \cdot v + u \cdot v' \equ - u \cdot v' \\
+  u' \cdot v = (u \cdot v)' - u \cdot v' \equ \int \\
+  \int u' \cdot v = \int (u \cdot v)' - \int u \cdot v' \\
+  \int u' \cdot v = u \cdot v - \int u \cdot v' \\\\
+  \textbf{Beispiel} \\
+  \int sin(x) \cdot x \cdot dx = -cos(x) \cdot x - \int -cos(x) \cdot 1 \cdot dx \\
+  \;= -cos(x) \cdot x + sin(x) + c \\
+  (-cos(x)) \cdot x + sin(x))' = sin(x) \cdot x
+\end{gather*}
+\begin{gather*}
+  \int e^{2x} \cdot x^2 \cdot dx = \frac{1}{2}e^{2x} \cdot x^2 - \int \frac{1}{2}e^{2x} \cdot dx \\
+  \;= \frac{1}{2}e^{2x} \cdot x^2 - (\frac{1}{2}e^{2x} \cdot x - \int \frac{1}{2}e^{2x} \cdot 1 \cdot dx) \\
+  \;= \frac{1}{2}e^{2x} \cdot x^2 - \frac{1}{2}e^{2x} \cdot x + \int \frac{1}{2}e^{2x} \cdot dx \\
+  \;= \frac{1}{2}e^{2x} \cdot x^2 - \frac{1}{2}e^{2x} \cdot x + \frac{1}{4}e^{2x} \\
+  \;= e^{2x} \cdot (\frac{1}{2}x^2 - \frac{1}{2}x + \frac{1}{4})
+\end{gather*}
+Spezialfälle
+\begin{gather*}
+  \int 1 \cdot ln(x) \cdot dx = x \cdot ln(x) - \int x \cdot \frac{1}{x} \cdot dx \\
+  \;= x \cdot ln(x) - x \\
+  \text{(Stammfunktion von $ln(x)$)}
+\end{gather*}
+\begin{gather*}
+  \int sin(x) \cdot cos(x) \cdot dx = -cos(x) \cdot cos(x) - \int cos(x) \cdot (-sin(x)) \cdot dx \\
+  \;= -cos^2(x) - \int sin(x) \cdot cos(x) \cdot dx \equ + \int sin(x) \cdot cos(x) \cdot dx \\
+  2 \cdot \int sin(x) \cdot cos(x) \cdot dx = -cos^2(x) \equ : 2 \\
+  \int sin(x) \cdot cos(x) \cdot dx = -\frac{cos^2(x)}{2}
+\end{gather*}
 
 \end{document}
