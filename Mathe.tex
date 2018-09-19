@@ -4447,5 +4447,14 @@ Spezialfälle
     \;= \left[-2cos(0.5x) \cdot 2x + 8sin(0.5x)\right]_0^{2\pi} = 8\pi
   \end{gather*}
 \end{exercise}
+\begin{exercise}{188/8}
+  \item [d]
+  \begin{gather*}
+    \int_0^2 sin(\pi x) \cdot e^{2x} \cdot dx = \left[\frac{1}{2}e^{2x} \cdot sin(\pi x) - \int \frac{1}{2}e^{2x} \cdot \pi \cdot cos(\pi x) \cdot dx\right]_0^2 \\
+    \;= \left[\frac{1}{2}e^{2x} \cdot sin(\pi x) - (\frac{1}{4}e^{2x} \cdot \pi \cdot cos(\pi x) - \int -\frac{1}{4}e^{2x} \cdot \pi^2 \cdot sin(\pi x) \cdot dx)\right]_0^2 \\
+    \;= \left[\frac{1}{2}e^{2x} \cdot sin(\pi x) - (\frac{1}{4}e^{2x} \cdot \pi \cdot cos(\pi x) + \frac{1}{4}\pi^2 \cdot \int e^{2x} \cdot sin(\pi x) \cdot dx)\right]_0^2 \\
+    \;= \left[\frac{2e^{2x} \cdot sin(\pi x) - \pi \cdot e^{2x} \cdot cos(\pi x)}{\pi^2 + 4}\right]_0^2 = \frac{\pi}{\pi^2 + 4} - \frac{e^4 \cdot \pi}{\pi^2 + 4} \approx -12.140
+  \end{gather*}
+\end{exercise}
 
 \end{document}
