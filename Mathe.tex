@@ -4448,6 +4448,20 @@ Spezialfälle
   \end{gather*}
 \end{exercise}
 \begin{exercise}{188/8}
+  \item [a]
+  \begin{gather*}
+    \int_0^\pi (sin(x))^2 \cdot dx = \left[-cos(x) \cdot sin(x) - \int -cos(x) \cdot cos(x) \cdot dx\right]_0^\pi \\
+    \;= \left[-cos(x) \cdot sin(x) - \int (-sin^2(x) - 1) \cdot dx\right]_0^\pi \\
+    \;= \left[-cos(x) \cdot sin(x) + x - \int sin^2(x) \cdot dx\right]_0^\pi \equ + \int_0^\pi sin^2(x) \cdot dx; \gap : 2 \\
+    \;= \left[\frac{-cos(x) \cdot sin(x) + x}{2}\right]_0^\pi = \frac{\pi}{2}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \int_{-2}^2 e^x \cdot cos(x) \cdot dx = \left[sin(x) \cdot e^x - \int sin(x) \cdot e^x \cdot dx\right]_{-2}^2 \\
+    \;= \left[sin(x) \cdot e^x - (-cos(x) \cdot e^x - \int -cos(x) \cdot e^x \cdot dx)\right]_{-2}^2 \\
+    \;= \left[sin(x) \cdot e^x + cos(x) \cdot e^x - \int cos(x) \cdot e^x \cdot dx\right]_{-2}^2 \\
+    \;= \left[\frac{(sin(x) + cos(x)) \cdot e^x}{2}\right]_{-2}^2 \approx 1.912
+  \end{gather*}
   \item [d]
   \begin{gather*}
     \int_0^2 sin(\pi x) \cdot e^{2x} \cdot dx = \left[\frac{1}{2}e^{2x} \cdot sin(\pi x) - \int \frac{1}{2}e^{2x} \cdot \pi \cdot cos(\pi x) \cdot dx\right]_0^2 \\
