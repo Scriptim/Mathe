@@ -4470,5 +4470,39 @@ Spezialfälle
     \;= \left[\frac{2e^{2x} \cdot sin(\pi x) - \pi \cdot e^{2x} \cdot cos(\pi x)}{\pi^2 + 4}\right]_0^2 = \frac{\pi}{\pi^2 + 4} - \frac{e^4 \cdot \pi}{\pi^2 + 4} \approx -12.140
   \end{gather*}
 \end{exercise}
+\subsection{Integration durch Substitution}
+Kettenregel: $(f(g(x)))' = f'(g(x)) \cdot g'(x)$ \\
+\begin{gather*}
+  \int f'(g(x)) \cdot g'(x) \cdot dx = \int (f(g(x)))' \cdot dx \\
+  \;= f(g(x)) \gap\gap \text{Dabei ist $f$ die Stammfunktion von $f'$} \\
+  \Rightarrow \text{ Benenne um $f' \rightarrow f \gap\gap f \rightarrow F$} \\\\
+  \int f(g(x)) \cdot g'(x) \cdot dx = F(g(x)) \\\\
+  \text{Substitution 1} \\
+  \int_a^b f(g(x)) \cdot g'(x) \cdot dx \gap\gap \text{ersetze $z = g(x) \gap\gap \frac{dz}{dx} = g'(x) \Rightarrow dz = g'(x) \cdot dx$} \\
+  \;= \int_{g(a)}^{g(b)} f(z) \cdot dz = \left[F(z)\right]_{g(a)}^{g(b)} \\
+  \text{Resubstitution} \\
+  \;= \left[F(g(x))\right]_a^b
+\end{gather*}
+Beispiel
+\begin{gather*}
+  \int_1^2 \frac{5x}{\sqrt{1 + 3x^2}} \cdot dx \\\\
+  \text{subst. } z = 1 + 3x^2 \gap\gap \frac{dz}{dx} = (1 + 3x^2)' = 6x \gap\gap dz = 6x \cdot dx \\
+  \;= {\color{red}\frac{5}{6}} \int_1^2 \frac{{\color{red}6}x}{\sqrt{1 + 3x^2}} \cdot dx = \frac{5}{6} \int_4^{13} z^{-\frac{1}{2}} \cdot dz \\
+  \;= \frac{5}{6} \left[2z^\frac{1}{2}\right]_4^{13} = \frac{5}{6} \left[2 \cdot (1 + 3x^2)^\frac{1}{2}\right]_1^2 \approx 2.676
+\end{gather*}
+\begin{exercise}{191/1}
+  \item [a]
+  \begin{gather*}
+    \int_0^2 \frac{4x}{\sqrt{1 + 2x^2}} \cdot dx; \gap\gap g(x) = 1 + 2x^2 \\
+    \text{subst. } z = g(x) \gap\gap dz = g'(x) \cdot dx \\
+    \;= \int_{g(0)}^{g(2)} \frac{1}{\sqrt{z}} \cdot dz = \left[2 \cdot \sqrt{z}\right]_1^9 = 4
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \int_{-1}^1 \frac{-2x}{(4 - 3x^2)^2} \cdot dx; \gap\gap g(x) = 4 - 3x^2 \\
+    \text{subst. } z = g(x) \gap\gap dz = g'(x) \cdot dx \\
+    \;= \int_{g(-1)}^{g(1)} \frac{1}{3z^2} \cdot dz = \left[-\frac{1}{3z}\right]_1^1 = 0
+  \end{gather*}
+\end{exercise}
 
 \end{document}
