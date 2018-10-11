@@ -4538,5 +4538,36 @@ Beispiel
     \;= \left[ln(sin(\pi x))\right]_\frac{1}{3}^\frac{1}{2} \approx 0.1438
   \end{gather*}
 \end{exercise}
+\newpage
+\begin{exercise}{191/8}
+  \item [a]
+  \begin{gather*}
+    \int_0^{ln(2)} \frac{e^{2x}}{e^{2x} + 3} \cdot dx \gap\gap\gap\gap t = e^{2x} + 3 \gap\gap t' = \frac{dt}{dx} = 2e^{2x} \gap\gap dx = \frac{1}{2 \cdot e^{2x}} \cdot dt \\
+    \;= \int_{t(0)}^{t(ln(2))} \frac{e^{4x}}{t} \cdot \frac{1}{2 \cdot e^{2x}} \cdot dt = \int_{t(0)}^{t(ln(2))} \frac{e^{2x}}{2t} \cdot dt = \int_{t(0)}^{t(ln(2))} \frac{t - 3}{2t} \cdot dt \\
+    \;= \left[\frac{t}{2} - \frac{3}{2} \cdot ln(t)\right]_4^7 \approx 0.6606
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \int_1^2 \frac{2x + 3}{(x + 2)^2} \cdot dx \gap\gap\gap\gap t = x + 2 \gap\gap t' = \frac{dt}{dx} = 1 \gap\gap dx = dt \\
+    \;= \int_{t(1)}^{t(2)} \frac{2x + 3}{t^2} \cdot dt = \int_{t(1)}^{t(2)} \frac{2t - 1}{t^2} \cdot dt = \int_{t(1)}^{t(2)} (\frac{2}{t} - \frac{1}{t^2}) \cdot dt \\
+    \;= \left[2 \cdot ln(t) + \frac{1}{t}\right]_3^4 \approx 0.4920
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \int_{0.5}^7 \frac{x}{\sqrt{4x - 1}} \cdot dx \gap\gap\gap\gap t = 4x - 1 \gap\gap t' = \frac{dt}{dx} = 4 \gap\gap dx = \frac{d4}{t} \\
+    \;= \int_{t(0.5)}^{t(7)} \frac{x}{\sqrt{t}} \cdot \frac{1}{4} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{\frac{1}{4}t + \frac{1}{4}}{4 \cdot \sqrt{t}} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{t + 1}{16 \cdot \sqrt{t}} \cdot dt \\
+    \;= \left[(\frac{1}{16}t + \frac{1}{16}) \cdot 2 \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \int_{t(0.5)}^{t(7)} \frac{1}{8} \cdot \sqrt{t} \cdot dt \\
+    \;= \left[(\frac{1}{8}t + \frac{1}{8}) \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \left[\frac{1}{8} \cdot \frac{2}{3} \cdot \sqrt{t^3}\right]_{t(0.5)}^{t(7)} \\
+    \;= \left[\frac{1}{8} \cdot (t \cdot \sqrt{t} + \sqrt{t} - \frac{2}{3} \cdot \sqrt{t^3})\right]_1^{27} \approx 6.3285
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \int_0^4 \frac{4}{1 + 2 \cdot \sqrt{x}} \cdot dx \gap\gap\gap\gap t = 1 + 2 \cdot \sqrt{x} \gap\gap t' = \frac{dt}{dx} = \frac{1}{\sqrt{x}} \gap\gap dx = \sqrt{x} \cdot dt \\
+    \;= \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \sqrt{x} \cdot dt = \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \frac{t - 1}{2} \cdot dt = \int_{t(0)}^{t(4)} \frac{4t - 4}{2t} \\
+    \;= \left[\frac{1}{2t} \cdot (2t^2 - 4t)\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} - \frac{1}{2t^2} \cdot (2t^2 - 4t) \cdot dt \\
+    \;= \left[t - 2\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} (\frac{2}{t} - 1) \cdot dt \\
+    \;= \left[t - 2 - (2 \cdot ln(t) - t)\right]_{t(0)}^{t(4)} = \left[2 \cdot (t - 1 - ln(t))\right]_1^5 \approx 4.7811
+  \end{gather*}
+\end{exercise}
 
 \end{document}
