@@ -4569,5 +4569,35 @@ Beispiel
     \;= \left[t - 2 - (2 \cdot ln(t) - t)\right]_{t(0)}^{t(4)} = \left[2 \cdot (t - 1 - ln(t))\right]_1^5 \approx 4.7811
   \end{gather*}
 \end{exercise}
+\begin{gather*}
+  \text{Substitution 2} \\
+  \int_a^b f(x) \cdot dx \gap\gap \text{ersetze } x = g(z) \\
+  \;= \int_a^b f(g(z)) \cdot dx = \int_{\overline{g}(a)}^{\overline{g}(b)} f(g(z)) \cdot g'(z) \cdot dz \\\\
+  \gap\gap\gap x = g(z) \gap\gap z = \overline{g}(x) \\
+  \gap\gap\gap \frac{dx}{dz} = g'(z) \gap\gap dx = g'(z) \cdot dz \\\\
+  \;= \left[F(g(z))\right]_{\overline{g}(a)}^{\overline{g}(b)} = \left[F(x)\right]_a^b
+\end{gather*}
+Beispiel
+\begin{gather*}
+  \int_0^\frac{1}{2} \frac{1}{\sqrt{1 - x^2}} \cdot dx \gap\gap x = sin(z) \gap\gap dx = cos(z) \cdot dz \\
+  \;= \int_0^\frac{\pi}{6} \frac{cos(z)}{\sqrt{1 - sin^2(z)}} \cdot dz = \int_0^\frac{\pi}{6} 1 \cdot dz = \left[z\right]_0^\frac{\pi}{6} = \frac{\pi}{6} \approx 0.524
+\end{gather*}
+\newpage
+\begin{exercise}{AB/23}
+  \item [a]
+  \begin{gather*}
+    \int_0^1 e^x \cdot \sqrt{e^x + 1} \cdot dx \\
+    x(t) = ln(t) \gap\gap t = e^x \gap\gap dx = \frac{1}{t} \cdot dt \\
+    \;= \int_{e^0}^{e^1} e^{ln(t)} \cdot \sqrt{e^{ln(t)} + 1} \cdot \frac{1}{t} \cdot dz = \int_1^e \sqrt{t + 1} \\
+    \;= \left[\frac{2}{3} \cdot \sqrt{(t + 1)^3}\right]_1^e \approx 2.8943
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \int_1^3 \frac{1}{x} \cdot ln(x^2) \cdot dx \\
+    x(t) = e^t \gap\gap t = ln(x) \gap\gap dx = e^t \cdot dt \\
+    \;= \int_{ln(1)}^{ln(3)} \frac{1}{e^t} \cdot ln(e^{t^2}) \cdot e^t \cdot dt = \int_0^{ln(3)} ln(e^{2t}) \cdot dt = \int_0^{ln(3)} 2t \cdot dt \\
+    \;= \left[t^2\right]_0^{ln(3)} = (ln(3))^2 \approx 1.2069
+  \end{gather*}
+\end{exercise}
 
 \end{document}
