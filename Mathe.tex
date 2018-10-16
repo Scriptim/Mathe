@@ -4554,7 +4554,7 @@ Beispiel
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \int_{0.5}^7 \frac{x}{\sqrt{4x - 1}} \cdot dx \gap\gap\gap\gap t = 4x - 1 \gap\gap t' = \frac{dt}{dx} = 4 \gap\gap dx = \frac{d4}{t} \\
+    \int_{0.5}^7 \frac{x}{\sqrt{4x - 1}} \cdot dx \gap\gap\gap\gap t = 4x - 1 \gap\gap t' = \frac{dt}{dx} = 4 \gap\gap dx = \frac{dt}{4} \\
     \;= \int_{t(0.5)}^{t(7)} \frac{x}{\sqrt{t}} \cdot \frac{1}{4} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{\frac{1}{4}t + \frac{1}{4}}{4 \cdot \sqrt{t}} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{t + 1}{16 \cdot \sqrt{t}} \cdot dt \\
     \;= \left[(\frac{1}{16}t + \frac{1}{16}) \cdot 2 \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \int_{t(0.5)}^{t(7)} \frac{1}{8} \cdot \sqrt{t} \cdot dt \\
     \;= \left[(\frac{1}{8}t + \frac{1}{8}) \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \left[\frac{1}{8} \cdot \frac{2}{3} \cdot \sqrt{t^3}\right]_{t(0.5)}^{t(7)} \\
@@ -4563,7 +4563,7 @@ Beispiel
   \item [d]
   \begin{gather*}
     \int_0^4 \frac{4}{1 + 2 \cdot \sqrt{x}} \cdot dx \gap\gap\gap\gap t = 1 + 2 \cdot \sqrt{x} \gap\gap t' = \frac{dt}{dx} = \frac{1}{\sqrt{x}} \gap\gap dx = \sqrt{x} \cdot dt \\
-    \;= \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \sqrt{x} \cdot dt = \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \frac{t - 1}{2} \cdot dt = \int_{t(0)}^{t(4)} \frac{4t - 4}{2t} \\
+    \;= \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \sqrt{x} \cdot dt = \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \frac{t - 1}{2} \cdot dt = \int_{t(0)}^{t(4)} \frac{4t - 4}{2t} \cdot dt \\
     \;= \left[\frac{1}{2t} \cdot (2t^2 - 4t)\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} - \frac{1}{2t^2} \cdot (2t^2 - 4t) \cdot dt \\
     \;= \left[t - 2\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} (\frac{2}{t} - 1) \cdot dt \\
     \;= \left[t - 2 - (2 \cdot ln(t) - t)\right]_{t(0)}^{t(4)} = \left[2 \cdot (t - 1 - ln(t))\right]_1^5 \approx 4.7811
@@ -4632,8 +4632,8 @@ Beispiel
   \begin{gather*}
     \int_0^1 \frac{1}{\sqrt{4 - x^2}} \cdot dx \\
     x(t) = 2 \cdot sin(t) \gap\gap t = asin(\frac{x}{2}) \gap\gap dx = 2 \cdot cos(t) \cdot dt \\\\
-    \;= \int_{asin(\frac{0}{2})}^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{\sqrt{4 - (2 \cdot sin(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{1 - (sin(t))^2}} \\
-    \;= \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{(cos(x))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} 1 \cdot dt = \left[t\right]_0^{asin(\frac{1}{2})} = \frac{\pi}{6}
+    \;= \int_{asin(\frac{0}{2})}^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{\sqrt{4 - (2 \cdot sin(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{1 - (sin(t))^2}} \cdot dt \\
+    \;= \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{(cos(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} 1 \cdot dt = \left[t\right]_0^{asin(\frac{1}{2})} = \frac{\pi}{6}
   \end{gather*}
 \end{exercise}
 \subsection{Rotationskörper}
