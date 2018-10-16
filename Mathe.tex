@@ -4599,5 +4599,58 @@ Beispiel
     \;= \left[t^2\right]_0^{ln(3)} = (ln(3))^2 \approx 1.2069
   \end{gather*}
 \end{exercise}
+\subsubsection{Wiederholung}
+\begin{enumerate}
+  \item Ersetze $g(x)$ durch $z$
+  \begin{gather*}
+    \int_a^b = f(g(x)) \cdot g'(x) \cdot dx = \int_{g(a)}^{g(b)} f(z) \cdot dz \\
+    \;= \left[F(z)\right]_{g(a)}^{g(b)} = \left[F(g(x))\right]_a^b \\
+    z = g(x) \\\\
+    \frac{dz}{dx} = g'(x) \\
+    dz = g'(x) \cdot dx
+  \end{gather*}
+  \item Ersetze $x$ durch $g(z)$
+  \begin{gather*}
+    \int_a^b f(x) \cdot dx = \int_{\overline{g}(a)}^{\overline{g}(b)} f(g(z)) \cdot g'(z) \cdot dz \\
+    \;= \left[F(g(z))\right]_{\overline{g}(a)}^{\overline{g}(b)} = \left[F(x)\right]_a^b \\\\
+    x = g(z) \gap\Leftrightarrow\gap z = \overline{g}(x) \\
+    \frac{dx}{dz} = g'(z) \\
+    dx = g'(z) \cdot dz
+  \end{gather*}
+\end{enumerate}
+\begin{exercise}{AB/23}
+  \item [d]
+  \begin{gather*}
+    \int_1^2 \frac{1 + ln(x)}{x \cdot (1 - ln(x))} \cdot dx \\
+    x(t) = e^t \gap\gap t = ln(x) \gap\gap dx = e^t \cdot dt \\\\
+    \;= \int_{ln(1)}^{ln(2)} \frac{1 + ln(e^t)}{e^t \cdot (1 - ln(e^t))} \cdot e^t \cdot dt = \int_0^{ln(2)} \frac{1 + t}{1 - t} \cdot dt \\
+    z = 1 - t \gap\gap \frac{dz}{dt} = -1 \gap\gap dz = -dt \\\\
+    \;= -\int_{1 - 0}^{1 - ln(2)} \frac{2 - z}{z} \cdot dz = -\int_{1 - 0}^{1 - ln(2)} (\frac{2}{z} - 1) \cdot dz \\
+    \;= -\left[2 \cdot ln(z) - z\right]_1^{1 - ln(2)} \approx 1.6696
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    \int_0^1 \frac{1}{\sqrt{4 - x^2}} \cdot dx \\
+    x(t) = 2 \cdot sin(t) \gap\gap t = asin(\frac{x}{2}) \gap\gap dx = 2 \cdot cos(t) \cdot dt \\\\
+    \;= \int_{asin(\frac{0}{2})}^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{\sqrt{4 - (2 \cdot sin(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{1 - (sin(t))^2}} \\
+    \;= \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{(cos(x))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} 1 \cdot dt = \left[t\right]_0^{asin(\frac{1}{2})} = \frac{\pi}{6}
+  \end{gather*}
+\end{exercise}
+\subsection{Rotationskörper}
+Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, dass eine Fläche um eine Achse ($x$-Achse) rotiert.
+\subsubsection{Bestimmung des Volumens von Rotationskörpern}
+\begin{gather*}
+  f(x) = \frac{1}{2}x^2 + 1
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.1\textwidth]{/fakepath/rotationskoerper.png}
+\end{figure}
+\begin{gather*}
+  A = \int_a^b f(x) \cdot dx \\
+  \;= \int_1^2 (\frac{1}{2}x^2 + 1) \cdot dx = \left[\frac{1}{6}x^3 + x\right]_1^2 = \frac{13}{6} FE \approx 2.17FE \\
+  V = \int_a^b \pi \cdot (f(x))^2 \cdot dx \\
+  \;= \pi \cdot \int_1^2 (\frac{1}{2}x^2 + 1)^2 \cdot dx = \pi \cdot \left[\frac{1}{20}x^5 + \frac{1}{3}x^3 + x\right]_1^2 = \frac{193\pi}{60}VE \approx 10.11VE
+\end{gather*}
 
 \end{document}
