@@ -4674,5 +4674,53 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
     \;= \pi \cdot \left[\frac{1}{5}x^5 - 3x^4 + \frac{52}{3}x^3 - 48x^2 + 64x\right]_2^4 = \pi \cdot \frac{16}{15}VE \approx 3.3510VE
   \end{gather*}
 \end{exercise}
+\begin{exercise}{197/8}
+  \begin{gather*}
+    f(x) = 0.5x + 1 \gap\gap g(x) = 1.5 \cdot \sqrt{x - 1} \gap\gap \left[0; 4\right]
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    V_W = \pi \cdot \int_1^4 (1.5 \cdot \sqrt{x - 1})^2 \cdot dx = \pi \cdot \int_1^4 (2.25x - 2.25) \cdot dx \\
+    \;= \pi \cdot \left[1.125x^2 - 2.25x\right]_1^4 = 10.125\pi \approx 31.8086 \\
+    [V_W] = cm^3
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    V = \pi \cdot \int_0^4 (0.5x + 1)^2 \cdot dx = \pi \cdot \int_0^4 (0.25x^2 + x + 1) \cdot dx \\
+    \;= \pi \cdot \left[\frac{1}{12}x^3 + \frac{1}{2}x^2 + x\right]_0^4 = \frac{52\pi}{3} \approx 54.4543 \\
+    V_G = V - V_W = 10.125\pi - \frac{52\pi}{3} = 22.6456 \\
+    [V] = [V_G] = cm^3
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{197/9}
+  \item [b]
+  \begin{gather*}
+    f(x) = 3x^2 - x^3 \gap\gap g(x) = x^2 \\
+    f(x) = g(x) \gap\gap L = \{0; 2\} \\\\
+    V = \pi \cdot ((3x^2 - x^3)^2 - (x^2)^2) \cdot dx = \pi \cdot (9x^4 - 6x^5 + x^6 - x^4) \cdot dx \\
+    \;= \pi \left[\frac{8}{5}x^5 - x^6 + \frac{1}{7}x^7\right]_0^2 = \frac{192\pi}{35} \approx 17.2339
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{188/4}
+  \item [b]
+  \begin{gather*}
+    f(x) = 2x \cdot sin(x) \\
+    \int f(x) \cdot dx = -cos(x) \cdot 2x - \int -cos(x) \cdot 2 \cdot dx = -cos(x) \cdot 2x + sin(x) \cdot 2
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{188/9}
+  \item [b]
+  \begin{gather*}
+    \int_1^e x \cdot ln(2x) \cdot dx \\
+    \;= \left[\frac{1}{2}x^2 \cdot ln(2x)\right]_1^e - \int_1^e \frac{1}{2}x^2 \cdot \frac{1}{x} \cdot dx = \left[\frac{1}{2}x^2 \cdot ln(2x)\right]_1^e - \int_1^e \frac{1}{2}x \cdot dx \\
+    \;= \left[\frac{1}{2}x^2 \cdot ln(2x) - \frac{1}{4}x^2\right]_1^e \approx 4.3115
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \int_1^{e^2} x^2 \cdot ln(x) \cdot dx \\
+    \;= \left[\frac{1}{3}x^3 \cdot ln(x)\right]_1^{e^2} - \int_1^{e^2} \frac{1}{3}x^3 \cdot \frac{1}{x} \cdot dx \\
+    \;= \left[\frac{1}{3}x^3 \cdot ln(x) - \frac{1}{9}x^3\right]_1^{e^2} \approx 224.2382
+  \end{gather*}
+\end{exercise}
 
 \end{document}
