@@ -4723,4 +4723,86 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
   \end{gather*}
 \end{exercise}
 
+\section{Analytische Geometrie: Punkte und Vektoren}
+Jeder Punkt im Raum $\mathbb{R}^3$ ist durch 3 Koordinaten $(x|y|z)$ oder $(x_1|x_2|x_3)$ festgelegt, sofern zuvor der Ursprung $O$ des Koordinatensystems festgelegt wird. \\
+Den Vektor, der vom Ursprung $O$ zum Punkt $A(x|y|z)$ führt, nennt man Ortsvektor von $A$ und notiert man \\
+$\vec{OA} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ \\
+Ein Vektor ist eine Stecke (mit Länge) mit Orientierung (Pfeil).
+\begin{gather*}
+  \begin{tikzpicture}[scale=0.5]
+    \draw[|->] (0,0) -- (5,1);
+    \node[below left] at (0,0) {$O$};
+    \node[above right] at (5,1) {$A$};
+    \node at (2.5,1.3) {$\vec{OA}$};
+  \end{tikzpicture}
+\end{gather*}
+\subsubsection{Darstellung im 3-dimensionalen Koordinatensystem}
+$A(2|3|4) \gap\gap B(-3|1|-2) \gap\gap C(3|0|2)$ \\
+Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
+\begin{gather*}
+  \begin{tikzpicture}[scale=0.7,tdplot_main_coords]
+    \coordinate (O) at (0,0,0);
+    \draw[thick,->] (O) -- (5,0,0) node[anchor=north east]{$x$};
+    \draw[thick,->] (O) -- (0,5,0) node[anchor=north west]{$y$};
+    \draw[thick,->] (O) -- (0,0,5) node[anchor=south]{$z$};
+    \foreach \coo in {1,...,4}
+    {
+      \draw (\coo,0,0.1pt) -- (\coo,0,-0.1pt) node[above=4pt] {\coo};
+      \draw (0,\coo,0.1pt) -- (0,\coo,-0.1pt) node[below] {\coo};
+      \draw (0.08pt,-0.08pt,\coo) -- (-0.08pt,0.08pt,\coo) node[right=-1pt] {\coo};
+    }
+    \coordinate[fill,circle,inner sep=1.5pt,label=above right:$A$] (A) at (2,3,4);
+    \coordinate[fill,circle,inner sep=1.5pt,label=above right:$B$] (B) at (-3,1,-2);
+    \coordinate[fill,circle,inner sep=1.5pt,label=above right:$C$] (C) at (3,0,2);
+    \draw[color=red] (-2,1,-3) -- (-2,1,5);
+  \end{tikzpicture}
+\end{gather*}
+\begin{exercise}{275/2}
+  \item [a+c]
+  \begin{gather*}
+    \begin{tikzpicture}[scale=2,tdplot_main_coords]
+      \draw[thick,->] (-3,0,0) -- (2,0,0) node[anchor=north east]{$x_1$};
+      \draw[thick,->] (0,-2,0) -- (0,1,0) node[anchor=north west]{$x_2$};
+      \draw[thick,->] (0,0,-1) -- (0,0,4.5) node[anchor=south]{$x_3$};
+      \foreach \coo in {-2,-1,1}
+      {
+        \draw (\coo,0,0.1pt) -- (\coo,0,-0.1pt);
+      }
+      \foreach \coo in {-1,0}
+      {
+        \draw (0,\coo,0.1pt) -- (0,\coo,-0.1pt);
+      }
+      \foreach \coo in {1,2,3}
+      {
+        \draw (0.08pt,-0.08pt,\coo) -- (-0.08pt,0.08pt,\coo);
+      }
+      \coordinate[label=below right:$A$] (A) at (-2,0,0);
+      \coordinate[label=below right:$B$] (B) at (1,0,0);
+      \coordinate[label=below left:$C$] (C) at (1,-1,0);
+      \coordinate[label=above:$G$] (G) at (1,-1,3);
+      \coordinate[label=above right:$D$] (D) at (-2,-1,0);
+      \coordinate[label=above right:$E$] (E) at (-2,0,3);
+      \coordinate[label=above:$F$] (F) at (1,0,3);
+      \coordinate[label=above right:$H$] (H) at (-2,-1,3);
+      \draw[color=blue] (A) -- (B) -- (F) -- (E) -- (A);
+      \draw[color=blue] (B) -- (C) -- (G) -- (F) -- (B);
+      \draw[color=blue] (E) -- (F) -- (G) -- (H) -- (E);
+      \draw[dashed,color=blue] (C) -- (D) -- (A);
+      \draw[dashed,color=blue] (H) -- (D);
+      \draw[color=red] (-1,-0.5,0) -- (-1,-0.5,3);
+    \end{tikzpicture}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    D(-2|-1|0) \gap\gap E(-2|0|3) \gap\gap F(1|0|3) \gap\gap H(-2|-1|3)
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{276/3}
+  \begin{gather*}
+    P(2|3|0) \gap\gap Q(4|4|0) \\
+    R(0|3|1) \gap\gap S(0|-2|-1) \\
+    T(2|0|2) \gap\gap U(3|0|-1)
+  \end{gather*}
+\end{exercise}
+
 \end{document}
