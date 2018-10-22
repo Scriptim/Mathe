@@ -12,9 +12,8 @@
 
 \part{11/1}
 
-\section{Terme, Gleichungen, Ungleichungen}
-
-\subsection{Pascalsches Dreieck}
+\chapter{Terme, Gleichungen, Ungleichungen}
+\section{Pascalsches Dreieck}
 \begin{tabular}{rccccccccccccccccc}
   $n=0$:&    &    &    &    &    &    &    &    &  1\\\noalign{\smallskip\smallskip}
   $n=1$:&    &    &    &    &    &    &    &  1 &    &  1\\\noalign{\smallskip\smallskip}
@@ -26,20 +25,17 @@
   $n=7$:&    &  1 &    &  7 &    & 21 &    & 35 &    & 35 &    & 21 &    &  7 &    &  1\\\noalign{\smallskip\smallskip}
   $n=8$:&  1 &    &  8 &    & 28 &    & 56 &    & 70 &    & 56 &    & 28 &    &  8 &    &  1\\\noalign{\smallskip\smallskip}
 \end{tabular}
-
-\subsection{pq-Formel}
+\section{pq-Formel}
 \begin{gather*}
   x^2 + px + q = 0 \\
   x_{1/2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{2})^2 - q}
 \end{gather*}
-
-\subsection{abc-Formel}
+\section{abc-Formel}
 \begin{gather*}
   ax^2 + bx + c = 0 \\
   x_{1/2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \end{gather*}
-
-\subsection{Satz von Vieta}
+\section{Satz von Vieta}
 \begin{gather*}
   0 = x^2 + px + q
 \end{gather*}
@@ -47,12 +43,10 @@ pq-Formel:
 \begin{gather*}
   x_{1/2} = -\frac{p}{2} \pm \sqrt{\smash[b]{\underbrace{(\frac{p}{2})^2 - q}_{\text{Diskriminante*}}}}
 \end{gather*}
-\begin{onepage}
-  *Diskriminante:\\
-  $ > 0 \gap\Rightarrow\gap \text{zwei Lösungen} $ \\
-  $ = 0 \gap\Rightarrow\gap \text{eine Lösung} $ \\
-  $ < 0 \gap\Rightarrow\gap \text{keine Lösung} $
-\end{onepage}
+*Diskriminante:\\
+$ > 0 \gap\Rightarrow\gap \text{zwei Lösungen} $ \\
+$ = 0 \gap\Rightarrow\gap \text{eine Lösung} $ \\
+$ < 0 \gap\Rightarrow\gap \text{keine Lösung} $
 \begin{gather*}
   x_1 + x_2 = -\frac{p}{2} + \sqrt{\cdots} - \frac{p}{2} - \sqrt{\cdots} = -p \\
   x_1 \cdot x_2 = (-\frac{p}{2} + \sqrt{\cdots}) (-\frac{p}{2} - \sqrt{\cdots}) = \frac{p^2}{4} - \frac{p^2}{4} + q = q \\\\
@@ -64,8 +58,7 @@ pq-Formel:
   x_1 = 12; \; x_2 = -6 \\
   0 = \frac{1}{9} \underbrace{(x - 12)(x + 6)}_{\text{Linearfaktoren}}
 \end{gather*}
-
-\subsection{Binomischer Lehrsatz}
+\section{Binomischer Lehrsatz}
 \begin{gather*}
   (a + b)^n = \sum_{k=0}^n \binom{n}{k} \cdot a^{n-k} \cdot b^k \\\\
   \textbf{Beispiele} \\
@@ -82,9 +75,7 @@ Binominialkoeffizienten
 \begin{gather*}
   \binom{n}{k} = \frac{n!}{k! \cdot (n - k)!}
 \end{gather*}
-
 \section{Gleichungen und Ungleichungen}
-
 \subsection{Gleichung lösen durch Substitution}
 \textbf{Beispiel} $ 0 = 2x^4 - 3x^2 - 5 $ \\
 Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) der Funktion mit gleichem Funktionsterm \\
@@ -100,9 +91,7 @@ Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) d
   \gap \text{keine Lösung} \\
   L = \{\sqrt{2.5}; -\sqrt{2.5}\}
 \end{gather*}
-
 \section{Potenzen, Wurzeln und Logarithmen}
-
 \subsection{Potenz- und Wurzelgesetze}
 \begin{gather*}
   a^x \cdot a^y = a^{x + y} \\
@@ -115,7 +104,6 @@ Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) d
   \sqrt[x]{a} \cdot \sqrt[x]{b} = \sqrt[x]{ab} \\
   \sqrt[x]{\sqrt[y]{a}} = \sqrt[xy]{a}
 \end{gather*}
-
 \subsection{Logarithmengesetze}
 \begin{gather*}
   \log_a(xy) = \log_a(x) + \log_a(y) \\
@@ -124,8 +112,8 @@ Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) d
   \log_a(x) = \frac{\log(x)}{\log(a)}
 \end{gather*}
 
-\section{Funktion - Relation - Zahlenfolge}
-Eien Funktion ist eine Zuordnung (Zahlen $x \rightarrow$ Zahlen $y$), die jeder Zahl $x$ der Definitionsmenge genau eine Zahl $y$ der Wertemenge zuordnet. \\\\
+\chapter{Funktion - Relation - Zahlenfolge}
+Eine Funktion ist eine Zuordnung (Zahlen $x \rightarrow$ Zahlen $y$), die jeder Zahl $x$ der Definitionsmenge genau eine Zahl $y$ der Wertemenge zuordnet. \\\\
 Darstellung:
 \begin{itemize}
   \item Funktionsgleichung, z. B. $f(x) = y = \underbrace{2x^2 + 5}_\text{Funktionsterm}$
@@ -135,8 +123,7 @@ Darstellung:
 Eine Relation ist eine allgemeine Zuordnung von $x$ zu $y$,\\
 z. B. $x = 3$ (senkrechte Gerade), $x^2y = y^2 + x^3$ \\\\
 Eine Zahlenfolge ist eine Funktion mit $x \in \mathbb{N}$
-
-\subsection{Zahlenfolgen}
+\section{Zahlenfolgen}
 Definitionsmenge $D = \mathbb{N}_0$ \\
 Wertemenge $W = \mathbb{R}$ \\
 $a_n = y = \dots \;\leftarrow Funktionsterm$ \\
@@ -195,12 +182,10 @@ Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung 
     a_n = \frac{\varphi^n - \psi^n}{\varphi - \psi}
   \end{gather*}
 \end{exercise}
-
-\subsection{Zahlenfolgen: Monotonie, Beschränktheit}
-\begin{onepage}
-  \textbf{16/5}\\
-  $a_n = 200000€ \cdot 0.98^n$ \\\\
-\end{onepage}
+\section{Monotonie, Beschränktheit}
+\begin{exercise}{16/5}
+  $$a_n = 200000€ \cdot 0.98^n$$
+\end{exercise}
 \begin{exercise}{16/7}
   \item [a]
   \begin{gather*}
@@ -214,13 +199,11 @@ Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung 
     V_n = \sum^n_{k = 0} 8^{-k}
   \end{gather*}
 \end{exercise}
-\begin{onepage}
-  Streng monoton fallende Zahlenfolge \\
-  \;z. B. $a_n$ von 16/5 ist eine Folge mit der Eigenschaft $a_n < a_{n - 1}$ \\
-  Streng monoton steigende Zahlenfolge \\
-  \;z. B. $V_n$ von 16/7 ist eine Folge mit der Eigenschaft $a_n > a_{n - 1}$ \\
-  Ohne \glqq streng\grqq entsprechend $\leq$ bzw. $\geq$
-\end{onepage} \\\\
+Streng monoton fallende Zahlenfolge \\
+\;z. B. $a_n$ von 16/5 ist eine Folge mit der Eigenschaft $a_n < a_{n - 1}$ \\
+Streng monoton steigende Zahlenfolge \\
+\;z. B. $V_n$ von 16/7 ist eine Folge mit der Eigenschaft $a_n > a_{n - 1}$ \\
+Ohne \glqq streng\grqq entsprechend $\leq$ bzw. $\geq$
 \begin{exercise}{18/1}
   \item [a]
   \begin{gather*}
@@ -258,8 +241,7 @@ Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung 
   streng monoton fallend \\
   nach oben beschränkt ($4$); nach unten beschränkt ($0$)
 \end{exercise}
-\begin{onepage}
-  \textbf{18/2} \\
+\begin{exercise}{18/2}
   \begin{tabular}{rcccc}
     $a_n$ & $n$ & $(-1)^n \cdot n$ & $(-1)^n : n$ & $1 + 1 : n$ \\
     $\uparrow$ beschränkt & \xmark & \xmark & \cmark & \cmark \\
@@ -267,8 +249,7 @@ Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung 
     beschränkt & \xmark & \xmark & \cmark & \cmark \\
     monoton & \cmark & \xmark & \xmark & \cmark
   \end{tabular}
-\end{onepage}
-
+\end{exercise}
 \section{Grenzwert einer Zahlenfolge/Funktion}
 Der Grenzwert $g$ ist eine reelle Zahl, der sich die Folgenwerte (Funktionswerte) annähern, sodass die Folgenwerte (Funktionswerte) vom Grenzwert praktisch nicht mehr unterschieden werden können. \\
 z. B.
@@ -280,6 +261,7 @@ $a_n$ hat den Grenzwert $g = 0$, da $a_n$ auch streng monoton fallend ist, ist $
 Vorgehen \\
 Ich gebe eine Genauigkeitsschranke, z. B. $\epsilon = 10^{-3}$ vor (kleine positive Zahl). Zu $\epsilon$ finde ich ein $n_\epsilon = 1001$. Alle Folgenwerte mit $n \geq n_\epsilon = 1001$ (also $a_{1001},\; a_{1002},\; \dots$) liegen näher beim Grenzwert $g = 0$ als $\epsilon = 10^{-3}$ angibt. Finde ich zu jeder möglichen Genauigkeitsschranke $\epsilon$ solch ein $n_\epsilon$, so ist $g$ der Grenzwert. Ist diese Bedingung erfüllt, so notiert man \\
 $\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \infty} n^{-1} = 0$
+\newpage
 \begin{exercise}{22/2}
   (Abweichung $< \epsilon = 0.1$)
   \item [a]
@@ -324,7 +306,6 @@ $\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \i
     \Rightarrow \text{nicht lösbar}
   \end{gather*}
 \end{exercise}
-
 \subsection{Grenzwerte}
 Eine Zahlenfolge mit Grenzwert ist eine konvergente Folge. Die Folge konvergiert gegen den Grenzwert. Eine Zahlenfolge ohne Grenzwert ist eine divergente Folge. Eine Nullfolge hat den Grenzwert $g = 0$. \\
 $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\gap g = 0\gap \text{(Nullfolge)}$
@@ -385,7 +366,6 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
     \lim\limits_{n \to \infty} a_n = (\lim\limits_{n \to \infty} (\frac{\frac{5}{n} - 1}{\frac{5}{n} + 1}))^4 = (\frac{\lim\limits_{n \to \infty} \frac{5}{n} - \lim\limits_{n \to \infty} 1}{\lim\limits_{n \to \infty} \frac{5}{n} + \lim\limits_{n \to \infty} 1})^4 = (\frac{0 - 1}{0 + 1})^4 = 1
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{24/3}
   \item [a]
   \begin{gather*}
@@ -408,13 +388,10 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
     \lim\limits_{n \to \infty} (\frac{2^n + 3^{n + 1}}{2 \cdot 3^n}) = \lim\limits_{n \to \infty} (\frac{(\frac{2}{3})^n + 3}{2}) = \frac{\lim\limits_{n \to \infty} (\frac{2}{3})^n + \lim\limits_{n \to \infty} 3}{\lim\limits_{n \to \infty} 2} = \frac{0 + 3}{2} = \frac{3}{2}
   \end{gather*}
 \end{exercise}
-
 \subsection{Grenzwerte von Funktionen: $\lim\limits_{x \to \infty};\; \lim\limits_{x \to a}$}
-\begin{onepage}
-  $f(x) = y = \frac{3x^2 - 3}{(x + 1)(x - 4)} \gap\gap \text{D} = \mathbb{R}\setminus\{\underbrace{-1; 4}_{\mathclap{\text{Nullstellen des Nenners}}}\}$ \\\\
-  $x = -1 \rightarrow \text{Nullstelle des Zählers und Nenners}$ \\
-  $x = 4 \rightarrow \text{Nullstelle des Nenners}$
-\end{onepage}
+$f(x) = y = \frac{3x^2 - 3}{(x + 1)(x - 4)} \gap\gap \text{D} = \mathbb{R}\setminus\{\underbrace{-1; 4}_{\mathclap{\text{Nullstellen des Nenners}}}\}$ \\\\
+$x = -1 \rightarrow \text{Nullstelle des Zählers und Nenners}$ \\
+$x = 4 \rightarrow \text{Nullstelle des Nenners}$
 \begin{gather*}
   f(x) = y = \frac{3(x^2 - 1)}{(x + 1)(x - 4)} = \frac{3(x + 1)(x - 1)}{(x + 1)(x - 4)} = \frac{3x - 3}{x - 4} \\
   \lim\limits_{x \to \infty} \frac{3x - 3}{x - 4} = \lim\limits_{x \to \infty} \frac{\frac{3x}{x} - \frac{3}{x}}{\frac{x}{x} - \frac{4}{x}} = \lim\limits_{x \to \infty} \frac{3 - \frac{3}{x}}{1 - \frac{4}{x}} = 3 \\
@@ -491,6 +468,7 @@ Der Punkt $(-1|1.2)$ gehört nicht zum Graphen. Es ergibt sich ein Loch im Graph
   \end{gather*}
 \end{exercise}
 
+\chapter{Analysis}
 \section{Abschnittsweise definierte Funktionen - Stetigkeit}
 \begin{gather*}
   D = \mathbb{R} \\
@@ -502,8 +480,8 @@ Der Punkt $(-1|1.2)$ gehört nicht zum Graphen. Es ergibt sich ein Loch im Graph
   \end{cases}
 \end{gather*}
 Abschnittsweise definierte Funktionen $\rightarrow$ Für verschiedene Abschnitte der Zahlengeraden von $\mathbb{R}$ sollen unterschiedliche Funktionsterme gelten. \\
+\subsubsection{Einschub: Ganzrationale Funktionen}
 \begin{gather*}
-  \textbf{Einschub: Ganzrationale Funktionen} \\
   f(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_2x^2 + a_1x + a_0 \\
   \textbf{z. B. } f(x) = 3x^4 + 5x - 7 \\
   n = 4 \gap\text{(Grad } n \in \mathbb{N}\text{)} \\ a_4 = 4 \\ a_3 = a_2 = 0 \\ a_1 = 5 \\ a_0 = -7 \\
@@ -534,6 +512,7 @@ Allgemein gilt: \\ Ganzrationale Funktionen sind überall, d. h. $-\infty < x < 
   \lim\limits_{x \searrow 1} f(x) = -1 \\
   \Rightarrow \text{unstetig bei $x = 11$}
 \end{gather*}
+\newpage
 \begin{exercise}{28/9}
   \item [a]
   \begin{gather*}
@@ -556,17 +535,15 @@ Allgemein gilt: \\ Ganzrationale Funktionen sind überall, d. h. $-\infty < x < 
     \Rightarrow \text{unstetig}
   \end{gather*}
 \end{exercise}
-\begin{onepage}
-  \begin{exercise}{28/11}
-    \item
-    \begin{gather*}
-      f(x) = sin(\frac{1}{x}) \gap\gap D_f = \mathbb{R} \setminus \{0\} \\
-      \lim\limits_{x \to 0} f(x) = \sin(\infty) = -1 \text{ bis } +1 \gap\Rightarrow \text{kein Grenzwert} \\
-      \lim\limits_{x \to \infty} f(x) = \sin(0) = 0
-    \end{gather*}
-  \end{exercise}
-\end{onepage}
-\subsection{Die Stetigkeit einer Funktion an der Stelle $x_0$}
+\begin{exercise}{28/11}
+  \item
+  \begin{gather*}
+    f(x) = sin(\frac{1}{x}) \gap\gap D_f = \mathbb{R} \setminus \{0\} \\
+    \lim\limits_{x \to 0} f(x) = \sin(\infty) = -1 \text{ bis } +1 \gap\Rightarrow \text{kein Grenzwert} \\
+    \lim\limits_{x \to \infty} f(x) = \sin(0) = 0
+  \end{gather*}
+\end{exercise}
+\section{Stetigkeit einer Funktion an der Stelle $x_0$}
 Eine Funktion ist stetig bei $x = x_0$, wenn Folgendes gilt: \\
 $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
 \begin{exercise}{29/4}
@@ -593,21 +570,19 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
   \item [b]
   $\lim\limits_{x \to 2} \frac{x^2 - 4}{x^4 - 16} = \lim\limits_{x \to 2} \frac{1}{x^2 + 4} = \frac{1}{8}$
 \end{exercise}
-\begin{onepage}
-  \begin{exercise}{30/11}
-    \item [a]
-    \begin{gather*}
-      f(x) = \frac{x^2 - 2x + 1}{x - 1} = \frac{(x - 1)^2}{x - 1} = x - 1 \gap\gap D = \mathbb{R} \setminus \{1\} \\
-      \lim\limits_{x \to 1} f(x) = x - 1 = 0
-    \end{gather*}
-    \item [c]
-    \begin{gather*}
-      f(x) = \frac{x^4 - 1}{x^2 - 1} = x^1 + 1 \gap\gap D = \mathbb{R} \setminus \{1; -1\} \\
-      \lim\limits_{x \to 1} f(x) = 1^2 + 1 = 2 \\
-      \lim\limits_{x \to -1} f(x) = (-1)^2 + 1 = 2
-    \end{gather*}
-  \end{exercise}
-\end{onepage}
+\begin{exercise}{30/11}
+  \item [a]
+  \begin{gather*}
+    f(x) = \frac{x^2 - 2x + 1}{x - 1} = \frac{(x - 1)^2}{x - 1} = x - 1 \gap\gap D = \mathbb{R} \setminus \{1\} \\
+    \lim\limits_{x \to 1} f(x) = x - 1 = 0
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = \frac{x^4 - 1}{x^2 - 1} = x^1 + 1 \gap\gap D = \mathbb{R} \setminus \{1; -1\} \\
+    \lim\limits_{x \to 1} f(x) = 1^2 + 1 = 2 \\
+    \lim\limits_{x \to -1} f(x) = (-1)^2 + 1 = 2
+  \end{gather*}
+\end{exercise}
 \begin{exercise}{29/6}
   $a_n = 0.95^n$
   \item [a]
@@ -620,9 +595,9 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
     s(5) = 1 + 2a_1 + 2a_2 + 2a_3 + 2a_4 \\ = 1 + 1.9 + 1.805 + 1.71475 + 1.6290125 = 8.0487625
   \end{gather*}
 \end{exercise}
-\begin{onepage}
-  \subsection{Polynomdivision}
-  \textbf{30/11d} \\
+\section{Polynomdivision}
+\begin{exercise}{30/11}
+  \item [d]
   \begin{gather*}
     f(x) = \frac{x^6 - 1}{x^2 - 1} \\
     (x^6 - 1) : (x^2 - 1)
@@ -633,60 +608,53 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
     f(x) = x^4 + x^2 + 1 \\
     \lim\limits_{x \to 1} f(x) = 1^4 + 1^2 + 1 = 3
   \end{gather*}
-\end{onepage}
-
-\section{Funktionen - Eigenschaften}
-\subsection{Punktbrobe}
+\end{exercise}
+\section{Punktbrobe}
 (erfüllt ein Punkt eine Gleichung) \\
 z. B. $P(2|3)$ \\
 $f(x) = y = 2x^2 - 5x + 3$ \\
 Setze für $x$ die Zahl 2 ein \\
 $f(x) = 8 - 10 + 3 = 1 \neq 3$ \\
 $\Rightarrow P$ gehört nicht zum Graphen von $f$ \\\\
-\begin{onepage}
-  \begin{exercise}{38/4}
-    \item [a]
-    Höhenmeter: 250m \\
-    Streckenkilometer: 10km
-    \item [b]
-    Gesamtanstieg: 750m
-    \item [c]
-    Bei Streckenkilometer 25: Achsensymmetrie zur y-Achse
-  \end{exercise}
-\end{onepage}
-\begin{onepage}
-  \begin{exercise}{39/7}
-    \item [a]
-    1.8m
-    \item [b]
-    $D = \{x \in \mathbb{R} | 0 \leq x \leq 7.42\}$
-    \item [c]
-    $f(2.5) = 2.425$
-  \end{exercise}
-\end{onepage}
-\begin{onepage}
-  \begin{exercise}{39/11}
-    \item [a]
-    $f(x) = 1.9879 \cdot 10^{-4} + 86$
-    \item [b]
-    $f(-995.5) = f(995.5) = 283$ \\
-    $f(0) = 86$
-    \item [c]
-    $D = \{x \in \mathbb{R} | -995.5 \leq x \leq 995.5\}$
-  \end{exercise}
-\end{onepage}
-
+\begin{exercise}{38/4}
+  \item [a]
+  Höhenmeter: 250m \\
+  Streckenkilometer: 10km
+  \item [b]
+  Gesamtanstieg: 750m
+  \item [c]
+  Bei Streckenkilometer 25: Achsensymmetrie zur y-Achse
+\end{exercise}
+\begin{exercise}{39/7}
+  \item [a]
+  1.8m
+  \item [b]
+  $D = \{x \in \mathbb{R} | 0 \leq x \leq 7.42\}$
+  \item [c]
+  $f(2.5) = 2.425$
+\end{exercise}
+\begin{exercise}{39/11}
+  \item [a]
+  $f(x) = 1.9879 \cdot 10^{-4} + 86$
+  \item [b]
+  $f(-995.5) = f(995.5) = 283$ \\
+  $f(0) = 86$
+  \item [c]
+  $D = \{x \in \mathbb{R} | -995.5 \leq x \leq 995.5\}$
+\end{exercise}
 \section{Mittlere Änderungsrate}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{/fakepath/sekante_tangente_passante.png}
+  \includegraphics[width=0.55\textwidth]{/fakepath/sekante_tangente_passante.png}
 \end{figure}
 Eine \textbf{Sekante s} ist eine Gerade, die eine Kurve in 2 (oder mehr) Punkten schneidet. \\
 Eine \textbf{Sehne s*}, Teil einer Sekante, ist eine Strecke, die zwei Kurvenpunkte verbindet. \\
 Eine \textbf{Tangente t} ist eine Gerade, die die Kurve in einem Punkt berührt. \\
 Eine \textbf{Passante p} ist eine Gerade, die die Kurve nicht schneidet. \\\\
-$P(1|3);\;Q(10|8)$ \\
-$m = \frac{\Delta y}{\Delta x} = \frac{5}{9}$ (Steigung der Sekante durch $P$ und $Q$) \\\\
+\begin{gather*}
+  P(1|3) \gap\gap Q(10|8) \\
+  m = \frac{\Delta y}{\Delta x} = \frac{5}{9} \text{ (Steigung der Sekante durch $P$ und $Q$)}
+\end{gather*}
 Die Sekantensteigung $m$ heißt mittlere Änderungsrate der Funktion $f$ zwischen den Punkten $P$ und $Q$. \\\\
 \begin{gather*}
   P(1|3)\;f(1) = 3 \\
@@ -711,16 +679,13 @@ Die Sekantensteigung $m$ heißt mittlere Änderungsrate der Funktion $f$ zwische
   \item [d] $m = \frac{h(6) - h(4)}{2} = 1$
   \item [c] $m = \frac{h(9) - h(7)}{2} = \frac{3}{2}$
 \end{exercise}
-\begin{onepage}
-  \begin{exercise}{41/1}
-    $f(x) = \frac{1}{x} + 2$
-    \item [a] $m = \frac{f(1) - f(0.1)}{0.9} = -10$
-    \item [b] $m = \frac{f(12) - f(2)}{10} = -\frac{1}{24}$
-    \item [c] $m = \frac{f(0.02) - f(0.01)}{0.01} = -5000$
-    \item [d] $m = \frac{f(1000) - f(100)}{900} = -100000^{-1}$
-  \end{exercise}
-\end{onepage}
-
+\begin{exercise}{41/1}
+  $f(x) = \frac{1}{x} + 2$
+  \item [a] $m = \frac{f(1) - f(0.1)}{0.9} = -10$
+  \item [b] $m = \frac{f(12) - f(2)}{10} = -\frac{1}{24}$
+  \item [c] $m = \frac{f(0.02) - f(0.01)}{0.01} = -5000$
+  \item [d] $m = \frac{f(1000) - f(100)}{900} = -100000^{-1}$
+\end{exercise}
 \section{Tangentensteigung, Ableitung}
 \begin{figure}[H]
   \centering
@@ -740,7 +705,7 @@ Die Sekantensteigung $m$ heißt mittlere Änderungsrate der Funktion $f$ zwische
   m = \frac{f(x_0 + h) - f(x_0)}{h} = \frac{(2 + h)^2 - 2^2}{h} = 4 + h \gap\text{(Sekante)} \\
   m = \lim\limits_{h \to 0} (4 + h) = 4 \gap\text{(Tangente)}
 \end{gather*}
-\subsection{Ableitungsfunktion}
+\subsection{Ableitung}
 \begin{gather*}
   f(x) = 2x^3\gap x_0 = 4 \\
   m_{\text{Sekante}} = \frac{f(x_0 + h) - f(x_0)}{h} \\
@@ -773,7 +738,6 @@ $\lim\limits_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h} = f'(x_0)$
   \item [h] $x_0 = 3\\ \lim\limits_{h \to 0} \frac{(-3 + h + 2) - (-3 + 2)}{h} = -1$
   \item [i] $x_0 = 7\\ \lim\limits_{h \to 0} \frac{4 - 4}{h} = 0$
 \end{exercise}
-
 \section{Sekanten-, Tangenten-, Normalengleichung}
 $f(x) = 5x^3\gap\gap P_1(2|f(2))\gap P_2(4|f(4))$ \\\\
 Sekantengleichung
@@ -801,7 +765,6 @@ Normalengleichung im Punkt $P_1(2|40)$
   n(x) = -\frac{1}{60}x + 40\frac{1}{30}
 \end{gather*}
 Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
-
 \begin{exercise}{49/14}
   \item [a]
   \begin{gather*}
@@ -874,7 +837,6 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
     \;= \frac{9}{-2\sqrt{72}} = \frac{3}{-4\sqrt{2}} = -\frac{3}{\sqrt{32}}
   \end{gather*}
 \end{exercise}
-
 \section{Ableitungsfunktion}
 Die Ableitung von $f(x)$ bei $x_0$ ist eine lokale Eigenschaft der Funktion $f(x)$, also einer Stelle $x_0$. Allerdings sind unsere Funktionen fast überall differenzierbar. Ausnahmen sind Unstetigkeitsstellen und Knickstellen. Es gibt eine Funktion $f'(x) = m_t(x)$ für alle Stellen $x$. Sie heißt Ableitungsfunktion.
 $$f'(x) = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
@@ -899,6 +861,7 @@ $$f'(x) = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
   \gap k'(x) = \lim\limits_{h \to 0} \frac{(x + h)^2 - x^{-2}}{h} = \lim\limits_{h \to 0} \frac{(x^2 + 2xh + h^2)^{-1} - x^{-1}}{h} = -2x^-3
 \end{gather*} \\\\
 $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
+\newpage
 \begin{exercise}{54/2}
   \item [a]
   \begin{gather*}
@@ -951,7 +914,6 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
     y = -12x + 18
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{59/6}
   $g(x) = 10 - 3x \Rightarrow m = -3$
   \item [c]
@@ -992,7 +954,6 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
     H'(1.8) = -10t + 10 = -8 \neq H'(1.8) = 0
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{67/3}
   \item [a]
   \begin{gather*}
@@ -1033,7 +994,6 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
     L = \{2; \pm \sqrt{\frac{5}{3}}; \pm \sqrt{3}\}
   \end{gather*}
 \end{exercise}
-
 \section{Nullstellen}
 Annahme: $f(x) = 0$ habe $x_1 = 2$; $x_2 = -3$; $x_3 = 1$ als Lösungen,\\ $f(x)$ hat Grad 3.
 \begin{gather*}
@@ -1060,6 +1020,7 @@ Beispiel $f(x)$ habe $x_1 = x_2 = 2$ und $x_3 = 1$ als Nullstellen (Grad 3).
 \end{gather*}
 Berührpunkt bei $x = 2$, außerdem Extrempunkt. \\\\
 Finde ich eine doppelte Nullstelle, so liegt gleichzeitig an der Stelle ein Extrempunkt vor. Eine dreifache Nullstelle ist zusätzlich ein Sattelpunkt mit waagerechter Tangente.
+\newpage
 \begin{exercise}{67/5}
   \item [a]
   \begin{gather*}
@@ -1205,12 +1166,11 @@ Daraus folgt ein Rechenverfahren zur Bestimmung der Stellen $x$ mit $f'(x) = 0$.
   f'(x) = 3x^2 - 4x = 0 \\
   \Rightarrow x_1 = 0 \gap x_2 = \frac{4}{3} \\
   x_1 \text{ und } x_2 \text{ sind Kandidaten für Extrema.}
-\end{gather*} \\
-\begin{onepage}
-  \textbf{Umgebungsuntersuchung} \\
-  für Hochpunkte gilt: $f'(x_l) > 0$ $f'(x) = 0$ $f'(x_r) < 0$ \\
-  für Tiefpunkte gilt: $f'(x_l) < 0$ $f'(x) = 0$ $f'(x_r) > 0$
-\end{onepage}
+\end{gather*}
+\newpage
+\textbf{Umgebungsuntersuchung} \\
+für Hochpunkte gilt: $f'(x_l) > 0$ $f'(x) = 0$ $f'(x_r) < 0$ \\
+für Tiefpunkte gilt: $f'(x_l) < 0$ $f'(x) = 0$ $f'(x_r) > 0$
 \begin{gather*}
   \text{zu: } x_1 = 0 \gap\gap x_l = -1 \gap x_r = 1 \\
   f'(x_l) = f'(-1) = 7 \\
@@ -1241,36 +1201,35 @@ Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
     f'(2) = 4 \gap f'(3) = 0 \gap f'(4) = -16 \gap \Rightarrow \text{Hochpunkt } H(3|f(3) = 2\frac{3}{4})
   \end{gather*}
 \end{exercise}
-\begin{onepage}
-  \begin{exercise}{74/6}
-    \item [b]
-    \begin{gather*}
-      f(x) = x^4 - 4x^3 + 4x^2 \\
-      f'(x) = 4x^3 - 12x^2 + 8x \\
-      0 = 4x^3 - 12x^2 + 8x \equ :x \Rightarrow x_1 = 0 \\
-      0 = 4x^2 - 12x + 8 \equ abc \\
-      x_{2/3} = \frac{12 \pm 4}{8} \\
-      x_2 = 1 \gap x_3 = 2 \\\\
-      f'(-1) = -24 \gap f'(x_1) = 0 \gap f'(\frac{1}{2}) = 1.5 \gap \Rightarrow T(0|0) \\
-      f'(\frac{1}{2}) = 1.5 \gap f'(x_2) = 0 \gap f'(\frac{3}{2}) = -1.5 \gap \Rightarrow H(1|1) \\
-      f'(\frac{3}{2}) = -1.5 \gap f'(x_3) = 0 \gap f'(3) = 24 \gap \Rightarrow T(2|0) \\
-    \end{gather*}
-    \begin{gather*}
-      \begin{tikzpicture}
-        \begin{axis}[
-          axis lines=middle,
-          ymax=5
-          ]
-          \addplot[
-          domain=-2:3,
-          samples=30
-          ]{x^4 - 4 * x^3 + 4 * x^2};
-        \end{axis}
-      \end{tikzpicture}
-    \end{gather*}
-  \end{exercise}
-\end{onepage}
-
+\newpage
+\begin{exercise}{74/6}
+  \item [b]
+  \begin{gather*}
+    f(x) = x^4 - 4x^3 + 4x^2 \\
+    f'(x) = 4x^3 - 12x^2 + 8x \\
+    0 = 4x^3 - 12x^2 + 8x \equ :x \Rightarrow x_1 = 0 \\
+    0 = 4x^2 - 12x + 8 \equ abc \\
+    x_{2/3} = \frac{12 \pm 4}{8} \\
+    x_2 = 1 \gap x_3 = 2 \\\\
+    f'(-1) = -24 \gap f'(x_1) = 0 \gap f'(\frac{1}{2}) = 1.5 \gap \Rightarrow T(0|0) \\
+    f'(\frac{1}{2}) = 1.5 \gap f'(x_2) = 0 \gap f'(\frac{3}{2}) = -1.5 \gap \Rightarrow H(1|1) \\
+    f'(\frac{3}{2}) = -1.5 \gap f'(x_3) = 0 \gap f'(3) = 24 \gap \Rightarrow T(2|0) \\
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymax=5
+        ]
+        \addplot[
+        domain=-2:3,
+        samples=30
+        ]{x^4 - 4 * x^3 + 4 * x^2};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
+\newpage
 \section{2. Ableitungsfunktion}
 $$f''(x) = (f'(x))'$$
 Die 2. Ableitungsfunktion $f''(x)$ beschreibt das Krümmungsverhalten der Ursprungsfunktion $f(x)$. \\
@@ -1307,7 +1266,6 @@ $f''(x) = 0$ Wendepunkt \\
     f''(-\frac{3}{2}) = -24 < 0 \gap T(-\frac{3}{2}|\frac{9}{5})
   \end{gather*}
 \end{exercise}
-
 \section{Wendepunkte}
 Wendepunkte eines Graphen sind Punkte, an denen die Krümmung wendet. Am Wendepunkt selbst ist das Krümmungsverhalten gleich 0. Außerdem sind Wendepunkte Punkte mit maximaler bzw. minimaler Steigung. \\\\
 Notwendige Bedingung: $f''(x) = 0$ \\\\
@@ -1318,6 +1276,7 @@ Hinreichende Bedingung (II): $f'''(x) \neq 0$ \\
 für $f'''(x) < 0$ LRWP \\
 für $f'''(x) > 0$ RLWP \\
 für $f'''(x) = 0$ keine Entscheidung \\
+\newpage
 \begin{exercise}{84/1}
   \item [a]
   \begin{gather*}
@@ -1419,6 +1378,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
     \Rightarrow c = \frac{b^2}{3}
   \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{85/14}
   \item [a]
   \begin{gather*}
@@ -1445,6 +1405,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \item [D]
   ?, die Funktionswerte sind an der Ableitungsfunktion nicht erkennbar
 \end{exercise}
+\newpage
 \begin{exercise}{89/1}
   \item [c]
   \begin{gather*}
@@ -1526,7 +1487,6 @@ für $f'''(x) = 0$ keine Entscheidung \\
     \end{tikzpicture}
   \end{gather*}
 \end{exercise}
-
 \section{Nullstellen: Polynomdivision}
 \begin{exercise}{97/2}
   \item [b]
@@ -1628,7 +1588,6 @@ für $f'''(x) = 0$ keine Entscheidung \\
     \text{Nullstellen: } \{0; 2\}
   \end{gather*}
 \end{exercise}
-
 \section{Verhalten für $x \to \pm \infty$}
 \begin{gather*}
   \text{z. B. } f(x) = -2x^3 + 5x^2 - 7x + 2 \\
@@ -1640,7 +1599,6 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \lim\limits_{x \to -\infty} g(x) \approx \lim\limits_{x \to -\infty} (2x^4) = +\infty \\
   \Rightarrow \text{gleich für geradzahligen Grad} \\\\
 \end{gather*}
-
 \section{Symmetrie}
 Bsp. $f(x) = x^4 + 5x^2 - 7$ \\
 $f(x)$ ist achsensymmetrisch zur y-Achse, weil nur geradzahlige Exponenten vorkommen. \\
@@ -1649,13 +1607,12 @@ $g(x)$ ist punktsymmetrisch zum Ursprung, weil nur ungeradzahlige Exponenten vor
 allgemein: \\
 achsensymmetrisch zur y-Achse: $f(x) = f(-x)$ \\
 punktsymmetrisch zum Ursprung: $f(x) = -f(-x)$ \\
-ansonsten: Symmetrie nicht erkennbar \\\\
-\begin{onepage}
-  Anwendung: \\
-  Bsp. $h(x) = \frac{3x^2 + 2x}{x^2 + 5}$ \\
-  $h(-x) = \frac{3(-x)^2 + 2(-x)}{(-x)^2 + 5} = -\frac{3x^2 + 2x}{x^2 + 5} = -h(x)$ \\
-  $\Rightarrow$ punktsymmetrisch
-\end{onepage}
+ansonsten: Symmetrie nicht erkennbar
+\newpage
+Anwendung: \\
+Bsp. $h(x) = \frac{3x^2 + 2x}{x^2 + 5}$ \\
+$h(-x) = \frac{3(-x)^2 + 2(-x)}{(-x)^2 + 5} = -\frac{3x^2 + 2x}{x^2 + 5} = -h(x)$ \\
+$\Rightarrow$ punktsymmetrisch
 \begin{exercise}{100/2}
   \item [a] $f(x) = \boldsymbol{-3x^4} - 0.2x^2 + 10$
   \item [b] $f(x) = 3x + 4x^3 - x^2 = \boldsymbol{4x^3} - x^2 + 3x$
@@ -1669,7 +1626,6 @@ ansonsten: Symmetrie nicht erkennbar \\\\
   \item [e] $f(x) = (x - 2)^2 + 1 = x^2 - 4x + 5 \Rightarrow $ nicht erkennbar
   \item [f] $f(x) = x(x - 1)(x + 1) = x^3 - x \Rightarrow $ punktsymmetrisch
 \end{exercise}
-
 \newpage
 \section{Kurvendiskussion}
 \begin{exercise}{105/1}
@@ -1799,8 +1755,8 @@ ansonsten: Symmetrie nicht erkennbar \\\\
     f(9) - 10 = 177.5 - 1.579 - 0.01988 \approx 176.2
   \end{gather*}
 \end{exercise}
-\subsection{Tangente und Anwendungen}
-\subsubsection{Allgemeine Tangentengleichung - Herleitung}
+\section{Tangente und Anwendungen}
+\subsection{Allgemeine Tangentengleichung - Herleitung}
 \begin{gather*}
   f(x) = y = m \cdot x + b \\
   \text{Stelle } u \gap\gap\gap f'(u) = m \gap\gap\gap f(u) = y \\
@@ -1864,6 +1820,7 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
     x_0 = 9.2706
   \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{112/7}
   $$S(t) = -0.08t^3 + 3.5t^2 + 10.6t + 237$$
   \item [a]
@@ -1932,7 +1889,6 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
   \item [b]
   Die Steigung der Wendetangente gibt an, wie sich die Temperaturänderung ändert (Beschleunigung).
 \end{exercise}
-
 \section{Optimieren unter Nebenbedingungen}
 Tunnelquerschnitt:
 \begin{figure}[H]
@@ -2021,6 +1977,7 @@ Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
     V(2.771m) \approx 3.55m^3
   \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{115/13}
   \begin{gather*}
     \text{Tragfähigkeit } T \sim b \\
@@ -2039,8 +1996,6 @@ Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
     h = \sqrt{10000 - (\frac{100}{\sqrt{3}})^2} \approx 81.65cm
   \end{gather*}
 \end{exercise}
-
-\newpage
 \section{Numerisches Verfahren zur Nullstellenbestimmung}
 \begin{gather*}
   \text{z. B. } f(x) = x^3 + 5x - 10 \\
@@ -2065,6 +2020,7 @@ Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
   n \text{ beginnend bei 0}
 \end{gather*}
 Abbruchbedingung: Nullstelle auf 3 Dezimalen genau. Das bedeutet, dass beim nächsten Schritt sich die 3. Dezimale nicht mehr ändern darf
+\newpage
 \begin{gather*}
   \text{Beispiel } f(x) = x^3 + 5x - 10 \\
   f'(x) = 3x^2 + 5 \\
@@ -2074,21 +2030,19 @@ Abbruchbedingung: Nullstelle auf 3 Dezimalen genau. Das bedeutet, dass beim näc
   x_3 = ... \approx 1.42331 \\
   \text{Nullstelle auf 3 Dezimalen genau: } x = 1.423
 \end{gather*}
-\begin{onepage}
-  \begin{exercise}{118/1}
-    \item [a]
-    \begin{gather*}
-      x^3 + 2x - 1 = 0 \\
-      f'(x) = 3x^2 + 2 \\
-      x_0 = 0 \\
-      x_1 = 0 - \frac{-1}{2} = 0.5 \\
-      x_2 = \frac{5}{11} = 0.\overline{45} \\
-      x_3 = \frac{1581}{3487} \approx 0.453398... \\
-      x_4 = \frac{50302634185}{110945952227} \approx 0.453397...\\
-      x^\ast = 0.453
-    \end{gather*}
-  \end{exercise}
-\end{onepage}
+\begin{exercise}{118/1}
+  \item [a]
+  \begin{gather*}
+    x^3 + 2x - 1 = 0 \\
+    f'(x) = 3x^2 + 2 \\
+    x_0 = 0 \\
+    x_1 = 0 - \frac{-1}{2} = 0.5 \\
+    x_2 = \frac{5}{11} = 0.\overline{45} \\
+    x_3 = \frac{1581}{3487} \approx 0.453398... \\
+    x_4 = \frac{50302634185}{110945952227} \approx 0.453397...\\
+    x^\ast = 0.453
+  \end{gather*}
+\end{exercise}
 \subsection{Anwendungen des Newton-Verfahrens}
 Mögliche Fragestellungen: \\
 \begin{itemize}
@@ -2320,7 +2274,7 @@ Mögliche Fragestellungen: \\
   \end{gather*}
 \end{exercise}
 \newpage
-\subsubsection{Ortslinie}
+\subsection{Ortslinie}
 Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortslinie der Tiefpunkte: \\
 \begin{gather*}
   T(a|-a^2 + 1) \\
@@ -2484,7 +2438,6 @@ Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortsl
   \item [c]
   $h'$ ist nicht positiv, da das Wasser ausschließlich nach unten fließt; die Einheit ist $\frac{m}{km}$
 \end{exercise}
-
 \section{Sinus- und Kosinusfunktion}
 \begin{gather*}
   f(\alpha) = sin(\alpha) \\
@@ -2895,7 +2848,6 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
     f'(x) = -\frac{1}{(sin(x))^2} \cdot cos(x) = -\frac{cos(x)}{(sin(x))^2}
   \end{gather*}
 \end{exercise}
-\newpage
 \subsubsection{Ableitungen mit mehr als zwei Funktionen}
 \begin{gather*}
   l = g \cdot [h \cdot k] \\
@@ -3423,8 +3375,6 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
   \item [h]
   Die Beschleunigung ist bei $t = 0$ am größten, da sie ständig kleiner wird.
 \end{exercise}
-
-\newpage
 \section{Lineare Gleichungssysteme (LGS)}
 \begin{gather*}
   \text{z. B.} \gap
@@ -3451,6 +3401,7 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
 \end{gather*}
 \subsection{Gauß-Verfahren}
 Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann zu lösen.
+\newpage
 \begin{exercise}{256/4}
   \item [a]
   \begin{gather*}
@@ -3499,6 +3450,7 @@ Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann z
     L = \{(1|1|1)\}
   \end{gather*}
 \end{exercise}
+\newpage
 \subsection{Matrix-Schreibweise}
 \begin{exercise}{256/4}
   \item [b]
@@ -3526,8 +3478,6 @@ Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann z
     ... \\
     L = \{0|1|2\}
   \end{gather*}
-\end{exercise}
-\begin{exercise}{256/4}
   \item [c]
   \begin{gather*}
     \begin{vmatrix}
@@ -3746,7 +3696,6 @@ Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
     f(x) = \frac{1}{4}x^2 - \frac{1}{2}x - 0.75
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{263/11}
   \begin{gather*}
     f(\pm\frac{1624}{2}) = f(\pm812) = 254 - 65 = 189 \\
@@ -3787,7 +3736,7 @@ Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
   \end{gather*}
 \end{exercise}
 
-\section{Integralrechnung}
+\chapter{Integralrechnung}
 \begin{gather*}
   s = v \cdot t \gap\gap\text{fuer } v = const. \\
   \text{Rechtecksfläche } A = 5s \cdot 15\frac{m}{s} = 75m \\
@@ -3797,6 +3746,7 @@ Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
   \centering
   \includegraphics[width=0.5\textwidth]{/fakepath/integral_tv1.png}
 \end{figure}
+\newpage
 \begin{gather*}
   s(t) = v(t) \cdot t \\
   s = \text{ Summe von Rechtecksstreifen als Näherung für den Flächeninhalt}
@@ -3809,7 +3759,7 @@ Durch Grenzwertbildung erhält man
 \begin{gather*}
   s = \int_0^5 v(t) \cdot dt
 \end{gather*}
-\subsection{Untersumme - Obersumme}
+\section{Untersumme - Obersumme}
 \begin{gather*}
   \text{Beispiel } f(x) = y = x^2 \gap\gap x \in \left[0; 1\right]
 \end{gather*}
@@ -3839,6 +3789,7 @@ Durch Grenzwertbildung erhält man
   O_{10} = 0.1 \cdot (0.01 + 0.04 + 0.09 + 0.16 + 0.25 + 0.36 + 0.49 + 0.64 + 0.81 + 1) \\
   \;= 0.385FE
 \end{gather*}
+\newpage
 \subsection{Obersumme/Untersumme $\rightarrow$ $lim$ $\rightarrow$ Integral}
 $$f(x) = x^2$$
 Teile das Intervall in $n$ Teile \\
@@ -3861,7 +3812,6 @@ Teile das Intervall in $n$ Teile \\
   \text{Wenn gilt, dass } \lim\limits_{n \to \infty} U_n = \lim\limits_{n \to \infty} O_n = \text{Zahl} = \int_a^b f(x) \cdot dx
 \end{gather*}
 Existiert ein gemeinsamer Grenzwert ($n \to \infty$) von Untersumme und Obersumme, so nennt man den Grenzwert Integralwert des bestimmten Integrals.
-\newpage
 \begin{exercise}{160/3}
   \item [a]
   $1FE \estim 1000000m^3 \text{ Wasser}$
@@ -3872,7 +3822,7 @@ Existiert ein gemeinsamer Grenzwert ($n \to \infty$) von Untersumme und Obersumm
   \item [c]
   Der Graph wird um $25\%$ gestreckt, die Fläche wächst also um $25\%$.
 \end{exercise}
-\subsection{Das bestimmte Integral}
+\section{Das bestimmte Integral}
 \begin{gather*}
   \int_a^b f(x) \cdot dx
 \end{gather*}
@@ -3884,7 +3834,7 @@ $f(x) \cdot dx$ ... Fläche eines infinitesimal schmalen Rechteckstreifens mit B
 $\int$ ... Integralzeichen meint eine Summation \\\\
 liegt $f(x)$ unterhalb der $x$-Achse ($<0$) im Intervall $\left[a; b\right]$, so gilt $\int_a^b f(x) \cdot dx < 0$ \\\\
 Das Integral ist die Differenz oberhalb der $x$-Achse und unterhalb der $x$-Achse liegender Flächenstücke
-\subsection{Berechnung von Integralen, Hauptsatz}
+\section{Berechnung von Integralen, Hauptsatz}
 Gesucht: Flächeninhalt unter dem Graphen von $f(x) = y = \frac{2}{5}x^3$ im Intervall $\left[0; b\right]$ \\
 \begin{gather*}
   \int_0^b \frac{1}{5}x^3 \cdot dx \\\\
@@ -3901,7 +3851,7 @@ Betrachte den Flächeninhalt zu linker Grenze $a$ und rechter Grenze $b$.
   A = \frac{1}{20}b^4 - \frac{1}{20}a^4 \gap\gap fuer\gap \left[a; b\right] \\\\
   A = \frac{1}{20}b^4 - \frac{1}{20}a^4 = \int_a^b \frac{1}{5}x^3 \cdot dx = \left[\frac{1}{20}x^4\right]_a^b
 \end{gather*}
-\subsubsection{Verallgemeinerung (Hauptsatz der Differenzial- und Integralrechnung)}
+\subsection{Verallgemeinerung (Hauptsatz der Differenzial- und Integralrechnung)}
 \begin{gather*}
   A = \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a)
 \end{gather*} \\
@@ -3932,7 +3882,7 @@ $F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
     \int_{-1}^1 x^5 \cdot dx = F(1) - F(-1) = 0
   \end{gather*}
 \end{exercise}
-\subsection{Integrale lösen - Anwendung}
+\section{Integrale lösen - Anwendung}
 \begin{exercise}{168/11}
   \begin{gather*}
     v(t) = 9.81 \cdot t \gap\gap V(t) = s(t) = 4.905 \cdot t^2 \\
@@ -4003,14 +3953,14 @@ $F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
 
 \part{12/1}
 
-\subsection{Stammfunktion bilden, integrieren}
+\section{Stammfunktion bilden, integrieren}
 \begin{gather*}
   \int_a^b x^7 \cdot dx = \left[\frac{1}{8}x^8\right]_a^b \\\\
   \int \frac{1}{(x + 4)^3} \cdot dx = -\frac{1}{2} \cdot (x + 4)^{-2} + c \\\\
   \int \frac{5}{(3x - 2)^5} \cdot dx = -\frac{5}{4 \cdot 3} \cdot (3x - 2)^{-4} + c \\\\
   \int \frac{1}{5} \cdot e^{2x} \cdot dx = \frac{1}{5 \cdot 2} \cdot e^{2x} + c
 \end{gather*}
-\subsection{bestimmtes Integral, Integralfunktion, unbestimmtes Integral}
+\section{bestimmtes Integral, Integralfunktion, unbestimmtes Integral}
 \begin{gather*}
   \int_a^b \frac{1}{x} \cdot dx = \left[ln(|x|)\right]_a^b \\\\
   \text{sofern } a, b > 0 \text{ oder } a, b < 0 \text{ kein Problem} \\
@@ -4058,7 +4008,7 @@ $F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
     \int_3^4 \frac{1}{2(x + 1)} \cdot dx = \left[\frac{ln(x + 1)}{2}\right]_3^4 = \frac{ln(4 + 1)}{2} - \frac{ln(3 + 1)}{2} \approx 0.1116
   \end{gather*}
 \end{exercise}
-\subsubsection{Integralfunktion}
+\subsection{Integralfunktion}
 \begin{gather*}
   \gap\gap\gap\gap \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a) = J \\
   J_a(x) = \int_a^x f(x) \cdot dx = \left[F(x)\right]_a^x = F(x) - F(a)
@@ -4085,7 +4035,7 @@ unbestimmtes Integral
     $J_2(x)$ & $3$ & $0$ & $-1$ & $0$ & $3$ & $8$
   \end{tabular}
 \end{exercise}
-\subsection{Rechenregeln für Integrale}
+\section{Rechenregeln für Integrale}
 \begin{gather*}
   \int_a^a f(x) \cdot dx = 0 \\
   \int_a^b c \cdot f(x) \cdot dx = c \cdot \int_a^b f(x) \cdot dx \\
@@ -4153,7 +4103,7 @@ unbestimmtes Integral
     G(12) = 20 \gap\gap G(0) = G(24) \approx 12.36
   \end{gather*}
 \end{exercise}
-\subsection{Ableitung der Umkehrfunktion}
+\section{Ableitung der Umkehrfunktion}
 \begin{gather*}
   \begin{tikzpicture}
     \begin{axis}[
@@ -4208,11 +4158,10 @@ unbestimmtes Integral
   \text{umbenennen} \\
   \overline{f'(x)} = \frac{1}{x^2 + 1}
 \end{gather*}
-\newpage
-\subsection{Integral und Flächeninhalt}
+\section{Integral und Flächeninhalt}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{/fakepath/integral_flaecheninhalt_1.png}
+  \includegraphics[width=0.8\textwidth]{/fakepath/integral_flaecheninhalt_1.png}
 \end{figure}
 \begin{gather*}
   A = A_1 + A_2 \\
@@ -4221,7 +4170,7 @@ unbestimmtes Integral
 \end{gather*}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{/fakepath/integral_flaecheninhalt_2.png}
+  \includegraphics[width=0.8\textwidth]{/fakepath/integral_flaecheninhalt_2.png}
 \end{figure}
 \begin{gather*}
   A = A_1 + A_2 \\
@@ -4309,7 +4258,6 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
   A = \lim\limits_{z \to \infty} \int_3^z \frac{1}{x^2} \cdot dx = \lim\limits_{z \to \infty} \left[-x^{-1}\right]_3^z \\
   \;= \lim\limits_{z \to \infty} (-\frac{1}{z} + \frac{1}{3}) = \frac{1}{3}FE
 \end{gather*}
-\newpage
 \begin{exercise}{183/1}
   \item [Fig. 1]
   \begin{gather*}
@@ -4355,6 +4303,7 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
    W = \lim\limits_{h_2 \to \infty} \left[-c \cdot s^{-1}\right]_{6.37 \cdot 10^6m}^{h_2} \approx 1.570 \cdot 10^{-7} \cdot c \approx 6.252 \cdot 10^{10}Nm
  \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{183/5}
   \begin{enumerate}[I]
     \item $f(x) = \frac{1}{x^3} \gap\gap F(x) = -\frac{1}{2 \cdot x^2}$
@@ -4370,7 +4319,6 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     \item $= 1$
     \item $= \infty$
   \end{enumerate}
-  \newpage
   \item [b]
   \begin{gather*}
     \lim\limits_{z \to 1} \int_z^0 f(x) \cdot dx = \left[F(x)\right]_z^1
@@ -4392,7 +4340,7 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     \;= \frac{1}{3}a^3
   \end{gather*}
 \end{exercise}
-\subsection{Integration von Produkten: partielle Integration}
+\section{Integration von Produkten: partielle Integration}
 Ableitungs-Produktregel: $(u \cdot v)' = u' \cdot v + u \cdot v'$
 \begin{gather*}
   (u \cdot v)' = u' \cdot v + u \cdot v' \equ - u \cdot v' \\
@@ -4434,7 +4382,6 @@ Spezialfälle
     \;= \left[2e^{2x + 2} \cdot x - e^{2x + 2}\right]_{0}^{0.5} = e^2
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{188/2}
   \item [b]
   \begin{gather*}
@@ -4447,6 +4394,7 @@ Spezialfälle
     \;= \left[-2cos(0.5x) \cdot 2x + 8sin(0.5x)\right]_0^{2\pi} = 8\pi
   \end{gather*}
 \end{exercise}
+\newpage
 \begin{exercise}{188/8}
   \item [a]
   \begin{gather*}
@@ -4470,7 +4418,7 @@ Spezialfälle
     \;= \left[\frac{2e^{2x} \cdot sin(\pi x) - \pi \cdot e^{2x} \cdot cos(\pi x)}{\pi^2 + 4}\right]_0^2 = \frac{\pi}{\pi^2 + 4} - \frac{e^4 \cdot \pi}{\pi^2 + 4} \approx -12.140
   \end{gather*}
 \end{exercise}
-\subsection{Integration durch Substitution}
+\section{Integration durch Substitution}
 Kettenregel: $(f(g(x)))' = f'(g(x)) \cdot g'(x)$ \\
 \begin{gather*}
   \int f'(g(x)) \cdot g'(x) \cdot dx = \int (f(g(x)))' \cdot dx \\
@@ -4490,6 +4438,7 @@ Beispiel
   \;= {\color{red}\frac{5}{6}} \int_1^2 \frac{{\color{red}6}x}{\sqrt{1 + 3x^2}} \cdot dx = \frac{5}{6} \int_4^{13} z^{-\frac{1}{2}} \cdot dz \\
   \;= \frac{5}{6} \left[2z^\frac{1}{2}\right]_4^{13} = \frac{5}{6} \left[2 \cdot (1 + 3x^2)^\frac{1}{2}\right]_1^2 \approx 2.676
 \end{gather*}
+\newpage
 \begin{exercise}{191/1}
   \item [a]
   \begin{gather*}
@@ -4538,7 +4487,6 @@ Beispiel
     \;= \left[ln(sin(\pi x))\right]_\frac{1}{3}^\frac{1}{2} \approx 0.1438
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{191/8}
   \item [a]
   \begin{gather*}
@@ -4582,7 +4530,6 @@ Beispiel
   \int_0^\frac{1}{2} \frac{1}{\sqrt{1 - x^2}} \cdot dx \gap\gap x = sin(z) \gap\gap dx = cos(z) \cdot dz \\
   \;= \int_0^\frac{\pi}{6} \frac{cos(z)}{\sqrt{1 - sin^2(z)}} \cdot dz = \int_0^\frac{\pi}{6} 1 \cdot dz = \left[z\right]_0^\frac{\pi}{6} = \frac{\pi}{6} \approx 0.524
 \end{gather*}
-\newpage
 \begin{exercise}{AB/23}
   \item [a]
   \begin{gather*}
@@ -4599,7 +4546,7 @@ Beispiel
     \;= \left[t^2\right]_0^{ln(3)} = (ln(3))^2 \approx 1.2069
   \end{gather*}
 \end{exercise}
-\subsubsection{Wiederholung}
+\subsection{Wiederholung}
 \begin{enumerate}
   \item Ersetze $g(x)$ durch $z$
   \begin{gather*}
@@ -4636,9 +4583,9 @@ Beispiel
     \;= \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{(cos(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} 1 \cdot dt = \left[t\right]_0^{asin(\frac{1}{2})} = \frac{\pi}{6}
   \end{gather*}
 \end{exercise}
-\subsection{Rotationskörper}
+\section{Rotationskörper}
 Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, dass eine Fläche um eine Achse ($x$-Achse) rotiert.
-\subsubsection{Bestimmung des Volumens von Rotationskörpern}
+\subsection{Bestimmung des Volumens von Rotationskörpern}
 \begin{gather*}
   f(x) = \frac{1}{2}x^2 + 1
 \end{gather*}
@@ -4723,7 +4670,8 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
   \end{gather*}
 \end{exercise}
 
-\section{Analytische Geometrie: Punkte und Vektoren}
+\chapter{Analytische Geometrie}
+\section{Punkte und Vektoren}
 Jeder Punkt im Raum $\mathbb{R}^3$ ist durch 3 Koordinaten $(x|y|z)$ oder $(x_1|x_2|x_3)$ festgelegt, sofern zuvor der Ursprung $O$ des Koordinatensystems festgelegt wird. \\
 Den Vektor, der vom Ursprung $O$ zum Punkt $A(x|y|z)$ führt, nennt man Ortsvektor von $A$ und notiert man \\
 $\vec{OA} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ \\
@@ -4736,11 +4684,11 @@ Ein Vektor ist eine Stecke (mit Länge) mit Orientierung (Pfeil).
     \node at (2.5,1.3) {$\vec{OA}$};
   \end{tikzpicture}
 \end{gather*}
-\subsubsection{Darstellung im 3-dimensionalen Koordinatensystem}
+\subsection{Darstellung im 3-dimensionalen Koordinatensystem}
 $A(2|3|4) \gap\gap B(-3|1|-2) \gap\gap C(3|0|2)$ \\
 Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
 \begin{gather*}
-  \begin{tikzpicture}[scale=0.7,tdplot_main_coords]
+  \begin{tikzpicture}[scale=0.5,tdplot_main_coords]
     \coordinate (O) at (0,0,0);
     \draw[thick,->] (O) -- (5,0,0) node[anchor=north east]{$x$};
     \draw[thick,->] (O) -- (0,5,0) node[anchor=north west]{$y$};
@@ -4804,7 +4752,6 @@ Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
     T(2|0|2) \gap\gap U(3|0|-1)
   \end{gather*}
 \end{exercise}
-\newpage
 \begin{exercise}{276/10}
   \begin{gather*}
     A(2|0|0) \gap\gap B(-1|2|-1) \gap\gap C(-2|3|4) \gap\gap D(3|4|-2)
@@ -4822,7 +4769,7 @@ Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
     A'(2|0|0) \gap\gap B'(-1|{\color{red}-2}|-1) \gap\gap C'(-2|{\color{red}-3}|4) \gap\gap D'(3|{\color{red}-4}|-2)
   \end{gather*}
 \end{exercise}
-\subsection{Ortsvektoren und Verschiebungsvektoren}
+\section{Ortsvektoren und Verschiebungsvektoren}
 $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$ zum Punkt $A$. $\vec{BC}$ ist ein Verschiebungsvektor, der Punkt $B$ auf Punkt $C$ verschiet, bzw. $B$ mit $C$ verbindet und auf $C$ zeigt. Mit Hilfe des Vektors $\vec{BC}$ lassen sich auch andere Punkte in gleicher Weise verschieben wie Punkt $B$ auf Punkt $C$.
 \begin{gather*}
   \vec{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \gap\gap P(0|1) \gap Q(4|3) \gap R(1.5|0.5) \\
