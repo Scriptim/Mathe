@@ -4280,7 +4280,7 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     f(x) = g(x) \gap\gap L = \{2; \sim -0.4; \sim 0.5\} \\
     f(x) - g(x) = -2.5x + 5.25 - \frac{1}{x^2} \\
     A \approx |\int_{0.5}^2 (-2.5x + 5.25 - \frac{1}{x^2}) \cdot dx| \\
-    \;= |[-1.25x^2 + 5.25x + 1/x]_{0.5}^2| \approx 1.7FE
+    \;= |[-1.25x^2 + 5.25x + \frac{1}{x}]_{0.5}^2| \approx 1.7FE
   \end{gather*}
 \end{exercise}
 \subsection{Flächeninhalt, uneigentliche Integrale}
@@ -4405,7 +4405,7 @@ Ableitungs-Produktregel: $(u \cdot v)' = u' \cdot v + u \cdot v'$
   (-cos(x)) \cdot x + sin(x))' = sin(x) \cdot x
 \end{gather*}
 \begin{gather*}
-  \int e^{2x} \cdot x^2 \cdot dx = \frac{1}{2}e^{2x} \cdot x^2 - \int \frac{1}{2}e^{2x} \cdot dx \\
+  \int e^{2x} \cdot x^2 \cdot dx = \frac{1}{2}e^{2x} \cdot x^2 - \int \frac{1}{2}e^{2x} \cdot 2x \cdot dx \\
   \;= \frac{1}{2}e^{2x} \cdot x^2 - (\frac{1}{2}e^{2x} \cdot x - \int \frac{1}{2}e^{2x} \cdot 1 \cdot dx) \\
   \;= \frac{1}{2}e^{2x} \cdot x^2 - \frac{1}{2}e^{2x} \cdot x + \int \frac{1}{2}e^{2x} \cdot dx \\
   \;= \frac{1}{2}e^{2x} \cdot x^2 - \frac{1}{2}e^{2x} \cdot x + \frac{1}{4}e^{2x} \\
@@ -4588,7 +4588,7 @@ Beispiel
   \begin{gather*}
     \int_0^1 e^x \cdot \sqrt{e^x + 1} \cdot dx \\
     x(t) = ln(t) \gap\gap t = e^x \gap\gap dx = \frac{1}{t} \cdot dt \\
-    \;= \int_{e^0}^{e^1} e^{ln(t)} \cdot \sqrt{e^{ln(t)} + 1} \cdot \frac{1}{t} \cdot dz = \int_1^e \sqrt{t + 1} \\
+    \;= \int_{e^0}^{e^1} e^{ln(t)} \cdot \sqrt{e^{ln(t)} + 1} \cdot \frac{1}{t} \cdot dz = \int_1^e \sqrt{t + 1} \cdot dz \\
     \;= \left[\frac{2}{3} \cdot \sqrt{(t + 1)^3}\right]_1^e \approx 2.8943
   \end{gather*}
   \item [c]
