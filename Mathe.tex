@@ -4822,5 +4822,19 @@ Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
     A'(2|0|0) \gap\gap B'(-1|{\color{red}-2}|-1) \gap\gap C'(-2|{\color{red}-3}|4) \gap\gap D'(3|{\color{red}-4}|-2)
   \end{gather*}
 \end{exercise}
+\subsection{Ortsvektoren und Verschiebungsvektoren}
+$\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$ zum Punkt $A$. $\vec{BC}$ ist ein Verschiebungsvektor, der Punkt $B$ auf Punkt $C$ verschiet, bzw. $B$ mit $C$ verbindet und auf $C$ zeigt. Mit Hilfe des Vektors $\vec{BC}$ lassen sich auch andere Punkte in gleicher Weise verschieben wie Punkt $B$ auf Punkt $C$.
+\begin{gather*}
+  \vec{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \gap\gap P(0|1) \gap Q(4|3) \gap R(1.5|0.5) \\
+  \vec{OP} + \vec{BC} = \vec{OP'} \gap\gap \begin{pmatrix} 0 \\ 1 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix}
+\end{gather*}
+\begin{tikzpicture}
+  \coordinate[label=below left:$P$] (P) at (0,1);
+  \coordinate[label=below left:$Q$] (Q) at (4,3);
+  \coordinate[label=below left:$R$] (R) at (1.5,0.5);
+  \draw[->] (P) -- node[anchor=south east]{$\vec{PP'}$} (3,3);
+  \draw[->] (Q) -- node[anchor=south east]{$\vec{QQ'}$} (7,5);
+  \draw[->] (R) -- node[anchor=south east]{$\vec{RR'}$} (4.5,2.5);
+\end{tikzpicture}
 
 \end{document}
