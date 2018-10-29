@@ -4674,14 +4674,14 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
 \section{Punkte und Vektoren}
 Jeder Punkt im Raum $\mathbb{R}^3$ ist durch 3 Koordinaten $(x|y|z)$ oder $(x_1|x_2|x_3)$ festgelegt, sofern zuvor der Ursprung $O$ des Koordinatensystems festgelegt wird. \\
 Den Vektor, der vom Ursprung $O$ zum Punkt $A(x|y|z)$ führt, nennt man Ortsvektor von $A$ und notiert man \\
-$\vec{OA} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ \\
+$\vv{OA} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ \\
 Ein Vektor ist eine Stecke (mit Länge) mit Orientierung (Pfeil).
 \begin{gather*}
   \begin{tikzpicture}[scale=0.5]
     \draw[|->] (0,0) -- (5,1);
     \node[below left] at (0,0) {$O$};
     \node[above right] at (5,1) {$A$};
-    \node at (2.5,1.3) {$\vec{OA}$};
+    \node at (2.5,1.3) {$\vv{OA}$};
   \end{tikzpicture}
 \end{gather*}
 \subsection{Darstellung im 3-dimensionalen Koordinatensystem}
@@ -4770,28 +4770,28 @@ Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
   \end{gather*}
 \end{exercise}
 \section{Ortsvektoren und Verschiebungsvektoren}
-$\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$ zum Punkt $A$. $\vec{BC}$ ist ein Verschiebungsvektor, der Punkt $B$ auf Punkt $C$ verschiet, bzw. $B$ mit $C$ verbindet und auf $C$ zeigt. Mit Hilfe des Vektors $\vec{BC}$ lassen sich auch andere Punkte in gleicher Weise verschieben wie Punkt $B$ auf Punkt $C$.
+$\vv{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$ zum Punkt $A$. $\vv{BC}$ ist ein Verschiebungsvektor, der Punkt $B$ auf Punkt $C$ verschiet, bzw. $B$ mit $C$ verbindet und auf $C$ zeigt. Mit Hilfe des Vektors $\vv{BC}$ lassen sich auch andere Punkte in gleicher Weise verschieben wie Punkt $B$ auf Punkt $C$.
 \begin{gather*}
-  \vec{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \gap\gap P(0|1) \gap Q(4|3) \gap R(1.5|0.5) \\
-  \vec{OP} + \vec{BC} = \vec{OP'} \gap\gap \begin{pmatrix} 0 \\ 1 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix}
+  \vv{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \gap\gap P(0|1) \gap Q(4|3) \gap R(1.5|0.5) \\
+  \vv{OP} + \vv{BC} = \vv{OP'} \gap\gap \begin{pmatrix} 0 \\ 1 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix}
 \end{gather*}
 \begin{tikzpicture}
   \coordinate[label=below left:$P$] (P) at (0,1);
   \coordinate[label=below left:$Q$] (Q) at (4,3);
   \coordinate[label=below left:$R$] (R) at (1.5,0.5);
-  \draw[->] (P) -- node[anchor=south east]{$\vec{PP'}$} (3,3);
-  \draw[->] (Q) -- node[anchor=south east]{$\vec{QQ'}$} (7,5);
-  \draw[->] (R) -- node[anchor=south east]{$\vec{RR'}$} (4.5,2.5);
+  \draw[->] (P) -- node[anchor=south east]{$\vv{PP'}$} (3,3);
+  \draw[->] (Q) -- node[anchor=south east]{$\vv{QQ'}$} (7,5);
+  \draw[->] (R) -- node[anchor=south east]{$\vv{RR'}$} (4.5,2.5);
 \end{tikzpicture}
 \subsection{Addition, Subtraktion und Multiplikation mit einer Zahl}
 \begin{gather*}
-  \vec{a} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} \gap\gap \vec{b} = \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} \gap\gap \vec{c} = \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix}
+  \vv{a} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix}
 \end{gather*}
 \begin{itemize}
   \item
   \begin{gather*}
-    \vec{d} = \vec{a} + \vec{b} + \vec{c} \\
-    \vec{d} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} + \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix} = \begin{pmatrix}7 \\ -3 \\ 5\end{pmatrix}
+    \vv{d} = \vv{a} + \vv{b} + \vv{c} \\
+    \vv{d} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} + \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix} = \begin{pmatrix}7 \\ -3 \\ 5\end{pmatrix}
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=0.5]
@@ -4804,8 +4804,8 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
   \end{gather*}
   \item
   \begin{gather*}
-    \vec{e} = \vec{a} - \vec{b} = \vec{a} + (-\vec{b}) \text{ (Gegenvektor von $\vec{b}$)} \\
-    \vec{e} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} - \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + \begin{pmatrix}-2 \\ 3 \\ -1\end{pmatrix} = \begin{pmatrix}-1 \\ 3 \\ 4\end{pmatrix}
+    \vv{e} = \vv{a} - \vv{b} = \vv{a} + (-\vv{b}) \text{ (Gegenvektor von $\vv{b}$)} \\
+    \vv{e} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} - \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + \begin{pmatrix}-2 \\ 3 \\ -1\end{pmatrix} = \begin{pmatrix}-1 \\ 3 \\ 4\end{pmatrix}
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=0.5]
@@ -4817,33 +4817,33 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
   \end{gather*}
   \item
   \begin{gather*}
-    \vec{f} = 3 \cdot \vec{a} \\
-    \vec{f} = 3 \cdot \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} = \begin{pmatrix}3 \\ 0 \\ 15\end{pmatrix}
+    \vv{f} = 3 \cdot \vv{a} \\
+    \vv{f} = 3 \cdot \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} = \begin{pmatrix}3 \\ 0 \\ 15\end{pmatrix}
   \end{gather*}
 \end{itemize}
 \subsubsection{Darstellung eines Vektors durch andere Vektoren (Bsp. Verbindungsvektor)}
 \begin{gather*}
-  \vec{a} = \vec{OA} = \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} \gap\gap \vec{b} = \vec{OB} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} \\
-  \vec{AB} = -\vec{a} + \vec{b} = -\vec{OA} + \vec{OB} = \vec{OB} - \vec{OA} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} + \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}-5 \\ -4 \\ 2\end{pmatrix}
+  \vv{a} = \vv{OA} = \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} \gap\gap \vv{b} = \vv{OB} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} \\
+  \vv{AB} = -\vv{a} + \vv{b} = -\vv{OA} + \vv{OB} = \vv{OB} - \vv{OA} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} + \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}-5 \\ -4 \\ 2\end{pmatrix}
 \end{gather*}
 \begin{exercise}{279/6}
   \item [a]
   \begin{gather*}
     A(-2|2|3) \gap\gap B(5|5|5) \gap\gap C(9|6|5) \gap\gap D(2|3|3) \\
-    \vec{AB} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \\
-    \vec{AB} = \vec{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+    \vv{AB} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \\
+    \vv{AB} = \vv{DC} \gap\Rightarrow\gap \text{Parallelogramm}
   \end{gather*}
   \item [b]
   \begin{gather*}
     A(2|0|3) \gap\gap B(4|4|4) \gap\gap C(11|7|9) \gap\gap D(9|3|8) \\
-    \vec{AB} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
-    \vec{AB} = \vec{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+    \vv{AB} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
+    \vv{AB} = \vv{DC} \gap\Rightarrow\gap \text{Parallelogramm}
   \end{gather*}
   \item [c]
   \begin{gather*}
     A(2|-2|7) \gap\gap B(6|5|1) \gap\gap C(1|-1|1) \gap\gap D(8|0|8) \\
-    \vec{AB} = \begin{pmatrix}4 \\ 7 \\ -6\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}-7 \\ -1 \\ -7\end{pmatrix} \\
-    \vec{AB} \neq \vec{DC} \gap\Rightarrow\gap \text{kein Parallelogramm}
+    \vv{AB} = \begin{pmatrix}4 \\ 7 \\ -6\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}-7 \\ -1 \\ -7\end{pmatrix} \\
+    \vv{AB} \neq \vv{DC} \gap\Rightarrow\gap \text{kein Parallelogramm}
   \end{gather*}
 \end{exercise}
 \newpage
@@ -4851,10 +4851,10 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
   \item [a]
   \begin{gather*}
     A(21|-11|43) \gap\gap B(3|7|-8) \gap\gap C(0|4|5) \\
-  \vec{AB} = \begin{pmatrix}-18 \\ 18 \\ -51\end{pmatrix} \gap\gap \vec{BC} = \begin{pmatrix}-3 \\ -3 \\ 13\end{pmatrix} \\
-  \vec{OD_1} = \vec{OA} + \vec{BC} = \begin{pmatrix}18 \\ -14 \\ 56\end{pmatrix} \\
-  \vec{OD_2} = \vec{OC} + \vec{AB} = \begin{pmatrix}-18 \\ 22 \\ -46\end{pmatrix} \\
-  \vec{OD_3} = \vec{OA} - \vec{BC} = \begin{pmatrix}24 \\ -8 \\ 30\end{pmatrix}
+  \vv{AB} = \begin{pmatrix}-18 \\ 18 \\ -51\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-3 \\ -3 \\ 13\end{pmatrix} \\
+  \vv{OD_1} = \vv{OA} + \vv{BC} = \begin{pmatrix}18 \\ -14 \\ 56\end{pmatrix} \\
+  \vv{OD_2} = \vv{OC} + \vv{AB} = \begin{pmatrix}-18 \\ 22 \\ -46\end{pmatrix} \\
+  \vv{OD_3} = \vv{OA} - \vv{BC} = \begin{pmatrix}24 \\ -8 \\ 30\end{pmatrix}
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=0.13]
@@ -4879,10 +4879,10 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
   \item [b]
   \begin{gather*}
     A(-75|199|-67) \gap\gap B(35|0|-81) \gap\gap C(1|2|3) \\
-    \vec{AB} = \begin{pmatrix}110 \\ -199 \\ 14\end{pmatrix} \gap\gap \vec{BC} = \begin{pmatrix}-34 \\ 2 \\ 84\end{pmatrix} \\
-    \vec{OD_1} = \vec{OA} + \vec{BC} = \begin{pmatrix}-109 \\ 201 \\ 17\end{pmatrix} \\
-    \vec{OD_2} = \vec{OC} + \vec{AB} = \begin{pmatrix}111 \\ -197 \\ 17\end{pmatrix} \\
-    \vec{OD_3} = \vec{OA} - \vec{BC} = \begin{pmatrix}-41 \\ 197 \\ -151\end{pmatrix}
+    \vv{AB} = \begin{pmatrix}110 \\ -199 \\ 14\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-34 \\ 2 \\ 84\end{pmatrix} \\
+    \vv{OD_1} = \vv{OA} + \vv{BC} = \begin{pmatrix}-109 \\ 201 \\ 17\end{pmatrix} \\
+    \vv{OD_2} = \vv{OC} + \vv{AB} = \begin{pmatrix}111 \\ -197 \\ 17\end{pmatrix} \\
+    \vv{OD_3} = \vv{OA} - \vv{BC} = \begin{pmatrix}-41 \\ 197 \\ -151\end{pmatrix}
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=0.024]
@@ -4910,21 +4910,21 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
 $M_1$ ... Mittelpunkt von $\overline{AB}$ \\
 $M_2$ ... Mittelpunkt des Parallelogramms (mit $D_1$)
 \begin{gather*}
-  \vec{OM_1} = \vec{OA} + \frac{1}{2} \cdot \vec{AB} = \vec{OB} - \frac{1}{2}\vec{AB} \\
-  \vec{OM_2} = \vec{OA} + \frac{1}{2} \cdot \vec{AC} = \vec{OC} - \frac{1}{2}\vec{AC}
+  \vv{OM_1} = \vv{OA} + \frac{1}{2} \cdot \vv{AB} = \vv{OB} - \frac{1}{2}\vv{AB} \\
+  \vv{OM_2} = \vv{OA} + \frac{1}{2} \cdot \vv{AC} = \vv{OC} - \frac{1}{2}\vv{AC}
 \end{gather*}
 \begin{itemize}
   \item [zu 6a]
   \begin{gather*}
-    \vec{OA} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} \gap\gap \vec{OB} = \begin{pmatrix}5 \\ 5 \\ 5\end{pmatrix} \gap\gap \vec{OC} = \begin{pmatrix}9 \\ 6 \\ 5\end{pmatrix} \\
-    \vec{OM_1} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} = \begin{pmatrix}1.5 \\ 3.5 \\ 4\end{pmatrix} \\
-    \vec{OM_2} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}11 \\ 4 \\ 2\end{pmatrix} = \begin{pmatrix}3.5 \\ 4 \\ 4\end{pmatrix}
+    \vv{OA} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{OB} = \begin{pmatrix}5 \\ 5 \\ 5\end{pmatrix} \gap\gap \vv{OC} = \begin{pmatrix}9 \\ 6 \\ 5\end{pmatrix} \\
+    \vv{OM_1} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} = \begin{pmatrix}1.5 \\ 3.5 \\ 4\end{pmatrix} \\
+    \vv{OM_2} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}11 \\ 4 \\ 2\end{pmatrix} = \begin{pmatrix}3.5 \\ 4 \\ 4\end{pmatrix}
   \end{gather*}
   \item [zu 6b]
   \begin{gather*}
-    \vec{OA} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \gap\gap \vec{OB} = \begin{pmatrix}4 \\ 4 \\ 4\end{pmatrix} \gap\gap \vec{OC} = \begin{pmatrix}11 \\ 7 \\ 9\end{pmatrix} \\
-    \vec{OM_1} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}3 \\ 2 \\ 3.5\end{pmatrix} \\
-    \vec{OM_2} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}9 \\ 7 \\ 6\end{pmatrix} = \begin{pmatrix}6.5 \\ 3.5 \\ 6\end{pmatrix}
+    \vv{OA} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \gap\gap \vv{OB} = \begin{pmatrix}4 \\ 4 \\ 4\end{pmatrix} \gap\gap \vv{OC} = \begin{pmatrix}11 \\ 7 \\ 9\end{pmatrix} \\
+    \vv{OM_1} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}3 \\ 2 \\ 3.5\end{pmatrix} \\
+    \vv{OM_2} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}9 \\ 7 \\ 6\end{pmatrix} = \begin{pmatrix}6.5 \\ 3.5 \\ 6\end{pmatrix}
   \end{gather*}
 \end{itemize}
 Setze ich mehrere Vektorpfeile, mit Koeffizienten multipliziert, aneinander, so nennt man das einen Vektorzug. Die rechnerische Summe solcher Vektoren heißt Linearkombination.
@@ -5005,18 +5005,18 @@ Setze ich mehrere Vektorpfeile, mit Koeffizienten multipliziert, aneinander, so 
   \end{gather*}
 \end{exercise}
 \begin{exercise}{284/11}
-  \item [f] $-(\vec{u} - \vec{v}) = \vec{v} - \vec{u}$
-  \item [g] $2(2\vec{a} + 4\vec{b}) = 4\vec{a} + 8\vec{b}$
-  \item [h] $-4(\vec{a} - \vec{b}) - \vec{b} + \vec{a} = 5\vec{a} - 5\vec{b}$
-  \item [i] $3(\vec{a} + 2(\vec{a} + \vec{b})) = 9\vec{a} + 6\vec{b}$
-  \item [j] $6(\vec{a} - \vec{b}) + 4(\vec{a} + \vec{b}) = 10\vec{a} - 2\vec{b}$
-  \item [k] $7\vec{u} + 5(\vec{u} - 2(\vec{u} + \vec{v})) = 2\vec{u} + 10\vec{v}$
+  \item [f] $-(\vv{u} - \vv{v}) = \vv{v} - \vv{u}$
+  \item [g] $2(2\vv{a} + 4\vv{b}) = 4\vv{a} + 8\vv{b}$
+  \item [h] $-4(\vv{a} - \vv{b}) - \vv{b} + \vv{a} = 5\vv{a} - 5\vv{b}$
+  \item [i] $3(\vv{a} + 2(\vv{a} + \vv{b})) = 9\vv{a} + 6\vv{b}$
+  \item [j] $6(\vv{a} - \vv{b}) + 4(\vv{a} + \vv{b}) = 10\vv{a} - 2\vv{b}$
+  \item [k] $7\vv{u} + 5(\vv{u} - 2(\vv{u} + \vv{v})) = 2\vv{u} + 10\vv{v}$
 \end{exercise}
 \begin{exercise}{284/12}
-  \item [a] $\vec{AG} = \vec{a} + \vec{b} + \vec{c}$
-  \item [b] $\vec{BH} = -\vec{a} + \vec{b} + \vec{c}$
-  \item [c] $\vec{EC} = \vec{a} + \vec{b} - \vec{c}$
-  \item [d] $\vec{ME} = -\frac{1}{2}\vec{a} - \frac{1}{2}\vec{b} + \vec{c}$
+  \item [a] $\vv{AG} = \vv{a} + \vv{b} + \vv{c}$
+  \item [b] $\vv{BH} = -\vv{a} + \vv{b} + \vv{c}$
+  \item [c] $\vv{EC} = \vv{a} + \vv{b} - \vv{c}$
+  \item [d] $\vv{ME} = -\frac{1}{2}\vv{a} - \frac{1}{2}\vv{b} + \vv{c}$
 \end{exercise}
 
 \end{document}
