@@ -4826,6 +4826,84 @@ $\vec{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O
   \vec{a} = \vec{OA} = \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} \gap\gap \vec{b} = \vec{OB} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} \\
   \vec{AB} = -\vec{a} + \vec{b} = -\vec{OA} + \vec{OB} = \vec{OB} - \vec{OA} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} + \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}-5 \\ -4 \\ 2\end{pmatrix}
 \end{gather*}
-% TODO: 279/6+7 (bei 7 je 3 Lösungen)
+\begin{exercise}{279/6}
+  \item [a]
+  \begin{gather*}
+    A(-2|2|3) \gap\gap B(5|5|5) \gap\gap C(9|6|5) \gap\gap D(2|3|3) \\
+    \vec{AB} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \\
+    \vec{AB} = \vec{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    A(2|0|3) \gap\gap B(4|4|4) \gap\gap C(11|7|9) \gap\gap D(9|3|8) \\
+    \vec{AB} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
+    \vec{AB} = \vec{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    A(2|-2|7) \gap\gap B(6|5|1) \gap\gap C(1|-1|1) \gap\gap D(8|0|8) \\
+    \vec{AB} = \begin{pmatrix}4 \\ 7 \\ -6\end{pmatrix} \gap\gap \vec{DC} = \begin{pmatrix}-7 \\ -1 \\ -7\end{pmatrix} \\
+    \vec{AB} \neq \vec{DC} \gap\Rightarrow\gap \text{kein Parallelogramm}
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{279/7}
+  \item [a]
+  \begin{gather*}
+    A(21|-11|43) \gap\gap B(3|7|-8) \gap\gap C(0|4|5) \\
+  \vec{AB} = \begin{pmatrix}-18 \\ 18 \\ -51\end{pmatrix} \gap\gap \vec{BC} = \begin{pmatrix}-3 \\ -3 \\ 13\end{pmatrix} \\
+  \vec{OD_1} = \vec{OA} + \vec{BC} = \begin{pmatrix}18 \\ -14 \\ 56\end{pmatrix} \\
+  \vec{OD_2} = \vec{OC} + \vec{AB} = \begin{pmatrix}-18 \\ 22 \\ -46\end{pmatrix} \\
+  \vec{OD_3} = \vec{OA} - \vec{BC} = \begin{pmatrix}24 \\ -8 \\ 30\end{pmatrix}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}[scale=0.13]
+      \coordinate (A) at (21,-11,43);
+      \coordinate (B) at (3,7,-8);
+      \coordinate (C) at (0,4,5);
+      \coordinate (D1) at (18,-14,56);
+      \coordinate (D2) at (-18,22,-46);
+      \coordinate (D3) at (24,-8,30);
+      \node[below right] at (A) {$A$};
+      \node[above right] at (B) {$B$};
+      \node[left] at (C) {$C$};
+      \node[below] at (D1) {$D_1$};
+      \node[above] at (D2) {$D_2$};
+      \node[right] at (D3) {$D_3$};
+      \draw[very thick] (A) -- (B) -- (C) -- (A);
+      \draw (A) -- (D1) -- (C);
+      \draw (B) -- (D2) -- (C);
+      \draw (A) -- (D3) -- (B);
+    \end{tikzpicture}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    A(-75|199|-67) \gap\gap B(35|0|-81) \gap\gap C(1|2|3) \\
+    \vec{AB} = \begin{pmatrix}110 \\ -199 \\ 14\end{pmatrix} \gap\gap \vec{BC} = \begin{pmatrix}-34 \\ 2 \\ 84\end{pmatrix} \\
+    \vec{OD_1} = \vec{OA} + \vec{BC} = \begin{pmatrix}-109 \\ 201 \\ 17\end{pmatrix} \\
+    \vec{OD_2} = \vec{OC} + \vec{AB} = \begin{pmatrix}111 \\ -197 \\ 17\end{pmatrix} \\
+    \vec{OD_3} = \vec{OA} - \vec{BC} = \begin{pmatrix}-41 \\ 197 \\ -151\end{pmatrix}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}[scale=0.024]
+      \coordinate (A) at (-75,199,-67);
+      \coordinate (B) at (35,0,-81);
+      \coordinate (C) at (1,2,3);
+      \coordinate (D1) at (-109,201,17);
+      \coordinate (D2) at (111,-197,17);
+      \coordinate (D3) at (-41,197,-151);
+      \node[above left] at (A) {$A$};
+      \node[right] at (B) {$B$};
+      \node[below left] at (C) {$C$};
+      \node[left] at (D1) {$D_1$};
+      \node[below right] at (D2) {$D_2$};
+      \node[above right] at (D3) {$D_3$};
+      \draw[very thick] (A) -- (B) -- (C) -- (A);
+      \draw (A) -- (D1) -- (C);
+      \draw (B) -- (D2) -- (C);
+      \draw (A) -- (D3) -- (B);
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
