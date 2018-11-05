@@ -5018,5 +5018,110 @@ Setze ich mehrere Vektorpfeile, mit Koeffizienten multipliziert, aneinander, so 
   \item [c] $\vv{EC} = \vv{a} + \vv{b} - \vv{c}$
   \item [d] $\vv{ME} = -\frac{1}{2}\vv{a} - \frac{1}{2}\vv{b} + \vv{c}$
 \end{exercise}
+\section{Geraden in $\mathbb{R}^3$}
+\begin{gather*}
+  \begin{tikzpicture}
+    \coordinate (O) at (0,0,0);
+    \coordinate (A) at (-1,0,3);
+    \coordinate (B) at (3,0,3);
+    \coordinate (S1) at (1,0,3);
+    \coordinate (S2) at (0,0,3);
+    \coordinate (S3) at (2,0,3);
+    \coordinate (S4) at (5,0,3);
+    \coordinate (S5) at (-2,0,3);
+    \node[above] at (O) {$O$};
+    \node[above] at (A) {$A$};
+    \node[above] at (B) {$B$};
+    \node[above] at (S1) {$S_1$};
+    \node[above] at (S2) {$S_2$};
+    \node[above] at (S3) {$S_3$};
+    \node[above] at (S4) {$S_4$};
+    \node[above] at (S5) {$S_5$};
+    \fill (O) circle[radius=1pt];
+    \fill (A) circle[radius=1pt];
+    \fill (B) circle[radius=1pt];
+    \fill (S1) circle[radius=1pt];
+    \fill (S2) circle[radius=1pt];
+    \fill (S3) circle[radius=1pt];
+    \fill (S4) circle[radius=1pt];
+    \fill (S5) circle[radius=1pt];
+    \draw (A) -- (B);
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  \vv{OS_1} = \vv{OA} + \frac{1}{2}\vv{AB} \\
+  \vv{OS_2} = \vv{OA} + \frac{1}{4}\vv{AB} \\
+  \vv{OS_3} = \vv{OA} + \frac{3}{4}\vv{AB} \\
+  \vv{OS_4} = \vv{OA} + \frac{3}{2}\vv{AB} = \vv{OB} + \frac{1}{2}\vv{AB} \\
+  \vv{OS_5} = \vv{OA} - \frac{1}{4}\vv{AB}
+\end{gather*}
+Gerade durch die Punkte $A$ und $B$:
+\begin{gather*}
+  g: \vv{x} = \vv{OA} + s \cdot \vv{AB} \gap\gap s \in \mathbb{R}
+\end{gather*}
+Parametergleichung einer Geraden $g$:
+\begin{itemize}
+  \item [$g$] Name der Geraden
+  \item [$\vv{x}$] Ortsvektor eines unbestimmten Punktes
+  \item [$\vv{OA}$] Ortsvektor eines bestimmten Punktes $A$ (heißt auch Stützvektor)
+  \item [$s$] Parameter $s \in \mathbb{R}$ \\
+  Beim Durchlaufen aller Zahlen von $\mathbb{R}$ werden nacheinander alle Punkte der Geraden $g$ dargestellt
+  \item [$\vv{AB}$] Richtungsvektor von $g$ gibt die Richtung von $g$ an
+\end{itemize}
+\begin{gather*}
+  h: \vv{x} = \vv{a} + r \cdot \vv{b} \\
+  h: \vv{x} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\\\
+  \text{Beispiele für Punkte auf $h$} \\
+  \vv{OP_1} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \gap\gap r = 0 \\
+  \vv{OP_2} = \begin{pmatrix}-2 \\ 5 \\ 4\end{pmatrix} \gap\gap r = 1 \\
+  \vv{OP_3} = \begin{pmatrix}-5 \\ 10 \\ 6\end{pmatrix} \gap\gap r = 2 \\
+  \vv{OP_4} = \begin{pmatrix}4 \\ -5 \\ 0\end{pmatrix} \gap\gap r = -1
+\end{gather*}
+\begin{gather*}
+  \vv{OQ} = \begin{pmatrix}3 \\ 7 \\ -1\end{pmatrix} \in h \\
+  \begin{pmatrix}3 \\ 7 \\ -1\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\
+  \text{gibt es ein $r$, das alle 3 Gleichungen löst?} \\
+  3 = 1 - 3r \gap\Rightarrow\gap r = -\frac{2}{3} \\
+  7 = 5r \gap\Rightarrow\gap r = \frac{7}{5} \\
+  -1 = 2 + 2r \gap\Rightarrow\gap r = -\frac{3}{2} \\
+  \Rightarrow\gap Q \notin h
+\end{gather*}
+\begin{exercise}{287/2}
+  \item [a]
+  \begin{gather*}
+    A(1|2|2) \gap\gap B(5|-4|7) \\
+    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix} \\
+    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}5 \\ -4 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    A(-3|-2|9) \gap\gap B(0|0|3) \\
+    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}-3 \\ -2 \\ 9\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix} \\
+    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    A(7|-2|7) \gap\gap B(1|1|1) \\
+    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}7 \\ -2 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix} \\
+    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{287/3}
+  \item [c]
+  \begin{gather*}
+    X(2|3|-1) \gap\gap g: \vv{x} = \begin{pmatrix}7 \\ 0 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}5 \\ -3 \\ 5\end{pmatrix} \\
+    2 = 7 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
+    3 = t \cdot -3 \gap\Rightarrow\gap t = -1 \\
+    -1 = 4 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
+    \Rightarrow\gap X \in g
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    X(2|-1|-1) \gap\gap g: \vv{x} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 3 \\ 3\end{pmatrix} \\
+    2 = 1 + t \gap\Rightarrow\gap t = 1 \\
+    -1 = t \cdot 3 \gap\Rightarrow\gap t = -\frac{1}{3} \\
+    \Rightarrow\gap X \notin g
+  \end{gather*}
+\end{exercise}
 
 \end{document}
