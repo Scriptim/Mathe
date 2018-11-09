@@ -5163,5 +5163,51 @@ Parametergleichung einer Geraden $g$:
     \end{gather*}
   \end{itemize}
 \end{exercise}
+\subsection{Kollinearität}
+\begin{gather*}
+  g: \vv{x} = \vv{a} + t \cdot \vv{b} \gap\gap t \in \mathbb{R} \\
+  \text{für $\vv{b}$ gilt: $\vv{b}$ kann durch $\vv{b}' = s \cdot \vv{b}$ ersetzt werden} \gap\gap s \in \mathbb{R} \gap s \neq 0 \\
+  \vv{b}' \parallel \vv{b} \gap\gap \text{$\vv{b}'$ und $\vv{b}$ sind kollinear}
+\end{gather*}
+Sonderfall: Gerade durch $O$
+\begin{gather*}
+  \text{z. B. } g: \vv{x} = t \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} = \begin{pmatrix}-2 \\ -6 \\ -10\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} \\
+  \text{hier ist $\vv{a} \parallel \vv{b}$, d. h. $\vv{a}$ und $\vv{b}$ sind kollinear ($\vv{a} = -2 \cdot \vv{b}$)}
+\end{gather*}
+\subsection{Lage zweier Geraden}
+4 Möglichkeiten unterschiedlicher Lage:
+\begin{itemize}
+  \item Schnitt (Schnittpunkt)
+  \item parallel
+  \item identisch
+  \item windschief
+\end{itemize}
+\subsubsection{Verfahren um festzustellen, welche Lage zwei Geraden $g$ und $h$ haben}
+\begin{gather*}
+  g: \vv{x} = \vv{a} + s \cdot \vv{b} \\
+  h: \vv{x} = \vv{c} + t \cdot \vv{d}
+\end{gather*}
+\begin{gather*}
+  \vv{b} \stackrel{?}{=} r \cdot \vv{d}
+\end{gather*}
+\begin{itemize}
+  \item wahr:
+  \begin{gather*}
+    \vv{a} \stackrel{?}{=} \vv{c} + t \cdot \vv{d} \text{ oder } \vv{c} \stackrel{?}{=} \vv{a} + s \cdot \vv{b}
+  \end{gather*}
+  \begin{itemize}
+    \item wenn wahr, dann sind $g$ und $h$ identisch
+    \item wenn nicht wahr, dann sind $g$ und $h$ parallel
+  \end{itemize}
+  \newpage
+  \item nicht wahr:
+  \begin{gather*}
+    \vv{a} + s \cdot \vv{b} = \vv{c} + t \cdot \vv{d}
+  \end{gather*}
+  \begin{itemize}
+    \item finde ich ein $s$ und ein $t$, sodass das LGS gelöst wird, so schneiden sich $g$ und $h$ in einem Punkt $S$
+    \item ansonsten sind $g$ und $h$ windschief
+  \end{itemize}
+\end{itemize}
 
 \end{document}
