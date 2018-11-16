@@ -5316,5 +5316,67 @@ Sonderfall: Gerade durch $O$
     V_Z - V_K = 100cm^3 = 0.1L
   \end{gather*}
 \end{exercise}
+\section{Abstand zweier Punkte, Vektorlänge, Streckenlänge}
+\begin{gather*}
+  \text{Bsp. } g: \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \gap\gap r \in \mathbb{R}: \left[2;5\right]
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}[scale=0.5]
+    \coordinate (O) at (0,0,0);
+    \coordinate (A) at (1,2,3);
+    \coordinate (C) at (5,0,3);
+    \coordinate (D) at (11,-3,3);
+    \node[below] at (O) {$O$};
+    \node[above right] at (A) {$A$};
+    \node[above right] at (C) {$C$};
+    \node[above right] at (D) {$D$};
+    \fill (O) circle[radius=2pt];
+    \fill (A) circle[radius=2pt];
+    \draw[->] (O) -- (A);
+    \draw (-3,4,3) -- (15,-5,3);
+    \draw[red,very thick] (C) -- (D);
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  \vv{OC} = \begin{pmatrix}5 \\ 0 \\ 3\end{pmatrix} \gap\gap \vv{OD} = \begin{pmatrix}11 \\ -3 \\ 3\end{pmatrix} \\
+  |\overline{CD}| = |\vv{CD}| = \text{Abstand } C \leftrightarrow D \\
+  \vv{CD} = \begin{pmatrix}6 \\ -3 \\ 0\end{pmatrix}
+\end{gather*}
+\begin{gather*}
+  \textbf{Seitenlängen des Segels (Bsp. S. 294)} \\
+  \text{unten: } 4m \\
+  \text{links: } \sqrt{(5m)^2 + (3m)^2} \gap\text{(Satz des Pythagoras)} \\
+  \text{rechts: } \sqrt{(\sqrt{34}m)^2 + (4m)^2} = \sqrt{(5m)^2 + (3m)^2 + (4m)^2}
+\end{gather*}
+\begin{gather*}
+  |\vv{CD}| = \sqrt{6^2 + (-3)^2 + 0^2} = \sqrt{45} \approx 6.71LE
+\end{gather*}
+Die Länge eines Vektors $\begin{pmatrix}a \\ b \\ c\end{pmatrix}$ ist $\Biggl|\begin{pmatrix}a \\ b \\ c\end{pmatrix}\Biggl| = \sqrt{a^2 + b^2 + c^2}$
+\begin{exercise}{297/2}
+  \item [a]
+  \begin{gather*}
+    A(0|0|0) \gap\gap B(2|3|-1) \\
+    \vv{AB} = \begin{pmatrix}2 \\ 3 \\ -1\end{pmatrix} \\
+    |\vv{AB}| = \sqrt{2^2 + 3^2 + (-1)^2} = \sqrt{14} \approx 3.74LE
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    A(2|2|-2) \gap\gap B(0|-1|5) \\
+    \vv{AB} = \begin{pmatrix}-2 \\ -3 \\ 7\end{pmatrix} \\
+    |\vv{AB}| = \sqrt{(-2)^2 + (-3)^2 + 7^2} = \sqrt{62} \approx 7.87LE
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    A(1|5|6) \gap\gap B(1|6|7) \\
+    \vv{AB} = \begin{pmatrix}0 \\ 1 \\ 1\end{pmatrix} \\
+    |\vv{AB}| = \sqrt{0^2 + 1^2 + 1^2} = \sqrt{2} \approx 1.41LE
+  \end{gather*}
+\end{exercise}
+\subsection{Einheitsvektor}
+Ein Einheitsvektor hat die Länge $1LE$ \\
+Einheitsvektor zu z. B. $\vv{a} = \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix} \gap\gap |\vv{a}| = \sqrt{30}$
+\begin{gather*}
+  \vv{a_0} = \frac{1}{\sqrt{30}} \cdot \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix}
+\end{gather*}
 
 \end{document}
