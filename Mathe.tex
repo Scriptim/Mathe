@@ -5429,5 +5429,50 @@ Einheitsvektor zu z. B. $\vv{a} = \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix} \gap\g
     |\vv{CS}| = \frac{2}{3} \cdot |\vv{CM_c}| = 10
   \end{gather*}
 \end{exercise}
+\section{Produkte zweier Vektoren}
+\subsection{Skalarprodukt}
+Beispiel aus der Physik:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.55\textwidth]{/fakepath/skalarprodukt_arbeit.png}
+\end{figure}
+\begin{gather*}
+  W = \vv{F} \cdot \vv{s} \\
+  cos(\alpha) = \frac{|\vv{F_s}|}{|\vv{F}|} \gap\Rightarrow\gap |\vv{F_s}| = |\vv{F}| \cdot cos(\alpha) \gap\gap\gap \text{$\vv{F_s}$ ... $\vv{F}$ in Richtung $\vv{s}$} \\
+  W = \vv{F} \cdot \vv{s} = |\vv{F}| \cdot cos(\alpha) \cdot |\vv{s}| \\\\
+  \vv{a} \cdot \vv{b} = |\vv{a}| \cdot |\vv{b}| \cdot cos(\alpha) = a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 \\
+\end{gather*}
+Beispiel:
+\begin{gather*}
+  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix} \\
+  \vv{a} \cdot \vv{b} = 1 \cdot (-2) + 2 \cdot 0 + 3 \cdot 3 = 7 \\\\
+  \text{Winkel zwischen $\vv{a}$ und $\vv{b}$:} \\
+  7 = \Biggl|\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\Biggl| \cdot \Biggl|\begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix}\Biggl| \cdot cos(\alpha) = \sqrt{14} \cdot \sqrt{13} \cdot cos(\alpha) \\
+  \alpha = acos(\frac{7}{\sqrt{14} \cdot \sqrt{13}}) \approx 1.025 \approx 58.73^\circ
+\end{gather*}
+Spezialfall:
+\begin{gather*}
+  \alpha = 90^\circ \\
+  \Rightarrow cos(\alpha) = 0 \\
+  \Rightarrow \vv{a} \cdot \vv{b} = 0 \\
+  \vv{a} \perp \vv{b} \\\\
+  \text{z. B. } \vv{a} = \begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 3 \\ 5\end{pmatrix} \\
+  \vv{a} \cdot \vv{b} = 1 \cdot 3 + (-1) \cdot 3 + 0 \cdot 5 = 0 \\
+  \Rightarrow \vv{a} \perp \vv{b}
+\end{gather*}
+\begin{exercise}{321/1}
+  \item [a]
+  \begin{gather*}
+    g: \vv{x} = \begin{pmatrix}2 \\ -2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \gap\gap h: \vv{x} = \begin{pmatrix}5 \\ -1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} \\
+    \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} = 12 \\
+    \Rightarrow g \notperp h
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    g: \vv{x} = \begin{pmatrix}8 \\ 6 \\ -9\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \gap\gap h: \vv{x} = \begin{pmatrix}0 \\ 0 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} \\
+    \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} = 0 \\
+    \Rightarrow g \perp h
+  \end{gather*}
+\end{exercise}
 
 \end{document}
