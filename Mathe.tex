@@ -5599,5 +5599,45 @@ Spezialfall:
     \vv{a} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}7 \\ -8 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}3 \\ 2 \\ -5\end{pmatrix}
   \end{gather*}
 \end{exercise}
+\begin{exercise}{366/7}
+  \item [a]
+  \begin{gather*}
+    A(2|-2|-2) \gap\gap B(-2|5.5|-2) \gap\gap C(-6|2|4) \gap\gap D(1|-2|1)
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}[scale=0.7]
+      \coordinate (O) at (0,0,0);
+      \coordinate (A) at (2,-2,-2);
+      \coordinate (B) at (-2,5.5,-2);
+      \coordinate (C) at (-6,2,4);
+      \coordinate (D) at (1,-2,1);
+      \node[below] at (O) {$O$};
+      \node[right] at (A) {$A$};
+      \node[above] at (B) {$B$};
+      \node[left] at (C) {$C$};
+      \node[below] at (D) {$D$};
+      \fill (O) circle[radius=2pt];
+      \fill (A) circle[radius=2pt];
+      \fill (B) circle[radius=2pt];
+      \fill (C) circle[radius=2pt];
+      \fill (D) circle[radius=2pt];
+      \draw (A) -- (B) -- (C) -- (D) -- (A);
+    \end{tikzpicture}
+  \end{gather*}
+  \begin{gather*}
+    \vv{AB} = \begin{pmatrix}-4 \\ 7.5 \\ 0\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-4 \\ -3.5 \\ 6\end{pmatrix} \gap\gap \vv{CD} = \begin{pmatrix}7 \\ -4 \\ -3\end{pmatrix} \gap\gap \vv{DA} = \begin{pmatrix}1 \\ 0 \\ -3\end{pmatrix} \\
+  \end{gather*}
+  \begin{gather*}
+    \alpha = acos(\frac{\vv{AB} \cdot \vv{AD}}{|\vv{AB}| \cdot |\vv{AD}|}) = acos(\frac{4}{\sqrt{72.25} \cdot \sqrt{10}}) \approx 1.42 \approx 81.44^\circ \\
+    \beta = acos(\frac{\vv{BC} \cdot \vv{BA}}{|\vv{BC}| \cdot |\vv{BA}|}) = acos(\frac{10.25}{\sqrt{64.25} \cdot \sqrt{72.25}}) \approx 1.42 \approx 81.35^\circ \\
+    \gamma = acos(\frac{\vv{CD} \cdot \vv{CB}}{|\vv{CD}| \cdot |\vv{CB}|}) = acos(\frac{32}{\sqrt{74} \cdot \sqrt{64.25}}) \approx 1.09 \approx 62.35^\circ \\
+    \delta = acos(\frac{\vv{DA} \cdot \vv{DC}}{|\vv{DA}| \cdot |\vv{DC}|}) = acos(\frac{-16}{\sqrt{10} \cdot \sqrt{74}}) \approx 2.20 \approx 126.03^\circ
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \alpha + \beta + \gamma + \delta \approx 351^\circ
+  \end{gather*}
+  Die Summe der Innenwinkel ist nicht $360^\circ$, da das Viereck nicht auf einer Ebene liegt.
+\end{exercise}
 
 \end{document}
