@@ -5666,5 +5666,37 @@ Spezialfall:
     \alpha_{-a,b} = \alpha_{a,-b} = 180^\circ - 45^\circ = 135^\circ
   \end{gather*}
 \end{exercise}
+\section{Vektorräume}
+Beispiel
+\begin{gather*}
+  \text{Vektorraum } V_1 = \left\{\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \subset \mathbb{R}^3 \\\\
+  \text{Prüfe}\gap \vv{a} + \vv{b} \in V_1 \colon \gap \begin{pmatrix}a_1 \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a_2 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a_1 + a_2 \\ 0 \\ 0\end{pmatrix} \\
+  \text{Nullvektor}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
+  \text{Gegenvektor}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}-a \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} \\
+  \text{Kommutativgesetz}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
+  \text{Assoziativgesetz}\gap \left(\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix}\right) + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \left(\begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix}\right)
+\end{gather*}
+\begin{gather*}
+  V_2 = \left\{\begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R} \right\} \subset \mathbb{R}^3 \\\\
+  \text{Abgeschlossenheit} \colon \\
+  \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}c^2 \\ c \\ 0\end{pmatrix} \gap\gap \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}a^2 + b^2 \\ a + b \\ 0\end{pmatrix} \not\in V_2 \\
+  \text{z. B.}\gap a = 3, b = 5 \gap\gap \begin{pmatrix}9 \\ 3 \\ 0\end{pmatrix} + \begin{pmatrix}25 \\ 5 \\ 0\end{pmatrix} = \begin{pmatrix}34 \\ 8 \\ 0\end{pmatrix} \not\in V_2 \\\\
+  \left[\begin{pmatrix}(a + b)^2 \\ a + b \\ c\end{pmatrix}\right] \in V_2 \\\\
+  \Rightarrow \text{$V_2$ ist kein Vektorraum, da er nicht abgeschlossen ist}
+\end{gather*}
+\begin{exercise}{300/1}
+  \item [b]
+  \begin{gather*}
+    V = \left\{\begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \\
+    \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} + \begin{pmatrix}b \\ 2b \\ 3b\end{pmatrix} = \begin{pmatrix}a + b \\ 2(a + b) \\ 3(a + b)\end{pmatrix} \in V \gap\gap\gap k \cdot \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} = \begin{pmatrix}ak \\ 2ak \\ 3ak\end{pmatrix} \in V \\
+    \Rightarrow \text{$V$ ist ein Vektorraum}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    V = \left\{\begin{pmatrix}a \\ a^2 \\ a^3\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \\
+    \begin{pmatrix}a \\ a^2 \\ a^3\end{pmatrix} + \begin{pmatrix}b \\ b^2 \\ b^3\end{pmatrix} = \begin{pmatrix}a + b \\ a^2 + b^2 \\ a^3 + b^3 \end{pmatrix} \not\in V \\
+    \Rightarrow \text{$V$ ist kein Vektorraum}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
