@@ -15,15 +15,15 @@
 \chapter{Terme, Gleichungen, Ungleichungen}
 \section{Pascalsches Dreieck}
 \begin{tabular}{rccccccccccccccccc}
-  $n=0$:&    &    &    &    &    &    &    &    &  1\\\noalign{\smallskip\smallskip}
-  $n=1$:&    &    &    &    &    &    &    &  1 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=2$:&    &    &    &    &    &    &  1 &    &  2 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=3$:&    &    &    &    &    &  1 &    &  3 &    &  3 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=4$:&    &    &    &    &  1 &    &  4 &    &  6 &    &  4 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=5$:&    &    &    &  1 &    &  5 &    & 10 &    & 10 &    &  5 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=6$:&    &    &  1 &    &  6 &    & 15 &    & 20 &    & 15 &    &  6 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=7$:&    &  1 &    &  7 &    & 21 &    & 35 &    & 35 &    & 21 &    &  7 &    &  1\\\noalign{\smallskip\smallskip}
-  $n=8$:&  1 &    &  8 &    & 28 &    & 56 &    & 70 &    & 56 &    & 28 &    &  8 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=0\colon$&    &    &    &    &    &    &    &    &  1\\\noalign{\smallskip\smallskip}
+  $n=1\colon$&    &    &    &    &    &    &    &  1 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=2\colon$&    &    &    &    &    &    &  1 &    &  2 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=3\colon$&    &    &    &    &    &  1 &    &  3 &    &  3 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=4\colon$&    &    &    &    &  1 &    &  4 &    &  6 &    &  4 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=5\colon$&    &    &    &  1 &    &  5 &    & 10 &    & 10 &    &  5 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=6\colon$&    &    &  1 &    &  6 &    & 15 &    & 20 &    & 15 &    &  6 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=7\colon$&    &  1 &    &  7 &    & 21 &    & 35 &    & 35 &    & 21 &    &  7 &    &  1\\\noalign{\smallskip\smallskip}
+  $n=8\colon$&  1 &    &  8 &    & 28 &    & 56 &    & 70 &    & 56 &    & 28 &    &  8 &    &  1\\\noalign{\smallskip\smallskip}
 \end{tabular}
 \section{pq-Formel}
 \begin{gather*}
@@ -95,9 +95,9 @@ Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) d
 \subsection{Potenz- und Wurzelgesetze}
 \begin{gather*}
   a^x \cdot a^y = a^{x + y} \\
-  a^x : a^y = a^{x - y} \\
+  a^x \colon a^y = a^{x - y} \\
   a^x \cdot b^x = (ab)^x \\
-  a^x : b^x = (\frac{a}{b})^x \\
+  a^x \colon b^x = (\frac{a}{b})^x \\
   (a^x)^y = a^{xy} \\
   a^{-x} = \frac{1}{a^x} \\\\
   \sqrt[x]{a^y} = a^\frac{y}{x} \\
@@ -243,7 +243,7 @@ Ohne \glqq streng\grqq entsprechend $\leq$ bzw. $\geq$
 \end{exercise}
 \begin{exercise}{18/2}
   \begin{tabular}{rcccc}
-    $a_n$ & $n$ & $(-1)^n \cdot n$ & $(-1)^n : n$ & $1 + 1 : n$ \\
+    $a_n$ & $n$ & $(-1)^n \cdot n$ & $(-1)^n \colon n$ & $1 + 1 \colon n$ \\
     $\uparrow$ beschränkt & \xmark & \xmark & \cmark & \cmark \\
     $\downarrow$ beschränkt & \cmark & \xmark & \cmark & \cmark \\
     beschränkt & \xmark & \xmark & \cmark & \cmark \\
@@ -300,7 +300,7 @@ $\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \i
     1 - \frac{2n^2 - 3}{3n^2} < 0.1 \equ -0.1 + \frac{2n^2 - 3}{3n^2} \\
     0.9 < \frac{2n^2 - 3}{3n^2} \equ \cdot 3n^2 \\
     2.7n^2 < 2n^2 - 3 \equ - 2n^2 \\
-    0.7n^2 < -3 \equ : 0.7 \\
+    0.7n^2 < -3 \equ \div 0.7 \\
     n^2 < -\frac{30}{7} \equ \sqrt{} \\
     n < \sqrt{-\frac{30}{7}} \gap\text{und}\gap n < -\sqrt{-\frac{30}{7}} \\
     \Rightarrow \text{nicht lösbar}
@@ -328,9 +328,9 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
   \item [c]
   \begin{gather*}
     |(\frac{2^{n + 1}}{2^n + 1}) - 2| < \epsilon \\
-    |\frac{-2}{2^n + 1}| < \epsilon \equ :2;\; x^{-1} \\
+    |\frac{-2}{2^n + 1}| < \epsilon \equ \div 2;\; x^{-1} \\
     2^n + 1 > \frac{2}{\epsilon} \equ -1 \\
-    2^n > \frac{2}{\epsilon} - 1 \equ \log;\; :\log(2) \\
+    2^n > \frac{2}{\epsilon} - 1 \equ \log;\; \div \log(2) \\
     n > \frac{\log(\frac{2}{\epsilon} - 1)}{\log(2)}
   \end{gather*}
   \item [d]
@@ -339,7 +339,7 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
     |\frac{3 \cdot 2^n + 2 - 3 \cdot 2^n}{2^{n+1}}| < \epsilon \\
     \frac{2}{2^[n+1]} < \epsilon \\
     \frac{1}{2^n} < \epsilon \equ x^{-1} \\
-    2^n > \frac{1}{\epsilon} \equ \log\; :\log(2) \\
+    2^n > \frac{1}{\epsilon} \equ \log\; \div \log(2) \\
     n > \frac{-\log(\epsilon)}{\log(2)}
   \end{gather*}
 \end{exercise}
@@ -357,7 +357,7 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
   \end{gather*}
   \item [f]
   \begin{gather*}
-    a_n = \frac{\sqrt{n + 1}}{\sqrt{n + 1} + 2} = (\frac{\sqrt{n + 1}}{\sqrt{n + 1}}) : (\frac{\sqrt{n + 1}}{\sqrt{n + 1}} + \frac{2}{\sqrt{n + 1}}) = \frac{1}{1 + \frac{2}{\sqrt{n + 1}}} \\
+    a_n = \frac{\sqrt{n + 1}}{\sqrt{n + 1} + 2} = (\frac{\sqrt{n + 1}}{\sqrt{n + 1}}) \div (\frac{\sqrt{n + 1}}{\sqrt{n + 1}} + \frac{2}{\sqrt{n + 1}}) = \frac{1}{1 + \frac{2}{\sqrt{n + 1}}} \\
     \lim\limits_{n \to \infty} a_n = \frac{\lim\limits_{n \to \infty} 1}{\lim\limits_{n \to \infty} 1 + \lim\limits_{n \to \infty} \frac{2}{\sqrt{n + 1}}} = \frac{1}{1 + 0} = 1
   \end{gather*}
   \item [g]
@@ -600,7 +600,7 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
   \item [d]
   \begin{gather*}
     f(x) = \frac{x^6 - 1}{x^2 - 1} \\
-    (x^6 - 1) : (x^2 - 1)
+    (x^6 - 1) \div (x^2 - 1)
   \end{gather*}
   \polylongdiv[style=C]{x^6 - 1}{x^2 - 1}
   \begin{gather*}
@@ -957,7 +957,7 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
 \begin{exercise}{67/3}
   \item [a]
   \begin{gather*}
-    x^5 - 20x^3 + 64x = 0 \equ :x \Rightarrow x = 0 \\
+    x^5 - 20x^3 + 64x = 0 \equ \div x \Rightarrow x = 0 \\
     x^4 - 20x^2 + 64 = 0 \equ t = x^2 \\
     t^2 - 20t + 64 = 0 \equ pq \\
     t_{1/2} = 10 \pm \sqrt{100 - 64} = 10 \pm 6 \equ \text{resubst.} \\
@@ -966,7 +966,7 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
   \end{gather*}
   \item [b]
   \begin{gather*}
-    x^5 - 17x^3 + 16x = 0 \equ :x \Rightarrow x = 0 \\
+    x^5 - 17x^3 + 16x = 0 \equ \div x \Rightarrow x = 0 \\
     x^4 - 17x^2 + 16 = 0 \equ t = x^2 \\
     t^2 - 17t + 16 = 0 \equ pq \\
     t_{1/2} = 8.5 \pm \sqrt{72.25 - 16} = 8.5 \pm 7.5 \equ \text{resubst.} \\
@@ -1084,28 +1084,28 @@ Finde ich eine doppelte Nullstelle, so liegt gleichzeitig an der Stelle ein Extr
   $f(x) = ax^3 + bx^2 + cx + d$
   \item [a]
   \begin{gather*}
-    \text{NS: } 0; -4; \frac{4}{5} \\
+    \text{NS} \colon 0; -4; \frac{4}{5} \\
     a = 5 \\
     f(x) = a(x - 0)(x + 4)(x - \frac{4}{5}) = a(x^3 + 3\frac{1}{5}x^2 - 3\frac{1}{5}x) \\
     \;= 5x^3 + 16x^2 - 16x
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \text{NS: } -\frac{1}{3}; 3; \frac{10}{3} \\
+    \text{NS} \colon -\frac{1}{3}; 3; \frac{10}{3} \\
     a = 9 \\
     f(x) = a(x + \frac{1}{3})(x - 3)(x - \frac{10}{3}) = a(x^3 - 6x^2 - \frac{1}{9}x + 3\frac{1}{3}) \\
     \;= 9x^3 - 72x^2 - x + 30
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \text{NS: } 0; -\sqrt{2}; \sqrt{2} \\
+    \text{NS} \colon 0; -\sqrt{2}; \sqrt{2} \\
     a = 1 \\
     f(x) = a(x - 0)(x + \sqrt{2})(x - \sqrt{2}) = a(x^3 - 2x) \\
     \;= x^3 - 2x
   \end{gather*}
   \item [d]
   \begin{gather*}
-    \text{NS: } 0; -\frac{1}{\sqrt{5}}; \frac{1}{\sqrt{5}} \\
+    \text{NS} \colon 0; -\frac{1}{\sqrt{5}}; \frac{1}{\sqrt{5}} \\
     a = 5 \\
     f(x) = a(x - 0)(x + \frac{1}{\sqrt{5}})(x - \frac{1}{\sqrt{5}}) = a(x^3 - \frac{1}{5}x) \\
     \;= 5x^3 - x
@@ -1134,7 +1134,7 @@ Finde ich eine doppelte Nullstelle, so liegt gleichzeitig an der Stelle ein Extr
     f(5) = f(-5) = 1 \\
     f(x) = -\frac{1}{25}x^2 + 2 \\
     f(x) = 0 \gap x = \pm \sqrt{50} \\
-    \text{Breite: } 2\sqrt{50} = 10\sqrt{2} \approx 14.14
+    \text{Breite} \colon 2\sqrt{50} = 10\sqrt{2} \approx 14.14
   \end{gather*}
 \end{exercise}
 \begin{exercise}{68/15}
@@ -1172,12 +1172,12 @@ Daraus folgt ein Rechenverfahren zur Bestimmung der Stellen $x$ mit $f'(x) = 0$.
 für Hochpunkte gilt: $f'(x_l) > 0$ $f'(x) = 0$ $f'(x_r) < 0$ \\
 für Tiefpunkte gilt: $f'(x_l) < 0$ $f'(x) = 0$ $f'(x_r) > 0$
 \begin{gather*}
-  \text{zu: } x_1 = 0 \gap\gap x_l = -1 \gap x_r = 1 \\
+  \text{zu} \colon x_1 = 0 \gap\gap x_l = -1 \gap x_r = 1 \\
   f'(x_l) = f'(-1) = 7 \\
   f'(x_1) = f'(0) = 0 \\
   f'(x_r) = f'(1) = -1 \\
   \Rightarrow H(0|0) \\\\
-  \text{zu: } x_2 = \frac{4}{3} \gap\gap x_l = 1 \gap x_r = 2 \\
+  \text{zu} \colon x_2 = \frac{4}{3} \gap\gap x_l = 1 \gap x_r = 2 \\
   f'(x_l) = f'(1) = -1 \\
   f'(x_1) = f'(0) = 0 \\
   f'(x_r) = f'(2) = 4 \\
@@ -1192,8 +1192,8 @@ Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
   \item [e]
   \begin{gather*}
     f(x) = -\frac{1}{4}x^4 + x^3 - 4 \\
-    f'(x) = -x^3 + 3x^2 = 0 \equ :x \Rightarrow x_1 = 0 \\
-    0 = -x^2 + 3x \equ :x \Rightarrow x_2 = 0 \\
+    f'(x) = -x^3 + 3x^2 = 0 \equ \div x \Rightarrow x_1 = 0 \\
+    0 = -x^2 + 3x \equ \div x \Rightarrow x_2 = 0 \\
     0 = -x + 3 \equ -3; \cdot (-1) \\
     3 = x \\
     L = \{0; 3\} \\\\
@@ -1207,7 +1207,7 @@ Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
   \begin{gather*}
     f(x) = x^4 - 4x^3 + 4x^2 \\
     f'(x) = 4x^3 - 12x^2 + 8x \\
-    0 = 4x^3 - 12x^2 + 8x \equ :x \Rightarrow x_1 = 0 \\
+    0 = 4x^3 - 12x^2 + 8x \equ \div x \Rightarrow x_1 = 0 \\
     0 = 4x^2 - 12x + 8 \equ abc \\
     x_{2/3} = \frac{12 \pm 4}{8} \\
     x_2 = 1 \gap x_3 = 2 \\\\
@@ -1283,8 +1283,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f(x) = x^3 + 2 \\
     f''(x) = 6x = 0 \gap L = \{0\} \\
     f'''(x) = 6 \Rightarrow RLWP(0|2) \\
-    \text{rechts: } x \in \left] -\infty; 0 \right] \\
-    \text{links: } x \in \left[ 0; \infty \right[
+    \text{rechts} \colon x \in \left] -\infty; 0 \right] \\
+    \text{links} \colon x \in \left[ 0; \infty \right[
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1304,7 +1304,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \begin{gather*}
     f(x) = 4 + 2x - x^2 \\
     f''(x) = -2 = 0 \gap L = \{\} \\
-    \text{rechts: } x \in \left] -\infty; \infty \right[ \\
+    \text{rechts} \colon x \in \left] -\infty; \infty \right[ \\
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1326,8 +1326,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f''(x) = 20x^3 - 12x^2 + 6x = 0 \gap L = \{0\} \\
     f'''(x) = 60x^2 - 24x + 6 \\
     f'''(0) = 6 \Rightarrow RLWP(0|0) \\
-    \text{rechts: } x \in \left] -\infty; 0 \right] \\
-    \text{links: } x \in \left[ 0; \infty \right[
+    \text{rechts} \colon x \in \left] -\infty; 0 \right] \\
+    \text{links} \colon x \in \left[ 0; \infty \right[
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1417,8 +1417,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f''(0) = 2 \Rightarrow T(0|f(0) = 0) \\
     f''(3) = 4 \Rightarrow T(3|f(3) = \frac{9}{2}) \\
     f''(-3) = -4 \Rightarrow T(-3|f(-3) = \frac{9}{2}) \\
-    \text{monoton steigend } f'(x) \geq 0: \left]-\infty; -3\right], \left[0; 3\right] \\
-    \text{monoton fallend } f'(x) \leq 0: \left[3; 0\right], \left[3; \infty\right[ \\
+    \text{monoton steigend } f'(x) \geq 0 \colon \left]-\infty; -3\right], \left[0; 3\right] \\
+    \text{monoton fallend } f'(x) \leq 0 \colon \left[3; 0\right], \left[3; \infty\right[ \\
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1443,8 +1443,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f''(x) = x - 2 \\
     f''(1) = -1 \Rightarrow H(1|f(1) = 0.\overline{6}) \\
     f''(3) = 1 \Rightarrow T(3|f(3) = 0) \\
-    \text{monoton steigend } f'(x) \geq 0: \left[-\infty; 1\right], \left[3; \infty\right] \\
-    \text{monoton fallend } f'(x) \leq 0: \left[1; 3\right]
+    \text{monoton steigend } f'(x) \geq 0 \colon \left[-\infty; 1\right], \left[3; \infty\right] \\
+    \text{monoton fallend } f'(x) \leq 0 \colon \left[1; 3\right]
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1468,8 +1468,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f''(x) = \frac{10}{x^3} \\
     f''(\sqrt{5}) = \frac{2}{\sqrt{5}} \Rightarrow T(\sqrt{5}|f(\sqrt{5}) = \sqrt{20}) \\
     f''(-\sqrt{5}) = -\frac{2}{\sqrt{5}} \Rightarrow T(-\sqrt{5}|f(-\sqrt{5}) = -\sqrt{20}) \\
-    \text{monoton steigend } f'(x) \geq 0: \left]-\infty; -\sqrt{5}\right], \left[\sqrt{5}; \infty\right] \\
-    \text{monoton fallend } f'(x) \leq 0: \left[-\sqrt{5}; 0\right[, \left]0; \sqrt{5}\right]
+    \text{monoton steigend } f'(x) \geq 0 \colon \left]-\infty; -\sqrt{5}\right], \left[\sqrt{5}; \infty\right] \\
+    \text{monoton fallend } f'(x) \leq 0 \colon \left[-\sqrt{5}; 0\right[, \left]0; \sqrt{5}\right]
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1563,15 +1563,15 @@ für $f'''(x) = 0$ keine Entscheidung \\
   $f_t(x) = 2x^3 - tx^2 + 8x$
   \item [a]
   \begin{gather*}
-    f_2(x) = 2x^3 - 2x^2 + 8x \equ :x \\
+    f_2(x) = 2x^3 - 2x^2 + 8x \equ \div x \\
     0 = 2x^2 - 2x + 8 \\
     x_{2/3} = \frac{2 \pm \sqrt{-60}}{4} \gap \text{keine Lösung} \\
     L = \{0\} \\\\
-    f_{10}(x) = 2x^3 - 10x^2 + 8x \equ :x \\
+    f_{10}(x) = 2x^3 - 10x^2 + 8x \equ \div x \\
     0 = 2x^2 - 10x + 8 \\
     x_{2/3} = \frac{10 \pm 6}{4} \\
     L = \{0; 1; 4\} \\\\
-    f_{-10}(x) = 2x^3 + 10x^2 + 8x \equ :x \\
+    f_{-10}(x) = 2x^3 + 10x^2 + 8x \equ \div x \\
     0 = 2x^2 + 10x + 8 \\
     x_{2/3} = \frac{-10 \pm 6}{4} \\
     L = \{0; -1; -4\}
@@ -1585,7 +1585,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \begin{gather*}
     t = 8 \\
     f_8(x) = 2x^3 - 8x^2 + 8x \\
-    \text{Nullstellen: } \{0; 2\}
+    \text{Nullstellen} \colon \{0; 2\}
   \end{gather*}
 \end{exercise}
 \section{Verhalten für $x \to \pm \infty$}
@@ -1642,7 +1642,7 @@ $\Rightarrow$ punktsymmetrisch
     f(-x) \neq -f(x) \\
     -\frac{1}{2}x^3 - 4x^2 - 8x \neq -\frac{1}{2}x^3 + 4x^2 - 8x \\
     \text{Nullstellen} \\
-    f(x) = 0 = \frac{1}{2}x^3 - 4x^2 + 8x \equ :x \Rightarrow x_1 = 0 \\
+    f(x) = 0 = \frac{1}{2}x^3 - 4x^2 + 8x \equ \div x \Rightarrow x_1 = 0 \\
     x_{2/3} = \frac{4 \pm \sqrt{16 - 4 \cdot \frac{1}{2} \cdot 8}}{2 \cdot \frac{1}{2}} = 4 \\
     L = \{0; 4\} \\
     \text{Grenzverhalten} \\
@@ -1701,7 +1701,7 @@ $\Rightarrow$ punktsymmetrisch
   \end{gather*}
   \begin{gather*}
     \text{Extremstellen} \\
-    f'(x) = 0 = 3x^2 + 12x \equ :x \Rightarrow x_1 = 0 \\
+    f'(x) = 0 = 3x^2 + 12x \equ \div x \Rightarrow x_1 = 0 \\
     3x + 12 = 0 \\
     L = \{0; -4\} \\
     f''(x_1) = f''(0) = 12 > 0 \gap TP(0|f(0)) \\
@@ -1751,7 +1751,7 @@ $\Rightarrow$ punktsymmetrisch
   \item [c]
   \begin{gather*}
     f(19) = 187.5 - 5.70019 - 0.259078148 \approx 181 \\
-    \text{vertikaler Abstand: } 187.5 - 181 = 6.5 < 10 \\
+    \text{vertikaler Abstand} \colon 187.5 - 181 = 6.5 < 10 \\
     f(9) - 10 = 177.5 - 1.579 - 0.01988 \approx 176.2
   \end{gather*}
 \end{exercise}
@@ -1810,8 +1810,8 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
 \begin{exercise}{109/11}
   \begin{gather*}
     f(x) = -0.002x^4 + 0.122x^2 - 1.8 \\
-    \text{Tiefster Punkt: } T(0|-1.8) \\
-    \text{Augen: } P(x_0|1.6) \\
+    \text{Tiefster Punkt} \colon T(0|-1.8) \\
+    \text{Augen} \colon P(x_0|1.6) \\
     f'(x) = -0.008x^3 + 0.244x \\
     t(x) = 0.006u^4 - 0.122u^3 - 0.008u^3x + 0.224ux - 1.8 \\
     t(0) = -1.8 = 0.006u^4 - 0.122u^3 - 1.8 \gap\gap\gap L = \{0; \pm\sqrt{\frac{61}{3}}\} \\
@@ -1869,7 +1869,7 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
     f_2'(2.1436) \approx 96 > 0 \\
     f_2'(16) = -48 < 0 \\
     (f_2'(29.856) \approx 96 > 0) \\\\
-    \text{Zeitraum: } 2.1436 \text{ bis } 16
+    \text{Zeitraum} \colon 2.1436 \text{ bis } 16
   \end{gather*}
 \end{exercise}
 
@@ -1999,7 +1999,7 @@ Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
 \section{Numerisches Verfahren zur Nullstellenbestimmung}
 \begin{gather*}
   \text{z. B. } f(x) = x^3 + 5x - 10 \\
-  \text{probeweise: } \\
+  \text{probeweise} \colon \\
   \gap\gap f(1) = -4 \\
   \gap\gap f(2) = 8 \\
   \gap\gap \Rightarrow \text{Nullstelle zwischen 1 und 2} \\
@@ -2028,7 +2028,7 @@ Abbruchbedingung: Nullstelle auf 3 Dezimalen genau. Das bedeutet, dass beim näc
   x_1 = 1.5 - \frac{1.5^3 + 5 \cdot 1.5 - 10}{3 \cdot 1.5^2 + 5} \approx 1.4255 \\
   x_2 = ... \approx 1.4233 \\
   x_3 = ... \approx 1.42331 \\
-  \text{Nullstelle auf 3 Dezimalen genau: } x = 1.423
+  \text{Nullstelle auf 3 Dezimalen genau} \colon x = 1.423
 \end{gather*}
 \begin{exercise}{118/1}
   \item [a]
@@ -2344,11 +2344,11 @@ Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortsl
     -f_a(x) = -\frac{1}{2}x^4 + ax^2 \neq f_a(-x) \\
     \Rightarrow \text{keine Punktsymmetrie erkennbar} \\
     \textbf{Nullstellen} \\
-    \frac{1}{2}x^4 - ax^2 = 0 \equ :x^2 \\
+    \frac{1}{2}x^4 - ax^2 = 0 \equ \div x^2 \\
     \frac{1}{2}x^2 - a = 0 \\
     L = \{0; \pm\sqrt{2a}\} \\
     \textbf{Extrema} \\
-    f_a'(x) = 2x^3 - 2ax = 0 \equ :x \\
+    f_a'(x) = 2x^3 - 2ax = 0 \equ \div x \\
     2x^2 - 2a = 0 \\
     x = \pm\sqrt{a} \\
     f_a''(x) = 6x^2 - 2a \\
@@ -2531,7 +2531,7 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
   \item [$d$] Verschiebung in y-Richtung
 \end{itemize}
 \newpage
-\subsection{AB Die Funktionen $f: x \mapsto a \cdot sin(b(x - c))$ und ihre Graphen}
+\subsection{AB Die Funktionen $f \colon x \mapsto a \cdot sin(b(x - c))$ und ihre Graphen}
 \begin{exercise}{AB/3}
   \item [a]
   \begin{gather*}
@@ -3356,7 +3356,7 @@ $$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \app
     v(t) = 2.5 \cdot (1 - e^{-0.1t}) \\
     v(t + 1) = 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \\\\
     v(t) < v(t + 1) \\
-    2.5 \cdot (1 - e^{-0.1t}) < 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \equ : 2.5 \\
+    2.5 \cdot (1 - e^{-0.1t}) < 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \equ \div 2.5 \\
     1 - e^{-0.1t} < 1 - e^{-0.1 \cdot (t + 1)} \equ - 1; \cdot (-1) \\
     e^{-0.1t} > e^{-0.1 \cdot (t + 1)} \equ ln() \\
     -0.1t > -0.1 \cdot (t + 1) \equ \cdot (-10) \\
@@ -3778,7 +3778,7 @@ Durch Grenzwertbildung erhält man
   \text{Der wahre Flächeninhalt ist sicher kleiner als } 0.44FE
 \end{gather*} \\
 \begin{gather*}
-  5 \rightarrow \text{ Intervall in $5$ gleiche Abschnitte: } \\
+  5 \rightarrow \text{ Intervall in $5$ gleiche Abschnitte} \colon \\
   \gap\gap\gap I = \left[0; 1\right] \Rightarrow \text{ Intervallbreite } 0.2 \rightarrow \text{ Breite der Rechtecke} \\
   (0 + ... + 0.64) \text{ bzw. } (0.04 + ... + 1) \rightarrow \text{ Höhen der Rechtecke} \\
   FE \rightarrow \text{ Flächeneinheiten}
@@ -3858,7 +3858,7 @@ Betrachte den Flächeninhalt zu linker Grenze $a$ und rechter Grenze $b$.
 dabei gilt $F'(x) = f(x)$ \\
 $F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
 \begin{gather*}
-  \text{im Beispiel: } F(x) = \frac{1}{20}x^4 \gap\rightarrow\gap (\frac{1}{20}x^4)' = \frac{d}{dx}(\frac{1}{20}x^4) = \frac{1}{5}x^3
+  \text{im Beispiel} \colon F(x) = \frac{1}{20}x^4 \gap\rightarrow\gap (\frac{1}{20}x^4)' = \frac{d}{dx}(\frac{1}{20}x^4) = \frac{1}{5}x^3
 \end{gather*}
 \begin{exercise}{167/3}
   \item [a]
@@ -4250,7 +4250,7 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
     A''(a) = \frac{4}{a^3} \\
     A'(a) = 0 \gap\gap L = \{\pm1\} \\
     A''(1) = 4 > 0 \gap\Rightarrow\gap TP \\
-    \text{Minimaler Flächeninhalt: } A(1) = 4FE
+    \text{Minimaler Flächeninhalt} \colon A(1) = 4FE
   \end{gather*}
 \end{exercise}
 \begin{gather*}
@@ -4368,7 +4368,7 @@ Spezialfälle
 \begin{gather*}
   \int sin(x) \cdot cos(x) \cdot dx = -cos(x) \cdot cos(x) - \int cos(x) \cdot (-sin(x)) \cdot dx \\
   \;= -cos^2(x) - \int sin(x) \cdot cos(x) \cdot dx \equ + \int sin(x) \cdot cos(x) \cdot dx \\
-  2 \cdot \int sin(x) \cdot cos(x) \cdot dx = -cos^2(x) \equ : 2 \\
+  2 \cdot \int sin(x) \cdot cos(x) \cdot dx = -cos^2(x) \equ \div 2 \\
   \int sin(x) \cdot cos(x) \cdot dx = -\frac{cos^2(x)}{2}
 \end{gather*}
 \begin{exercise}{188/1}
@@ -4400,7 +4400,7 @@ Spezialfälle
   \begin{gather*}
     \int_0^\pi (sin(x))^2 \cdot dx = \left[-cos(x) \cdot sin(x)\right]_0^\pi - \int -cos(x) \cdot cos(x) \cdot dx \\
     \;= \left[-cos(x) \cdot sin(x)\right]_0^\pi - \int (-sin^2(x) - 1) \cdot dx \\
-    \;= \left[-cos(x) \cdot sin(x) + x\right]_0^\pi - \int sin^2(x) \cdot dx \equ + \int_0^\pi sin^2(x) \cdot dx; \gap : 2 \\
+    \;= \left[-cos(x) \cdot sin(x) + x\right]_0^\pi - \int sin^2(x) \cdot dx \equ + \int_0^\pi sin^2(x) \cdot dx; \gap \div 2 \\
     \;= \left[\frac{-cos(x) \cdot sin(x) + x}{2}\right]_0^\pi = \frac{\pi}{2}
   \end{gather*}
   \item [c]
@@ -5057,7 +5057,7 @@ Setze ich mehrere Vektorpfeile, mit Koeffizienten multipliziert, aneinander, so 
 \end{gather*}
 Gerade durch die Punkte $A$ und $B$:
 \begin{gather*}
-  g: \vv{x} = \vv{OA} + s \cdot \vv{AB} \gap\gap s \in \mathbb{R}
+  g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} \gap\gap s \in \mathbb{R}
 \end{gather*}
 Parametergleichung einer Geraden $g$:
 \begin{itemize}
@@ -5069,8 +5069,8 @@ Parametergleichung einer Geraden $g$:
   \item [$\vv{AB}$] Richtungsvektor von $g$ gibt die Richtung von $g$ an
 \end{itemize}
 \begin{gather*}
-  h: \vv{x} = \vv{a} + r \cdot \vv{b} \\
-  h: \vv{x} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\\\
+  h \colon \vv{x} = \vv{a} + r \cdot \vv{b} \\
+  h \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\\\
   \text{Beispiele für Punkte auf $h$} \\
   \vv{OP_1} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \gap\gap r = 0 \\
   \vv{OP_2} = \begin{pmatrix}-2 \\ 5 \\ 4\end{pmatrix} \gap\gap r = 1 \\
@@ -5090,26 +5090,26 @@ Parametergleichung einer Geraden $g$:
   \item [a]
   \begin{gather*}
     A(1|2|2) \gap\gap B(5|-4|7) \\
-    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix} \\
-    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}5 \\ -4 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix}
+    g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix} \\
+    g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}5 \\ -4 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix}
   \end{gather*}
   \item [b]
   \begin{gather*}
     A(-3|-2|9) \gap\gap B(0|0|3) \\
-    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}-3 \\ -2 \\ 9\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix} \\
-    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix}
+    g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}-3 \\ -2 \\ 9\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix} \\
+    g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix}
   \end{gather*}
   \item [c]
   \begin{gather*}
     A(7|-2|7) \gap\gap B(1|1|1) \\
-    g: \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}7 \\ -2 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix} \\
-    g: \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix}
+    g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}7 \\ -2 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix} \\
+    g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{287/3}
   \item [c]
   \begin{gather*}
-    X(2|3|-1) \gap\gap g: \vv{x} = \begin{pmatrix}7 \\ 0 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}5 \\ -3 \\ 5\end{pmatrix} \\
+    X(2|3|-1) \gap\gap g \colon \vv{x} = \begin{pmatrix}7 \\ 0 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}5 \\ -3 \\ 5\end{pmatrix} \\
     2 = 7 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
     3 = t \cdot -3 \gap\Rightarrow\gap t = -1 \\
     -1 = 4 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
@@ -5117,7 +5117,7 @@ Parametergleichung einer Geraden $g$:
   \end{gather*}
   \item [d]
   \begin{gather*}
-    X(2|-1|-1) \gap\gap g: \vv{x} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 3 \\ 3\end{pmatrix} \\
+    X(2|-1|-1) \gap\gap g \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 3 \\ 3\end{pmatrix} \\
     2 = 1 + t \gap\Rightarrow\gap t = 1 \\
     -1 = t \cdot 3 \gap\Rightarrow\gap t = -\frac{1}{3} \\
     \Rightarrow\gap X \notin g
@@ -5128,50 +5128,50 @@ Parametergleichung einer Geraden $g$:
   \begin{itemize}
     \item [$g$]
     \begin{gather*}
-      P_1(2|9|0) \gap\gap P_2(-4|1|0) \gap\gap g: \vv{x} = \begin{pmatrix}2 \\ 9 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 4 \\ 0\end{pmatrix}
+      P_1(2|9|0) \gap\gap P_2(-4|1|0) \gap\gap g \colon \vv{x} = \begin{pmatrix}2 \\ 9 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 4 \\ 0\end{pmatrix}
     \end{gather*}
     \item [$h$]
     \begin{gather*}
-      H(-4|1|3) \gap\gap P(2|5|-3) \gap\gap h: \vv{x} = \begin{pmatrix}-4 \\ 1 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 2 \\ -3\end{pmatrix}
+      H(-4|1|3) \gap\gap P(2|5|-3) \gap\gap h \colon \vv{x} = \begin{pmatrix}-4 \\ 1 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 2 \\ -3\end{pmatrix}
     \end{gather*}
     \item [$i$]
     \begin{gather*}
-      P_1(-4|5|3) \gap\gap P_2(-4|9|0) \gap\gap i: \vv{x} = \begin{pmatrix}-4 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix}
+      P_1(-4|5|3) \gap\gap P_2(-4|9|0) \gap\gap i \colon \vv{x} = \begin{pmatrix}-4 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix}
     \end{gather*}
     \item [$j$]
     \begin{gather*}
-      P_1(-1|1|0) \gap\gap P_2(-1|5|3) \gap\gap j: \vv{x} = \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ 3\end{pmatrix}
+      P_1(-1|1|0) \gap\gap P_2(-1|5|3) \gap\gap j \colon \vv{x} = \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ 3\end{pmatrix}
     \end{gather*}
   \end{itemize}
   \item [b]
   \begin{itemize}
     \item [$g$]
     \begin{gather*}
-      C(-8|11|0) \gap\gap P(-2|5|3) \gap\gap g: \vv{x} = \begin{pmatrix}-8 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -2 \\ 1\end{pmatrix}
+      C(-8|11|0) \gap\gap P(-2|5|3) \gap\gap g \colon \vv{x} = \begin{pmatrix}-8 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -2 \\ 1\end{pmatrix}
     \end{gather*}
     \item [$h$]
     \begin{gather*}
-      P_1(-2|5|3) \gap\gap P_2(-6|9|3) \gap\gap h: \vv{x} = \begin{pmatrix}-2 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix}
+      P_1(-2|5|3) \gap\gap P_2(-6|9|3) \gap\gap h \colon \vv{x} = \begin{pmatrix}-2 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix}
     \end{gather*}
     \item [$i$]
     \begin{gather*}
-      B(0|11|0) \gap\gap P(-6|5|3) \gap\gap i: \vv{x} = \begin{pmatrix}0 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 1\end{pmatrix}
+      B(0|11|0) \gap\gap P(-6|5|3) \gap\gap i \colon \vv{x} = \begin{pmatrix}0 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 1\end{pmatrix}
     \end{gather*}
     \item [$j$]
     \begin{gather*}
-      M(-4|7|0) \gap\gap P(-6|5|3) \gap\gap j: \vv{x} = \begin{pmatrix}-4 \\ 7 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 3\end{pmatrix}
+      M(-4|7|0) \gap\gap P(-6|5|3) \gap\gap j \colon \vv{x} = \begin{pmatrix}-4 \\ 7 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 3\end{pmatrix}
     \end{gather*}
   \end{itemize}
 \end{exercise}
 \subsection{Kollinearität}
 \begin{gather*}
-  g: \vv{x} = \vv{a} + t \cdot \vv{b} \gap\gap t \in \mathbb{R} \\
+  g \colon \vv{x} = \vv{a} + t \cdot \vv{b} \gap\gap t \in \mathbb{R} \\
   \text{für $\vv{b}$ gilt: $\vv{b}$ kann durch $\vv{b}' = s \cdot \vv{b}$ ersetzt werden} \gap\gap s \in \mathbb{R} \gap s \neq 0 \\
   \vv{b}' \parallel \vv{b} \gap\gap \text{$\vv{b}'$ und $\vv{b}$ sind kollinear}
 \end{gather*}
 Sonderfall: Gerade durch $O$
 \begin{gather*}
-  \text{z. B. } g: \vv{x} = t \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} = \begin{pmatrix}-2 \\ -6 \\ -10\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} \\
+  \text{z. B. } g \colon \vv{x} = t \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} = \begin{pmatrix}-2 \\ -6 \\ -10\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix} \\
   \text{hier ist $\vv{a} \parallel \vv{b}$, d. h. $\vv{a}$ und $\vv{b}$ sind kollinear ($\vv{a} = -2 \cdot \vv{b}$)}
 \end{gather*}
 \subsection{Lage zweier Geraden}
@@ -5184,8 +5184,8 @@ Sonderfall: Gerade durch $O$
 \end{itemize}
 \subsubsection{Verfahren um festzustellen, welche Lage zwei Geraden $g$ und $h$ haben}
 \begin{gather*}
-  g: \vv{x} = \vv{a} + s \cdot \vv{b} \\
-  h: \vv{x} = \vv{c} + t \cdot \vv{d}
+  g \colon \vv{x} = \vv{a} + s \cdot \vv{b} \\
+  h \colon \vv{x} = \vv{c} + t \cdot \vv{d}
 \end{gather*}
 \begin{gather*}
   \vv{b} \stackrel{?}{=} r \cdot \vv{d}
@@ -5212,8 +5212,8 @@ Sonderfall: Gerade durch $O$
 \begin{exercise}{292/1}
   \item [a]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}3 \\ 6 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ 8 \\ 2\end{pmatrix} \\\\
+    g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
+    h \colon \vv{x} = \begin{pmatrix}3 \\ 6 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ 8 \\ 2\end{pmatrix} \\\\
     \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} = r \cdot \begin{pmatrix}4 \\ 8 \\ 2\end{pmatrix} \\
     r = 2 \\
     \Rightarrow \text{identisch oder parallel} \\\\
@@ -5226,8 +5226,8 @@ Sonderfall: Gerade durch $O$
 \begin{exercise}{292/2}
   \item [a]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}9 \\ 0 \\ 6\end{pmatrix} + r \cdot \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 1 \\ 2\end{pmatrix} \\\\
+    g \colon \vv{x} = \begin{pmatrix}9 \\ 0 \\ 6\end{pmatrix} + r \cdot \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} \\
+    h \colon \vv{x} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 1 \\ 2\end{pmatrix} \\\\
     \begin{pmatrix}9 \\ 0 \\ 6\end{pmatrix} + r \cdot \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 1 \\ 2\end{pmatrix} \\\\
     9 + 3r = 7 + s \\
     2r = -2 + s \\
@@ -5241,8 +5241,8 @@ Sonderfall: Gerade durch $O$
 \begin{exercise}{292/4}
   \item [a]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}5 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}7 \\ 1 \\ 2\end{pmatrix} + t \cdot \begin{pmatrix}-6 \\ -3 \\ 3\end{pmatrix} \\\\
+    g \colon \vv{x} = \begin{pmatrix}5 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \\
+    h \colon \vv{x} = \begin{pmatrix}7 \\ 1 \\ 2\end{pmatrix} + t \cdot \begin{pmatrix}-6 \\ -3 \\ 3\end{pmatrix} \\\\
     \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} = r \cdot \begin{pmatrix}-6 \\ -3 \\ 3\end{pmatrix} \\
     r = -3 \\
     \Rightarrow \text{identisch oder parallel} \\\\
@@ -5254,8 +5254,8 @@ Sonderfall: Gerade durch $O$
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g: \vv{x} = t \cdot \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\\\
+    g \colon \vv{x} = t \cdot \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} \\
+    h \colon \vv{x} = \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\\\
     \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} \neq r \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     t_g \cdot \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} = \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + t_h \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\
@@ -5268,10 +5268,10 @@ Sonderfall: Gerade durch $O$
 \begin{exercise}{293/8}
   \item [b]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \\
-    i: \vv{x} = t \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} \\
-    j: \vv{x} = t \cdot \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}
+    g \colon \vv{x} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} \\
+    h \colon \vv{x} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \\
+    i \colon \vv{x} = t \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} \\
+    j \colon \vv{x} = t \cdot \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}
   \end{gather*}
 \end{exercise}
 \subsection{Parameterpunkte und -geraden}
@@ -5280,12 +5280,12 @@ Sonderfall: Gerade durch $O$
   \vv{OC_d} = \begin{pmatrix}2d \\ 1 - 5d \\ 7\end{pmatrix} = \begin{pmatrix}0 + d \cdot 2 \\ 1 + d \cdot (-5) \\ 7 + d \cdot 0\end{pmatrix} = \begin{pmatrix}0 \\ 1 \\ 7\end{pmatrix} + d \cdot \begin{pmatrix}2 \\ -5 \\ 0\end{pmatrix}
 \end{gather*}
 \begin{gather*}
-  g_a: \vv{x} = \begin{pmatrix}2 \\ a \\ 5\end{pmatrix} + r \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} = \begin{pmatrix}2 \\ 0 \\ 5\end{pmatrix} + a \cdot \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}
+  g_a \colon \vv{x} = \begin{pmatrix}2 \\ a \\ 5\end{pmatrix} + r \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix} = \begin{pmatrix}2 \\ 0 \\ 5\end{pmatrix} + a \cdot \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}
 \end{gather*}
 \begin{exercise}{293/10}
   \item [a]
   \begin{gather*}
-    g_a: \vv{x} = \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \gap\gap\gap h_a: \vv{x} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\\\
+    g_a \colon \vv{x} = \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \gap\gap\gap h_a \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\\\
     \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \neq t \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\
@@ -5297,7 +5297,7 @@ Sonderfall: Gerade durch $O$
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g_a: \vv{x} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \gap\gap\gap h_a: \vv{x} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\\\
+    g_a \colon \vv{x} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \gap\gap\gap h_a \colon \vv{x} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\\\
     \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \neq t \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\
@@ -5318,7 +5318,7 @@ Sonderfall: Gerade durch $O$
 \end{exercise}
 \section{Abstand zweier Punkte, Vektorlänge, Streckenlänge}
 \begin{gather*}
-  \text{Bsp. } g: \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \gap\gap r \in \mathbb{R}: \left[2;5\right]
+  \text{Bsp. } g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \gap\gap r \in \mathbb{R} \colon \left[2;5\right]
 \end{gather*}
 \begin{gather*}
   \begin{tikzpicture}[scale=0.5]
@@ -5344,9 +5344,9 @@ Sonderfall: Gerade durch $O$
 \end{gather*}
 \begin{gather*}
   \textbf{Seitenlängen des Segels (Bsp. S. 294)} \\
-  \text{unten: } 4m \\
-  \text{links: } \sqrt{(5m)^2 + (3m)^2} \gap\text{(Satz des Pythagoras)} \\
-  \text{rechts: } \sqrt{(\sqrt{34}m)^2 + (4m)^2} = \sqrt{(5m)^2 + (3m)^2 + (4m)^2}
+  \text{unten} \colon 4m \\
+  \text{links} \colon \sqrt{(5m)^2 + (3m)^2} \gap\text{(Satz des Pythagoras)} \\
+  \text{rechts} \colon \sqrt{(\sqrt{34}m)^2 + (4m)^2} = \sqrt{(5m)^2 + (3m)^2 + (4m)^2}
 \end{gather*}
 \begin{gather*}
   |\vv{CD}| = \sqrt{6^2 + (-3)^2 + 0^2} = \sqrt{45} \approx 6.71LE
@@ -5463,13 +5463,13 @@ Spezialfall:
 \begin{exercise}{321/1}
   \item [a]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}2 \\ -2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \gap\gap h: \vv{x} = \begin{pmatrix}5 \\ -1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} \\
+    g \colon \vv{x} = \begin{pmatrix}2 \\ -2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \gap\gap h \colon \vv{x} = \begin{pmatrix}5 \\ -1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} \\
     \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} = 12 \\
     \Rightarrow g \notperp h
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}8 \\ 6 \\ -9\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \gap\gap h: \vv{x} = \begin{pmatrix}0 \\ 0 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} \\
+    g \colon \vv{x} = \begin{pmatrix}8 \\ 6 \\ -9\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \gap\gap h \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} \\
     \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} = 0 \\
     \Rightarrow g \perp h
   \end{gather*}
@@ -5539,11 +5539,11 @@ Spezialfall:
 \begin{exercise}{321/3}
   \item [a]
   \begin{gather*}
-    g: \vv{x} = \begin{pmatrix}3 \\ 3 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}7 \\ 17 \\ 2\end{pmatrix} \\
+    g \colon \vv{x} = \begin{pmatrix}3 \\ 3 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}7 \\ 17 \\ 2\end{pmatrix} \\
     \begin{pmatrix}7 \\ 17 \\ 2\end{pmatrix} \cdot \vv{a} = 0 \\
     7a_1 + 17a_2 + 2a_3 = 0 \\
     \text{z. B. } \vv{a} = \begin{pmatrix}2 \\ 0 \\ -7\end{pmatrix} \\
-    h: \vv{x} = \begin{pmatrix}3 \\ 3 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ 0 \\ -7\end{pmatrix}
+    h \colon \vv{x} = \begin{pmatrix}3 \\ 3 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ 0 \\ -7\end{pmatrix}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{322/8}
