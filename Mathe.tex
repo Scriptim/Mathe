@@ -5698,5 +5698,50 @@ Beispiel
     \Rightarrow \text{$V$ ist kein Vektorraum}
   \end{gather*}
 \end{exercise}
+\subsection{Basis}
+Die Basis eines Vektorraums ist ein Satz von Vektoren mit den Eigenschaften:
+\begin{itemize}
+  \item Jeder Vektor muss als Linearkombination der Vektoren der Basis darstellbar sein
+  \item Die Anzahl der Basisvektoren muss minimal sein
+\end{itemize}
+Beispiel
+\begin{gather*}
+  V = \mathbb{R}^3 \gap\gap\gap Basis_1 = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}\right\} \\\\
+  \text{z. B. } \begin{pmatrix}2 \\ -3 \\ 4\end{pmatrix} = 2 \cdot \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix} + (-3) \cdot \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} + 4 \cdot \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix} \\\\
+  Basis_2 = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 1\end{pmatrix}; \begin{pmatrix}0 \\ -1 \\ 1\end{pmatrix}\right\} \\\\
+  M = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix}\right\} \gap\gap \text{$M$ ist keine Basis}
+\end{gather*}
+Die Mindestzahl von Vektoren der Basis heißt Dimension des Vektorraums. $\mathbb{R}^3$ ist ein 3-dimensionaler Vektorraum.
+\begin{gather*}
+  V_1 = \left\{\begin{pmatrix}1a \\ 2a \\ 3a\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \gap\gap Basis = \left\{\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right\} \gap\text{(1-dim.)} \\
+  V_2s = \left\{\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \gap\gap Basis = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}\right\} \gap\text{(1-dim.)}
+\end{gather*}
+\newpage
+\begin{exercise}{301/3}
+  \item [a]
+  \begin{gather*}
+    N = \left\{\begin{pmatrix}a & b \\ -b & a\end{pmatrix} \Bigm| a, b \in \mathbb{R}\right\} \\\\
+    \begin{pmatrix}a_1 & b_1 \\ -b_1 & a_1\end{pmatrix} + \begin{pmatrix}a_2 & b_2 \\ -b_2 & a_2\end{pmatrix} = \begin{pmatrix}a_1 + a_2 & b_1 + b_2 \\ -(b_1 + b_2) & a_1 + a_2\end{pmatrix} \\
+    r \cdot \begin{pmatrix}a & b \\ -b & a\end{pmatrix} = \begin{pmatrix}ar & br \\ -br & ar\end{pmatrix} \\
+    \Rightarrow \text{$N$ ist ein Vektorraum} \\\\
+    Basis = \left\{\begin{pmatrix}1 & 0 \\ 0 & 1\end{pmatrix}; \begin{pmatrix}0 & 1 \\ -1 & 0\end{pmatrix}\right\}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    N = \left\{\begin{pmatrix}a & b \\ 0 & c\end{pmatrix} \Bigm| a + b + c = 0\right\} \\\\
+    \begin{pmatrix}a_1 & b_1 \\ 0 & c_1\end{pmatrix} + \begin{pmatrix}a_2 & b_2 \\ 0 & c_2\end{pmatrix} = \begin{pmatrix}a_1 + a_2 & b_1 + b_2 \\ 0 & c1 + c_2\end{pmatrix} \\
+    (a_1 + a_2) + (b_1 + b_2) + (c_1 + c_2) = (a_1 + b_1 + c_1) + (a_2 + b_2 + c_2) = 0 \\
+    r \cdot \begin{pmatrix}a & b \\ 0 & c\end{pmatrix} = \begin{pmatrix}ar & br \\ 0 & cr\end{pmatrix} \\
+    ar + br + cr = r(a + b + c) = 0 \\
+    \Rightarrow \text{$N$ ist ein Vektorraum} \\\\
+    Basis = \left\{\begin{pmatrix}1 & 0 \\ 0 & 0\end{pmatrix}; \begin{pmatrix}0 & 1 \\ 0 & 0\end{pmatrix}; \begin{pmatrix}0 & 0 \\ 0 & 1\end{pmatrix}\right\}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    N = \left\{\begin{pmatrix}1 & a \\ a & 1\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \\\\
+    \begin{pmatrix}1 & a_1 \\ a_1 & 1\end{pmatrix} + \begin{pmatrix}1 & a_2 \\ a_2 & 1\end{pmatrix} = \begin{pmatrix}2 & a_1 + a_2 \\ a_1 + a_2 & 2\end{pmatrix} \\
+    \Rightarrow \text{$N$ ist kein Vektorraum}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
