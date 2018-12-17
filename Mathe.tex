@@ -5743,5 +5743,57 @@ Die Mindestzahl von Vektoren der Basis heißt Dimension des Vektorraums. $\mathb
     \Rightarrow \text{$N$ ist kein Vektorraum}
   \end{gather*}
 \end{exercise}
+\section{Lineare Abhängigkeit, Unabhängigkeit}
+Beispiele
+\begin{gather*}
+  \vv{a} = \begin{pmatrix}1 \\ -3 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-4 \\ 12 \\ -8\end{pmatrix} \\
+  -4\vv{a} = \vv{b} \gap\text{oder}\gap 4\vv{a} + \vv{b} = 0 \\
+  \text{$\vv{a}$, $\vv{b}$ sind linear abhängig; geometrisch formuliert: $\vv{a}$, $\vv{b}$ sind kollinear} \\\\
+  \vv{a} = \begin{pmatrix}2 \\ 1 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-1 \\ 0 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}1 \\ 2 \\ 9\end{pmatrix} \\
+  \text{$(\vv{a}, \vv{b})$, $(\vv{a}, \vv{c})$, $(\vv{b}, \vv{c})$ sind jeweils linear unabhängig} \\
+  \text{$(\vv{a}, \vv{b}, \vv{c})$ sind linear abhängig, denn $2\vv{a} + 3\vv{b} = \vv{c}$ oder $2\vv{a} + 3\vv{b} - \vv{c} = \vv{0}$}
+\end{gather*}
+Allgemein gilt für 3 Vektoren $\vv{a}$, $\vv{b}$, $\vv{c}$
+\begin{gather*}
+  \text{gilt mindestens eine der Gleichungen} \\
+  r \cdot \vv{a} + s \cdot \vv{b} = \vv{c} \text{ oder} \\
+  r \cdot \vv{a} + s \cdot \vv{c} = \vv{b} \text{ oder} \\
+  r \cdot \vv{b} + s \cdot \vv{c} = \vv{a} \\
+  \text{dann heißt die Vektormenge $\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ linear abhängig}
+\end{gather*}
+einfachere Prüfung:
+\begin{gather*}
+  \text{gilt} \\
+  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \gap\gap\gap r \neq 0 \lor s \neq 0 \lor t \neq 0 \\
+  \text{dann sind $\vv{a}, \vv{b}, \vv{c}$ linear abhängig, andernfalls linear unabhängig}
+\end{gather*}
+Prüfe auf lineare Abhängigkeit
+\begin{gather*}
+  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-2 \\ 2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}3 \\ -1 \\ 1\end{pmatrix} \\
+  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \\\\
+  \text{\Rmnum{1}} \gap r - 2s + 3t = 0 \\
+  \text{\Rmnum{2}} \gap 2r + 2s - t = 0 \\
+  \text{\Rmnum{3}} \gap 3r + s + t = 0 \\\\
+  L = \{(0, 0, 0)\} \gap\Rightarrow\gap \text{$\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ ist linear unabhängig}
+\end{gather*} \\
+Ist $\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ eine Basis des $\mathbb{R}^3$? \\\\
+Das meint: \\
+Lässt sich jeder Vektor des $\mathbb{R}^3$ durch eine Linearkombination von $\vv{a}$, $\vv{b}$, $\vv{c}$ darstellen? \\\\
+Löse dazu:
+\begin{gather*}
+  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \begin{pmatrix}x \\ y \\ z\end{pmatrix}
+\end{gather*}
+\begin{exercise}{304/2}
+  \item [b]
+  \begin{gather*}
+    \begin{pmatrix}7 \\ -1 \\ 3\end{pmatrix}; \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix}; \begin{pmatrix}3 \\ -6 \\ 3\end{pmatrix} \\
+    7r + s + 3t = 0 \\
+    -r - 2s -6t = 0 \\
+    3r + s + 3t = 0 \\
+    L = \{(0, 0, 0); (0, k, -\frac{k}{3})\} \gap\Rightarrow\gap \text{linear abhängig}
+  \end{gather*}
+  Die letzten beiden Vektoren sind kollinear. Der erste Vektor, der nicht kollinear zu den anderen beiden ist, lässt sich daher nicht durch eine Linearkombination der anderen beiden darstellen.
+\end{exercise}
+
 
 \end{document}
