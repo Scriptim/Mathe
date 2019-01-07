@@ -5794,6 +5794,30 @@ Löse dazu:
   \end{gather*}
   Die letzten beiden Vektoren sind kollinear. Der erste Vektor, der nicht kollinear zu den anderen beiden ist, lässt sich daher nicht durch eine Linearkombination der anderen beiden darstellen.
 \end{exercise}
-
+Prüfe auf lineare Abhängigkeit
+\begin{gather*}
+  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \\
+  r = s = t = 0 \text{ ist immer eine Lösung (triviale Lösung)}
+\end{gather*}
+Findet man weitere Lösungen, so sind $\{\vv{a}; \vv{b}; \vv{c}\}$ linear abhängig und komplanar. Andernfalls (nur triviale Lösung) sind sie linear unabhängig und bilden eine Basis des $\mathbb{R}^3$. \\\\
+Da $\Bigl|\left\{\vv{a}; \vv{b}; \vv{c}\right\}\Bigl| = 3$ ist der $\mathbb{R}^3$ dreidimensional.
+\begin{exercise}{304/4}
+  \item [c]
+  \begin{gather*}
+    \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix}; \begin{pmatrix}-4 \\ -2 \\ 2\end{pmatrix}; \begin{pmatrix}-7 \\ -2 \\ 8\end{pmatrix} \\\\
+    r - 4s - 7t = 0 \\
+    r - 2s - 2t = 0 \\
+    r + 2s + 8t = 0 \\\\
+    L = \{(0, 0, 0); (-6k, -5k, 2k)\} \gap\Rightarrow\gap \text{linear abhängig}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \begin{pmatrix}4 \\ -1 \\ 2\end{pmatrix}; \begin{pmatrix}1 \\ 4 \\ 1\end{pmatrix}; \begin{pmatrix}-2 \\ 3 \\ -1\end{pmatrix} \\\\
+    4r + s - 2t = 0 \\
+    -r + 4s + 3t = 0 \\
+    2r + s - t = 0 \\\\
+    L = \{(0, 0, 0)\} \gap\Rightarrow\gap \text{linear unabhängig}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
