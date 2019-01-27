@@ -5985,5 +5985,50 @@ $\{\vv{d}; \vv{e}\}$ sind normalerweise nicht kollinear. Im Sonderfall, $g$ verl
     g \colon \vv{x} = \begin{pmatrix}3 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ -3 \\ -1\end{pmatrix} \gap\gap \text{für $k = 1$}
   \end{gather*}
 \end{exercise}
+\section{Kreuzprodukt}
+\begin{gather*}
+  \vv{a} \times \vv{b} = \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix} \times \begin{pmatrix}b_1 \\ b_2 \\ b_3\end{pmatrix} = \begin{pmatrix}a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1\end{pmatrix} \\\\
+  \vv{a} \cdot \vv{x} = 0 \gap\gap\gap \text{\Rmnum{1}} \gap a_1x_1 + a_2x_2 + a_3x_3 = 0 \\
+  \vv{b} \cdot \vv{x} = 0 \gap\gap\gap \text{\Rmnum{2}} \gap b_1x_1 + b_2x_2 + b_3x_3 = 0 \\\\
+  b_1 \cdot \text{\Rmnum{1}} - a_1 \cdot \text{\Rmnum{2}} \\
+  \text{\Rmnum{1}} a_1x_1 + a_2x_2 + a_3x_3 = 0 \\
+  \text{\Rmnum{2}} 0 + (b_1a_2 - a_1b_2)x_2 + (b_1a_3-a_1b_3)x_3 = 0 \\\\
+  \text{willkürlich } x_2 = a_3b_1 - a_1b_3 \\
+  \Rightarrow x_3 = -(a_2b_1 - a_1b_2) = a_1b_2 - a_2b_1 \\
+  \Rightarrow x_1 = a_2b_3 - a_3b_2
+\end{gather*}
+\newpage
+\begin{gather*}
+  |\vv{a} \times \vv{b}| = |\vv{a}| \cdot |\vv{b}| \cdot sin(\alpha)
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}[scale=1.2]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (5,0);
+    \coordinate (C) at (8,2);
+    \coordinate (D) at (3,2);
+    \draw (A) -- (B) -- (C) -- (D) -- (A);
+    \node[red,right] at (3,1) {$h$};
+    \draw[red] (3,0) -- (D);
+    \node[above left] at (1.5,1) {$\vv{b}$};
+    \draw[blue] (0.6,0.5) arc (33.69:0:1);
+    \node[blue,above right] at (0.8,0.1) {$\alpha$};
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  sin(\alpha) = \frac{h}{\vv{b}} \\
+  h = |\vv{b}| \cdot sin(\alpha) \\
+  A_P = |\vv{a}| \cdot h = |\vv{a}| \cdot |\vv{b}| \cdot sin(\alpha) = |\vv{a} \times \vv{b}|
+\end{gather*}
+Das Kreuzprodukt $\vv{a} \times \vv{b}$ ergibt einen Vektor als Ergebnis. Die Länge des Vektors $\vv{c}$ ist $|\vv{c}|$ und entspricht dem Flächeninhalt $A_P$ des von den Vektoren $\vv{a}$ und $\vv{b}$ aufgespannten Parallelogramms.
+\begin{exercise}{373/1}
+  \item [a]
+  \begin{gather*}
+    \vv{a} = \begin{pmatrix}2 \\ 1 \\ 5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}-1 \\ 5 \\ 0\end{pmatrix} \\\\
+    \vv{a} \times \vv{b} = \begin{pmatrix}1 \cdot 1 - 5 \cdot 2 \\ 5 \cdot 3 - 2 \cdot 1 \\ 2 \cdot 2 - 1 \cdot 3\end{pmatrix} = \begin{pmatrix}-9 \\ 13 \\ 1\end{pmatrix} \\
+    \vv{b} \times \vv{c} = \begin{pmatrix}2 \cdot 0 - 1 \cdot 5 \\ 1 \cdot (-1) - 3 \cdot 0 \\ 3 \cdot 5 - 2 \cdot (-1)\end{pmatrix} = \begin{pmatrix}-5 \\ -1 \\ 17\end{pmatrix} \\
+    \vv{c} \times \vv{a} = \begin{pmatrix}5 \cdot 5 - 0 \cdot 1 \\ 0 \cdot 2 - (-1) \cdot 5 \\ -1 \cdot 1 - 5 \cdot 2\end{pmatrix} = \begin{pmatrix}25 \\ 5 \\ -11\end{pmatrix}
+  \end{gather*}
+\end{exercise}
 
 \end{document}
