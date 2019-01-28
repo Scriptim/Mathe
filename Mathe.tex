@@ -6030,5 +6030,44 @@ Das Kreuzprodukt $\vv{a} \times \vv{b}$ ergibt einen Vektor als Ergebnis. Die LÃ
     \vv{c} \times \vv{a} = \begin{pmatrix}5 \cdot 5 - 0 \cdot 1 \\ 0 \cdot 2 - (-1) \cdot 5 \\ -1 \cdot 1 - 5 \cdot 2\end{pmatrix} = \begin{pmatrix}25 \\ 5 \\ -11\end{pmatrix}
   \end{gather*}
 \end{exercise}
+\newpage
+\begin{gather*}
+  \vv{a} \times \vv{b} = \vv{c} \gap\gap\gap \vv{b} \times \vv{a} = -\vv{c}
+\end{gather*}
+$\vv{a}$, $\vv{b}$, $\vv{c}$ bilden ein Rechtssystem (rechte Hand)
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{/fakepath/kreuzprodukt.png}
+\end{figure}
+\begin{exercise}{373/3}
+  \item [a]
+  \begin{gather*}
+    \vv{a} = \begin{pmatrix}3 \\ 2 \\ -1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} \\
+    \vv{a} \times \vv{b} = \begin{pmatrix}2 \cdot 0 - (-1) \cdot 1 \\ -1 \cdot 1 - 3 \cdot 0 \\ 3 \cdot 1 - 2 \cdot 1\end{pmatrix} = \begin{pmatrix}1 \\ -1 \\ 1\end{pmatrix} \\
+    \Biggl|\begin{pmatrix}1 \\ -1 \\ 1\end{pmatrix}\Biggl| = \sqrt{1^2 + (-1)^2 + 1^2} = \sqrt{3} \\
+    A_P = \sqrt{3}FE \approx 1.732FE
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \vv{a} = \begin{pmatrix}5 \\ -2 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}8 \\ 9 \\ -2\end{pmatrix} \\
+    \vv{a} \times \vv{b} = \begin{pmatrix}-2 \cdot (-2) - 2 \cdot 9 \\ 2 \cdot 8 - 5 \cdot (-2) \\ 5 \cdot 9 - (-2) \cdot 8\end{pmatrix} = \begin{pmatrix}-14 \\ 26 \\ 61\end{pmatrix} \\
+    \Biggl|\begin{pmatrix}-14 \\ 26 \\ 61\end{pmatrix}\Biggl| = \sqrt{(-14)^2 + 26^2 + 61^2} = \sqrt{4593} \\
+    A_P = \sqrt{4593}FE \approx 67.772FE
+  \end{gather*}
+\end{exercise}
+Wenn $\vv{a} \parallel \vv{b}$, also kollinear, dann gilt $\vv{a} \times \vv{b} = \vv{0}$ \\
+$|\vv{a} \times \vv{b}| = |\vv{a}| \cdot |\vv{b}| \cdot sin(\alpha)$
+\section{Spatprodukt}
+\begin{gather*}
+  V_{Spat} = G \cdot h = |\vv{a} \times \vv{b}| \cdot h \\
+  \;= |\vv{a} \times \vv{b}| \cdot |\vv{c}| \cdot cos(\alpha) \\
+  \;= |(\vv{a} \times \vv{b}) \cdot \vv{c}| \gap\gap \text{(Spatprodukt)}
+\end{gather*}
+Anwendung: Berechne das Volumen von Spat und Pyramiden
+\begin{gather*}
+  V_{Spat} = |(\vv{a} \times \vv{b}) \cdot \vv{c}| \\
+  V_{Pyramide} = \frac{1}{3} \cdot |(\vv{a} \times \vv{b}) \cdot \vv{c}| \gap\gap \text{(Grundseite: Parallelogramm des Spats)} \\
+  V_{Pyramide,dreiseitig} = \frac{1}{6} \cdot |(\vv{a} \times \vv{b}) \cdot \vv{c}|
+\end{gather*}
 
 \end{document}
