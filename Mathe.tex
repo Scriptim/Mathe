@@ -6136,5 +6136,39 @@ $|\vv{h}|$ ist der gesuchte Abstand von Punkt $P$ zur Geraden $g$.
     |\vv{h}| = \frac{|\vv{u} \times \vv{PR}|}{|\vv{u}|} = \frac{\Biggl|\begin{pmatrix}-9 \\ -16 \\ -5\end{pmatrix}\Biggr|}{\Biggl|\begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix}\Biggr|} = \frac{\sqrt{362}}{\sqrt{49}} \approx 2.7180
   \end{gather*}
 \end{exercise}
+\section{Ebenendarstellung}
+\subsection{Normalenform}
+\begin{gather*}
+  E \colon \vv{x} = \vv{a} + r \cdot \vv{b} + s \cdot \vv{c} \\\\
+  E \colon (\vv{x} - \vv{a}) \cdot \vv{n} = 0 \\
+  \; \vv{AX} \cdot \vv{n} = 0
+\end{gather*}
+$\vv{n}$ ... Normalenvektor der Ebene \\
+$\vv{a}$ ... Stützvektor, Ortsvektor eines bestimmten Punktes \\
+$\vv{x}$ ... allgemeiner Ortsvektor aller Punkte der Ebene \\
+$\vv{AX}$ ... Verbindungsvektor, der in der Ebene liegt \\\\
+Punkte $X$ der Ebene sind diejenigen, deren Verbindungsvektoren $\vv{AX}$ orthogonal zu $\vv{h}$ stehen. \\\\
+z. B.
+\begin{gather*}
+  \Biggl(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\Biggr) \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \\\\
+  \text{Beispiellösung } x_1 = \begin{pmatrix}5 \\ 0 \\ 4\end{pmatrix} \\\\
+  \text{Punktprobe } P(2|1|1) \gap P \in E ? \\
+  \begin{pmatrix}2 - 1 \\ 1 - 2 \\ 1 - 3\end{pmatrix} \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \gap\gap -1 + 0 - 8 = -9 \neq 0 \gap\Rightarrow\gap P \not\in E
+\end{gather*}
+Normalengleichung aus $A(1|0|5)$, $B(0|2|1)$, $C(4|5|6)$
+\begin{gather*}
+  E \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 2 \\ -4\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 5 \\ 1\end{pmatrix} \\
+  \vv{n} = \vv{AB} \times \vv{AC} = \begin{pmatrix}-1 \\ 2 \\ -4\end{pmatrix} \times \begin{pmatrix}3 \\ 5 \\ 1\end{pmatrix} = \begin{pmatrix}22 \\ -11 \\ -11\end{pmatrix} \\
+  E \colon \Biggl(\vv{x} - \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix}  \Biggr) \cdot \begin{pmatrix}22 \\ -11 \\ -11\end{pmatrix} = 0
+\end{gather*}
+\subsection{Koordinatenform}
+Berechne das Skalarprodukt in der Normalengleichung mit $\vv{x} = \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix}$
+\begin{gather*}
+  E \colon \Biggl(\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} - \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix}\Biggr) \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} = 0 \\
+  \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} - \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix} \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} = 0 \\
+  (n_1 \cdot x_1 + n_2 \cdot x_2 + n_3 \cdot x_3) - (a_1 \cdot n_1 + a_2 \cdot n_2 + a_3 \cdot n_3) = 0 \\\\
+  \text{z. B. } 22x_1 - 11x_2 - 11x_3 = -33 \\
+  \text{Beispiellösungen } \vv{x} = \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix}, \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}, \begin{pmatrix}2 \\ 1 \\ 6\end{pmatrix}, ...
+\end{gather*}
 
 \end{document}
