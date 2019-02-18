@@ -2272,3 +2272,128 @@ Betrache die Koordinatenform als eine Gleichung für drei Variablen $x_1$, $x_2$
     D \in E? \gap\gap 4x_1 + 8x_3 = -28 + 24 = -4 \gap\gap \Rightarrow\gap D \in E
   \end{gather*}
 \end{exercise}
+\subsection{Ebenen zeichnen}
+Zeichne Ebene $E \colon 2x_1 - 3x_2 + 5x_3 = 12$ \\\\
+Schnitt mit der ...
+\begin{itemize}
+  \item [] $x_1$-Achse:
+  \begin{gather*}
+    x_2 = x_3 = 0 \gap\Rightarrow\gap 2x_1 = 12 \gap x_1 = 6 \gap P(6|0|0)
+  \end{gather*}
+  \item [] $x_2$-Achse:
+  \begin{gather*}
+    x_1 = x_3 = 0 \gap\Rightarrow\gap -3x_2 = 12 \gap x_2 = -4 \gap Q(0|-4|0)
+  \end{gather*}
+  \item [] $x_3$-Achse:
+  \begin{gather*}
+    x_1 = x_2 = 0 \gap\Rightarrow\gap 5x_3 = 12 \gap x_3 = 2.4 \gap R(0|0|2.4)
+  \end{gather*}
+\end{itemize}
+$P$, $Q$, $R$ heißen Spurpunkte. \\
+Gerade durch $P$ und $Q$ (bzw. $Q$ und $R$, $P$ und $R$) heißt Spurgerade.
+\begin{gather*}
+  \begin{tikzpicture}
+    \coordinate (P) at (6,0,0);
+    \coordinate (Q) at (0,-4,0);
+    \coordinate (R) at (0,0,2.4);
+    \node[above] at (P) {$P$};
+    \node[below left] at (Q) {$Q$};
+    \node[above left] at (R) {$R$};
+    \draw[red,fill=red!10] (P) -- (Q) -- (R) -- (P);
+    \draw[thick,->] (-1,0,0) -- (7,0,0) node[anchor=north east]{$x_1$};
+    \draw[thick,->] (0,-5,0) -- (0,1,0) node[anchor=north west]{$x_2$};
+    \draw[thick,->] (0,0,-1) -- (0,0,4) node[anchor=south east]{$x_3$};
+  \end{tikzpicture}
+\end{gather*}
+Spurgerade (PQ):
+\begin{gather*}
+  g \colon \vv{x} = \begin{pmatrix}0 \\ -4 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}6 \\ 4 \\ 0\end{pmatrix}
+\end{gather*}
+Spezialfälle
+\begin{itemize}
+  \item
+  \begin{gather*}
+    3x_1 + 6x_2 = 18 \gap\gap P(6|0|0) \gap R(0|0|3) \gap Q(0|\infty|0)
+  \end{gather*}
+  Kein Schnitt mit der $x_2$-Achse, verläuft parallel zur $x_2$-Achse.
+  \item
+  \begin{gather*}
+    2x_1 = 5 \gap\gap P(2.5|0|0)
+  \end{gather*}
+  Kein Schnitt mit der $x_2$- und $x_3$-Achse, verläuft parallel zur $x_2x_3$-Ebene.
+\end{itemize}
+\begin{exercise}{328/3}
+  Fig. 1
+  \begin{gather*}
+    P(2|0|0) \gap\gap Q(0|5|0) \gap\gap R(0|0|3) \\
+    15x_1 = 30 \gap\gap 6x_2 = 30 \gap\gap 10x_3 = 30 \\
+    E \colon 15x_1 + 6x_2 + 10x_3 = 30
+  \end{gather*}
+  Fig. 2
+  \begin{gather*}
+    P(1|0|0) \gap\gap Q(0|4|0) \gap\gap R(0|0|-1.5) \\
+    12x_1 = 12 \gap\gap 3x_2 = 12 \gap\gap -8x_3 = 12 \\
+    E \colon 12x_1 + 3x_2 - 8x_3 = 12
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{328/5}
+  \item [a]
+  \begin{gather*}
+    E \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} \\
+    \vv{n} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \times \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} = \begin{pmatrix}6 \\ 3 \\ -2\end{pmatrix} \gap\gap\gap \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \cdot \vv{n} = 6 \\
+    E \colon 6x_1 + 3x_2 - 2x_3 = 6 \\
+    P(1|0|0) \gap\gap Q(0|2|0) \gap\gap R(0|0|-3)
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}[scale=1.7]
+      \coordinate (P) at (1,0,0);
+      \coordinate (Q) at (0,2,0);
+      \coordinate (R) at (0,0,-3);
+      \node[below] at (P) {$P$};
+      \node[left] at (Q) {$Q$};
+      \node[below right] at (R) {$R$};
+      \draw[thick,->] (-1,0,0) -- (2,0,0) node[anchor=north east]{$x_1$};
+      \draw[thick,->] (0,-1,0) -- (0,3,0) node[anchor=north west]{$x_2$};
+      \draw[thick,->] (0,0,-4) -- (0,0,1) node[anchor=south east]{$x_3$};
+      \draw[red,fill=red!10] (P) -- (Q) -- (R) -- (P);
+      \draw[dashed] (0,0,-1.7) -- (R);
+    \end{tikzpicture}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    E \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}5 \\ 0 \\ 5\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} \\
+    \vv{n} = \begin{pmatrix}5 \\ 0 \\ 5\end{pmatrix} \times \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} = \begin{pmatrix}-5 \\ -20 \\ 5\end{pmatrix} \gap\gap\gap \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \cdot \vv{n} = -20 \\
+    E \colon -5x_1 - 20x_2 + 5x_3 = -20 \\
+    P(4|0|0) \gap\gap Q(0|1|0) \gap\gap R(0|0|-4)
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}[scale=1.7]
+      \coordinate (P) at (4,0,0);
+      \coordinate (Q) at (0,1,0);
+      \coordinate (R) at (0,0,-4);
+      \node[below] at (P) {$P$};
+      \node[left] at (Q) {$Q$};
+      \node[above left] at (R) {$R$};
+      \draw[thick,->] (-1,0,0) -- (5,0,0) node[anchor=north east]{$x_1$};
+      \draw[thick,->] (0,-1,0) -- (0,2,0) node[anchor=north west]{$x_2$};
+      \draw[thick,->] (0,0,-5) -- (0,0,1) node[anchor=south east]{$x_3$};
+      \draw[red,fill=red!10] (P) -- (Q) -- (R) -- (P);
+      \draw[dashed] (0,0,-2) -- (R);
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{328/6}
+  Fig. 3
+  \begin{gather*}
+    P(0|3|0) \\
+    E \colon x_2 = 3 \\
+    \text{parallel zur $x_1x_3$-Ebene}
+  \end{gather*}
+  Fig. 4
+  \begin{gather*}
+    P(1|0|0) \gap\gap Q(0|5|0) \\
+    5x_1 = 5 \gap\gap x_2 = 5 \\
+    E \colon 5x_1 + x_2 = 5 \\
+    \text{parallel zur $x_3$-Ebene}
+  \end{gather*}
+\end{exercise}
