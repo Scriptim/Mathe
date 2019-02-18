@@ -1,0 +1,2077 @@
+\part{11/2}
+
+\begin{exercise}{112/5}
+  $$O(t) = -\frac{1}{300}(t^3 - 36t^2 + 324t - 5700) \gap\gap\gap t \in \left[0; 24\right]$$
+  \item [a]
+  \begin{gather*}
+    O'(t) = \frac{1}{100}(-t^2 + 24t - 108) = 0 \\
+    t_{1/2} = \frac{-24 \pm \sqrt{24^2 - 4 \cdot 108}}{-2} = \frac{-24 \pm 12}{-2} = 12 \pm 6 \\
+    t_1 = 6 \gap\gap\gap t_2 = 18 \\\\
+    O''(t) = \frac{12 - t}{50} \\
+    O''(t_1) = \frac{6}{50} > 0 \gap\Rightarrow\gap TP(6|O(6) = 16.12) \\
+    O''(t_2) = \frac{-6}{50} < 0 \gap\Rightarrow\gap HP(18|O(18) = 19)
+  \end{gather*}
+  \item [b]
+  Die Steigung der Wendetangente gibt an, wie sich die Temperaturänderung ändert (Beschleunigung).
+\end{exercise}
+\section{Optimieren unter Nebenbedingungen}
+Tunnelquerschnitt:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/tunnelquerschnitt.png}
+\end{figure}
+Länge der Randlinie (Umfang) ist $5m$; $A$ ist maximal
+\begin{gather*}
+  \text{Hauptbedingung HB} \\
+  A(r, h) = 2rh + \frac{1}{2}\pi r^2 \\
+  \text{($A(r)$ heißt Zielfunktion ZF)} \\\\
+  \text{Nebenbedingung NB} \\
+  U = 5 = 2h + 2r + \pi r \equ -2r - \pi r \\
+  h = \frac{5}{2} - r - \frac{1}{2}\pi r \\\\
+  \text{setze $h$ in $A(r, h)$ ein} \\
+  A(r) = 2r(\frac{5}{2} - r - \frac{1}{2}\pi r) + \frac{1}{2}\pi r^2 \\
+  \;= 5r - 2r^2 - \pi r^2 + \frac{1}{2}\pi r^2 \\
+  \;= (-\frac{1}{2}\pi - 2) \cdot r^2 + 5r \\\\
+  A'(r) = 5 - 7.14159r \\
+  A'(r) = 0 \gap\gap\gap L = \{0.7\} \\
+  h = 0.7 \gap fuer \; r = 0.7 \\
+  A(r) = 1.75m^2
+\end{gather*}
+\begin{exercise}{114/3}
+  \begin{gather*}
+    A(l, b) = l \cdot b \\
+    U = 50 = 2(l + b) \Rightarrow b = 25 - l \\
+    A(l) = 2l \cdot (25 - l) = -2l^2 + 50l \\
+    A'(l) = -4l + 50 \\
+    A'(l) = 0 \gap\gap\gap L = \{12.5\} \\
+    l = b = 12.5cm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{114/4}
+  \begin{gather*}
+    U(l, b) = 2(l + b) \\
+    A = 400 = l \cdot b \Rightarrow b = \frac{400}{l} \\
+    U(l) = 2l + \frac{800}{l} \\
+    U'(l) = 2 - 800l^{-2} \\
+    U'(l) = 0 \gap\gap\gap L = \{\pm 20\} \\
+    l = b = 20cm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{115/7}
+  \item [a]
+  \begin{gather*}
+    V(x) = (16 - 2x) \cdot (10 - 2x) \cdot x = 4x^3 - 52x^2 + 160x \\
+    V'(x) = 12x^2 - 104x + 160 \\
+    V'(x) = 0 \gap\gap\gap L = \{2; (\frac{20}{3})\} \\
+    V(2cm) = 144cm^3
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{115/8}
+  \begin{gather*}
+    U(r, h) = \pi r + 2r + 2h \\
+    A = 45 = \frac{1}{2}\pi r^2 + 2rh \Rightarrow h = \frac{45 - \frac{1}{2}\pi r^2}{2r} \\
+    U(r) = \frac{1}{2}\pi r + 2r + \frac{45}{r} \\
+    U'(r) = -45r^{-2} + \frac{1}{2}\pi + 2 \\
+    U'(r) = 0 \gap\gap\gap L = \{\pm 3.55\} \\
+    r = 3.55m \\
+    h = 3.55m \gap fuer \; r = 3.55m
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{115/11}
+  \begin{gather*}
+    V(r, h) = \pi r^2h \\
+    12^2 = (2r)^2 + h^2 \Rightarrow r = \sqrt{36 - \frac{h^2}{4}} \\
+    V(h) = \pi \cdot (36 - \frac{h^2}{4}) \cdot h = 36h\pi - \frac{h^3\pi}{4} \\
+    V'(h) = -\frac{3}{4}\pi h^2 + 36\pi \\
+    V'(h) = 0 \gap\gap\gap L = \{\pm 6.93\} \\
+    h = 6.93cm \\
+    r = 4.9 cm \gap fuer \; h = 6.93cm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{115/14}
+  \begin{gather*}
+    a \text{ ... Kantenlänge der Grundfläche} \\
+    V(a, h) = \frac{1}{3} \cdot a^2 \cdot h \\\\
+    2.4^2 = 5.76 = h_s^2 + (\frac{a}{2})^2 \\
+    h_s^2 = h^2 + (\frac{a}{2})^2 \\
+    \Rightarrow h = \sqrt{5.76 - \frac{a^2}{2}} \\\\
+    V(a) = \frac{1}{3} \cdot a^2 \cdot \sqrt{5.76 - \frac{a^2}{2}} \\
+    V_2(a) = V(a)^2 = \frac{1}{9} \cdot a^4 \cdot (5.76 - \frac{a^2}{2}) = -\frac{1}{18}a^6 + 0.64a^4 \\
+    V_2'(a) = -\frac{1}{3}a^5 + 2.56a^3 \\
+    V_2'(a) = 0 \gap\gap\gap L = \{0; \pm 2.771\} \\\\
+    V(2.771m) \approx 3.55m^3
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{115/13}
+  \begin{gather*}
+    \text{Tragfähigkeit } T \sim b \\
+    \text{Tragfähigkeit } T \sim h^2
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    r = 50cm \\
+    T(b, h) = b \cdot h^2 \\
+    h^2 + b^2 = (2r)^2 \Rightarrow h^2 = 10000 - b^2 \Rightarrow h = \sqrt{10000 - b^2} \\
+    T(b) = b \cdot (10000 - b^2) = -b^3 + 10000b \\
+    T'(b) = -3b^2 + 10000 \\
+    T'(b) = 0 \gap\gap\gap L = \{\pm \frac{100}{\sqrt{3}}\} \\
+    T(\frac{100}{\sqrt{3}}) \approx 384900 \\\\
+    b \approx 57.74cm \\
+    h = \sqrt{10000 - (\frac{100}{\sqrt{3}})^2} \approx 81.65cm
+  \end{gather*}
+\end{exercise}
+\section{Numerisches Verfahren zur Nullstellenbestimmung}
+\begin{gather*}
+  \text{z. B. } f(x) = x^3 + 5x - 10 \\
+  \text{probeweise} \colon \\
+  \gap\gap f(1) = -4 \\
+  \gap\gap f(2) = 8 \\
+  \gap\gap \Rightarrow \text{Nullstelle zwischen 1 und 2} \\
+  \text{Vermutung } x_0 = 1.5
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{/fakepath/newton_verfahren.png}
+\end{figure}
+\begin{gather*}
+  \text{Zum Rechenverfahren} \\
+  \text{Tangentengleichung } t(x) = f'(x_0)(x - x_0) + f(x_0) \\
+  t(x_1) = 0 \gap\gap\gap x_1 = x_0 - \frac{f(x_0)}{f'(x_0)} \\
+  \rightarrow x_2 = x_1 - \frac{f(x_1)}{f'(x_1)} \\\\
+  %t(x) = (3x_0^2 + 5) \cdot (x - x_0) + x_0^3 + 5x_0 - 10 = 11.75x - 16.75 \\
+  \text{allgemeine Näherungsformel nach Newton (und Raphson)} \\
+  x_{n + 1} = x_n - \frac{f(x_n)}{f'(x_n)} \\
+  n \text{ beginnend bei 0}
+\end{gather*}
+Abbruchbedingung: Nullstelle auf 3 Dezimalen genau. Das bedeutet, dass beim nächsten Schritt sich die 3. Dezimale nicht mehr ändern darf
+\newpage
+\begin{gather*}
+  \text{Beispiel } f(x) = x^3 + 5x - 10 \\
+  f'(x) = 3x^2 + 5 \\
+  x_0 = 1.5 \\
+  x_1 = 1.5 - \frac{1.5^3 + 5 \cdot 1.5 - 10}{3 \cdot 1.5^2 + 5} \approx 1.4255 \\
+  x_2 = ... \approx 1.4233 \\
+  x_3 = ... \approx 1.42331 \\
+  \text{Nullstelle auf 3 Dezimalen genau} \colon x = 1.423
+\end{gather*}
+\begin{exercise}{118/1}
+  \item [a]
+  \begin{gather*}
+    x^3 + 2x - 1 = 0 \\
+    f'(x) = 3x^2 + 2 \\
+    x_0 = 0 \\
+    x_1 = 0 - \frac{-1}{2} = 0.5 \\
+    x_2 = \frac{5}{11} = 0.\overline{45} \\
+    x_3 = \frac{1581}{3487} \approx 0.453398... \\
+    x_4 = \frac{50302634185}{110945952227} \approx 0.453397...\\
+    x^\ast = 0.453
+  \end{gather*}
+\end{exercise}
+\subsection{Anwendungen des Newton-Verfahrens}
+Mögliche Fragestellungen: \\
+\begin{itemize}
+  \item Nullstellen eines Funktionsgraphen $f(x) = 0$, auch $f(x) = a$
+  \item Nullstellen der Ableitungsfunktion $f'(x) = 0$, auch $f'(x) = m$
+  \item Schnittstellen zweier Funktionsgraphen $f(x) = g(x)$
+  \item zu Zielfunktion Lösungen finden
+\end{itemize}
+\newpage
+\begin{exercise}{118/2}
+  \item [a]
+  \begin{gather*}
+    f(x) = x^3 - 3x - 1 \\
+    f'(x) = 3x^2 - 3 \\
+    x_0 = 2 \\
+    x_1 = 1.8889 \\
+    x_2 = 1.8795 \\
+    x_3 = 1.8794 \\
+    x_4 = 1.8794 \\
+    x_1^\ast = 1.879 \\
+    ...\\
+    x_2^\ast = -1.532 \\
+    x_3^\ast = -0.347
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = x^3 + 3x^2 - 3 \\
+    f'(x) = 3x^2 + 6x \\
+    x_0 = 1 \\
+    x_1 = 0.8889 \\
+    x_2 = 0.8795 \\
+    x_3 = 0.8794 \\
+    x_4 = 0.8794 \\
+    x_1^\ast = 0.879 \\
+    ...\\
+    x_2^\ast = -2.532 \\
+    x_3^\ast = -1.347
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = x^4 - 2x^3 - 5x^2 + 1 \\
+    f'(x) = 4x^3 - 6x^2 - 10x \\
+    x_0 = 0.5 \\
+    x_1 = 0.4271 \\
+    x_2 = 0.4203 \\
+    x_3 = 0.4204 \\
+    x_4 = 0.4204 \\
+    x_1^\ast = 0.420 \\
+    ... \\
+    x_2^\ast = -1.332 \\
+    x_3^\ast = -0.521 \\
+    x_4^\ast = 3.432
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = x^4 + x^3 - 4x^2 + x + 0.5 \\
+    f'(x) = 4x^3 + 3x^2 - 8x + 1 \\
+    x_0 = 0.5 \\
+    x_1 = 0.6071 \\
+    x_2 = 0.6030 \\
+    x_3 = 0.6030 \\
+    x_1^\ast = 0.603 \\
+    ... \\
+    x_2^\ast = -2.635 \\
+    x_3^\ast = -0.246 \\
+    x_4^\ast = 1.278
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{118/3}
+  \begin{gather*}
+    f(x) = x^5 + x^3 + 1 \\
+    f'(x) = 5x^4 + 3x^2 \\
+    x_0 = -1 \\
+    x_1 = -0.8750 \\
+    x_2 = -0.8400 \\
+    x_3 = -0.8376 \\
+    x_4 = -0.8376 \\
+    x^\ast = -0.838
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{118/4}
+  \item [a]
+  \begin{gather*}
+    g(x) = x^2; \gap h(x) = x^3 - 1 \\
+    f(x) = g(x) - h(x) = -x^3 + x^2 + 1 \\
+    f'(x) = -3x^2 + 2x \\
+    x_0 = 1.5 \\
+    ... \\
+    x^\ast = 1.466
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    g(x) = x^3; \gap h(x) = \frac{1}{2}x^3 - 2x + 2 \\
+    f(x) = g(x) - h(x) = \frac{1}{2}x^3 + 2x - 2 \\
+    f'(x) = \frac{3}{2}x^2 + 2 \\
+    x_0 = 1 \\
+    ... \\
+    x^\ast = 0.848
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{118/5}
+  \item [a]
+  \begin{gather*}
+    f(x) = 0.1x^4 - x^2 - x + 1; \gap m = 1 \\
+    f'(x) = 0.4x^3 - 2x - 1 = 1 \\
+    0.4x^3 - 2x - 2 = 0 \\
+    x_0 = 2.5 \\
+    ... \\
+    x^\ast = 2.627
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = -0.1x^4 - x^3 + x^2 + 3; \gap m = -18 \\
+    f'(x) = -0.4x^3 - 3x^2 + 2x = -18 \\
+    -0.4x^3 - 3x^2 + 2x + 18 = 0 \\
+    x_0 = 2.5 \\
+    ... \\
+    x^\ast = 2.400
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = \frac{1}{10}x^3 + \frac{1}{2}x^2 - 1 + \frac{1}{x}; \gap m = 4 \\
+    f'(x) = \frac{3}{10}x^2 + x - \frac{1}{x^2} = 4 \\
+    \frac{3}{10}x^2 + x - \frac{1}{x^2} - 4 = 0 \\
+    x_0 = 2.5 \\
+    ... \\
+    x^\ast = 2.418
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \sqrt{x} - \frac{1}{2}x^3 + 3; \gap m = -10 \\
+    f'(x) = \frac{1}{2 \sqrt{x}} - \frac{3}{2}x^2 = -10 \\
+    \frac{1}{2 \sqrt{x}} - \frac{3}{2}x^2 + 10 = 0 \\
+    x_0 = 2.5 \\
+    ... \\
+    x^\ast = 2.622
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{118/6}
+  \item [a]
+  \begin{gather*}
+    f(x) = x^5 + x + 1 \\
+    f'(x) = 5x^4 + 1 > 0 \\
+    \text{Die Funktion ist streng monoton steigend, d. h. sie hat genau eine Nullstelle.}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    x_0 = -1 \\
+    ... \\
+    x^\ast \approx -0.755
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{118/7}
+  \begin{gather*}
+    r = 9cm \\
+    V_K = \frac{4}{3}\pi r^3 \\
+    V_Z = h\pi R^2 = \frac{1}{4}V_K = \frac{1}{3}\pi r^3 \\
+    hR^2 = \frac{1}{3}r^3 \\
+    R^2 + (\frac{h}{2})^2 = r^2 \Rightarrow R^2 = r^2 - \frac{h^2}{4} \\
+    h(r^2 - \frac{h^2}{4}) = hr^2 - \frac{h^3}{4} = \frac{1}{3}r^3 \\
+    81h - \frac{h^3}{4} = 243 \\
+    -\frac{1}{4}h^3 + 81h - 243 = 0 \\
+    (-\frac{1}{4}h^3 + 81h - 243)' = -\frac{3}{4}h^2 + 81 \\
+    ... \\
+    (h_1 \approx -19.345) \\
+    h_2 \approx 3.091 \\
+    h_3 \approx 16.25 \\
+    R_2 = \sqrt{r^2 - \frac{h_2^2}{4}} \approx 8.87 \\
+    R_3 = \sqrt{r^2 - \frac{h_3^2}{4}} \approx 3.87
+  \end{gather*}
+\end{exercise}
+\newpage
+\section{AB Kurvenuntersuchungen}
+\begin{exercise}{AB/1}
+  \item [a]
+  \begin{gather*}
+    f_a(x) = x^2 - 2ax + 1 \\
+    a \in \mathbb{R}, a > 0 \\
+    \textbf{Symmetrie} \\
+    f_a(-x) = x^2 + 2ax + 1 \neq f_a(x) \\
+    -f_a(x) = -x^2 + 2ax - 1 \neq f_a(-x) \\
+    \Rightarrow \text{keine Symmetrie erkennbar} \\
+    \textbf{Nullstellen} \\
+    x^2 - 2ax + 1 = 0 \\
+    x_{1/2} = \frac{2a \pm \sqrt{(-2a)^2 - 4 \cdot 1 \cdot 1}}{2 \cdot 1} = a \pm \sqrt{a^2 - 1} \\
+    \textbf{Extrema} \\
+    f_a'(x) = 2x - 2a = 0 \gap L = \{a\} \\
+    f_a''(x) = 2 > 0 \gap \Rightarrow TP(a|f_a(a) = -a^2 + 1) \\
+    \textbf{Wendepunkte} \\
+    f_a''(x) = 0 \gap L = \{\}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \begin{tikzpicture}
+    \begin{axis}[
+      scale only axis,
+      axis lines=middle,
+      ]
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=red
+      ]{x^2 - 2 * 1 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=blue
+      ]{x^2 - 2 * 1.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=green
+      ]{x^2 - 2 * 0.5 * x + 1};
+    \end{axis}
+  \end{tikzpicture} \\
+  a = {\color{red}1},\; {\color{blue}1.5},\; {\color{green}0.5}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f_a'(4) = 2 \cdot 4 - 2a = 1 \gap\Rightarrow a = 3.5
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    x_{1/2} = a \pm \sqrt{a^2 - 1} \\
+    a^2 - 1 < 0 \gap fuer \; a < 1 \gap \Rightarrow \text{ keine Nullstelle} \\
+    a^2 - 1 = 0 \gap fuer \; a = 1 \gap \Rightarrow \text{ 1 Nullstelle} \\
+    a^2 - 1 > 0 \gap fuer \; a > 1 \gap \Rightarrow \text{ 2 Nullstellen}
+  \end{gather*}
+\end{exercise}
+\newpage
+\subsection{Ortslinie}
+Der Graph, auf dem alle Tiefpunkte zu unterschiedlichen $a$ liegen, heißt Ortslinie der Tiefpunkte: \\
+\begin{gather*}
+  T(a|-a^2 + 1) \\
+  x = a \\
+  y = -a^2 + 1 \\
+  \text{setze $a$ aus $x$-Koordinate in $y$ ein} \\
+  f(x) = y = -x^2 + 1 \\
+  \text{Funktionsgleichung der Ortskurve der Tiefpunkte}
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      scale only axis,
+      axis lines=middle,
+      ymin=-30,
+      ymax=40,
+      ]
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 0.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 1 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 1.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 2 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 2.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 3 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 3.5 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20
+      ]{x^2 - 2 * 4 * x + 1};
+      \addplot[
+      domain=-6:8,
+      samples=20,
+      color=red
+      ]{-x^2 + 1};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\newpage
+\begin{exercise}{AB/5}
+  \item [a]
+  \begin{gather*}
+    f_a(x) = \frac{1}{2}x^4 - ax^2 \\
+    a > 0 \\
+    \textbf{Symmetrie} \\
+    f_a(-x) = \frac{1}{2}x^4 - ax^2 = f_a(x) \\
+    \Rightarrow \text{Achsensymmetrie} \\
+    -f_a(x) = -\frac{1}{2}x^4 + ax^2 \neq f_a(-x) \\
+    \Rightarrow \text{keine Punktsymmetrie erkennbar} \\
+    \textbf{Nullstellen} \\
+    \frac{1}{2}x^4 - ax^2 = 0 \equ \div x^2 \\
+    \frac{1}{2}x^2 - a = 0 \\
+    L = \{0; \pm\sqrt{2a}\} \\
+    \textbf{Extrema} \\
+    f_a'(x) = 2x^3 - 2ax = 0 \equ \div x \\
+    2x^2 - 2a = 0 \\
+    x = \pm\sqrt{a} \\
+    f_a''(x) = 6x^2 - 2a \\
+    f_a''(\pm\sqrt{a}) = 4a > 0 \Rightarrow TP \\
+    f_a''(0) = -2a < 0 \Rightarrow HP \\
+    \textbf{Wendepunkte} \\
+    f_a''(x) = 0 \gap L = \{\pm\sqrt{\frac{a}{3}}\} \\
+    f_a'''(x) = 12x \\
+    f_a'''(\sqrt{\frac{a}{3}}) = 12\sqrt{\frac{a}{3}} > 0 \Rightarrow RLWP \\
+    f_a'''(-\sqrt{\frac{a}{3}}) = -12\sqrt{\frac{a}{3}} < 0 \Rightarrow LRWP
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    T(\pm\sqrt{a}|-\frac{1}{2}a^2) \\
+    f_T(x) = -\frac{1}{2}x^4 \\\\
+    W(\pm\sqrt{\frac{a}{3}}|-\frac{5a^2}{18}) \\
+    f_W(x) = -\frac{5}{2}x^4
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        scale only axis,
+        axis lines=middle,
+        ymin=-30,
+        ymax=10
+        ]
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 1 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 3 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 5 * x^2};
+        \addplot[
+        samples=40
+        ]{1/2 * x^4 - 7 * x^2};
+        \addplot[
+        samples=40,
+        color=red
+        ]{-1/2 * x^4};
+        \addplot[
+        samples=40,
+        color=red
+        ]{-5/2 * x^4};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{AB/4}
+  \item [a]
+  \begin{gather*}
+    f_a(x) = \frac{1}{4}(x^4 - ax^2) \gap\gap\gap WP(1|f_a(1)) \\
+    f_a(-x) = \frac{1}{4}(x^4 - ax^2) = f_a(x) \\
+    \Rightarrow \text{Achsensymmetrie} \Rightarrow \text{zweiter Wendepunkt bei } x = -1 \\
+    f_a''(\pm1) = 3 \cdot 1^2 - \frac{1}{2}a = 0 \gap\Rightarrow a = 6 \\
+    f_6(\pm1) = \frac{1}{4}(1^4 - 6 \cdot 1^2) = -\frac{5}{4}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f_a''(x) = 3x^2 - \frac{1}{2}a = 0 \gap L=\{\pm\sqrt{\frac{a}{6}}\} \\
+    t_1(x) = -\frac{a}{3}\sqrt{\frac{a}{6}}x + \frac{a^2}{48} \\
+    t_2(x) = \frac{a}{3}\sqrt{\frac{a}{6}}x + \frac{a^2}{48}
+  \end{gather*}
+\end{exercise}
+\section{Wiederholung}
+\begin{exercise}{115/9}
+  \begin{gather*}
+    O(a, h) = a^2 + 4ah \\
+    V(a, h) = a^2 \cdot h = 40dm^3 \gap\Rightarrow h = \frac{40dm^3}{a^2} \\
+    O(a) = a^2 + 160dm^3 \cdot a^{-1} \\
+    O'(a) = 2a - 160dcm^3 \cdot a^{-2} \\
+    a = \sqrt[3]{80dm^3} \approx 4.309dm \\
+    h = \frac{40dm^3}{\sqrt[3]{80dm^3}^2} = \sqrt[3]{10} \approx 2.154dm
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{119/8}
+  \begin{gather*}
+    h(0) = 400m \\
+    h(370) = 0
+  \end{gather*}
+  \item [a]
+  $h'$ beschreibt das Gefälle des Flusses und gibt den Höhenverlust des Wassers pro Kilometer an
+  \item [b]
+  ein Stausee hat einen waagerechten Abschnitt des Graphen zur Folge, ein Wasserfall eine Sprungstelle
+  \item [c]
+  $h'$ ist nicht positiv, da das Wasser ausschließlich nach unten fließt; die Einheit ist $\frac{m}{km}$
+\end{exercise}
+\section{Sinus- und Kosinusfunktion}
+\begin{gather*}
+  f(\alpha) = sin(\alpha) \\
+  f(x) = sin(x) \\\\
+  \frac{\alpha}{360^\circ} = \frac{x}{U} \gap\gap\gap U = 2\pi r \\\\
+  x = \frac{\alpha \cdot 2\pi}{360^\circ} \gap\gap\gap \alpha = \frac{x \cdot 360^\circ}{2\pi} \\\\
+  \text{wichtige x-Koordinaten} \\
+  x = 3.14... = \pi \gap\gap\gap x = 6.28... = 2\pi \\
+  x = 1.57... = \frac{\pi}{2} \gap\gap\gap x = 4.71... = \frac{3\pi}{2} \\\\
+  sin(x + \frac{\pi}{2}) = cos(x) \gap\gap\gap sin(x) = cos(x - \frac{\pi}{2}) \\\\
+\end{gather*}
+\subsection{Vielfachheit der Lösungen von (geniometrischen) Gleichungen}
+\begin{gather*}
+  sin(x) = 0.7 \\
+  x = asin(0.7) \approx 0.775 \\
+  x_n \approx 0.775 + n \cdot 2\pi \\
+  x_m \approx \pi - 0.775 + m \cdot 2\pi \\
+  n, m \in \mathbb{Z} \\\\
+  cos(x) = 0.3 \\
+  x = acos(0.3) \approx 1.266 \\
+  x_n \approx 1.266 + n \cdot 2\pi \\
+  x_m \approx -1.266 + n \cdot 2\pi \\
+  n, m \in \mathbb{Z}
+\end{gather*}
+\begin{exercise}{128/6}
+  \item [a]
+  \begin{gather*}
+    sin(x) = 0.9396 \\
+    x = asin(0.9396) \approx 1.221 \\
+    x_n \approx 1.221 + n \cdot 2\pi \\
+    x_m \approx \pi - 1.221 + m \cdot 2\pi
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    sin(x) = 0.5519 \\
+    x = asin(0.5519) \approx 0.585 \\
+    x_n \approx 0.585 + n \cdot 2\pi \\
+    x_m \approx \pi - 0.585 + m \cdot 2\pi
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    cos(x) = 0.6294 \\
+    x = asin(0.6294) \approx 0.890 \\
+    x_n \approx 0.890 + n \cdot 2\pi \\
+    x_m \approx -0.890 + m \cdot 2\pi
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    cos(x) = -0.8870 \\
+    x = asin(-0.8870) \approx 2.662 \\
+    x_n \approx 2.662 + n \cdot 2\pi \\
+    x_m \approx -2.662 + m \cdot 2\pi
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{128/7}
+  \item [a]
+  \begin{gather*}
+    sin(x) = 0.63 \\
+    x = asin(0.63) \approx 0.682 \\
+    x_n \approx 0.682 + n \cdot 2\pi \\
+    x_m \approx \pi - 0.682 + m \cdot 2\pi
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    cos(x) = -0.55 \\
+    x = asin(-0.55) \approx 2.153 \\
+    x_n \approx 2.153 + n \cdot 2\pi \\
+    x_m \approx -2.153 + m \cdot 2\pi
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    sin(x) = -\frac{1}{2} \\
+    x = asin(-\frac{1}{2}) \approx -0.524 \\
+    x_n \approx -0.524 + n \cdot 2\pi \\
+    x_m \approx \pi + 0.524 + m \cdot 2\pi
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    cos(x) = -\frac{1}{2}\sqrt{2} \\
+    x = asin(-\frac{1}{2}\sqrt{2}) \approx 2.356 \\
+    x_n \approx 2.356 + n \cdot 2\pi \\
+    x_m \approx -2.356 + m \cdot 2\pi
+  \end{gather*}
+\end{exercise}
+\subsection{Die allgemeine Sinusfunktion}
+$$f(x) = y = a \cdot sin(b(x - c)) + d$$
+\begin{itemize}
+  \item [$a$] Streckung entlang der y-Achse (Amplitude)
+  \item [$b$] Streckung entlang der x-Achse (Perioden pro $2\pi$, Periodenlänge $p = \frac{2\pi}{b}$)
+  \item [$c$] Verschiebung in x-Richtung (für $c > 0$ nach rechts)
+  \item [$d$] Verschiebung in y-Richtung
+\end{itemize}
+\newpage
+\subsection{AB Die Funktionen $f \colon x \mapsto a \cdot sin(b(x - c))$ und ihre Graphen}
+\begin{exercise}{AB/3}
+  \item [a]
+  \begin{gather*}
+    f(x) = 3 \cdot sin(\frac{1}{2}(x - \pi)) \\
+    p = 4\pi \\
+    3 \cdot sin(\frac{1}{2}(x - \pi)) \\
+    x_H = 2\pi + n \cdot p \\
+    x_T = n \cdot p \\
+    x_W = \pi + \frac{n}{2} \cdot p
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = 2 \cdot sin(\frac{2}{3}x) \\
+    p = 3\pi \\
+    x_H = \frac{3}{4}\pi + n \cdot p \\
+    x_T = 2\frac{1}{4}\pi + n \cdot p \\
+    x_W = \frac{n}{2} \cdot p
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = 4 \cdot sin(x - \frac{\pi}{6}) \\
+    p = 2\pi \\
+    x_H = \frac{2}{3}\pi + n \cdot p \\
+    x_T = \frac{5}{3}\pi + n \cdot p \\
+    x_W = \frac{\pi}{6} + \frac{p}{2}
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{AB/5}
+  $$f(x) = a \cdot sin(b \cdot x + e)$$
+  \item [a] $$f(x) = 20 \cdot sin(\frac{\pi}{20} \cdot x - \frac{\pi}{2})$$
+  \item [b] $$f(x) = 6 \cdot sin(\frac{\pi}{12} \cdot x + \frac{\pi}{4})$$
+  \item [c] $$f(x) = 4 \cdot sin(\frac{\pi}{4} \cdot x - \frac{\pi}{2})$$
+\end{exercise}
+\begin{exercise}{AB/6}
+  $$f(t) = a \cdot sin(b(t - c)) \gap\gap\gap -2 \leq t \leq 13$$
+  \item [a]
+  Die Sonne bewegt sich aus Sicht der Aufnahmen periodisch auf und ab. Ihr Höhenverlauf lässt sich daher über eine Sinuskurve modellieren.
+  \item [b]
+  $$f(x) = a \cdot sin(\frac{\pi}{12} \cdot (x - 6))$$
+\end{exercise}
+\subsection{Ableitung der Sinusfunktion}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymax=1.1
+      ]
+      \addplot[
+      domain=0:1.7,
+      samples=30
+      ]{sin(deg(x))};
+      \addplot[
+      domain=0:1.6,
+      samples=30,
+      color=red
+      ]{cos(deg(x))};
+    \end{axis}
+  \end{tikzpicture} \\
+  sin(x),\; {\color{red}cos(x)}
+\end{gather*}
+\subsubsection{Annäherung mit Taylorreihe}
+\begin{gather*}
+  f(x) = f(a) + \frac{f'(a)}{1!}(x - a)^1 + \frac{f''(a)}{2!}(x - a)^2 + \frac{f'''(a)}{3!}(x - a)^3 + ... \\
+  a = x_0 = 0 \\
+  f(x_0) = f(0) + \frac{f'(0)}{1!}x^1 + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + ... \\
+  sin(x) = 0 + x^1 - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...\\
+  (sin(x))' = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} = ... = cos(x)
+\end{gather*}
+\begin{gather*}
+  f(x) = sin(x) \\
+  f'(x) = cos(x) \\
+  f''(x) = -sin(x) \\
+  f'''(x) = -cos(x) \\
+  f''''(x) = sin(x) \\
+  ...
+\end{gather*}
+\begin{exercise}{130/1}
+  \item[a]
+  \begin{gather*}
+    f(x) = 12 \cdot sin(x) \\
+    f'(x) = 12 \cdot cos(x) \\
+  \end{gather*}
+  \item[b]
+  \begin{gather*}
+    f(x) = -2 \cdot cos(x) \\
+    f'(x) = -2 \cdot (-sin(x)) \\
+  \end{gather*}
+  \item[c]
+  \begin{gather*}
+    f(x) = \sqrt{5} \cdot cos(x) \\
+    f'(x) = \sqrt{5} \cdot (-sin(x)) \\
+  \end{gather*}
+  \item[d]
+  \begin{gather*}
+    f(x) = \frac{1}{\pi} \cdot sin(x) \\
+    f'(x) = \frac{1}{\pi} \cdot cos(x) \\
+  \end{gather*}
+  \item[e]
+  \begin{gather*}
+    f(x) = 5x^3 - sin(x) \\
+    f'(x) = 15x^2 - cos(x) \\
+  \end{gather*}
+  \item[f]
+  \begin{gather*}
+    f(x) = 2 \cdot cos(x) - sin(x) \\
+    f'(x) = 2 \cdot (-sin(x)) - cos(x) \\
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{130/3}
+  \item [b]
+  \begin{gather*}
+    f(x) = 3 \cdot sin(x) \\
+    P(\frac{5\pi}{3}|?) \\
+    y = f(\frac{5\pi}{3}) \approx -2.598 \\
+    f'(x) = 3 \cdot cos(x) \\
+    m_t = f'(\frac{5\pi}{3}) = 1.5 \\
+    b_t = -2.598 - 1.5 \cdot \frac{5\pi}{3} \approx -10.452 \\
+    t(x) = 1.5x - 10.452
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{130/4}
+  \item [c]
+  \begin{gather*}
+    f(x) = 2 \cdot sin(x) - cos(x); \gap x \in \left[0; 2\pi\right] \\
+    f'(x) = 2 \cdot cos(x) + sin(x) \\\\
+    f'(x) = 0 = 2 \cdot cos(x) + sin(x) \\
+    2 = -\frac{sin(x)}{cos(x)} = -tan(x) \gap\Rightarrow\gap x = atan(-2) \\
+    L = \{atan(-2) + n\pi\} \gap n \in \{1; 2\} \\\\
+    f''(x) = cos(x) - 2 \cdot sin(x) \\
+    f''(atan(-2) + \pi) \approx -2.23 < 0 \\
+    HP(atan(-2) + \pi|f(atan(-2) + \pi)) = HP(2.034|2.236) \\
+    f''(atan(-2) + 2\pi) \approx 2.23 > 0 \\
+    TP(atan(-2) + 2\pi|f(atan(-2) + 2\pi)) = TP(5.176|-2.236)
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = 4 \cdot cos(x) + 2x; \gap x \in \left[0; 2\pi\right] \\
+    f'(x) = -4 \cdot sin(x) + 2 \\\\
+    f'(x) = 0 = -4 \cdot sin(x) + 2 \\
+    0.5 = sin(x) \gap\Rightarrow\gap x = asin(0.5) \\
+    L = \{asin(0.5); \pi - asin(0.5)\} \\\\
+    f''(x) = -4 \cdot cos(x) \\
+    f''(asin(0.5)) \approx -3.46 < 0 \\
+    HP(asin(0.5)|f(asin(0.5))) = HP(0.524|4.51) \\
+    f''(\pi - asin(0.5)) \approx 3.46 > 0 \\
+    TP(\pi - asin(0.5)|f(\pi - asin(0.5))) = TP(2.618|1.772)
+  \end{gather*}
+\end{exercise}
+\section{Neue Funktionen aus alten Funktionen}
+\begin{gather*}
+  \text{gegeben sind} \\
+  f(x) = sin(x) \\
+  g(x) = \sqrt{x} \\
+  h(x) = x^2 + 5 \\\\
+  \text{Produkt} \\
+  i(x) = f(x) \cdot g(x) = sin(x) \cdot \sqrt{x} \\
+  j(x) = h(x) \cdot f(x) = (x^2 + 5) \cdot sin(x) \\\\
+  \text{Quotient} \\
+  k(x) = \frac{g(x)}{f(x)} = \frac{\sqrt{x}}{sin(x)} \\
+  l(x) = \frac{h(x)}{g(x)} = \frac{x^2 + 5}{\sqrt{x}} \\\\
+  \text{Verkettung} \\
+  m(x) = f(g(x)) = sin(\sqrt{x}) \\
+  n(x) = g(f(x)) = \sqrt{sin(x)} \\
+  o(x) = f(g(h(x))) = sin(\sqrt{x^2 + 5})
+\end{gather*}
+\subsection{Ableitungsregeln}
+\subsubsection{Produktregel}
+\begin{gather*}
+  k(x) = f(x) \cdot g(x) \\
+  k'(x) = \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x)}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) {\color{red}- f(x \cdot g(x + h) + f(x) \cdot g(x + h)} - f(x) \cdot g(x)}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{{\color{blue}[f(x + h) - f(x)]} \cdot g(x + h) + f(x) \cdot {\color{violet}[g(x + h) - g(x)]}}{h} \\
+  \;= \boldsymbol{{\color{blue}f'(x)} \cdot g(x) + f(x) \cdot {\color{violet}g'(x)}}
+\end{gather*}
+\subsubsection{Kettenregel}
+\begin{gather*}
+  k(x) = f(g(x)) \\
+  k'(x) = \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{{\color{red}g(x + h) - g(x)}} \cdot \frac{{\color{red}g(x + h) - g(x)}}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(z + i) - f(z)}{i} \cdot g'(x) \\
+  \;= f'(z) \cdot g'(x) \\
+  \;= \boldsymbol{f'(g(x)) \cdot g'(x)} \\\\
+  g(x) = z \gap\gap g(x + h) = z + i
+\end{gather*}
+\begin{gather*}
+  \textbf{Beispiele} \\
+  k(x) = (x^2 + 2x - 7) \cdot sin(x) \\
+  k'(x) = (2x + 2) \cdot sin(x) + (x^2 + 2x - 7) \cdot cos(x) \\\\
+  k(x) = sin(x^3 - 5x) \\
+  k'(x) = cos(x^3 - 5x) \cdot (3x^2 - 5)
+\end{gather*}
+\begin{exercise}{135/1}
+  \item [a]
+  \begin{gather*}
+    f(x) = (x + 2)^4 \\
+    f'(x) = 4(x + 2)^3
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = (8x + 2)^3 \\
+    f'(x) = 3(8x + 2)^2 \cdot 8 = 24(8x + 2)^2
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = (\frac{1}{2} - 5x)^3 \\
+    f'(x) = 3(\frac{1}{2} - 5x)^2 \cdot (-5) = -15(\frac{1}{2} - 5x)^2
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \frac{1}{4}(x^2 - 5)^2 \\
+    f'(x) = \frac{1}{2}(x^2 - 5) \cdot 2x = x^3 - 5x
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{135/2}
+  \item [a]
+  \begin{gather*}
+    f(x) = \frac{1}{(x - 1)^2} \\
+    f'(x) = -2(x - 1)^{-3}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{1}{(3x - 1)^2} \\
+    f'(x) = -2(3x - 1)^{-3} \cdot 3 = -6(3x - 1)^{-3}
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = sin(2x) \\
+    f'(x) = cos(2x) \cdot 2 = 2cos(2x)
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = sin(2x + \pi) \\
+    f'(x) = cos(2x + \pi) \cdot 2 = 2cos(2x + \pi) = -2cos(2x)
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{138/1}
+  \item [g]
+  \begin{gather*}
+    f(x) = \frac{2}{x} \cdot cos(x) \\
+    f'(x) = -2x^{-2} \cdot cos(x) - \frac{2}{x} \cdot sin(x)
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = sin(x) \cdot cos(x) \\
+    f'(x) = (cos(x))^2 - (sin(x))^2 = cos(2x)
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = x^2 \cdot sin(x) \\
+    f'(x) = 2x \cdot sin(x) + x^2 \cdot cos(x)
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = \frac{1}{\sqrt{x}} \cdot cos(x) \\
+    f'(x) = -\frac{cos(x)}{2\sqrt{x^3}} - \frac{sin(x)}{\sqrt{x}}
+  \end{gather*}
+  \item [k]
+  \begin{gather*}
+    f(x) = \frac{\pi}{4} \cdot sin(x) \cdot (2 - x) \\
+    f'(x) = \frac{\pi}{4} \cdot cos(x) \cdot (2 - x) - \frac{\pi}{4} \cdot sin(x)
+  \end{gather*}
+  \item [l]
+  \begin{gather*}
+    f(x) = \sqrt{3} \cdot \sqrt{x} \\
+    f'(x) = \frac{\sqrt{3}}{2\sqrt{x}}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{135/4}
+  \item [a]
+  \begin{gather*}
+    f(x) = 0.25 \cdot sin(2x + \pi) \\
+    f'(x) = 0.25 \cdot cos(2x + \pi) \cdot 2 = -0.5 \cdot cos(2x)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{2}{3} \cdot sin(\pi - 3x) \\
+    f'(x) = \frac{2}{3} \cdot cos(\pi - 3x) \cdot (-3) = 2 \cdot cos(3x)
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = -cos(x^2 + 1) \\
+    f'(x) = sin(x^2 + 1) \cdot 2x
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \frac{1}{3} \cdot (cos(x))^2 \\
+    f'(x) = \frac{1}{3} \cdot 2 \cdot cos(x) \cdot (-sin(x)) = -\frac{2}{3} \cdot cos(x) \cdot sin(x)
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = \sqrt{3x} \\
+    f'(x) = \frac{1}{2} \cdot \frac{1}{\sqrt{3x}} \cdot 3 = \frac{3}{2\sqrt{3x}}
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = \sqrt{3 + x} \\
+    f'(x) = \frac{1}{2} \cdot \frac{1}{\sqrt{3 + x}} \cdot 1 = \frac{1}{2\sqrt{3 + x}}
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    f(x) = \sqrt{7x - 5} \\
+    f'(x) = \frac{1}{2} \cdot \frac{1}{\sqrt{7x - 5}} \cdot 7 = \frac{7}{2 \cdot \sqrt{7x - 5}}
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = \sqrt{7x^2 - 5} \\
+    f'(x) = \frac{1}{2} \cdot \frac{1}{\sqrt{7x^2 - 5}} \cdot 14x = \frac{7x}{\sqrt{7x^2 - 5}}
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = \frac{1}{sin(x)} \\
+    f'(x) = -\frac{1}{(sin(x))^2} \cdot cos(x) = -\frac{cos(x)}{(sin(x))^2}
+  \end{gather*}
+\end{exercise}
+\subsubsection{Ableitungen mit mehr als zwei Funktionen}
+\begin{gather*}
+  l = g \cdot [h \cdot k] \\
+  l' = g' \cdot h \cdot k + g \cdot [h' \cdot k + h \cdot k'] \\
+  \;= g' \cdot h \cdot k + g \cdot h' \cdot k + g \cdot h \cdot k' \\\\
+  l = g(h(k)) \\
+  l' = g'(h(k)) \cdot h'(k) \cdot k' \\\\
+  l = g \cdot h(k) \\
+  l' = g' \cdot h(k) + g \cdot h'(k) \cdot k' \\\\
+  l = g(h \cdot k) \\
+  l' = g'(h \cdot k) \cdot [h' \cdot k + h \cdot k']
+\end{gather*}
+\subsubsection{Quotientenregel}
+\begin{gather*}
+  l = \frac{g}{h} = g \cdot h^{-1} \\
+  l' = g' \cdot h^{-1} + g \cdot [-h^{-2} \cdot h'] \\
+  \;= g' \cdot h^{-1} - g \cdot h^{-2} \cdot h' \\
+  \;= \frac{g'}{h} - \frac{g \cdot h'}{h^2} = \frac{g' \cdot h}{h \cdot h} - \frac{g \cdot h'}{h^2} \\
+  \;= \boldsymbol{\frac{g' \cdot h - g \cdot h'}{h^2}}
+\end{gather*}
+\begin{exercise}{138/2}
+  \item [e]
+  \begin{gather*}
+    f(x) = (5 - 4x)^3 \cdot x^{-2} \\
+    f'(x) = 3(5 - 4x)^2 \cdot (-4) \cdot x^{-2} + (5 - 4x)^3 \cdot (-2x^{-3}) \\
+    \;= -\frac{2 \cdot (5 - 4x)^2 \cdot (2x + 5)}{x^3}
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = 3x \cdot cos(2x) \\
+    f'(x) = 3 \cdot cos(2x) + 3x \cdot (-sin(2x)) \cdot 2 \\
+    \;= 3 \cdot (cos(2x) - 2x \cdot sin(2x))
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    f(x) = 3x \cdot (sin(x))^2 \\
+    f'(x) = 3 \cdot (sin(x))^2 + 3x \cdot 2 \cdot sin(x) \cdot cos(x) \\
+    \;= 3 \cdot sin(x) \cdot (sin(x) + 2x \cdot cos(x))
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = (2x - 1)^2 \cdot \sqrt{x} \\
+    f'(x) = 2(2x - 1) \cdot 2 \cdot \sqrt{x} + (2x - 1)^2 \cdot \frac{1}{2\sqrt{x}} \\
+    \;= \frac{(2x - 1) \cdot (10x - 1)}{2\sqrt{x}}
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = 0.5x^2 \cdot \sqrt{4 - x} \\
+    f'(x) = x \cdot \sqrt{4 - x} + 0.5x^2 \cdot \frac{1}{2\sqrt{4 - x}} \cdot (-1) \\
+    \;= \frac{(4 - 1.25x) \cdot x}{\sqrt{4 - x}}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{140/2}
+  \item [a]
+  \begin{gather*}
+    f(x) = \frac{1 - x^2}{3x + 5} \\
+    f'(x) = \frac{-2x \cdot (3x + 5) - (1 - x^2) \cdot 3}{(3x + 5)^2} \\
+    \;= -\frac{(3x + 1) \cdot (x + 3)}{(3x + 5)^2}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    g(x) = \frac{\sqrt{x}}{x + 2} \\
+    g'(x) = \frac{\frac{1}{2\sqrt{x}} \cdot (x + 2) - \sqrt{x} \cdot 1}{(x + 2)^2} \\
+    \;= \frac{2 - x}{2\sqrt{x} \cdot (x + 2)^2}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    h(x) = \frac{3 \cdot sin(x)}{6x - 1} \\
+    h'(x) = \frac{3 \cdot cos(x) \cdot (6x - 1) - 3 \cdot sin(x) \cdot 6}{(6x - 1)^2}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    k(x) = \frac{sin(x)}{cos(x)} \\
+    k'(x) = \frac{cos(x) \cdot cos(x) - sin(x) \cdot (-sin(x))}{(cos(x))^2} \\
+    \;= 1 + (tan(x))^2
+  \end{gather*}
+\end{exercise}
+\section{Exponentialfunktionen - Ableitung}
+\begin{gather*}
+  {\color{blue}f(x) = 2^x} \gap\gap {\color{cyan}f'(x)} \gap\gap\gap\gap\gap {\color{red}g(x) = 4^x} \gap\gap {\color{purple}g'(x)}\\
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ]
+      \addplot[
+      domain=-2:3,
+      samples=30,
+      color=blue
+      ]{2^x};
+      \addplot[
+      domain=-2:3,
+      samples=30,
+      color=cyan
+      ]{2^x * ln(2)};
+      \addplot[
+      domain=-2:1.7,
+      samples=30,
+      color=red
+      ]{4^x};
+      \addplot[
+      domain=-2:1.5,
+      samples=30,
+      color=purple
+      ]{4^x * ln(4)};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+Zwischen $2^x$ und $4^x$ liegt eine Exponentialfunktion, deren Ableitungsfunktion genau der Ursprungsfunktion entspricht. Sie wird natürliche Exponentialfunktion genannt.
+$$f(x) = e^x$$
+$$\text{Eulersche Zahl } e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n \approx 2.71828$$
+\begin{gather*}
+  f(x) = e^x \\
+  f'(x) = e^x \\
+  f''(x) = e^x \\
+  ... \\\\
+  e^x \leftrightarrow log_e(x) = ln(x) \\
+  \Rightarrow e^{ln(x)} = ln(e^x) = x \\\\
+  2^x = 5^{x \cdot \frac{log(2)}{log(5)}} = 5^{x \cdot log_5(2)} \\
+  2^x = e^{x \cdot ln(2)} \\
+  10^x = e^{x \cdot ln(10)} \\\\
+  f(x) = e^{x \cdot ln(2)} = 2^x \\
+  f'(x) = e^{x \cdot ln(2)} \cdot ln(2) = 2^x \cdot ln(2) \approx 2^x \cdot 0.7 \\\\
+  f(x) = e^{x \cdot ln(4)} = 4^x \\
+  f'(x) = e^{x \cdot ln(4)} \cdot ln(4) = 4^x \cdot ln(4) \approx 4^x \cdot 1.4
+\end{gather*}
+\begin{exercise}{142/3}
+  \item [a]
+  \begin{gather*}
+    f(x) = x \cdot e^x \\
+    f'(x) = 1 \cdot e^x + xe^x = e^x \cdot (x + 1)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{e^x}{x} \\
+    f'(x) = \frac{e^x \cdot x - e^x \cdot 1}{x^2} = \frac{e^x \cdot (x - 1)}{x^2}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = \frac{x}{e^x} \\
+    f'(x) = \frac{1 \cdot e^x - x \cdot e^x}{(e^x)^2} = \frac{1 - x}{e^x}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = (x + 1) \cdot e^x \\
+    f'(x) = 1 \cdot e^x + (x + 1) \cdot e^x = e^x \cdot (x + 2)
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = \frac{x}{e^{-0.5x}} \\
+    f(x) = \frac{1 \cdot e^{-0.5x} - x \cdot (-0.5) \cdot e^{-0.5x}}{(e^{-0.5x})^2} = e^{0.5x} \cdot (1 + 0.5x)
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = \frac{e^x + 1}{x} \\
+    f'(x) = \frac{e^x \cdot x - (e^x + 1) \cdot 1}{x^2} = \frac{e^x \cdot (x - 1) - 1}{x^2}
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    f(x) = \frac{e^x}{x - 1} \\
+    f'(x) = \frac{e^x \cdot (x - 1) - e^x \cdot 1}{(x - 1)^2} = \frac{e^x \cdot (x - 2)}{(x - 1)^2}
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = \frac{e^{3x}}{x + 2} \\
+    f'(x) = \frac{3 \cdot e^{3x} \cdot (x + 2) - e^{3x} \cdot 1}{(x + 2)^2} = \frac{e^{3x} \cdot (3x + 5)}{(x + 2)^2}
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = x^2 + x \cdot e^{0.1x} = x^2 \cdot (1 + \frac{e^{0.1x}}{x}) \\
+    f'(x) = 2x \cdot (1 + \frac{e^{0.1x}}{x}) + x^2 \cdot \frac{e^{0.1x} \cdot (0.1x - 1)}{x^2} = e^{0.1x} \cdot (0.1x + 1) + 2x
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = x \cdot e^{-2x + 1} \\
+    f'(x) = 1 \cdot e^{-2x + 1} + x \cdot (-2e^{-2x + 1}) = e^{1 - 2x} \cdot (1 - 2x)
+  \end{gather*}
+  \item [k]
+  \begin{gather*}
+    f(x) = x^2 \cdot e^{ax} \\
+    f'(x) = 2x \cdot e^{ax} + x^2 \cdot a \cdot e^{ax} = x \cdot e^{ax} \cdot (2 + ax)
+  \end{gather*}
+  \item [l]
+  \begin{gather*}
+    f(x) = x \cdot e^{2x^2 + 1} \\
+    f'(x) = 1 \cdot e^{2x^2 + 1} + x \cdot e^{2x^2 + 1} \cdot 4x = e^{2x^2 + 1} \cdot (4x^2 + 1)
+  \end{gather*}
+\end{exercise}
+\subsection{Basis $\neq e$}
+\begin{gather*}
+  f(x) = 10^x = (e^z)^x = e^{ln(10) \cdot x} \\
+  e^z = 10 \gap\Rightarrow\gap z = ln(10) \\
+  \Rightarrow\gap b^x = e^{ln(b) \cdot x} \\\\
+  f'(x) = e^{ln(10) \cdot x} \cdot ln(10) \\
+  \;= 10^x \cdot ln(10) \\
+  \Rightarrow\gap b^x \cdot ln(b)
+\end{gather*}
+\begin{exercise}{145/8}
+  \item [f]
+  \begin{gather*}
+    e^{2x} + 10 = 6.5 \cdot e^x \equ \text{subst. } e^x = z \\
+    z^2 + 10 = 6.5z \equ - 6.5z \\
+    z^2 - 6.5z + 10 = 0 \\
+    z_{1/2} = \frac{6.5 \pm \sqrt{42.25 - 40}}{2} \\
+    z_1 = 4 \gap z_2 = 2.5 \equ \text{resubst.} \\\\
+    z_1 = 4 = e^x \equ ln \\
+    x_1 = ln(4) \approx 1.386 \\\\
+    z_2 = 2.5 = e^x \equ ln \\
+    x_2 = ln(2.5) \approx 0.916
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    e^{2x} - 6 \cdot e^x + 8 = 0 \equ \text{subst. } e^x = z \\
+    z^2 - 6z + 8 = 0 \\
+    z_{1/2} = \frac{6 \pm \sqrt{36 - 32}}{2} \\
+    z_1 = 4 \gap z_2 = 2 \equ \text{resubst.} \\\\
+    z_1 = 4 = e^x \equ ln \\
+    x_1 = ln(4) \approx 1.386 \\\\
+    z_2 = 2 \equ ln \\
+    x_2 = ln(2) \approx 0.693
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    e^x - 2 - \frac{15}{e^x} = 0 \equ \text{subst. } e^x = z \\
+    z - 2 - \frac{15}{z} = 0 \equ \cdot z \\
+    z^2 - 2z - 15 = 0 \\
+    z_{1/2} = \frac{2 \pm \sqrt{4 + 60}}{2} \\
+    z_1 = 5 \gap (z_2 = -3) \equ \text{resubst.} \\\\
+    z_1 = 5 = e^x \equ ln \\
+    x_1 = ln(5) \approx 1.609
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    (e^{2x} - 6) \cdot (5 - e^{3x}) = 0 \equ \text{subst. } e^x = z \\
+    (z^2 - 6) \cdot (5 - z^3) = 0 \\\\
+    z^2 - 6 = 0 \equ \sqrt{} \\
+    z_1 = \sqrt{6} \approx 2.449 \equ \text{resubst.} \\
+    z_1 = \sqrt{6} = e^x \equ ln \\
+    x_1 = ln(\sqrt{6}) \approx 0.896 \\\\
+    5 - z^3 = 0 \equ \sqrt[3]{} \\
+    z_2 = \sqrt[3]{5} \approx 1.710 \equ \text{resubst.} \\
+    z_2 = \sqrt[3]{5} = e^x \equ ln \\
+    x_2 = ln(\sqrt[3]{5}) \approx 0.536
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    2 \cdot e^x + 15 = 8 \cdot e^{-x} \equ \text{subst. } e^x = z \\
+    2z + 15 = \frac{8}{z} \equ -\frac{8}{z} \\
+    2z + 15 - \frac{8}{z} = 0 \equ \cdot z \\
+    2z^2 + 15z - 8 = 0 \\
+    z_{1/2} = \frac{-15 \pm \sqrt{225 + 64}}{4} \\
+    z_1 = 0.5 \gap (z_2 = -8) \equ \text{resubst.} \\\\
+    z_1 = 0.5 = e^x \equ ln \\
+    x = ln(0.5) \approx -0.693
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{146/9}
+  \begin{gather*}
+    h(t) = 0.02 \cdot e^{kt}
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    h(0) = 0.02
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    h(6) = 0.02 \cdot e^{6k} = 0.4 \\
+    e^{6k} = 20 \\
+    6k = ln(20) \\
+    k = \frac{ln(20)}{6} \approx 0.499
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    h(9) = 0.02 \cdot e^{0.499 \cdot 9} \approx 1.784
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    h(t) = 0.02 \cdot e^{0.499t} = 3 \\
+    e^{0.499t} = 150 \\
+    0.499t = ln(150) \\
+    t = \frac{ln(150)}{0.499} \approx 10.041
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    h(t + 1) - h(t) = 1.5 \\
+    0.02 \cdot e^{k \cdot (t + 1)} - 0.02 \cdot e^{k \cdot t} = 1.5 \\
+    0.02e^{kt} \cdot (e^k - 1) = 1.5 \\
+    e^{kt} \cdot (e^k - 1) = 75 \\
+    0.647e^{0.499t} = 75 \\
+    e^{0.499t} = 115.92 \\
+    0.499t = ln(115.92) \\
+    t = \frac{ln(115.92)}{0.499} \approx 9.525
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    h'(t) = 0.02k \cdot e^{kt} = 1 \\
+    0.02 \cdot 0.499 \cdot e^{0.499t} = 1 \\
+    e^{0.499t} = 100.2 \\
+    0.499t = ln(100.2) \\
+    t = \frac{ln(100.2)}{0.499} \approx 9.233
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    t \geq 9 \\
+    k(t) = 3.5 - 8.2 \cdot e^{-0.175t} \\\\
+    k(t) = 3.5 - 8.2 \cdot e^{-0.175t} = 3 \\
+    e^{-0.175t} \approx 0.061 \\
+    -0.175t \approx ln(0.061) \\
+    t \approx \frac{ln(0.061)}{-0.175} \approx 15.982 \\\\
+    k(t + 1) - k(t) = 0.2 \\
+    3.5 - 8.2 \cdot e^{-0.175 \cdot (t + 1)} - 3.5 + 8.2 \cdot e^{-0.175t} = 0.2 \\
+    -8.2 \cdot e^{-0.175 \cdot (t + 1)} + 8.2 \cdot e^{-0.175t} = 0.2 \\
+    -8.2 \cdot e^{-0.175t} \cdot (e^{-0.175} - 1) = 0.2 \\
+    1.316 \cdot e^{-0.175t} \approx 0.2 \\
+    e^{-0.175t} \approx 0.152 \\
+    -0.175t \approx ln(0.152) \\
+    t \approx \frac{ln(0.152)}{-0.175} \approx 10.765
+  \end{gather*}
+\end{exercise}
+\newpage
+\section{Wiederholung}
+\subsection{Sinusfunktionen und Newton-Verfahren}
+\begin{exercise}{130/8}
+  \begin{gather*}
+    P(x_0|f(x_0)) \gap\gap Q(x_0|g(x_0)) \gap\gap 0 \leq x \leq 2\pi
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    f(x) = 2 \cdot sin(x) \gap\gap g(x) = x^2 \\
+    f'(x) = 2 \cdot cos(x) \gap\gap g'(x) = 2x \\
+    h(x) = f'(x) - g'(x) = 2 \cdot cos(x) - 2x = 0 \\
+    h'(x) = -2 \cdot sin(x) - 2 \\\\
+    x_0 = 0 \\
+    x_1 = x_0 - \frac{h(x_0)}{h'(x_0)} = 1 \\
+    x_2 = x_1 - \frac{h(x_1)}{h'(x_1)} \approx 0.75036 \\
+    x_3 = x_2 - \frac{h(x_2)}{h'(x_2)} \approx 0.73911 \\
+    x_4 = x_3 - \frac{h(x_3)}{h'(x_3)} \approx 0.73908 \\
+    x_5 = x_4 - \frac{h(x_4)}{h'(x_4)} \approx 0.73909 \\
+    x^\ast \approx 0.7391 \\\\
+    P(x^\ast|f(x^\ast)) \approx P(0.7391|1.3472) \\
+    Q(x^\ast|g(x^\ast)) \approx Q(0.7391|0.5463)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = sin(x) + 2 \cdot cos(x) \gap\gap g(x) = x^3 \\
+    f'(x) = cos(x) - 2 \cdot sin(x) \gap\gap g'(x) = 3x^2 \\
+    h(x) = f'(x) - g'(x) = cos(x) - 2 \cdot sin(x) - 3x^2 = 0 \\
+    h'(x) = -sin(x) - 2 \cdot cos(x) - 6x \\\\
+    x_0 = 0 \\
+    x_1 = x_0 - \frac{h(x_0)}{h'(x_0)} = 0.5 \\
+    x_2 = x_1 - \frac{h(x_1)}{h'(x_1)} \approx 0.34120 \\
+    x_3 = x_2 - \frac{h(x_2)}{h'(x_2)} \approx 0.32336 \\
+    x_4 = x_3 - \frac{h(x_3)}{h'(x_3)} \approx 0.32311 \\
+    x_5 = x_4 - \frac{h(x_4)}{h'(x_4)} \approx 0.32311 \\
+    x^\ast \approx 0.3231 \\\\
+    P(x^\ast|f(x^\ast)) \approx P(0.3231|2.2140) \\
+    Q(x^\ast|g(x^\ast)) \approx Q(0.3231|0.0337)
+  \end{gather*}
+\end{exercise}
+\subsection{Produktregel}
+\begin{exercise}{138/3}
+  \item [a]
+  \begin{gather*}
+    f(x) = (2x - 8) \cdot sin(x) \gap\gap f'(x) = 2 \cdot cos(x) \\
+    f(x) = a \cdot b \gap\gap f'(x) = a' \cdot b + a \cdot b' \neq a' \cdot b' \\
+    \Rightarrow \gap f'(x) = 2 \cdot sin(x) + (2x - 8) \cdot cos(x)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    g(x) = (2x - 3) \cdot (8 - x)^2 \\
+    g'(x) = \textbf{2} \cdot (8 - x)^2 + (2x - 3) \cdot \textbf{(16 - 2x)}
+  \end{gather*}
+\end{exercise}
+\subsection{Quotientenregel}
+\begin{exercise}{140/11}
+  \item [a]
+  \begin{gather*}
+    f(x) = sin(x) + tan(x) = sin(x) + \frac{sin(x)}{cos(x)} \\
+    f'(x) = cos(x) + (cos(x))^{-2}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = sin(x) \cdot tan(x) = \frac{(sin(x))^2}{cos(x)} \\
+    f'(x) = sin(x) + \frac{sin(x)}{(cos(x))^2}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = \frac{cos(x)}{tan(x)} = \frac{(cos(x))^2}{sin(x)} \\
+    f'(x) = -2 \cdot cos(x) - \frac{(cos(x))^3}{(sin(x))^2}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \frac{tan(x)}{2} = \frac{sin(x)}{2 \cdot cos(x)} \\
+    f'(x) = \frac{1}{2 \cdot (cos(x))^2}
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = tan(2x) = \frac{sin(2x)}{cos(2x)} \\
+    f'(x) = \frac{2}{(cos(2x))^2}
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = tan(x^2) = \frac{sin(x^2)}{cos(x^2)} \\
+    f'(x) = \frac{2x}{(cos(x^2))^2}
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    f(x) = (tan(x))^2 = \frac{(sin(x))^2}{(cos(x))^2} \\
+    f'(x) = \frac{2 \cdot sin(x)}{(cos(x))^3}
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = \frac{2}{tan(x)} = \frac{2 \cdot cos(x)}{sin(x)} \\
+    f'(x) = -\frac{2}{(sin(x))^2}
+  \end{gather*}
+\end{exercise}
+\subsection{Kurvendiskussion}
+\begin{exercise}{146/13}
+  \begin{gather*}
+    f(x) = 80000 \cdot e^{0.002x} \\
+    0 \estim 01.10.2002
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    92 \estim 01.01.2003 \\
+    f(92) = 80000 \cdot e^{0.002 \cdot 92} \approx 96161.27 \\
+    457 \estim 01.01.2004 \\
+    f(457) = 80000 \cdot e^{0.002 \cdot 457} \approx 199542.38 \\
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = 80000 \cdot e^{0.002x} = 1000000 \\
+    e^{0.002x} = 12.5 \\
+    x = \frac{ln(12.5)}{0.002} \approx 1262.86 \estim 17.03.2006 \\\\
+    f(x) = 80000 \cdot e^{0.002x} = 1000000000 \\
+    e^{0.002x} = 12500 \\
+    x = \frac{ln(12500)}{0.002} \approx 4716.74 \estim 31.08.2015
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    2 \cdot f(x_1) = f(x_2) \\
+    2 \cdot 80000 \cdot e^{0.002x_1} = 80000 \cdot e^{0.002x_2} \\
+    2 \cdot e^{0.002x_1} = e^{0.002x_2} \\
+    ln(2) + 0.002x_1 = 0.002x_2 \\
+    x_2 - x_1 = \frac{ln(2)}{0.002} \approx 346.57
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    p \cdot f(x_1) = f(x_1 + 365) \\
+    p \cdot 80000 \cdot e^{0.002x_1} = 80000 \cdot e^{0.002 \cdot (x_1 + 365)} \\
+    p \cdot e^{0.002x_1} = e^{0.002x_1} \cdot e^{0.002 \cdot 365} \\
+    p = e^{0.002 \cdot 365} \approx 2.08 = 208\%
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    365 \estim 01.10.2003 \\
+    f(365) - f(364) = 80000 \cdot e^{0.002 \cdot 365} - 80000 \cdot e^{0.002 \cdot 364} \approx 331.68 \\\\
+    f'(x) = 80000 \cdot 0.002 \cdot e^{0.002x} = 160 \cdot e^{0.002x} \\
+    f(364.5) \approx 331.68
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x + 1) - f(x) = 400 \\
+    80000 \cdot e^{0.002 \cdot (x + 1)} - 80000 \cdot e^{0.002x} = 400 \\
+    80000 \cdot e^{0.002x} \cdot (e^{0.002} - 1) = 400 \\
+    x = ln(\frac{400}{80000 \cdot (e^{0.002} - 1)}) \cdot \frac{1}{0.002} \approx 457.65 \estim 02.01.2004 \\\\
+    f'(x) = 160 \cdot e^{0.002x} = 400 \\
+    x = ln(\frac{400}{160}) \cdot \frac{1}{0.002} \approx 458.15 \estim 03.01.2004
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{146/10}
+  \begin{gather*}
+    v(t) = 2.5 \cdot (1 - e^{-0.1t})
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    v(0) = 0 \\
+    v(10) \approx 1.58
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle
+        ]
+        \addplot[
+        domain=0:20,
+        samples=100
+        ]{2.5 * (1 - e^(-0.1 * x))};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    v(t) = 2 \\
+    t = -\frac{ln(0.2)}{0.1} \approx 16.09
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \lim\limits_{t \to \infty} v(t) = 2.5
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    v(t) = 2.5 \cdot (1 - e^{-0.1t}) \\
+    v(t + 1) = 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \\\\
+    v(t) < v(t + 1) \\
+    2.5 \cdot (1 - e^{-0.1t}) < 2.5 \cdot (1 - e^{-0.1 \cdot (t + 1)}) \equ \div 2.5 \\
+    1 - e^{-0.1t} < 1 - e^{-0.1 \cdot (t + 1)} \equ - 1; \cdot (-1) \\
+    e^{-0.1t} > e^{-0.1 \cdot (t + 1)} \equ ln() \\
+    -0.1t > -0.1 \cdot (t + 1) \equ \cdot (-10) \\
+    t < t + 1
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    \Delta v = v(t_2) - v(t_1) \\
+    \;= v(5) - v(2) \approx 0.98 - 0.45 = 0.53
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    v'(t) = 0.25 \cdot e^{-0.1t} \\
+    v'(2) = 0.20
+  \end{gather*}
+  \item [h]
+  Die Beschleunigung ist bei $t = 0$ am größten, da sie ständig kleiner wird.
+\end{exercise}
+\section{Lineare Gleichungssysteme (LGS)}
+\begin{gather*}
+  \text{z. B.} \gap
+  \begin{vmatrix}
+    3x_1 & + & 2x_2 & - & 3x_3 & = & 5 \\
+    -x_1 & - & x_2 & + & 5x_3 & = & 15
+  \end{vmatrix}
+  \gap \text{2x3 LGS}
+\end{gather*}
+\subsubsection{LGS in Stufenform}
+\begin{gather*}
+  \begin{vmatrix}
+    -x_2 & + & 4x_1 & + & 3x_3 & = 2 \\
+    3x_2 & + & x_1 &&&  = 5 \\
+    4x_2 &&&&& = 8
+  \end{vmatrix} \\
+  \Rightarrow \text{ einfach zu lösen} \\
+  \text{\Rmnum{3}} \gap 4x_2 = 8 \rightarrow x_2 = 2 \\
+  \text{eingesetzt in \Rmnum{2}} \\
+  x_1 + 3 \cdot 2 = 5 \rightarrow x_1 = -1 \\
+  \text{eingesetzt in \Rmnum{1}} \\
+  4 \cdot (-1) -2 + 3x_3 = 2 \rightarrow x_3 = \frac{8}{3} \\
+  L = \{(-1|2|\frac{8}{3})\}
+\end{gather*}
+\subsection{Gauß-Verfahren}
+Das Gauß-Verfahren dient dazu, ein LGS in Stufenform zu überführen und dann zu lösen.
+\newpage
+\begin{exercise}{256/4}
+  \item [a]
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      3x_1 & + & 3x_2 & + & 7x_3 & = & 13 \\
+      4x_1 & - & 2x_2 & - & 3x_3 & = & -1
+    \end{vmatrix}
+  \end{gather*}
+  Eliminiere $x_1$ aus 2 der 3 Gleichungen
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      3x_1 & + & 3x_2 & + & 7x_3 & = & 13 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap \Rmnum{3} - 2 \cdot \Rmnum{1} \\
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      {\color{red}0}x_1 & + & 18x_2 & - & 1x_3 & = & 17 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap 2 \cdot \Rmnum{2} - 3 \cdot \Rmnum{1}
+  \end{gather*}
+  Eliminiere $x_2$ aus 1 der 2 Gleichungen
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      {\color{red}0}x_1 & + & {\color{red}0}x_2 & + & 38x_3 & = & 38 \\
+      {\color{red}0}x_1 & + & 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix}
+    \gap\gap \Rmnum{2} - 3 \cdot \Rmnum{3}
+  \end{gather*}
+  Löse LGS in Stufenform
+  \begin{gather*}
+    \begin{vmatrix}
+      2x_1 & - & 4x_2 & + & 5x_3 & = & 3 \\
+      &&&& 38x_3 & = & 38 \\
+      && 6x_2 & - & 13x_3 & = & -7
+    \end{vmatrix} \\
+    \text{\Rmnum{2}} \gap 38x_3 = 38 \rightarrow x_3 = 1 \\
+    \text{eingesetzt in \Rmnum{3}} \\
+    6x_2 - 13 \cdot 1 = -7 \rightarrow x_2 = 1 \\
+    \text{eingesetzt in \Rmnum{1}} \\
+    2x_1 - 4 \cdot 1 + 5 \cdot 1 = 3 \rightarrow x_1 = 1 \\
+    L = \{(1|1|1)\}
+  \end{gather*}
+\end{exercise}
+\newpage
+\subsection{Matrix-Schreibweise}
+\begin{exercise}{256/4}
+  \item [b]
+  \begin{gather*}
+    \begin{vmatrix}
+      -x_1 & + & 7x_2 & - & x_3 & = & 5 \\
+      4x_1 & - & x_2 & + & x_3 & = & 1 \\
+      5x_1 & - & 3x_2 & + & x_3 & = & -1
+    \end{vmatrix} \gap\longrightarrow\gap
+    \begin{vmatrix}
+      -1 & 7 & -1 & \vdots & 5 \\
+      4 & -1 & 1 & \vdots & 1 \\
+      5 & -3 & 1 & \vdots & -1
+    \end{vmatrix} \\\\
+    \begin{vmatrix}
+      -1 & 7 & -1 & \vdots & 5 \\
+      3 & 6 & 0 & \vdots & 6 \\
+      1 & -2 & 0 & \vdots & -2
+    \end{vmatrix} \gap\gap \Rmnum{2} + \Rmnum{1}; \gap \Rmnum{3} - \Rmnum{2} \\
+    \begin{vmatrix}
+      -1 & 7 & -1 & \vdots & 5 \\
+      3 & 6 & 0 & \vdots & 6 \\
+      0 & 12 & 0 & \vdots & 12
+    \end{vmatrix} \gap\gap \Rmnum{2} - 3 \cdot \Rmnum{3} \\\\
+    ... \\
+    L = \{0|1|2\}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \begin{vmatrix}
+      0 & 0.6 & 1.8 & 3 \\
+      0.3 & 1.2 & 0 & 0 \\
+      0.5 & 0 & 1 & 1
+    \end{vmatrix} \\
+    \begin{vmatrix}
+      0 & 0.6 & 1.8 & 3 \\
+      0.3 & 0 & -3.6 & -6 \\
+      0.5 & 0 & 1 & 1 \\
+    \end{vmatrix} \Rmnum{2} - 2 \cdot \Rmnum{1} \\
+    \begin{vmatrix}
+      0 & 0.6 & 1.8 & 3 \\
+      2.1 & 0 & 0 & -2.4 \\
+      0.5 & 0 & 1 & 1 \\
+    \end{vmatrix} \Rmnum{2} + 3.6 \cdot \Rmnum{3} \\
+    2.1x_1 = -2.4 \rightarrow x_1 = -\frac{8}{7} \\
+    0.5 \cdot (-\frac{8}{7}) + x_3 = 1 \rightarrow x_3 = \frac{11}{7} \\
+    0.6x_2 + 1.8 \cdot \frac{11}{7} = 3 \rightarrow x_2 = \frac{2}{7} \\
+    L = \{-\frac{8}{7}|\frac{2}{7}|\frac{11}{7}\}
+  \end{gather*}
+\end{exercise}
+\subsubsection{Beispiel einer Sonderfall-Lösung}
+\begin{gather*}
+  \begin{vmatrix}
+    3x_1 & + & 2x_2 & - & 3x_3 & = & 5 \\
+    -x_1 & - & x_2 & + & 5x_3 & = & 15
+  \end{vmatrix} \\
+  \begin{vmatrix}
+    3x_1 & + & 2x_2 & - & 3x_3 & = 5 \\
+    & - & x_2 & + & 12x_3 & = 50
+  \end{vmatrix} \Rmnum{1} + 3 \cdot \Rmnum{2} \\
+  \text{Eine Variable ist frei wählbar und wird $a$ bezeichnet} \\
+  x_3 = a \\
+  \Rmnum{2} \gap -x_2 + 12a = 50 \rightarrow x_2 = 12a - 50 \\
+  \Rmnum{1} \gap 3x_1 + 2(12a - 50) - 3a = 5 \rightarrow x_1 = -7a + 35 \\
+  \begin{pmatrix}
+    x_1 \\ x_2 \\ x_3
+  \end{pmatrix} =
+  \begin{pmatrix}
+    -7a + 35 \\ 12a - 50 \\ a
+  \end{pmatrix} =
+  \begin{pmatrix}
+    -7a \\ 12a \\ a
+  \end{pmatrix} +
+  \begin{pmatrix}
+    35 \\ -50 \\ 0
+  \end{pmatrix} =
+  \begin{pmatrix}
+    35 \\ -50 \\ 0
+  \end{pmatrix} + a \cdot
+  \begin{pmatrix}
+    7 \\ 12 \\ 1
+  \end{pmatrix} \\
+  \text{Geradengleichung im $\mathbb{R}^3$}
+\end{gather*}
+\subsection{Steckbriefaufgaben}
+\textbf{Beispiel} Gesucht ist die Funktionsgleichung einer Funktion zweiten Grades \\
+$y = ax^2 + bx + c$ \\
+Merkmale:
+\begin{enumerate}
+  \item verläuft durch $P(2|5)$
+  \begin{gather*}
+    f(2) = 5 \\
+    5 = a \cdot 2^2 + b \cdot 2 + c
+    5 = 4a + 2b + c
+  \end{gather*}
+  \item hat bei $x=3$ die Steigung $10$
+  \begin{gather*}
+    f'(x) = 2ax + b = 10 \\
+    10 = 6a + b
+  \end{gather*}
+  \item schneidet die y-Achse bei $5$
+  \begin{gather*}
+    f(0) = 5 \\
+    5 = a \cdot 0^2 + b \cdot 0 + c \\
+    5 = c
+  \end{gather*}
+\end{enumerate}
+\begin{gather*}
+  c = 5 \\
+  10 = 6a + b \gap\Rightarrow\gap b = 10 - 6a \\
+  5 = 4a + 2(10 - 6a) + 5 \gap\Rightarrow\gap a = 2.5 \\
+  b = 10 - 6 \cdot 2.5 = -5
+\end{gather*}
+Die gesuchte Funktion heißt $f(x) = 2.5x^2 -5x + 5$ \\\\
+\subsubsection{Beispiele für Bedingungen}
+\begin{itemize}
+  \item hat bei $P(1|3)$ einen Wendepunkt
+  \begin{gather*}
+    f(1) = 3 \\
+    f''(1) = 0
+  \end{gather*}
+  \item verläuft bei $P(-2|3)$ parallel zur Geraden $g(x) = 4x - 1$
+  \begin{gather*}
+    f'(-2) = 4
+  \end{gather*}
+  \item hat an der Stelle $x = 3$ einen Sattelpunkt
+  \begin{gather*}
+    f'(3) = 0 \\
+    f''(3) = 0
+  \end{gather*}
+  \item ist eine achsensymmetrische Funktion 4. Grades / punktsymmetrische Funktion 5. Grades
+  \begin{gather*}
+    f(x) = ax^4 + bx^3 + cx^2 + dx + e \\
+    \Rightarrow\gap b = d = 0 \\
+    g(x) = ax^5 + bx^4 + cx^3 + dx^2 + ex + f \\
+    \Rightarrow\gap b = d = f = 0
+  \end{gather*}
+\end{itemize}
+\begin{exercise}{262/1}
+  \item [c]
+  \begin{gather*}
+    A(1|3) \gap\gap B(-1|2) \gap\gap C(3|2) \\
+    y = ax^2 + bx + c \\
+    3 = a + b + c \\
+    2 = a - b + c \\
+    2 = 9a + 3b + c \\\\
+    a - b + c = 9a + 3b + c \gap\Rightarrow\gap a = -\frac{1}{2}b \\
+    \frac{1}{2}b + c = -\frac{3}{2} + c + 1 \gap\Rightarrow\gap b = \frac{1}{2} \gap\Rightarrow\gap a = -\frac{1}{4} \\
+    3 = -\frac{1}{4} + \frac{1}{2} + c \gap\Rightarrow\gap c = 2\frac{3}{4} \\\\
+    y = -\frac{x}{4} + \frac{x}{2} + 2\frac{3}{4}x
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{262/4}
+  \item [a]
+  \begin{gather*}
+    A(0|1) \gap\gap B(1|0) \gap\gap C(-1|4) \gap\gap D(2|-5) \\
+    y = ax^3 + bx^2 + cx + d \\
+    1 = d \\
+    0 = a + b + c + d \\
+    4 = -a + b - c + d \\
+    -5 = 8a + 4b + 2c + d \\\\
+    a + b + c = a + b - c + d + 8a + 4b + 2c + d \gap\Rightarrow\gap c = 2a + b \\
+    4 = -a + b - 2a - b + d \gap\Rightarrow\gap a = -1 \gap\Rightarrow\gap b + c = 0 \\
+    c = 2a + b \gap\Rightarrow\gap c = -1 \gap\Rightarrow\gap b = 1 \\\\
+    y = -x^3 + x^2 - x + 1
+  \end{gather*}
+\end{exercise}
+\subsection{Funktionenschar}
+\begin{exercise}{262/3}
+  \item [b]
+  \begin{gather*}
+    f(x) = ax^2 + bx + c \\
+    A(2|0) \gap\gap B(-2|0) \\
+    \begin{vmatrix}
+      4a & + & 2b & + & c & = & 0 \\
+      4a & - & 2b & + & c & = & 0
+    \end{vmatrix} \\
+    \text{2x3 LGS unterbestimmt $\Rightarrow$ eine Variable ist frei wählbar} \\
+    \begin{vmatrix}
+      4a & + & 2b & + & c & = & 0 \\
+      4b &&&&& = & 0
+    \end{vmatrix}
+    \gap\gap \Rmnum{1} - \Rmnum{2} \\
+    \Rightarrow\gap b = 0 \\
+    4a + c = 0 \\\\
+    \text{setze } a = k \\
+    4k + c = 0 \gap\Rightarrow\gap c = -4k \\\\
+    f_k(x) = kx^2 - 4k \gap\gap \text{Funktionenschar, Parameterfunktion}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = ax^2 + bx + c \\
+    A(-4|0) \gap\gap B(0|-4) \\
+    \begin{vmatrix}
+      16a & - & 4b & + & c & = & 0 \\
+      &&&& c & = & -4
+    \end{vmatrix} \\
+    \Rightarrow\gap c = -4 \\
+    16a - 4b - 4 = 0 \\\\
+    a = k \\
+    16k - 4b = 4 \gap\Rightarrow\gap b = 4k - 1 \\\\
+    f_k(x) = kx^2 + 4kx - x - 4
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{262/8}
+  \begin{gather*}
+    f(x) = ax^4 + bx^3 + cx^2 + dx + e \\\\
+    f(x) = -f(x) \gap\Rightarrow\gap b = d = 0 \\
+    f(0) = -1 \gap\Rightarrow\gap e = -1 \\
+    f(1) = -3 \gap\gap f'(1) = 0 \gap\gap f''(1) < 0 \\\\
+    f(x) = ax^4 + bx^2 - 1 \\
+    f(1) = a + b - 1 = -3 \gap\Rightarrow\gap a + b = -2 \\
+    f'(x) = 4ax^3 + 2bx \\
+    f'(1) = 4a + 2b = 2a - 4 = 0 \gap\Rightarrow\gap a = 2 \gap\Rightarrow\gap b = -4 \\\\
+    f(x) = 2x^4 - 4x^2 - 1 \\\\
+    f''(x) = 24x^2 - 8 \\
+    f''(1) = 16 > 0 \\\\
+    \Rightarrow\text{ keine Lösung}
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{263/10}
+  \item [c]
+  \begin{gather*}
+    f(x) = a_2x^2 + a_1x + a_0 \\
+    P(-3|3) \gap\gap Q(3|0) \\\\
+    f(-3) = 9a_2 - 3a_1 + a_0 = 3 \\
+    f(3) = 9a_2 + 3a_1 + a_0 = 0 \\\\
+    9a_2 - 3a_1 + a_0 = 9a_2 + 3a_1 + a_0 + 3 \\
+    -a_1 = a_1 + 1 \gap\Rightarrow\gap a_1 = -\frac{1}{2} \\
+    9a_2 + 1.5 + a_0 = 3 \gap\Rightarrow\gap a_0 = 1.5 - 9a_2 \\\\
+    a_2 = k \\
+    f_k(x) = kx^2 - 0.5x + 1.5 - 9k \\\\
+    \text{schwarz} \\
+    f_k(1) = k - 0.5 + 1.5 - 9k = 2 \gap\Rightarrow\gap k = -\frac{1}{8} \\
+    f(x) = -\frac{1}{8}x^2 - \frac{1}{2}x^2 + 2.625 \\\\
+    \text{rot} \\
+    f_k(1) = k - 0.5 + 1.5 - 9k = 3 \gap\Rightarrow\gap k = -\frac{1}{4} \\
+    f(x) = -\frac{1}{4}x^2 - \frac{1}{2}x + 3.75 \\\\
+    \text{blau} \\
+    f_k(1) = k - 0.5 + 1.5 - 9k = -1 \gap\Rightarrow\gap k = \frac{1}{4} \\
+    f(x) = \frac{1}{4}x^2 - \frac{1}{2}x - 0.75
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{263/11}
+  \begin{gather*}
+    f(\pm\frac{1624}{2}) = f(\pm812) = 254 - 65 = 189 \\
+    f(x) = ax^2 + bx + c \\
+    f(x) = -f(x) \gap\Rightarrow\gap b = 0 \\
+    f(0) = 0 \gap\Rightarrow\gap c = 0 \\
+    f(812) = ax^2 = 659344a = 189 \gap\Rightarrow\gap a \approx 2.8665 \cdot 10^{-4} \\
+    f(x) = 2.8665 \cdot 10^{-4} \cdot x^2
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{263/12}
+  \begin{gather*}
+    SP(-1|-1) \gap\gap SP(1|1) \gap\Rightarrow\gap f'(\pm1) = f''(\pm1) = 0 \\
+    WP(0|0) \gap\Rightarrow\gap f''(0) = 0 \\
+    f(x) = ax^5 + bx^3 + cx \\\\
+    f(1) = a + b + c = 1 \\
+    f'(1) = 5a + 3b + c = 0 \\
+    f''(1) = 20a + 6b = 0 \\\\
+    \begin{vmatrix}
+      1 & 1 & 1 & 1 \\
+      5 & 3 & 1 & 0 \\
+      20 & 6 & 0 & 0
+    \end{vmatrix} \\
+    \begin{vmatrix}
+      1 & 1 & 1 & 1 \\
+      4 & 2 & 0 & -1 \\
+      20 & 6 & 0 & 0
+    \end{vmatrix} \gap \Rmnum{2} - \Rmnum{1} \\
+    \begin{vmatrix}
+      1 & 1 & 1 & 1 \\
+      4 & 2 & 0 & -1 \\
+      8 & 0 & 0 & 3
+    \end{vmatrix} \gap \Rmnum{3} - 3 \cdot \Rmnum{2} \\\\
+    8a = 3 \gap\Rightarrow\gap a = \frac{3}{8} \\
+    \frac{3}{2} + 2b = -1 \gap\Rightarrow\gap b = -\frac{5}{4} \\
+    \frac{3}{8} - \frac{5}{4} + c = 1 \gap\Rightarrow\gap \frac{15}{8} \\\\
+    f(x) = \frac{3}{8}x^5 - \frac{5}{4}x^3 + \frac{15}{8}x
+  \end{gather*}
+\end{exercise}
+
+\chapter{Integralrechnung}
+\begin{gather*}
+  s = v \cdot t \gap\gap\text{fuer } v = const. \\
+  \text{Rechtecksfläche } A = 5s \cdot 15\frac{m}{s} = 75m \\
+  \text{Es gilt } A = s = \text{ zurückgelegter Weg}
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/integral_tv1.png}
+\end{figure}
+\newpage
+\begin{gather*}
+  s(t) = v(t) \cdot t \\
+  s = \text{ Summe von Rechtecksstreifen als Näherung für den Flächeninhalt}
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{/fakepath/integral_tv2.png}
+\end{figure}
+Durch Grenzwertbildung erhält man
+\begin{gather*}
+  s = \int_0^5 v(t) \cdot dt
+\end{gather*}
+\section{Untersumme - Obersumme}
+\begin{gather*}
+  \text{Beispiel } f(x) = y = x^2 \gap\gap x \in \left[0; 1\right]
+\end{gather*}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{/fakepath/untersumme_obersumme.png}
+\end{figure}
+\subsubsection{Untersumme}
+\begin{gather*}
+  U_5 = 0.2 \cdot (0 + 0.04 + 0.16 + 0.36 + 0.64) = 0.24FE \\
+  \text{Der wahre Flächeninhalt ist sicher größer als } 0.24FE
+\end{gather*}
+\subsubsection{Obersumme}
+\begin{gather*}
+  O_5 = 0.2 \cdot (0.04 + 0.16 + 0.36 + 0.64 + 1) = 0.44FE \\
+  \text{Der wahre Flächeninhalt ist sicher kleiner als } 0.44FE
+\end{gather*} \\
+\begin{gather*}
+  5 \rightarrow \text{ Intervall in $5$ gleiche Abschnitte} \colon \\
+  \gap\gap\gap I = \left[0; 1\right] \Rightarrow \text{ Intervallbreite } 0.2 \rightarrow \text{ Breite der Rechtecke} \\
+  (0 + ... + 0.64) \text{ bzw. } (0.04 + ... + 1) \rightarrow \text{ Höhen der Rechtecke} \\
+  FE \rightarrow \text{ Flächeneinheiten}
+\end{gather*} \\
+\begin{gather*}
+  U_{10} = 0.1 \cdot (0 + 0.01 + 0.04 + 0.09 + 0.16 + 0.25 + 0.36 + 0.49 + 0.64 + 0.81) \\
+  \;= 0.285FE \\
+  O_{10} = 0.1 \cdot (0.01 + 0.04 + 0.09 + 0.16 + 0.25 + 0.36 + 0.49 + 0.64 + 0.81 + 1) \\
+  \;= 0.385FE
+\end{gather*}
+\newpage
+\subsection{Obersumme/Untersumme $\rightarrow$ $lim$ $\rightarrow$ Integral}
+$$f(x) = x^2$$
+Teile das Intervall in $n$ Teile \\
+\gap $\rightarrow$ Jeder Teil ist $\frac{b}{n}$ (da $b = 1 \rightarrow \frac{1}{n}$) Längeneinheiten breit
+\begin{gather*}
+  U_n = \frac{1}{n} \cdot (0 + (\frac{1}{n})^2 + (\frac{2}{n})^2 + (\frac{3}{n})^2 + ... + (\frac{n-1}{n})^2) \\
+  \;= \frac{1}{n^3} \cdot (0 + 1^2 + 2^2 + 3^2 + ... + (n-1)^2) \\
+  \;= \frac{1}{n^3} \cdot \frac{1}{6} \cdot (n - 1) \cdot n \cdot (2n - 1) \\
+  \;= \frac{1}{6} \cdot \frac{n - 1}{n} \cdot \frac{n}{n} \cdot \frac{2n - 1}{n} \\
+  \lim\limits_{n \to \infty} U_n = \lim\limits_{n \to \infty} (\frac{1}{6} \cdot \frac{n - 1}{n} \cdot \frac{n}{n} \cdot \frac{2n - 1}{n}) = \frac{1}{6} \cdot 1 \cdot 1 \cdot 2 = \frac{1}{3} \\\\
+  O_n = \frac{1}{n} \cdot ((\frac{1}{n})^2 + (\frac{2}{n})^2 + (\frac{3}{n})^2 + ... + (\frac{n-1}{n})^2 + (\frac{n}{n})^2) \\
+  \;= \frac{1}{n^3} \cdot (1^2 + 2^2 + 3^2 + ... + (n-1)^2 + n^2) \\
+  \;= \frac{1}{n^3} \cdot \frac{1}{6} \cdot n \cdot (n + 1) \cdot (2(n + 1) - 1) \\
+  \;= \frac{1}{6} \cdot \frac{n}{n} \cdot \frac{n + 1}{n} \cdot \frac{2(n + 1) - 1}{n} \\
+  \lim\limits_{n \to \infty} O_n = \lim\limits_{n \to \infty} (\frac{1}{6} \cdot \frac{n}{n} \cdot \frac{n + 1}{n} \cdot \frac{2(n + 1) - 1}{n}) = \frac{1}{6} \cdot 1 \cdot 1 \cdot 2 = \frac{1}{3} \\\\
+  \lim\limits_{n \to \infty} U_n = \lim\limits_{n \to \infty} O_n = \frac{1}{3} \\
+  \text{Der wahre Flächeninhalt ist $A = \frac{1}{3}FE$}
+\end{gather*}
+\begin{gather*}
+  \text{Wenn gilt, dass } \lim\limits_{n \to \infty} U_n = \lim\limits_{n \to \infty} O_n = \text{Zahl} = \int_a^b f(x) \cdot dx
+\end{gather*}
+Existiert ein gemeinsamer Grenzwert ($n \to \infty$) von Untersumme und Obersumme, so nennt man den Grenzwert Integralwert des bestimmten Integrals.
+\begin{exercise}{160/3}
+  \item [a]
+  $1FE \estim 1000000m^3 \text{ Wasser}$
+  \item [b]
+  Am schnellsten zwischen $2h$ und $4h$. \\
+  Am langsamsten zwischen $8h$ und $10h$. \\
+  Nach $12h$ wiederholt sich der Graph periodisch.
+  \item [c]
+  Der Graph wird um $25\%$ gestreckt, die Fläche wächst also um $25\%$.
+\end{exercise}
+\section{Das bestimmte Integral}
+\begin{gather*}
+  \int_a^b f(x) \cdot dx
+\end{gather*}
+$a, b$ ... linke bzw. rechte Intervallgrenze \\
+$f(x)$ ... Integrand, zu integrierende Funktion \\
+$x$ ... Integrationsvariable \\
+$dx$ ... Differenzial \gap $\lim\limits_{x \to 0} \Delta x = dx$ \\
+$f(x) \cdot dx$ ... Fläche eines infinitesimal schmalen Rechteckstreifens mit Breite $dx$ und Höhe $f(x)$ \\
+$\int$ ... Integralzeichen meint eine Summation \\\\
+liegt $f(x)$ unterhalb der $x$-Achse ($<0$) im Intervall $\left[a; b\right]$, so gilt $\int_a^b f(x) \cdot dx < 0$ \\\\
+Das Integral ist die Differenz oberhalb der $x$-Achse und unterhalb der $x$-Achse liegender Flächenstücke
+\section{Berechnung von Integralen, Hauptsatz}
+Gesucht: Flächeninhalt unter dem Graphen von $f(x) = y = \frac{2}{5}x^3$ im Intervall $\left[0; b\right]$ \\
+\begin{gather*}
+  \int_0^b \frac{1}{5}x^3 \cdot dx \\\\
+  O_n = \frac{b}{n} \cdot (\frac{1}{5}(\frac{b}{n})^3 + \frac{1}{5}(\frac{2b}{n})^3 + ... + \frac{1}{5}(\frac{(n - 1) \cdot b}{n})^3 + \frac{1}{5}b^3) \\
+  \;= \frac{1}{5} \cdot \frac{b^4}{n^4} \cdot (1^3 + 2^3 + ... + (n - 1)^3 + n^3) \\
+  \;= \frac{1}{5} \cdot \frac{b^4}{n^4} \cdot \frac{1}{4}n^2 \cdot (n + 1)^2 \\
+  \;= \frac{1}{4} \cdot \frac{1}{5} \cdot b^4 \cdot \frac{n}{n} \cdot \frac{n}{n} \cdot \frac{n + 1}{n} \cdot \frac{n + 1}{n} \\\\
+  \int_0^b \frac{1}{5}x^3 \cdot dx = \lim\limits_{n \to \infty} O_n = \lim\limits_{n \to \infty} (\frac{1}{4} \cdot \frac{1}{5} \cdot b^4 \cdot \frac{n}{n} \cdot \frac{n}{n} \cdot \frac{n + 1}{n} \cdot \frac{n + 1}{n}) = \frac{1}{20}b^4
+\end{gather*}
+Betrachte den Flächeninhalt zu linker Grenze $a$ und rechter Grenze $b$.
+\begin{gather*}
+  \lim\limits_{n \to \infty} O_n = \frac{1}{20}a^4 \gap\gap fuer\gap \left[0; a\right] \\
+  \lim\limits_{n \to \infty} O_n = \frac{1}{20}b^4 \gap\gap fuer\gap \left[0; b\right] \\
+  A = \frac{1}{20}b^4 - \frac{1}{20}a^4 \gap\gap fuer\gap \left[a; b\right] \\\\
+  A = \frac{1}{20}b^4 - \frac{1}{20}a^4 = \int_a^b \frac{1}{5}x^3 \cdot dx = \left[\frac{1}{20}x^4\right]_a^b
+\end{gather*}
+\subsection{Verallgemeinerung (Hauptsatz der Differenzial- und Integralrechnung)}
+\begin{gather*}
+  A = \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a)
+\end{gather*} \\
+dabei gilt $F'(x) = f(x)$ \\
+$F(x)$ heißt Aufleitungsfunktion oder Stammfunktion von $f(x)$.
+\begin{gather*}
+  \text{im Beispiel} \colon F(x) = \frac{1}{20}x^4 \gap\rightarrow\gap (\frac{1}{20}x^4)' = \frac{d}{dx}(\frac{1}{20}x^4) = \frac{1}{5}x^3
+\end{gather*}
+\begin{exercise}{167/3}
+  \item [a]
+  \begin{gather*}
+    f(x) = x^2 \gap\gap F(x) = \frac{1}{3}x^3 \\
+    \int_0^4 x^2 \cdot dx = F(4) - F(0) = \frac{64}{3}
+  \end{gather*}
+  \item [i]
+  \begin{gather*}
+    f(x) = \frac{1}{8}x^4 \gap\gap F(x) = \frac{1}{40}x^5 \\
+    \int_{-2}^{-1} \frac{1}{8}x^4 \cdot dx = F(-1) - F(-2) = 0.775
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = 0.5x^2 \gap\gap F(x) = \frac{1}{6}x^3 \\
+    \int_{-4}^4 0.5x^2 \cdot dx = F(4) - F(-4) = \frac{64}{3}
+  \end{gather*}
+  \item [k]
+  \begin{gather*}
+    f(x) = x^5 \gap\gap F(x) = \frac{1}{6}x^6 \\
+    \int_{-1}^1 x^5 \cdot dx = F(1) - F(-1) = 0
+  \end{gather*}
+\end{exercise}
+\section{Integrale lösen - Anwendung}
+\begin{exercise}{168/11}
+  \begin{gather*}
+    v(t) = 9.81 \cdot t \gap\gap V(t) = s(t) = 4.905 \cdot t^2 \\
+    \int_0^3 v(t) \cdot dt = V(3) - V(0) = 44.145
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{168/13}
+  \item [a]
+  \begin{gather*}
+    f(x) = x \gap\gap F(x) = 0.5x^2 \\
+    \int_0^z x \cdot dx = 18 = F(z) - F(0) = F(z) - 0 \\
+    F(z) = 18 \gap\Rightarrow\gap z = 6
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = 4x \gap\gap F(x) = 2x^2 \\
+    \int_1^z 4x \cdot dx = 30 = F(z) - F(1) = F(z) - 2 \\
+    F(z) = 32 \gap\Rightarrow\gap z = 4
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = 2x \gap\gap F(x) = x^2 \\
+    \int_z^{10} 2x \cdot dx = 19 = F(10) - F(z) = 100 - F(z) \\
+    F(z) = 81 \gap\Rightarrow\gap z = 9
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = 0.4 \gap\gap F(x) = 0.4x \\
+    \int_0^{2z} 0.4 \cdot dx = 8 = F(2z) - F(0) = F(2z) - 0 \\
+    F(2z) = 8 \gap\Rightarrow\gap 2z = 20 \gap\Rightarrow\gap z = 10
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{168/15}
+  \item [a]
+  \begin{gather*}
+    f(x) = -2x^2 + 8x + 1 = 0 \\
+    x_{1/2} = \frac{-8 \pm \sqrt{8^2 - 4 \cdot (-2) \cdot 1}}{2 \cdot (-2)} = \frac{-8 \pm \sqrt{72}}{-4} \\
+    x_1 \approx -0.1213 \gap\gap x_2 \approx 4.1213
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = (x + 3)^2 \cdot (x + 1) = 0 \\
+    (x + 3)^2 = 0 \gap\Rightarrow\gap x_1 = -3 \\
+    (x + 1) = 0 \gap\Rightarrow\gap x_2 = -1
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = 4x^2 \cdot (x^2 - 10) + 4x^2 = 8x^4 - 40x^2 = 0 \\
+    x_1 = 0 \\
+    (x^2 - 10) = -1 \gap\Rightarrow\gap x_{2/3} = \pm 3
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = 4 \cdot (x - 0.5)^4 - 4 = 0 \\
+    (x - 0.5)^4 = 1 \gap\Rightarrow\gap x_1 = 1.5 \gap\gap x_2 = -0.5
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = e^x - e^2 = 0 \\
+    x = 2
+  \end{gather*}
+  \item [f]
+  \begin{gather*}
+    f(x) = 0.2e^{2x} - 1 = 0 \\
+    e^{2x} = 5 \gap\Rightarrow\gap x = \frac{log(5)}{2} \approx 0.8047
+  \end{gather*}
+\end{exercise}
