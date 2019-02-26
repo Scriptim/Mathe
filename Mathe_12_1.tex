@@ -2397,3 +2397,23 @@ Spezialfälle
     \text{parallel zur $x_3$-Ebene}
   \end{gather*}
 \end{exercise}
+\section{Lage Ebene $\leftrightarrow$ Gerade}
+\begin{itemize}
+  \item schneiden sich
+  \item verlaufen parallel
+  \item Gerade ist Teil der Ebene
+\end{itemize}
+Beispiel:
+\begin{gather*}
+  E \colon 2x_1 - x_2 + 3x_3 = 16 \\
+  g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} = \begin{pmatrix}1 + 2r \\ 2 - r \\ 3\end{pmatrix} = \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} \\\\
+  \text{$g$ in $E$ eingesetzt} \\
+  2 \cdot (1 + 2r) - (2 - r) + 3 \cdot 3 = 16 \\
+  \Rightarrow\gap r = \frac{7}{5} \\
+  \text{Schnittpunkt } \vv{OS} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + \frac{7}{5} \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} = \begin{pmatrix}3.8 \\ 0.6 \\ 3\end{pmatrix}
+\end{gather*}
+\begin{itemize}
+  \item eindeutige Lösung für $r$ $\Rightarrow$ schneiden sich
+  \item kein $r$ erfüllt die Gleichung $\Rightarrow$ kein Schnittpunkt, parallele Lage
+  \item für jedes $r$ ein möglicher gemeinsamer Punkt $\Rightarrow$ Gerade liegt in der Ebene
+\end{itemize}
