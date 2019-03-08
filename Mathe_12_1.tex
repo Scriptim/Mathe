@@ -2476,3 +2476,57 @@ Beispiel:
   \alpha = acos\left(\frac{\vv{b} \cdot \vv{d}}{|\vv{b}| \cdot |\vv{d}|}\right) \gap\gap \alpha < 90^\circ \\\\
   \alpha = acos\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \gap\gap \beta = asin\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \gap\gap \beta = 90^\circ - \alpha
 \end{gather*}
+\section{Wiederholung}
+\begin{exercise}{344/7}
+  \begin{gather*}
+    g_a \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 + 2a \\ -1 + 5a \\ 1 + 3a\end{pmatrix} \gap\gap a \in \mathbb{R} \\
+    P(1|0|2),\; Q(2|0|3),\; R(0|2|2) \in E
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    \vv{PQ} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} \gap\gap \vv{PR} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \\
+    \vv{n} = \vv{PQ} \times \vv{PR} = \begin{pmatrix}-2 \\ -1 \\ 2\end{pmatrix} \gap\gap \vv{OP} \cdot \vv{n} = 2 \\
+    E \colon -2x_1 - x_2 + 2x_3 = 2 \\\\
+    g_0 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} \gap\gap g_1 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} \\\\
+    g_0 = E \gap\gap -2(2 + 4t) - (7 - t) + 2(3 + t) = 2 \gap\Rightarrow\gap t = -\frac{7}{5} \\
+    g_1 = E \gap\gap -2(2 + 6t) - (7 + 4t) + 2(3 + 4t) = 2 \gap\Rightarrow\gap t = \frac{-7}{8} \\\\
+  \end{gather*}
+  \begin{gather*}
+    \vv{OS_0} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{5} \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} = \begin{pmatrix}-3.6 \\ 8.4 \\ 1.6\end{pmatrix} \gap\gap \vv{OS_1} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{8} \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} = \begin{pmatrix}-3.25 \\ 3.5 \\ -0.5\end{pmatrix} \\
+    \vv{S_0S_1} = \begin{pmatrix}0.35 \\ -4.9 \\ -2.1\end{pmatrix} \\\\
+    h \colon \vv{x} = \begin{pmatrix}-3.6 \\ 8.4 \\ 1.6\end{pmatrix} + t \cdot \begin{pmatrix}0.35 \\ -4.9 \\ -2.1\end{pmatrix}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    t \cdot \begin{pmatrix}0.35 \\ -4.9 \\ -2.1\end{pmatrix} = \begin{pmatrix}4 + 2a \\ -1 + 5a \\ 1 + 3a\end{pmatrix} \\\\
+    0.35t = 4 + 2a \\
+    -4.9t = -1 + 5a \\
+    -2.1t = 1 + 3a \\\\
+    \Rightarrow\gap a = -\frac{5}{3} \gap\gap (t \approx 1.905)
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{326/15}
+  \item [a]
+  \begin{gather*}
+    2t = 0 \gap\Rightarrow\gap t = 0 \\
+    4 = 0 \gap\Rightarrow\gap \text{keine Lösung} \\
+    t = 0 \gap\Rightarrow\gap t = 0 \\\\
+    \Rightarrow\gap t = 0
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    t - 1 = 0 \gap\Rightarrow\gap t = 1 \\
+    t^2 - 1 = 0 \gap\Rightarrow\gap t = \pm1 \\
+    t + 1 = 0 \gap\Rightarrow\gap t = -1 \\\\
+    \Rightarrow\gap t = \pm1
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{374/7}
+  \item [b]
+  \begin{gather*}
+    A(1|-2|12) \gap\gap B(11|3|5) \gap\gap C(3|5|8) \gap\gap D(19|4|4) \\
+    \vv{AB} = \begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \gap\gap \vv{AC} = \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \gap\gap \vv{AD} = \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix} \\
+    V = \frac{1}{6} \cdot |\vv{AB} \times \vv{AC} \cdot \vv{AD}| = \frac{1}{6} \cdot \Biggl|\begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \times \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\Biggr| \\
+    \;= \frac{1}{6} \cdot \Biggl|\begin{pmatrix}29 \\ 26 \\ 60\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\Biggr| = \frac{1}{6} \cdot |198| = 33
+  \end{gather*}
+\end{exercise}
