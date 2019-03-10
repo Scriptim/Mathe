@@ -32,13 +32,13 @@ pq-Formel:
   x_{1/2} = -\frac{p}{2} \pm \sqrt{\smash[b]{\underbrace{(\frac{p}{2})^2 - q}_{\text{Diskriminante*}}}}
 \end{gather*}
 *Diskriminante:\\
-$ > 0 \gap\Rightarrow\gap \text{zwei Lösungen} $ \\
-$ = 0 \gap\Rightarrow\gap \text{eine Lösung} $ \\
-$ < 0 \gap\Rightarrow\gap \text{keine Lösung} $
+$ > 0 \quad\Rightarrow\quad \text{zwei Lösungen} $ \\
+$ = 0 \quad\Rightarrow\quad \text{eine Lösung} $ \\
+$ < 0 \quad\Rightarrow\quad \text{keine Lösung} $
 \begin{gather*}
   x_1 + x_2 = -\frac{p}{2} + \sqrt{\cdots} - \frac{p}{2} - \sqrt{\cdots} = -p \\
   x_1 \cdot x_2 = (-\frac{p}{2} + \sqrt{\cdots}) (-\frac{p}{2} - \sqrt{\cdots}) = \frac{p^2}{4} - \frac{p^2}{4} + q = q \\\\
-  \Rightarrow x_1 + x_2 = -p \gap x_1 \cdot x_2 = q \\\\
+  \Rightarrow x_1 + x_2 = -p \quad x_1 \cdot x_2 = q \\\\
   0 = x^2 + px + q = (x - x_1)(x - x_2) \\
   = x^2 + (-x_1 - x_2)x + x_1 \cdot x_2 \\\\
   \textbf{Beispiel} \\
@@ -71,12 +71,12 @@ Lösungsmenge der Gleichung = Menge der Nullstellen (Schnitte mit der x-Achse) d
   \text{substituiere} \; x^2 = t \\
   0 = 2t^2 - 3t - 5 \\
   t_{1/2} = \frac{3 \pm \sqrt{9 + 40}}{4} = \frac{3 \pm 7}{4} \\
-  t_1 = 2.5, \gap t_2 = -1 \\\\
+  t_1 = 2.5, \quad t_2 = -1 \\\\
   \text{resubstituiere} \\
   t_1 = x^2 = 2.5 \equ \sqrt{} \\
-  \gap x_1 = \sqrt{2.5}; \; x_2 = -\sqrt{2.5} \\
+  \quad x_1 = \sqrt{2.5}; \; x_2 = -\sqrt{2.5} \\
   t_2 = x^2 = -1 \equ \sqrt{} \\
-  \gap \text{keine Lösung} \\
+  \quad \text{keine Lösung} \\
   L = \{\sqrt{2.5}; -\sqrt{2.5}\}
 \end{gather*}
 \section{Potenzen, Wurzeln und Logarithmen}
@@ -118,12 +118,12 @@ $a_n = y = \dots \;\leftarrow Funktionsterm$ \\
 Angabe eines Funktionsterms für alle Zahlen nennt man explizite Darstellung der Zahlenfolge. \\
 \begin{gather*}
   a_n = (\frac{1}{2})^n \\
-  a_1 = \frac{1}{2};\gap a_2 = \frac{1}{4};\gap a_3 = \frac{1}{8}; \gap\dots;\gap a_{100} = 2^{-100}
+  a_1 = \frac{1}{2};\quad a_2 = \frac{1}{4};\quad a_3 = \frac{1}{8}; \quad\dots;\quad a_{100} = 2^{-100}
 \end{gather*}
 Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung der Zahlenfolge. (Rekursion) \\
 \begin{gather*}
   a_n = 2 \cdot a_{n-1} + 3 \cdot a_{n-2} \\
-  a_1 = 1;\gap a_2 = 1 \\
+  a_1 = 1;\quad a_2 = 1 \\
   a_3 = 2 \cdot a_2 + 3 \cdot a_1 = 2 \cdot 1 + 3 \cdot 1 = 5
   a_4 = 2 \cdot a_3 + 3 \cdot a_2 = 2 \cdot 5 + 3 \cdot 1 = 13
 \end{gather*} \\
@@ -164,7 +164,7 @@ Berechnung der Folgezahlen Schritt für Schritt nennt man implizite Darsteluung 
   \end{gather*}
   \item [d]
   \begin{gather*}
-    a_1 = 0;\; a_2 = 1;\; a_{n + 2} = a_n + a_{n + 1}\gap \text{(Fibonacci)} \\
+    a_1 = 0;\; a_2 = 1;\; a_{n + 2} = a_n + a_{n + 1}\quad \text{(Fibonacci)} \\
     a_1 = 0;\; a_2 = 1;\; a_3 = 1;\; a_4 = 2;\; a_5 = 3;\\
     a_6 = 5;\; a_7 = 8;\; a_8 = 13;\; a_9 = 21;\; a_{10} = 34\\
     a_n = \frac{\varphi^n - \psi^n}{\varphi - \psi}
@@ -248,7 +248,7 @@ z. B.
 $a_n$ hat den Grenzwert $g = 0$, da $a_n$ auch streng monoton fallend ist, ist $s = 0$ die größte untere Schranke (=\glqq Infimum\grqq). \\\\
 Vorgehen \\
 Ich gebe eine Genauigkeitsschranke, z. B. $\epsilon = 10^{-3}$ vor (kleine positive Zahl). Zu $\epsilon$ finde ich ein $n_\epsilon = 1001$. Alle Folgenwerte mit $n \geq n_\epsilon = 1001$ (also $a_{1001},\; a_{1002},\; \dots$) liegen näher beim Grenzwert $g = 0$ als $\epsilon = 10^{-3}$ angibt. Finde ich zu jeder möglichen Genauigkeitsschranke $\epsilon$ solch ein $n_\epsilon$, so ist $g$ der Grenzwert. Ist diese Bedingung erfüllt, so notiert man \\
-$\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \infty} n^{-1} = 0$
+$\lim\limits_{n \to \infty} a_n = g\qquad \text{hier:}\; \lim\limits_{n \to \infty} n^{-1} = 0$
 \newpage
 \begin{exercise}{22/2}
   (Abweichung $< \epsilon = 0.1$)
@@ -262,7 +262,7 @@ $\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \i
   \begin{gather*}
     a_n = \frac{n^2 - 1}{n^2} \\
     |\frac{n^2 - 1}{n^2} - 1| < 0.1 \\
-    \epsilon > \sqrt{10} \approx 3.162\gap \text{(ab 4)}
+    \epsilon > \sqrt{10} \approx 3.162\quad \text{(ab 4)}
   \end{gather*}
   \item [c]
   \begin{gather*}
@@ -290,13 +290,13 @@ $\lim\limits_{n \to \infty} a_n = g\gap\gap \text{hier:}\; \lim\limits_{n \to \i
     2.7n^2 < 2n^2 - 3 \equ - 2n^2 \\
     0.7n^2 < -3 \equ \div 0.7 \\
     n^2 < -\frac{30}{7} \equ \sqrt{} \\
-    n < \sqrt{-\frac{30}{7}} \gap\text{und}\gap n < -\sqrt{-\frac{30}{7}} \\
+    n < \sqrt{-\frac{30}{7}} \quad\text{und}\quad n < -\sqrt{-\frac{30}{7}} \\
     \Rightarrow \text{nicht lösbar}
   \end{gather*}
 \end{exercise}
 \subsection{Grenzwerte}
 Eine Zahlenfolge mit Grenzwert ist eine konvergente Folge. Die Folge konvergiert gegen den Grenzwert. Eine Zahlenfolge ohne Grenzwert ist eine divergente Folge. Eine Nullfolge hat den Grenzwert $g = 0$. \\
-$a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\gap g = 0\gap \text{(Nullfolge)}$
+$a_n = \frac{n}{n+1}\quad g = 1\quad \rightarrow\quad a_n^\ast = \frac{n}{n+1} - 1\quad g = 0\quad \text{(Nullfolge)}$
 \begin{exercise}{22/4}
   \item [a]
   \begin{gather*}
@@ -377,7 +377,7 @@ $a_n = \frac{n}{n+1}\gap g = 1\gap \rightarrow\gap a_n^\ast = \frac{n}{n+1} - 1\
   \end{gather*}
 \end{exercise}
 \subsection{Grenzwerte von Funktionen: $\lim\limits_{x \to \infty};\; \lim\limits_{x \to a}$}
-$f(x) = y = \frac{3x^2 - 3}{(x + 1)(x - 4)} \gap\gap \text{D} = \mathbb{R}\setminus\{\underbrace{-1; 4}_{\mathclap{\text{Nullstellen des Nenners}}}\}$ \\\\
+$f(x) = y = \frac{3x^2 - 3}{(x + 1)(x - 4)} \qquad \text{D} = \mathbb{R}\setminus\{\underbrace{-1; 4}_{\mathclap{\text{Nullstellen des Nenners}}}\}$ \\\\
 $x = -1 \rightarrow \text{Nullstelle des Zählers und Nenners}$ \\
 $x = 4 \rightarrow \text{Nullstelle des Nenners}$
 \begin{gather*}
@@ -400,7 +400,7 @@ $x = 4 \rightarrow \text{Nullstelle des Nenners}$
   y & -87                     & -897                     & -8997                      & 93                      & 903  & 9003
 \end{tabular}
 \begin{gather*}
-  \lim\limits_{ x \nearrow 4} f(x) = -\infty \gap\gap \lim\limits_{ x \searrow 4} f(x) = +\infty
+  \lim\limits_{ x \nearrow 4} f(x) = -\infty \qquad \lim\limits_{ x \searrow 4} f(x) = +\infty
 \end{gather*}
 \begin{tikzpicture}
   \begin{axis}
@@ -472,7 +472,7 @@ Abschnittsweise definierte Funktionen $\rightarrow$ Für verschiedene Abschnitte
 \begin{gather*}
   f(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_2x^2 + a_1x + a_0 \\
   \textbf{z. B. } f(x) = 3x^4 + 5x - 7 \\
-  n = 4 \gap\text{(Grad } n \in \mathbb{N}\text{)} \\ a_4 = 4 \\ a_3 = a_2 = 0 \\ a_1 = 5 \\ a_0 = -7 \\
+  n = 4 \quad\text{(Grad } n \in \mathbb{N}\text{)} \\ a_4 = 4 \\ a_3 = a_2 = 0 \\ a_1 = 5 \\ a_0 = -7 \\
   \text{Grad der ganzrationalen Funktion ist die höchste Potenz, bspw. 4} \\
   \text{Funktionsterm = Polynom}
 \end{gather*} \\
@@ -526,8 +526,8 @@ Allgemein gilt: \\ Ganzrationale Funktionen sind überall, d. h. $-\infty < x < 
 \begin{exercise}{28/11}
   \item
   \begin{gather*}
-    f(x) = sin(\frac{1}{x}) \gap\gap D_f = \mathbb{R} \setminus \{0\} \\
-    \lim\limits_{x \to 0} f(x) = \sin(\infty) = -1 \text{ bis } +1 \gap\Rightarrow \text{kein Grenzwert} \\
+    f(x) = sin(\frac{1}{x}) \qquad D_f = \mathbb{R} \setminus \{0\} \\
+    \lim\limits_{x \to 0} f(x) = \sin(\infty) = -1 \text{ bis } +1 \quad\Rightarrow \text{kein Grenzwert} \\
     \lim\limits_{x \to \infty} f(x) = \sin(0) = 0
   \end{gather*}
 \end{exercise}
@@ -536,13 +536,13 @@ Eine Funktion ist stetig bei $x = x_0$, wenn Folgendes gilt: \\
 $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
 \begin{exercise}{29/4}
   \item [a]
-  $a_n = \frac{n^2 - 7n - 1}{10n^2 - 7n}\gap \lim\limits_{n \to \infty} a_n = \frac{1}{10}$
+  $a_n = \frac{n^2 - 7n - 1}{10n^2 - 7n}\quad \lim\limits_{n \to \infty} a_n = \frac{1}{10}$
   \item [b]
-  $a_n = \frac{n^3 - 3n^2 + 3n - 1}{5n^3 - 8n + 5}\gap \lim\limits_{n \to \infty} a_n = \frac{1}{5}$
+  $a_n = \frac{n^3 - 3n^2 + 3n - 1}{5n^3 - 8n + 5}\quad \lim\limits_{n \to \infty} a_n = \frac{1}{5}$
   \item [f]
-  $a_n = \frac{2^{n + 1}}{2^n + 1}\gap \lim\limits_{n \to \infty} a_n = 2$
+  $a_n = \frac{2^{n + 1}}{2^n + 1}\quad \lim\limits_{n \to \infty} a_n = 2$
   \item [g]
-  $a_n = \frac{3^n + 1}{5^n}\gap \lim\limits_{n \to \infty} a_n = 0$
+  $a_n = \frac{3^n + 1}{5^n}\quad \lim\limits_{n \to \infty} a_n = 0$
 \end{exercise}
 \begin{exercise}{29/5}
   \item [a]
@@ -561,12 +561,12 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
 \begin{exercise}{30/11}
   \item [a]
   \begin{gather*}
-    f(x) = \frac{x^2 - 2x + 1}{x - 1} = \frac{(x - 1)^2}{x - 1} = x - 1 \gap\gap D = \mathbb{R} \setminus \{1\} \\
+    f(x) = \frac{x^2 - 2x + 1}{x - 1} = \frac{(x - 1)^2}{x - 1} = x - 1 \qquad D = \mathbb{R} \setminus \{1\} \\
     \lim\limits_{x \to 1} f(x) = x - 1 = 0
   \end{gather*}
   \item [c]
   \begin{gather*}
-    f(x) = \frac{x^4 - 1}{x^2 - 1} = x^1 + 1 \gap\gap D = \mathbb{R} \setminus \{1; -1\} \\
+    f(x) = \frac{x^4 - 1}{x^2 - 1} = x^1 + 1 \qquad D = \mathbb{R} \setminus \{1; -1\} \\
     \lim\limits_{x \to 1} f(x) = 1^2 + 1 = 2 \\
     \lim\limits_{x \to -1} f(x) = (-1)^2 + 1 = 2
   \end{gather*}
@@ -576,7 +576,7 @@ $\lim\limits_{x \nearrow x_0} f(x) = \lim\limits_{x \searrow x_0} f(x) = f(x_0)$
   \item [a]
   $a_5 = 0.95^5 = 0.77$
   \item [b]
-  $0.5 = 0.95^n \Rightarrow n = \frac{\log(0.5)}{\log(0.95)} \approx 13.5 \gap n = 13$
+  $0.5 = 0.95^n \Rightarrow n = \frac{\log(0.5)}{\log(0.95)} \approx 13.5 \quad n = 13$
   \item [c]
   \begin{gather*}
     s(n) = 1 + \sum_{k = 1}^{n - 1} 2a_k \\
@@ -640,14 +640,14 @@ Eine \textbf{Sehne s*}, Teil einer Sekante, ist eine Strecke, die zwei Kurvenpun
 Eine \textbf{Tangente t} ist eine Gerade, die die Kurve in einem Punkt berührt. \\
 Eine \textbf{Passante p} ist eine Gerade, die die Kurve nicht schneidet. \\\\
 \begin{gather*}
-  P(1|3) \gap\gap Q(10|8) \\
+  P(1|3) \qquad Q(10|8) \\
   m = \frac{\Delta y}{\Delta x} = \frac{5}{9} \text{ (Steigung der Sekante durch $P$ und $Q$)}
 \end{gather*}
 Die Sekantensteigung $m$ heißt mittlere Änderungsrate der Funktion $f$ zwischen den Punkten $P$ und $Q$. \\\\
 \begin{gather*}
   P(1|3)\;f(1) = 3 \\
   Q(10|8)\;f(10) = 8 \\
-  x_1 = 1;\;x_2 = 10\gap \Delta x = x_2 - x_1 = h = 9 \\
+  x_1 = 1;\;x_2 = 10\quad \Delta x = x_2 - x_1 = h = 9 \\
   \frac{\Delta y}{\Delta x} = \underbrace{\frac{y_2 - y_1}{x_2 - x_1}}_{\mathclap{{\text{Differenzenquotient}}}} = \frac{f(x_1 + h) - f(x_1)}{h}
 \end{gather*}
 \begin{gather*}
@@ -689,13 +689,13 @@ Die Sekantensteigung $m$ heißt mittlere Änderungsrate der Funktion $f$ zwische
 \end{enumerate}
 \subsection{Vom Differenzenquotienten zum Differentialquotienten}
 \begin{gather*}
-  f(x) = y = x^2\gap x_0 = 2 \\
-  m = \frac{f(x_0 + h) - f(x_0)}{h} = \frac{(2 + h)^2 - 2^2}{h} = 4 + h \gap\text{(Sekante)} \\
-  m = \lim\limits_{h \to 0} (4 + h) = 4 \gap\text{(Tangente)}
+  f(x) = y = x^2\quad x_0 = 2 \\
+  m = \frac{f(x_0 + h) - f(x_0)}{h} = \frac{(2 + h)^2 - 2^2}{h} = 4 + h \quad\text{(Sekante)} \\
+  m = \lim\limits_{h \to 0} (4 + h) = 4 \quad\text{(Tangente)}
 \end{gather*}
 \subsection{Ableitung}
 \begin{gather*}
-  f(x) = 2x^3\gap x_0 = 4 \\
+  f(x) = 2x^3\quad x_0 = 4 \\
   m_{\text{Sekante}} = \frac{f(x_0 + h) - f(x_0)}{h} \\
   \;= \frac{2(4 + h)^3 - 2 \cdot 4^3}{h} \\
   \;= \frac{128 + 96h + 24h^2 + 2h^3 - 128}{h} \\
@@ -727,7 +727,7 @@ $\lim\limits_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h} = f'(x_0)$
   \item [i] $x_0 = 7\\ \lim\limits_{h \to 0} \frac{4 - 4}{h} = 0$
 \end{exercise}
 \section{Sekanten-, Tangenten-, Normalengleichung}
-$f(x) = 5x^3\gap\gap P_1(2|f(2))\gap P_2(4|f(4))$ \\\\
+$f(x) = 5x^3\qquad P_1(2|f(2))\quad P_2(4|f(4))$ \\\\
 Sekantengleichung
 \begin{gather*}
   y = m \cdot x + b \\
@@ -756,7 +756,7 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
 \begin{exercise}{49/14}
   \item [a]
   \begin{gather*}
-    f(x) = 0.5x^2\gap\gap\gap P(1|f(1) = 0.5) \\
+    f(x) = 0.5x^2\qquad P(1|f(1) = 0.5) \\
     m_t = \lim\limits_{h \to 0} \frac{\frac{1}{2}(1 + h)^2 - \frac{1}{2}}{h} = \lim\limits_{h \to 0} (1 + \frac{1}{2}h) = 1 \\
     b_t = -m_t \cdot x + y = -\frac{1}{2} \\
     y_t = x - \frac{1}{2} \\
@@ -766,7 +766,7 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
   \end{gather*}
   \item [b]
   \begin{gather*}
-    f(x) = 2x^2 - 4\gap\gap\gap P(-2|f(-2) = 4) \\
+    f(x) = 2x^2 - 4\qquad P(-2|f(-2) = 4) \\
     m_t = \lim\limits_{h \to 0} \frac{2(-2 + h)^2 - 4 - 4}{h} = -8 \\
     b_t = -m_t \cdot x + y = -12 \\
     y_t = -8x - 12 \\
@@ -776,7 +776,7 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
   \end{gather*}
   \item [c]
   \begin{gather*}
-    f(x) = \sqrt{x}\gap\gap\gap P(0.5|f(0.5) = \sqrt{0.5}) \\
+    f(x) = \sqrt{x}\qquad P(0.5|f(0.5) = \sqrt{0.5}) \\
     m_t = \lim\limits_{h \to 0} \frac{\sqrt{0.5 + h} - \sqrt{0.5}}{h} = \frac{\sqrt{2}}{2} \\
     b_t = -m_t \cdot x + y = \frac{\sqrt{2}}{4} \\
     y_t = \frac{\sqrt{2}}{2}x + \frac{\sqrt{2}}{4} \\
@@ -786,7 +786,7 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
   \end{gather*}
   \item [d]
   \begin{gather*}
-    f(x) = -x^3 + 2\gap\gap\gap P(2|f(2) = -6) \\
+    f(x) = -x^3 + 2\qquad P(2|f(2) = -6) \\
     m_t = \lim\limits_{h \to 0} \frac{-(2 + h)^3 + 2 + 6}{h} = -12 \\
     b_t = -m_t \cdot x + y = 18 \\
     y_t = -12x + 18 \\
@@ -818,7 +818,7 @@ Zwei Geraden mit $m_1$ und $m_2$ sind orthogonal, wenn gilt $m_1 \cdot m_2 = -1$
 \end{exercise}
 \begin{exercise}{49/12c}
   \begin{gather*}
-    f(x) = -3\sqrt{x}\gap\gap\gap x_0 = 8 \\
+    f(x) = -3\sqrt{x}\qquad x_0 = 8 \\
     f'(x_0) = \lim\limits_{h \to 0} \frac{-3\sqrt{8 + h} - (-3\sqrt{8})}{h} \\
     \;= \lim\limits_{h \to 0} \frac{(-\sqrt{72 + 9h} + \sqrt{72})(-\sqrt{72 + 9h} - \sqrt{72})}{h(-\sqrt{72 + 9h} - \sqrt{72})} \\
     \;= \lim\limits_{h \to 0} \frac{9}{-\sqrt{72 + 9h} - \sqrt{72}} \\
@@ -838,17 +838,17 @@ $$f'(x) = \lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
 \end{gather*}
 \begin{gather*}
   g(x) = x^2 \\
-  \gap g'(x) = \lim\limits_{h \to 0} \frac{(x + h)^2 - x^2}{h} = \lim\limits_{h \to 0} \frac{x^2 + xh + h^2 - x^2}{h} = 2x \\
+  \quad g'(x) = \lim\limits_{h \to 0} \frac{(x + h)^2 - x^2}{h} = \lim\limits_{h \to 0} \frac{x^2 + xh + h^2 - x^2}{h} = 2x \\
   h(x) = x^3 \\
-  \gap h'(x) = \lim\limits_{h \to 0} \frac{(x + h)^3 - x^3}{h} = \lim\limits_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} = 3x^2 \\
+  \quad h'(x) = \lim\limits_{h \to 0} \frac{(x + h)^3 - x^3}{h} = \lim\limits_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} = 3x^2 \\
   i(x) = a \cdot x^2 \\
-  \gap i'(x) = \lim\limits_{h \to 0} \frac{a(x + h)^2 - a \cdot x^2}{h} = \lim\limits_{h \to 0} \frac{ax^2 + 2xh + ah^2 - ax^2}{h} = 2ax \\
+  \quad i'(x) = \lim\limits_{h \to 0} \frac{a(x + h)^2 - a \cdot x^2}{h} = \lim\limits_{h \to 0} \frac{ax^2 + 2xh + ah^2 - ax^2}{h} = 2ax \\
   j(x) = \sqrt{x} \\
-  \gap j'(x) = \lim\limits_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h} = \lim\limits_{h \to 0} \frac{(\sqrt{x + h} - \sqrt{x})(\sqrt{x + h} + \sqrt{x})}{h(\sqrt{x + h} + \sqrt{x})} = \frac{1}{2\sqrt{x}} \\
+  \quad j'(x) = \lim\limits_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h} = \lim\limits_{h \to 0} \frac{(\sqrt{x + h} - \sqrt{x})(\sqrt{x + h} + \sqrt{x})}{h(\sqrt{x + h} + \sqrt{x})} = \frac{1}{2\sqrt{x}} \\
   k(x) = \frac{1}{x^2} \\
-  \gap k'(x) = \lim\limits_{h \to 0} \frac{(x + h)^2 - x^{-2}}{h} = \lim\limits_{h \to 0} \frac{(x^2 + 2xh + h^2)^{-1} - x^{-1}}{h} = -2x^-3
+  \quad k'(x) = \lim\limits_{h \to 0} \frac{(x + h)^2 - x^{-2}}{h} = \lim\limits_{h \to 0} \frac{(x^2 + 2xh + h^2)^{-1} - x^{-1}}{h} = -2x^-3
 \end{gather*} \\\\
-$$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
+$$f(x) = ax^n \qquad f'(x) = n \cdot ax^{n-1}$$ \\\\
 \newpage
 \begin{exercise}{54/2}
   \item [a]
@@ -918,7 +918,7 @@ $$f(x) = ax^n \gap\gap\gap f'(x) = n \cdot ax^{n-1}$$ \\\\
     f'(x) = 3bx^2 \\
     -3 = 3bx^2 \\
     x = \pm (-b)^{-\frac{1}{2}} \\
-    P(\pm (-b)^{-\frac{1}{2}} | f(\pm (-b)^{-\frac{1}{2}}) = \pm (-b)^{-\frac{1}{2}}+ c) \gap\gap b < 0
+    P(\pm (-b)^{-\frac{1}{2}} | f(\pm (-b)^{-\frac{1}{2}}) = \pm (-b)^{-\frac{1}{2}}+ c) \qquad b < 0
   \end{gather*}
 \end{exercise}
 \begin{exercise}{60/12}
@@ -1105,14 +1105,14 @@ Finde ich eine doppelte Nullstelle, so liegt gleichzeitig an der Stelle ein Extr
   \begin{gather*}
     0 = -0.08x^2 + 0.56x + 1.44 \\
     x_{1/2} = \frac{-0.56 \pm \sqrt{0.56^2 - 4(-0.08) \cdot 1.44}}{2(-0.08)} = \frac{-0.56 \pm 0.88}{-0.16} \\
-    (x_1 = -2) \gap x_2 = 9
+    (x_1 = -2) \quad x_2 = 9
   \end{gather*}
   \item [b]
   \begin{gather*}
     1.44 = -0.08x^2 + 0.56x + 1.44 \\
     0 = -0.08x^2 + 0.56x \\
     x_{1/2} = \frac{-0.56 \pm \sqrt{0.56^2}}{2(-0.08)} = \frac{-0.56 \pm 0.56}{-0.16} \\
-    (x_1 = 0) \gap x_2 = 7
+    (x_1 = 0) \quad x_2 = 7
   \end{gather*}
 \end{exercise}
 \begin{exercise}{68/11}
@@ -1121,7 +1121,7 @@ Finde ich eine doppelte Nullstelle, so liegt gleichzeitig an der Stelle ein Extr
     f(0) = 2 \Rightarrow c = 2 \\
     f(5) = f(-5) = 1 \\
     f(x) = -\frac{1}{25}x^2 + 2 \\
-    f(x) = 0 \gap x = \pm \sqrt{50} \\
+    f(x) = 0 \quad x = \pm \sqrt{50} \\
     \text{Breite} \colon 2\sqrt{50} = 10\sqrt{2} \approx 14.14
   \end{gather*}
 \end{exercise}
@@ -1152,7 +1152,7 @@ Daraus folgt ein Rechenverfahren zur Bestimmung der Stellen $x$ mit $f'(x) = 0$.
 \begin{gather*}
   \text{z. B. } f(x) = x^3 - 2x^2 \\
   f'(x) = 3x^2 - 4x = 0 \\
-  \Rightarrow x_1 = 0 \gap x_2 = \frac{4}{3} \\
+  \Rightarrow x_1 = 0 \quad x_2 = \frac{4}{3} \\
   x_1 \text{ und } x_2 \text{ sind Kandidaten für Extrema.}
 \end{gather*}
 \newpage
@@ -1160,12 +1160,12 @@ Daraus folgt ein Rechenverfahren zur Bestimmung der Stellen $x$ mit $f'(x) = 0$.
 für Hochpunkte gilt: $f'(x_l) > 0$ $f'(x) = 0$ $f'(x_r) < 0$ \\
 für Tiefpunkte gilt: $f'(x_l) < 0$ $f'(x) = 0$ $f'(x_r) > 0$
 \begin{gather*}
-  \text{zu} \colon x_1 = 0 \gap\gap x_l = -1 \gap x_r = 1 \\
+  \text{zu} \colon x_1 = 0 \qquad x_l = -1 \quad x_r = 1 \\
   f'(x_l) = f'(-1) = 7 \\
   f'(x_1) = f'(0) = 0 \\
   f'(x_r) = f'(1) = -1 \\
   \Rightarrow H(0|0) \\\\
-  \text{zu} \colon x_2 = \frac{4}{3} \gap\gap x_l = 1 \gap x_r = 2 \\
+  \text{zu} \colon x_2 = \frac{4}{3} \qquad x_l = 1 \quad x_r = 2 \\
   f'(x_l) = f'(1) = -1 \\
   f'(x_1) = f'(0) = 0 \\
   f'(x_r) = f'(2) = 4 \\
@@ -1173,8 +1173,8 @@ für Tiefpunkte gilt: $f'(x_l) < 0$ $f'(x) = 0$ $f'(x_r) > 0$
 \end{gather*}
 Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
 \begin{gather*}
-  f'(x_l) < 0 \gap f'(x) = 0 \gap f'(x_r) < 0 \gap \text{oder} \\
-  f'(x_l) > 0 \gap f'(x) = 0 \gap f'(x_r) > 0
+  f'(x_l) < 0 \quad f'(x) = 0 \quad f'(x_r) < 0 \quad \text{oder} \\
+  f'(x_l) > 0 \quad f'(x) = 0 \quad f'(x_r) > 0
 \end{gather*}
 \begin{exercise}{73/2}
   \item [e]
@@ -1185,8 +1185,8 @@ Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
     0 = -x + 3 \equ -3; \cdot (-1) \\
     3 = x \\
     L = \{0; 3\} \\\\
-    f'(-1) = 4 \gap f'(0) = 0 \gap f'(1) = 2 \gap \Rightarrow \text{Sattelpunkt } S(0|f(0) = -4) \\
-    f'(2) = 4 \gap f'(3) = 0 \gap f'(4) = -16 \gap \Rightarrow \text{Hochpunkt } H(3|f(3) = 2\frac{3}{4})
+    f'(-1) = 4 \quad f'(0) = 0 \quad f'(1) = 2 \quad \Rightarrow \text{Sattelpunkt } S(0|f(0) = -4) \\
+    f'(2) = 4 \quad f'(3) = 0 \quad f'(4) = -16 \quad \Rightarrow \text{Hochpunkt } H(3|f(3) = 2\frac{3}{4})
   \end{gather*}
 \end{exercise}
 \newpage
@@ -1198,10 +1198,10 @@ Sonderfall Sattelpunkt (Wendepunkt mit waagerechter Tangente)
     0 = 4x^3 - 12x^2 + 8x \equ \div x \Rightarrow x_1 = 0 \\
     0 = 4x^2 - 12x + 8 \equ abc \\
     x_{2/3} = \frac{12 \pm 4}{8} \\
-    x_2 = 1 \gap x_3 = 2 \\\\
-    f'(-1) = -24 \gap f'(x_1) = 0 \gap f'(\frac{1}{2}) = 1.5 \gap \Rightarrow T(0|0) \\
-    f'(\frac{1}{2}) = 1.5 \gap f'(x_2) = 0 \gap f'(\frac{3}{2}) = -1.5 \gap \Rightarrow H(1|1) \\
-    f'(\frac{3}{2}) = -1.5 \gap f'(x_3) = 0 \gap f'(3) = 24 \gap \Rightarrow T(2|0) \\
+    x_2 = 1 \quad x_3 = 2 \\\\
+    f'(-1) = -24 \quad f'(x_1) = 0 \quad f'(\frac{1}{2}) = 1.5 \quad \Rightarrow T(0|0) \\
+    f'(\frac{1}{2}) = 1.5 \quad f'(x_2) = 0 \quad f'(\frac{3}{2}) = -1.5 \quad \Rightarrow H(1|1) \\
+    f'(\frac{3}{2}) = -1.5 \quad f'(x_3) = 0 \quad f'(3) = 24 \quad \Rightarrow T(2|0) \\
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1230,28 +1230,28 @@ $f''(x) = 0$ Wendepunkt \\
     f(x) = 2x - 3x^2 \\
     f'(x) = 2 - 6x \\
     f''(x) = -6 \\
-    f'(x) = 0 \gap L = \{\frac{1}{3}\} \\
-    f''(\frac{1}{3}) = -6 < 0 \gap H(\frac{1}{3}|\frac{1}{3})
+    f'(x) = 0 \quad L = \{\frac{1}{3}\} \\
+    f''(\frac{1}{3}) = -6 < 0 \quad H(\frac{1}{3}|\frac{1}{3})
   \end{gather*}
   \item [d]
   \begin{gather*}
     f(x) = x^4 - 4x^2 + 3 \\
     f'(x) = 2 - 6x \\
     f''(x) = 12x^2 - 8 \\
-    f'(x) = 0 \gap L = \{\pm \sqrt{2}; 0\} \\
-    f''(\pm \sqrt{2}) = 16 > 0 \gap T(\pm \sqrt{2}|-1) \\
-    f''(0) = -8 < 0 \gap H(0|3)
+    f'(x) = 0 \quad L = \{\pm \sqrt{2}; 0\} \\
+    f''(\pm \sqrt{2}) = 16 > 0 \quad T(\pm \sqrt{2}|-1) \\
+    f''(0) = -8 < 0 \quad H(0|3)
   \end{gather*}
   \item [e]
   \begin{gather*}
     f(x) = \frac{4}{5}x^5 - \frac{10}{3}x^3 + \frac{9}{4}x \\
     f'(x) = 4x^4 - 10x^2 + \frac{9}{4} \\
     f''(x) = 16x^3 - 20x \\
-    f'(x) = 0 \gap L = \{\pm \frac{1}{2}; \pm \frac{3}{2}\} \\
-    f''(\frac{1}{2}) = -8 < 0 \gap H(\frac{1}{2}|\frac{11}{15}) \\
-    f''(-\frac{1}{2}) = 8 > 0 \gap H(-\frac{1}{2}|-\frac{11}{15}) \\
-    f''(\frac{3}{2}) = 24 > 0 \gap T(\frac{3}{2}|-\frac{9}{5}) \\
-    f''(-\frac{3}{2}) = -24 < 0 \gap T(-\frac{3}{2}|\frac{9}{5})
+    f'(x) = 0 \quad L = \{\pm \frac{1}{2}; \pm \frac{3}{2}\} \\
+    f''(\frac{1}{2}) = -8 < 0 \quad H(\frac{1}{2}|\frac{11}{15}) \\
+    f''(-\frac{1}{2}) = 8 > 0 \quad H(-\frac{1}{2}|-\frac{11}{15}) \\
+    f''(\frac{3}{2}) = 24 > 0 \quad T(\frac{3}{2}|-\frac{9}{5}) \\
+    f''(-\frac{3}{2}) = -24 < 0 \quad T(-\frac{3}{2}|\frac{9}{5})
   \end{gather*}
 \end{exercise}
 \section{Wendepunkte}
@@ -1269,7 +1269,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \item [a]
   \begin{gather*}
     f(x) = x^3 + 2 \\
-    f''(x) = 6x = 0 \gap L = \{0\} \\
+    f''(x) = 6x = 0 \quad L = \{0\} \\
     f'''(x) = 6 \Rightarrow RLWP(0|2) \\
     \text{rechts} \colon x \in \left] -\infty; 0 \right] \\
     \text{links} \colon x \in \left[ 0; \infty \right[
@@ -1291,7 +1291,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \item [b]
   \begin{gather*}
     f(x) = 4 + 2x - x^2 \\
-    f''(x) = -2 = 0 \gap L = \{\} \\
+    f''(x) = -2 = 0 \quad L = \{\} \\
     \text{rechts} \colon x \in \left] -\infty; \infty \right[ \\
   \end{gather*}
   \begin{gather*}
@@ -1311,7 +1311,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \item [d]
   \begin{gather*}
     f(x) = x^5 - x^4 + x^3 \\
-    f''(x) = 20x^3 - 12x^2 + 6x = 0 \gap L = \{0\} \\
+    f''(x) = 20x^3 - 12x^2 + 6x = 0 \quad L = \{0\} \\
     f'''(x) = 60x^2 - 24x + 6 \\
     f'''(0) = 6 \Rightarrow RLWP(0|0) \\
     \text{rechts} \colon x \in \left] -\infty; 0 \right] \\
@@ -1338,7 +1338,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
     f'(x) = 3x^2 + 6x + 3 \\
     f''(x) = 6x + 6 \\
     f'''(x) = 6 \\
-    f''(x) = 0 \gap L = \{-1\} \\
+    f''(x) = 0 \quad L = \{-1\} \\
     f'''(-1) = 6 \Rightarrow RLWP(-1|f(-1) = -1) \\
     f'(-1) = 0 \Rightarrow Sattelpunkt
   \end{gather*}
@@ -1371,13 +1371,13 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \item [a]
   \begin{gather*}
     f_a(x) = x^3 - ax^2 \\
-    f_a''(x) = 6x - 2a = 0 \gap L = \{\frac{a}{3}\} \\
-    f_a'''(x) = 6 \gap f_a'''(\frac{a}{3}) = 6 \Rightarrow RLWP(\frac{a}{3}|f_a(\frac{a}{3}))
+    f_a''(x) = 6x - 2a = 0 \quad L = \{\frac{a}{3}\} \\
+    f_a'''(x) = 6 \quad f_a'''(\frac{a}{3}) = 6 \Rightarrow RLWP(\frac{a}{3}|f_a(\frac{a}{3}))
   \end{gather*}
   \item [b]
   \begin{gather*}
     f_a(x) = x^4 - 2ax^2 + 1 \\
-    f_a''(x) = 12x^2 - 4a = 0 \gap L = \{\pm \sqrt{\frac{a}{3}}\} \\
+    f_a''(x) = 12x^2 - 4a = 0 \quad L = \{\pm \sqrt{\frac{a}{3}}\} \\
     f_a'''(x) = 24x \\
     f_a'''(\sqrt{\frac{a}{3}}) = 24(\sqrt{\frac{a}{3}}) > 0 \Rightarrow RLWP(\sqrt{\frac{a}{3}}|f_a(\sqrt{\frac{a}{3}})) \\
     f_a'''(-\sqrt{\frac{a}{3}}) = 24(-\sqrt{\frac{a}{3}}) < 0 \Rightarrow LRWP(-\sqrt{\frac{a}{3}}|f_a(-\sqrt{\frac{a}{3}}))
@@ -1399,8 +1399,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \begin{gather*}
     f(x) = -\frac{1}{18}x^4 + x^2 \\
     f(0) = 0 \Rightarrow S(0|0) \\
-    f(x) = 0 \gap L = \{0; \pm \sqrt{18}\} \Rightarrow S(0|0), S(\sqrt{18}|0), S(-\sqrt{18}|0) \\
-    f'(x) = -\frac{2}{9}x^3 + 2x = 0 \gap L = \{0; \pm 3\} \\
+    f(x) = 0 \quad L = \{0; \pm \sqrt{18}\} \Rightarrow S(0|0), S(\sqrt{18}|0), S(-\sqrt{18}|0) \\
+    f'(x) = -\frac{2}{9}x^3 + 2x = 0 \quad L = \{0; \pm 3\} \\
     f''(x) = -\frac{2}{3}x^2 + 2 \\
     f''(0) = 2 \Rightarrow T(0|f(0) = 0) \\
     f''(3) = 4 \Rightarrow T(3|f(3) = \frac{9}{2}) \\
@@ -1426,8 +1426,8 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \begin{gather*}
     f(x) = \frac{1}{6}x^3 - x^2 + 1.5x \\
     f(0) = 0 \Rightarrow S(0|0) \\
-    f(x) = \frac{1}{6}x^3 - x^2 + 1.5x = 0 \gap L = \{0; 3\} \Rightarrow S(0|0), S(3|0) \\
-    f'(x) = \frac{1}{2}x^2 - 2x + 1.5 = 0 \gap L = \{1; 3\} \\
+    f(x) = \frac{1}{6}x^3 - x^2 + 1.5x = 0 \quad L = \{0; 3\} \Rightarrow S(0|0), S(3|0) \\
+    f'(x) = \frac{1}{2}x^2 - 2x + 1.5 = 0 \quad L = \{1; 3\} \\
     f''(x) = x - 2 \\
     f''(1) = -1 \Rightarrow H(1|f(1) = 0.\overline{6}) \\
     f''(3) = 1 \Rightarrow T(3|f(3) = 0) \\
@@ -1450,9 +1450,9 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \end{gather*}
   \item [f]
   \begin{gather*}
-    f(x) = x + \frac{5}{x} \gap D = \mathbb{R}\setminus\{0\} \gap \text{(kein Schnittpunkt mit y-Achse)} \\
-    f(x) = 0 \gap L = \{\} \gap \text{(kein Schnittpunkt mit x-Achse)} \\
-    f'(x) = 1 - \frac{5}{x^2} = 0 \gap L = \{\pm \sqrt{5}\} \\
+    f(x) = x + \frac{5}{x} \quad D = \mathbb{R}\setminus\{0\} \quad \text{(kein Schnittpunkt mit y-Achse)} \\
+    f(x) = 0 \quad L = \{\} \quad \text{(kein Schnittpunkt mit x-Achse)} \\
+    f'(x) = 1 - \frac{5}{x^2} = 0 \quad L = \{\pm \sqrt{5}\} \\
     f''(x) = \frac{10}{x^3} \\
     f''(\sqrt{5}) = \frac{2}{\sqrt{5}} \Rightarrow T(\sqrt{5}|f(\sqrt{5}) = \sqrt{20}) \\
     f''(-\sqrt{5}) = -\frac{2}{\sqrt{5}} \Rightarrow T(-\sqrt{5}|f(-\sqrt{5}) = -\sqrt{20}) \\
@@ -1524,7 +1524,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \end{gather*}
 \end{exercise}
 \begin{exercise}{98/11}
-  $f(x) = x^3 - 2x^2 - 3x + 10 \gap\gap S(-2|0) \Rightarrow x_1 = -2$
+  $f(x) = x^3 - 2x^2 - 3x + 10 \qquad S(-2|0) \Rightarrow x_1 = -2$
   \item [a]
   \polylongdiv[style=C]{x^3 - 2 x^2 - 3 * x + 10}{x + 2}
   \begin{gather*}
@@ -1533,18 +1533,18 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g(x) = mx + b \gap m = 2 \gap S(-2|0) \\
+    g(x) = mx + b \quad m = 2 \quad S(-2|0) \\
     0 = 2 \cdot (-2) + b \Rightarrow b = 4 \\
     \Rightarrow g(x) = 2x + 4 \\\\
     f(x) = g(x)
     x^3 - 2x^2 - 3x + 10 = 2x + 4 \\
-    0 = x^3 - 2x^2 - 5x + 6 \gap x_1 = -2
+    0 = x^3 - 2x^2 - 5x + 6 \quad x_1 = -2
   \end{gather*}
   \polylongdiv[style=C]{x^3 - 2 * x^2 - 5 * x + 6}{x + 2}
   \begin{gather*}
     x_{2/3} = \frac{4 \pm 2}{2} \\
-    x_2 = 1 \gap S(1|6) \\
-    x_3 = 3 \gap S(3|10)
+    x_2 = 1 \quad S(1|6) \\
+    x_3 = 3 \quad S(3|10)
   \end{gather*}
 \end{exercise}
 \begin{exercise}{98/12}
@@ -1553,7 +1553,7 @@ für $f'''(x) = 0$ keine Entscheidung \\
   \begin{gather*}
     f_2(x) = 2x^3 - 2x^2 + 8x \equ \div x \\
     0 = 2x^2 - 2x + 8 \\
-    x_{2/3} = \frac{2 \pm \sqrt{-60}}{4} \gap \text{keine Lösung} \\
+    x_{2/3} = \frac{2 \pm \sqrt{-60}}{4} \quad \text{keine Lösung} \\
     L = \{0\} \\\\
     f_{10}(x) = 2x^3 - 10x^2 + 8x \equ \div x \\
     0 = 2x^2 - 10x + 8 \\
@@ -1642,12 +1642,12 @@ $\Rightarrow$ punktsymmetrisch
     f'(x) = 0 = \frac{3}{2}x^2 - 8x + 8 \\
     x_{1/2} = \frac{8 \pm \sqrt{64 - 4 \cdot \frac{3}{2} \cdot 8}}{2 \cdot \frac{3}{2}} = \frac{8 \pm 4}{3} \\
     L = \{\frac{4}{3}; 4\} \\
-    f''(x_1) = f''(\frac{4}{3}) = -4 < 0 \gap HP(\frac{4}{3}|f(\frac{4}{3})) \\
-    f''(x_2) = f''(4) = 4 > 0 \gap TP(4|f(4)) \\
+    f''(x_1) = f''(\frac{4}{3}) = -4 < 0 \quad HP(\frac{4}{3}|f(\frac{4}{3})) \\
+    f''(x_2) = f''(4) = 4 > 0 \quad TP(4|f(4)) \\
     \text{Wendestellen} \\
     f''(x) = 0 = 3x - 8 \\
     L = \{\frac{8}{3}\} \\
-    f'''(x_1) = f'''(\frac{8}{3}) = 3 > 0 \gap RLWP(\frac{8}{3}|f(\frac{8}{3}))
+    f'''(x_1) = f'''(\frac{8}{3}) = 3 > 0 \quad RLWP(\frac{8}{3}|f(\frac{8}{3}))
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1692,12 +1692,12 @@ $\Rightarrow$ punktsymmetrisch
     f'(x) = 0 = 3x^2 + 12x \equ \div x \Rightarrow x_1 = 0 \\
     3x + 12 = 0 \\
     L = \{0; -4\} \\
-    f''(x_1) = f''(0) = 12 > 0 \gap TP(0|f(0)) \\
-    f''(x_2) = f''(-4) = -12 < 0 \gap HP(-4|f(-4)) \\
+    f''(x_1) = f''(0) = 12 > 0 \quad TP(0|f(0)) \\
+    f''(x_2) = f''(-4) = -12 < 0 \quad HP(-4|f(-4)) \\
     \text{Wendestellen} \\
     f''(x) = 0 = 6x + 12 \\
     L = \{-2\} \\
-    f'''(x_1) = f'''(-2) = 6 > 0 \gap RLWP(-2|f(-2))
+    f'''(x_1) = f'''(-2) = 6 > 0 \quad RLWP(-2|f(-2))
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}
@@ -1726,7 +1726,7 @@ $\Rightarrow$ punktsymmetrisch
     \text{subst. } t = x^2 \\
     0 = 187.5 - 1.579 \cdot 10^{-2} \cdot t - 1.988 \cdot 10^{-6} \cdot t^2 \\
     t_{1/2} = \frac{1.579 \cdot 10^{-2} \pm \sqrt{(1.579 \cdot 10^{-2})^2 - 4 \cdot (-1.988 \cdot 10^{-6}) \cdot 187.5}}{2 \cdot (-1.988 \cdot 10^{-6})} \\
-    t_1 < 0 \gap\gap\gap t_2 = 6520.923541 \\
+    t_1 < 0 \qquad t_2 = 6520.923541 \\
     x_{1/2} = \pm \sqrt{t_2} \approx \pm 80 \\
     2 \cdot 80 = 160
   \end{gather*}
@@ -1747,8 +1747,8 @@ $\Rightarrow$ punktsymmetrisch
 \subsection{Allgemeine Tangentengleichung - Herleitung}
 \begin{gather*}
   f(x) = y = m \cdot x + b \\
-  \text{Stelle } u \gap\gap\gap f'(u) = m \gap\gap\gap f(u) = y \\
-  f(u) = f'(u) \cdot u + b \gap\Rightarrow\gap b = f(u) - f'(u) \cdot u \\
+  \text{Stelle } u \qquad f'(u) = m \qquad f(u) = y \\
+  f(u) = f'(u) \cdot u + b \quad\Rightarrow\quad b = f(u) - f'(u) \cdot u \\
   t(x) = f'(u) \cdot x + f(u) - f'(u) \cdot u \\
   \;= f'(u) \cdot (x - u) + f(u) \\
   n(x) = -\frac{1}{f'(u)} \cdot (x - u) + f(u)
@@ -1756,15 +1756,15 @@ $\Rightarrow$ punktsymmetrisch
 \begin{exercise}{108/5}
   \item [a]
   \begin{gather*}
-    f(x) = x^2 - x; \gap B(-2|6) \gap u = -2 \\
-    f'(x) = 2x - 1 \gap f'(u) = -5 \\
+    f(x) = x^2 - x; \quad B(-2|6) \quad u = -2 \\
+    f'(x) = 2x - 1 \quad f'(u) = -5 \\
     t(x) = -5 \cdot (x + 2) + 6 = -5x - 4 \\
     n(x) = \frac{1}{5} \cdot (x + 2) + 6 = \frac{1}{5}x + 6\frac{2}{5}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    f(x) = \frac{4}{x} + 2; \gap B(4|3) \gap u = 4 \\
-    f'(x) = -4x^{-2} \gap f'(u) = -\frac{1}{4} \\
+    f(x) = \frac{4}{x} + 2; \quad B(4|3) \quad u = 4 \\
+    f'(x) = -4x^{-2} \quad f'(u) = -\frac{1}{4} \\
     t(x) = -\frac{1}{4} \cdot (x - 4) + 3 = -\frac{1}{4}x + 4 \\
     n(x) = 4 \cdot (x - 4) + 3 = 4x - 13
   \end{gather*}
@@ -1792,7 +1792,7 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
     Y(0|6) \\
     f'(x) = -x \\
     t(x) = f'(x_0) \cdot (x - x_0) + f(x_0) = \frac{x_0^2}{2} - x \cdot x_0 + 4 \\
-    0 = \frac{1}{2}x_0^2 - 2 \gap\gap\gap x_0 = \pm 2
+    0 = \frac{1}{2}x_0^2 - 2 \qquad x_0 = \pm 2
   \end{gather*}
 \end{exercise}
 \begin{exercise}{109/11}
@@ -1802,8 +1802,8 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
     \text{Augen} \colon P(x_0|1.6) \\
     f'(x) = -0.008x^3 + 0.244x \\
     t(x) = 0.006u^4 - 0.122u^3 - 0.008u^3x + 0.224ux - 1.8 \\
-    t(0) = -1.8 = 0.006u^4 - 0.122u^3 - 1.8 \gap\gap\gap L = \{0; \pm\sqrt{\frac{61}{3}}\} \\
-    t(x) = 0.366752x - 1.8 \gap fuer \; u = \sqrt{\frac{61}{3}} \\
+    t(0) = -1.8 = 0.006u^4 - 0.122u^3 - 1.8 \qquad L = \{0; \pm\sqrt{\frac{61}{3}}\} \\
+    t(x) = 0.366752x - 1.8 \quad fuer \; u = \sqrt{\frac{61}{3}} \\
     1.6 = 0.366752x_0 - 1.8 \\
     x_0 = 9.2706
   \end{gather*}
@@ -1818,13 +1818,13 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
   \begin{gather*}
     S''(t) = -0.48t + 7 \\
     S''(t_0) = 0 \\
-    t_0 = 14.58\overline{3} \gap (um \; 1994)
+    t_0 = 14.58\overline{3} \quad (um \; 1994)
   \end{gather*}
   \item [c]
   \begin{gather*}
     S'(t_0) = 0 = -0.24t^2 + 7t + 10.6 \\
-    t_0 = \frac{1}{12}(175 + \sqrt{36985}) \approx 30.6 \gap (um \; 2010) \\
-    S''(t_0) \approx -7.69 < 0 \gap\Rightarrow\gap Hochpunkt
+    t_0 = \frac{1}{12}(175 + \sqrt{36985}) \approx 30.6 \quad (um \; 2010) \\
+    S''(t_0) \approx -7.69 < 0 \quad\Rightarrow\quad Hochpunkt
   \end{gather*}
   \item [d]
   Nicht die Staatsschulden, sondern die Neuverschuldung, nahm ab.
@@ -1833,13 +1833,13 @@ nimm den Koeffizienten (-1), halbiere ihn (-0.5) und quadriere anschließend (0.
   $$f(t) = 0.25t^3 - 12t^2 + 144t$$
   \item [a]
   \begin{gather*}
-    f(t) = 0 = 0.25t^3 - 12t^2 + 144t \gap\gap\gap L = \{0; 24\} \\\\
-    f'(t) = 0 = 0.75t^2 - 24t + 144 \gap\gap\gap L = \{8; 24\} \\
+    f(t) = 0 = 0.25t^3 - 12t^2 + 144t \qquad L = \{0; 24\} \\\\
+    f'(t) = 0 = 0.75t^2 - 24t + 144 \qquad L = \{8; 24\} \\
     f''(t) = 1.5t - 24 \\
-    f''(8) = -12 < 0 \gap\Rightarrow\gap HP \\
-    f''(24) = 12 > 0 \gap\Rightarrow\gap TP \\\\
-    f''(t) = 0 = 1.5t - 24 \gap\gap\gap L = \{16\} \\
-    f'''(t) = 1.5 > 0 \gap\Rightarrow\gap RLWP
+    f''(8) = -12 < 0 \quad\Rightarrow\quad HP \\
+    f''(24) = 12 > 0 \quad\Rightarrow\quad TP \\\\
+    f''(t) = 0 = 1.5t - 24 \qquad L = \{16\} \\
+    f'''(t) = 1.5 > 0 \quad\Rightarrow\quad RLWP
   \end{gather*}
   \item [b]
   \begin{gather*}

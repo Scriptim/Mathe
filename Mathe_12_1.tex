@@ -12,7 +12,7 @@
   \int_a^b \frac{1}{x} \cdot dx = \left[ln(|x|)\right]_a^b \\\\
   \text{sofern } a, b > 0 \text{ oder } a, b < 0 \text{ kein Problem} \\
   \text{wenn eines größer und eines kleiner $0$ ist, dann muss man genauer untersuchen (Polstelle!)} \\\\
-  a = -1 \gap\gap b = 2 \\
+  a = -1 \qquad b = 2 \\
   \int_a^b \frac{1}{2x - 5} \cdot dx = \left[\frac{1}{2} \cdot ln(|2x - 5|)\right]_a^b
 \end{gather*}
 \begin{exercise}{171/3}
@@ -57,7 +57,7 @@
 \end{exercise}
 \subsection{Integralfunktion}
 \begin{gather*}
-  \gap\gap\gap\gap \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a) = J \\
+  \qquad\qquad \int_a^b f(x) \cdot dx = \left[F(x)\right]_a^b = F(b) - F(a) = J \\
   J_a(x) = \int_a^x f(x) \cdot dx = \left[F(x)\right]_a^x = F(x) - F(a)
 \end{gather*}
 Integralfunktion zur unteren (linken) Grenze $a$. Sie gibt zu jedem später eingesetzten Wert $x$ ($= b$) den bestimmten Integralwert an.
@@ -67,7 +67,7 @@ Integralfunktion zur unteren (linken) Grenze $a$. Sie gibt zu jedem später eing
 unbestimmtes Integral
 \begin{exercise}{175/2}
   \begin{gather*}
-    f(x) = \frac{1}{2}x \gap\gap\gap J_a(x) = \int_a^x \frac{1}{2}t \cdot dt
+    f(x) = \frac{1}{2}x \qquad J_a(x) = \int_a^x \frac{1}{2}t \cdot dt
   \end{gather*} \\
   \begin{tabular}{l|cccccc}
     $x$ & $-4$ & $-2$ & $0$ & $2$ & $4$ & $6$ \\
@@ -144,10 +144,10 @@ unbestimmtes Integral
   \begin{gather*}
     F(t) = -\frac{12}{\pi} \cdot sin(\frac{\pi}{12}t) + c \\
     c = 20 - F_{c=0}(12) = 20 \\
-    F(18) \approx 23.82 \gap\gap F(6) \approx 16.18 \\\\
+    F(18) \approx 23.82 \qquad F(6) \approx 16.18 \\\\
     G(t) = -\frac{12}{\pi} \cdot cos(\frac{\pi}{12}t) + c \\
     c = 20 - G_{c=0}(12) \approx 16.1803 \\
-    G(12) = 20 \gap\gap G(0) = G(24) \approx 12.36
+    G(12) = 20 \qquad G(0) = G(24) \approx 12.36
   \end{gather*}
 \end{exercise}
 \section{Ableitung der Umkehrfunktion}
@@ -226,8 +226,8 @@ unbestimmtes Integral
 \end{gather*}
 Wie die Flächen zur $x$-Achse liegen ist unwichtig, weil ich gedanklich beide Graphen gemeinsam soweit nach oben schieben kann dass die Flächen komplett oberhalb der $x$-Achse liegen.
 \begin{gather*}
-  f(x) \gap\longrightarrow\gap f(x) + d \\
-  g(x) \gap\longrightarrow\gap g(x) + d
+  f(x) \quad\longrightarrow\quad f(x) + d \\
+  g(x) \quad\longrightarrow\quad g(x) + d
 \end{gather*}
 Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wieder weg.
 \begin{gather*}
@@ -236,8 +236,8 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
 \begin{exercise}{179/2}
   \item [a]
   \begin{gather*}
-    f(x) = -0.5x^2 + 0.5 \gap\gap g(x) = -1.5 \\
-    F(x) = -\frac{1}{6}x^3 + 0.5x \gap\gap G(x) = -1.5x
+    f(x) = -0.5x^2 + 0.5 \qquad g(x) = -1.5 \\
+    F(x) = -\frac{1}{6}x^3 + 0.5x \qquad G(x) = -1.5x
   \end{gather*}
   \begin{enumerate}[I]
     \item $A_2 + A_3$
@@ -265,15 +265,15 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
 \begin{exercise}{180/5}
   \item [a]
   \begin{gather*}
-    f(x) = x^2 \gap\gap g(x) = -x^2 + 4x \\
-    f(x) = g(x) \gap\gap L = \{0; 2\} \\
+    f(x) = x^2 \qquad g(x) = -x^2 + 4x \\
+    f(x) = g(x) \qquad L = \{0; 2\} \\
     f(x) - g(x) = 2x^2 - 4x \\
     A = |\int_0^2 (2x^2 - 4x) \cdot dx| = |[\frac{2}{3}x^3 - 2x^2]_0^2| = 2\frac{2}{3}FE
   \end{gather*}
   \item [b]
   \begin{gather*}
-    f(x) = -\frac{1}{x^2} \gap\gap g(x) = 2.5x - 5.25 \\
-    f(x) = g(x) \gap\gap L = \{2; \sim -0.4; \sim 0.5\} \\
+    f(x) = -\frac{1}{x^2} \qquad g(x) = 2.5x - 5.25 \\
+    f(x) = g(x) \qquad L = \{2; \sim -0.4; \sim 0.5\} \\
     f(x) - g(x) = -2.5x + 5.25 - \frac{1}{x^2} \\
     A \approx |\int_{0.5}^2 (-2.5x + 5.25 - \frac{1}{x^2}) \cdot dx| \\
     \;= |[-1.25x^2 + 5.25x + \frac{1}{x}]_{0.5}^2| \approx 1.7FE
@@ -282,7 +282,7 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
 \subsection{Flächeninhalt, uneigentliche Integrale}
 \begin{exercise}{180/8}
   \begin{gather*}
-    f_t(x) = \frac{t}{x^2} \gap\gap \left[1; 2\right] \\
+    f_t(x) = \frac{t}{x^2} \qquad \left[1; 2\right] \\
     F_t(x) = -\frac{t}{x} \\
     A(t) = \int_1^2 -\frac{t}{x} \cdot dx = \frac{t}{2} \\
     A(16) = 8
@@ -290,43 +290,43 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
 \end{exercise}
 \begin{exercise}{180/10}
   \begin{gather*}
-    f_a(x) = a \cdot sin(x) \gap\gap g_a(x) = -\frac{1}{a} \cdot sin(x) \gap\gap x \in \left[0; \pi\right] \\
+    f_a(x) = a \cdot sin(x) \qquad g_a(x) = -\frac{1}{a} \cdot sin(x) \qquad x \in \left[0; \pi\right] \\
     f_a(x) - g_a(x) = sin(x) \cdot (a + \frac{1}{a}) \\
     A(a) = \int_0^\pi sin(x) \cdot (a + \frac{1}{a}) \cdot dx = (a + \frac{1}{a}) \cdot \left[-cos(x)\right]_0^\pi = (a + \frac{1}{a}) \cdot 2 \\\\
     A'(a) = -\frac{2}{a^2} + 2 \\
     A''(a) = \frac{4}{a^3} \\
-    A'(a) = 0 \gap\gap L = \{\pm1\} \\
-    A''(1) = 4 > 0 \gap\Rightarrow\gap TP \\
+    A'(a) = 0 \qquad L = \{\pm1\} \\
+    A''(1) = 4 > 0 \quad\Rightarrow\quad TP \\
     \text{Minimaler Flächeninhalt} \colon A(1) = 4FE
   \end{gather*}
 \end{exercise}
 \begin{gather*}
-  \text{Beispiel } f(x) = \frac{1}{x^2} \gap\gap \left[3; \infty\right[ \\
+  \text{Beispiel } f(x) = \frac{1}{x^2} \qquad \left[3; \infty\right[ \\
   A = \lim\limits_{z \to \infty} \int_3^z \frac{1}{x^2} \cdot dx = \lim\limits_{z \to \infty} \left[-x^{-1}\right]_3^z \\
   \;= \lim\limits_{z \to \infty} (-\frac{1}{z} + \frac{1}{3}) = \frac{1}{3}FE
 \end{gather*}
 \begin{exercise}{183/1}
   \item [Fig. 1]
   \begin{gather*}
-    y = \frac{1}{(x + 1)^2} \gap\gap \left[1; z\right] \\
+    y = \frac{1}{(x + 1)^2} \qquad \left[1; z\right] \\
     A(z) = \int_1^z \frac{1}{(x + 1)^2} \cdot dx = \left[-\frac{1}{x + 1}\right]_1^z = -\frac{1}{z + 1} + \frac{1}{2} \\
     A = \lim\limits_{z \to \infty} A(z) = \frac{1}{2}
   \end{gather*}
   \item [Fig. 2]
   \begin{gather*}
-    y = e^{-\frac{1}{2}x} \gap\gap \left[2; z\right] \\
+    y = e^{-\frac{1}{2}x} \qquad \left[2; z\right] \\
     A(z) = \int_2^z e^{-\frac{1}{2}x} \cdot dx = \left[-2 \cdot e^{-\frac{1}{2}x}\right]_2^z = -2 \cdot e^{-\frac{1}{2}z} + \frac{2}{e} \\
     A = \lim\limits_{z \to \infty} A(z) = \frac{2}{e} \approx 0.736
   \end{gather*}
   \item [Fig. 3]
   \begin{gather*}
-    y = \frac{2}{x^3} \gap\gap \left[z; 1\right] \\
+    y = \frac{2}{x^3} \qquad \left[z; 1\right] \\
     A(z) = \int_z^1 \frac{2}{x^3} \cdot dx = \left[-\frac{1}{x^2}\right] = -1 + \frac{1}{z^2} \\
     A = \lim\limits_{z \to 0} A(z) = \infty
   \end{gather*}
   \item [Fig. 4]
   \begin{gather*}
-    y = \frac{4}{\sqrt{x}} \gap\gap \left[z; 4\right] \\
+    y = \frac{4}{\sqrt{x}} \qquad \left[z; 4\right] \\
     A(z) = \int_z^4 \frac{4}{\sqrt{x}} \cdot dx = \left[8 \cdot \sqrt{x}\right] = 16 - 8 \cdot \sqrt{z} \\
     A = \lim\limits_{z \to 0} A(z) = 16
   \end{gather*}
@@ -341,21 +341,21 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
  \end{gather*}
  \item [a]
  \begin{gather*}
-   h_1 = 6.37 \cdot 10^6m \gap\gap h_2 = 4.22 \cdot 10^7m \\
+   h_1 = 6.37 \cdot 10^6m \qquad h_2 = 4.22 \cdot 10^7m \\
    W = \left[-c \cdot s^{-1}\right]_{6.37 \cdot 10^6m}^{4.22 \cdot 10^7m} \approx 1.333 \cdot 10^{-7} \cdot c \approx 5.308 \cdot 10^{10}Nm
  \end{gather*}
  \item [b]
  \begin{gather*}
-   h_1 = 6.37 \cdot 10^6m \gap\gap h_2 \rightarrow \infty \\
+   h_1 = 6.37 \cdot 10^6m \qquad h_2 \rightarrow \infty \\
    W = \lim\limits_{h_2 \to \infty} \left[-c \cdot s^{-1}\right]_{6.37 \cdot 10^6m}^{h_2} \approx 1.570 \cdot 10^{-7} \cdot c \approx 6.252 \cdot 10^{10}Nm
  \end{gather*}
 \end{exercise}
 \newpage
 \begin{exercise}{183/5}
   \begin{enumerate}[I]
-    \item $f(x) = \frac{1}{x^3} \gap\gap F(x) = -\frac{1}{2 \cdot x^2}$
-    \item $f(x) = \frac{1}{x^2} \gap\gap F(x) = -\frac{1}{x}$
-    \item $f(x) = \frac{1}{\sqrt{x}} \gap\gap F(x) = 2 \cdot \sqrt{x}$
+    \item $f(x) = \frac{1}{x^3} \qquad F(x) = -\frac{1}{2 \cdot x^2}$
+    \item $f(x) = \frac{1}{x^2} \qquad F(x) = -\frac{1}{x}$
+    \item $f(x) = \frac{1}{\sqrt{x}} \qquad F(x) = 2 \cdot \sqrt{x}$
   \end{enumerate}
   \item [a]
   \begin{gather*}
@@ -380,8 +380,8 @@ Durch Differenzialbildung fallen die gedanklich eingeführten Verschiebungen wie
   \begin{gather*}
     f(x) = x^2 \\
     t(x) = m \cdot x + b \\
-    f'(x) = 2x \gap\Rightarrow\gap m = f'(a) = 2a \\
-    f(a) = a^2 \gap\Rightarrow\gap b = a^2 - 2a \cdot a = -a^2 \\
+    f'(x) = 2x \quad\Rightarrow\quad m = f'(a) = 2a \\
+    f(a) = a^2 \quad\Rightarrow\quad b = a^2 - 2a \cdot a = -a^2 \\
     \Rightarrow t(x) = 2a \cdot x - a^2 \\\\
     \int_0^a (f(x) - t(x)) \cdot dx = \int_0^a (x^2 - 2ax + a^2) \cdot dx = \left[\frac{1}{3}x^3 - ax^2 + a^2x\right]_0^a \\
     \;= \frac{1}{3}a^3
@@ -447,7 +447,7 @@ Spezialfälle
   \begin{gather*}
     \int_0^\pi (sin(x))^2 \cdot dx = \left[-cos(x) \cdot sin(x)\right]_0^\pi - \int -cos(x) \cdot cos(x) \cdot dx \\
     \;= \left[-cos(x) \cdot sin(x)\right]_0^\pi - \int (-sin^2(x) - 1) \cdot dx \\
-    \;= \left[-cos(x) \cdot sin(x) + x\right]_0^\pi - \int sin^2(x) \cdot dx \equ + \int_0^\pi sin^2(x) \cdot dx; \gap \div 2 \\
+    \;= \left[-cos(x) \cdot sin(x) + x\right]_0^\pi - \int sin^2(x) \cdot dx \equ + \int_0^\pi sin^2(x) \cdot dx; \quad \div 2 \\
     \;= \left[\frac{-cos(x) \cdot sin(x) + x}{2}\right]_0^\pi = \frac{\pi}{2}
   \end{gather*}
   \item [c]
@@ -469,11 +469,11 @@ Spezialfälle
 Kettenregel: $(f(g(x)))' = f'(g(x)) \cdot g'(x)$ \\
 \begin{gather*}
   \int f'(g(x)) \cdot g'(x) \cdot dx = \int (f(g(x)))' \cdot dx \\
-  \;= f(g(x)) \gap\gap \text{Dabei ist $f$ die Stammfunktion von $f'$} \\
-  \Rightarrow \text{ Benenne um $f' \rightarrow f \gap\gap f \rightarrow F$} \\\\
+  \;= f(g(x)) \qquad \text{Dabei ist $f$ die Stammfunktion von $f'$} \\
+  \Rightarrow \text{ Benenne um $f' \rightarrow f \qquad f \rightarrow F$} \\\\
   \int f(g(x)) \cdot g'(x) \cdot dx = F(g(x)) \\\\
   \text{Substitution 1} \\
-  \int_a^b f(g(x)) \cdot g'(x) \cdot dx \gap\gap \text{ersetze $z = g(x) \gap\gap \frac{dz}{dx} = g'(x) \Rightarrow dz = g'(x) \cdot dx$} \\
+  \int_a^b f(g(x)) \cdot g'(x) \cdot dx \qquad \text{ersetze $z = g(x) \qquad \frac{dz}{dx} = g'(x) \Rightarrow dz = g'(x) \cdot dx$} \\
   \;= \int_{g(a)}^{g(b)} f(z) \cdot dz = \left[F(z)\right]_{g(a)}^{g(b)} \\
   \text{Resubstitution} \\
   \;= \left[F(g(x))\right]_a^b
@@ -481,7 +481,7 @@ Kettenregel: $(f(g(x)))' = f'(g(x)) \cdot g'(x)$ \\
 Beispiel
 \begin{gather*}
   \int_1^2 \frac{5x}{\sqrt{1 + 3x^2}} \cdot dx \\\\
-  \text{subst. } z = 1 + 3x^2 \gap\gap \frac{dz}{dx} = (1 + 3x^2)' = 6x \gap\gap dz = 6x \cdot dx \\
+  \text{subst. } z = 1 + 3x^2 \qquad \frac{dz}{dx} = (1 + 3x^2)' = 6x \qquad dz = 6x \cdot dx \\
   \;= {\color{red}\frac{5}{6}} \int_1^2 \frac{{\color{red}6}x}{\sqrt{1 + 3x^2}} \cdot dx = \frac{5}{6} \int_4^{13} z^{-\frac{1}{2}} \cdot dz \\
   \;= \frac{5}{6} \left[2z^\frac{1}{2}\right]_4^{13} = \frac{5}{6} \left[2 \cdot (1 + 3x^2)^\frac{1}{2}\right]_1^2 \approx 2.676
 \end{gather*}
@@ -489,14 +489,14 @@ Beispiel
 \begin{exercise}{191/1}
   \item [a]
   \begin{gather*}
-    \int_0^2 \frac{4x}{\sqrt{1 + 2x^2}} \cdot dx; \gap\gap g(x) = 1 + 2x^2 \\
-    \text{subst. } z = g(x) \gap\gap dz = g'(x) \cdot dx \\
+    \int_0^2 \frac{4x}{\sqrt{1 + 2x^2}} \cdot dx; \qquad g(x) = 1 + 2x^2 \\
+    \text{subst. } z = g(x) \qquad dz = g'(x) \cdot dx \\
     \;= \int_{g(0)}^{g(2)} \frac{1}{\sqrt{z}} \cdot dz = \left[2 \cdot \sqrt{z}\right]_1^9 = 4
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \int_{-1}^1 \frac{-2x}{(4 - 3x^2)^2} \cdot dx; \gap\gap g(x) = 4 - 3x^2 \\
-    \text{subst. } z = g(x) \gap\gap dz = g'(x) \cdot dx \\
+    \int_{-1}^1 \frac{-2x}{(4 - 3x^2)^2} \cdot dx; \qquad g(x) = 4 - 3x^2 \\
+    \text{subst. } z = g(x) \qquad dz = g'(x) \cdot dx \\
     \;= \int_{g(-1)}^{g(1)} \frac{1}{3z^2} \cdot dz = \left[-\frac{1}{3z}\right]_1^1 = 0
   \end{gather*}
 \end{exercise}
@@ -504,7 +504,7 @@ Beispiel
   \item [e]
   \begin{gather*}
     \int_0^3 \frac{2x}{1 + x^2} \cdot dx \\
-    \text{subst. } z = 1 + x^2 \gap\gap dz = 2x \cdot dx \\
+    \text{subst. } z = 1 + x^2 \qquad dz = 2x \cdot dx \\
     \;= \int_1^{10} \frac{1}{z} \cdot dz = \left[ln(z)\right]_1^{10} \\
     \text{resubst.} \\
     \;= \left[ln(1 + x^2)\right]_0^3 = ln(10) \approx 2.3026
@@ -512,7 +512,7 @@ Beispiel
   \item [f]
   \begin{gather*}
     \int_{-1}^2 \frac{e^x}{2 + e^x} \cdot dx \\
-    \text{subst. } z = 2 + e^x \gap\gap dz = e^x \cdot dx \\
+    \text{subst. } z = 2 + e^x \qquad dz = e^x \cdot dx \\
     \;= \int_{2 + e^{-1}}^{2 + e^2} \frac{1}{z} \cdot dz = \left[ln(z)\right]_{2 + e^{-1}}^{2 + e^2} \\
     \text{resubst.} \\
     \;= \left[ln(2 + e^x)\right]_{-1}^2 \approx 1.3775
@@ -520,7 +520,7 @@ Beispiel
   \item [g]
   \begin{gather*}
     \int_e^{e^2} \frac{4}{x \cdot ln(x)} \cdot dx \\
-    \text{subst. } z = ln(x) \gap\gap dz = \frac{1}{x} \cdot dx \\
+    \text{subst. } z = ln(x) \qquad dz = \frac{1}{x} \cdot dx \\
     \;= \int_1^2 \frac{4}{z} \cdot dz = \left[4 \cdot ln(z)\right]_1^2 \\
     \text{resubst.} \\
     \;= \left[4 \cdot ln(ln(x))\right]_e^{e^2} = 4 \cdot ln(2) \approx 2.7726
@@ -528,7 +528,7 @@ Beispiel
   \item [h]
   \begin{gather*}
     \int_\frac{1}{3}^\frac{1}{2} \frac{\pi \cdot cos(\pi x)}{sin(\pi x)} \cdot dx \\
-    \text{subst. } z = sin(\pi x) \gap\gap dz = \pi \cdot cos(\pi x) \cdot dx \\
+    \text{subst. } z = sin(\pi x) \qquad dz = \pi \cdot cos(\pi x) \cdot dx \\
     \;= \int_{sin(\frac{\pi}{3})}^{sin(\frac{\pi}{2})} \frac{1}{z} \cdot dz = \left[ln(z)\right]_{sin(\frac{\pi}{3})}^{sin(\frac{\pi}{2})} \\
     \text{resubst.} \\
     \;= \left[ln(sin(\pi x))\right]_\frac{1}{3}^\frac{1}{2} \approx 0.1438
@@ -537,19 +537,19 @@ Beispiel
 \begin{exercise}{191/8}
   \item [a]
   \begin{gather*}
-    \int_0^{ln(2)} \frac{e^{2x}}{e^{2x} + 3} \cdot dx \gap\gap\gap\gap t = e^{2x} + 3 \gap\gap t' = \frac{dt}{dx} = 2e^{2x} \gap\gap dx = \frac{1}{2 \cdot e^{2x}} \cdot dt \\
+    \int_0^{ln(2)} \frac{e^{2x}}{e^{2x} + 3} \cdot dx \qquad\qquad t = e^{2x} + 3 \qquad t' = \frac{dt}{dx} = 2e^{2x} \qquad dx = \frac{1}{2 \cdot e^{2x}} \cdot dt \\
     \;= \int_{t(0)}^{t(ln(2))} \frac{e^{4x}}{t} \cdot \frac{1}{2 \cdot e^{2x}} \cdot dt = \int_{t(0)}^{t(ln(2))} \frac{e^{2x}}{2t} \cdot dt = \int_{t(0)}^{t(ln(2))} \frac{t - 3}{2t} \cdot dt \\
     \;= \left[\frac{t}{2} - \frac{3}{2} \cdot ln(t)\right]_4^7 \approx 0.6606
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \int_1^2 \frac{2x + 3}{(x + 2)^2} \cdot dx \gap\gap\gap\gap t = x + 2 \gap\gap t' = \frac{dt}{dx} = 1 \gap\gap dx = dt \\
+    \int_1^2 \frac{2x + 3}{(x + 2)^2} \cdot dx \qquad\qquad t = x + 2 \qquad t' = \frac{dt}{dx} = 1 \qquad dx = dt \\
     \;= \int_{t(1)}^{t(2)} \frac{2x + 3}{t^2} \cdot dt = \int_{t(1)}^{t(2)} \frac{2t - 1}{t^2} \cdot dt = \int_{t(1)}^{t(2)} (\frac{2}{t} - \frac{1}{t^2}) \cdot dt \\
     \;= \left[2 \cdot ln(t) + \frac{1}{t}\right]_3^4 \approx 0.4920
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \int_{0.5}^7 \frac{x}{\sqrt{4x - 1}} \cdot dx \gap\gap\gap\gap t = 4x - 1 \gap\gap t' = \frac{dt}{dx} = 4 \gap\gap dx = \frac{dt}{4} \\
+    \int_{0.5}^7 \frac{x}{\sqrt{4x - 1}} \cdot dx \qquad\qquad t = 4x - 1 \qquad t' = \frac{dt}{dx} = 4 \qquad dx = \frac{dt}{4} \\
     \;= \int_{t(0.5)}^{t(7)} \frac{x}{\sqrt{t}} \cdot \frac{1}{4} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{\frac{1}{4}t + \frac{1}{4}}{4 \cdot \sqrt{t}} \cdot dt = \int_{t(0.5)}^{t(7)} \frac{t + 1}{16 \cdot \sqrt{t}} \cdot dt \\
     \;= \left[(\frac{1}{16}t + \frac{1}{16}) \cdot 2 \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \int_{t(0.5)}^{t(7)} \frac{1}{8} \cdot \sqrt{t} \cdot dt \\
     \;= \left[(\frac{1}{8}t + \frac{1}{8}) \cdot \sqrt{t}\right]_{t(0.5)}^{t(7)} - \left[\frac{1}{8} \cdot \frac{2}{3} \cdot \sqrt{t^3}\right]_{t(0.5)}^{t(7)} \\
@@ -557,7 +557,7 @@ Beispiel
   \end{gather*}
   \item [d]
   \begin{gather*}
-    \int_0^4 \frac{4}{1 + 2 \cdot \sqrt{x}} \cdot dx \gap\gap\gap\gap t = 1 + 2 \cdot \sqrt{x} \gap\gap t' = \frac{dt}{dx} = \frac{1}{\sqrt{x}} \gap\gap dx = \sqrt{x} \cdot dt \\
+    \int_0^4 \frac{4}{1 + 2 \cdot \sqrt{x}} \cdot dx \qquad\qquad t = 1 + 2 \cdot \sqrt{x} \qquad t' = \frac{dt}{dx} = \frac{1}{\sqrt{x}} \qquad dx = \sqrt{x} \cdot dt \\
     \;= \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \sqrt{x} \cdot dt = \int_{t(0)}^{t(4)} \frac{4}{t} \cdot \frac{t - 1}{2} \cdot dt = \int_{t(0)}^{t(4)} \frac{4t - 4}{2t} \cdot dt \\
     \;= \left[\frac{1}{2t} \cdot (2t^2 - 4t)\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} - \frac{1}{2t^2} \cdot (2t^2 - 4t) \cdot dt \\
     \;= \left[t - 2\right]_{t(0)}^{t(4)} - \int_{t(0)}^{t(4)} (\frac{2}{t} - 1) \cdot dt \\
@@ -566,29 +566,29 @@ Beispiel
 \end{exercise}
 \begin{gather*}
   \text{Substitution 2} \\
-  \int_a^b f(x) \cdot dx \gap\gap \text{ersetze } x = g(z) \\
+  \int_a^b f(x) \cdot dx \qquad \text{ersetze } x = g(z) \\
   \;= \int_a^b f(g(z)) \cdot dx = \int_{\overline{g}(a)}^{\overline{g}(b)} f(g(z)) \cdot g'(z) \cdot dz \\\\
-  \gap\gap\gap x = g(z) \gap\gap z = \overline{g}(x) \\
-  \gap\gap\gap \frac{dx}{dz} = g'(z) \gap\gap dx = g'(z) \cdot dz \\\\
+  \qquad x = g(z) \qquad z = \overline{g}(x) \\
+  \qquad \frac{dx}{dz} = g'(z) \qquad dx = g'(z) \cdot dz \\\\
   \;= \left[F(g(z))\right]_{\overline{g}(a)}^{\overline{g}(b)} = \left[F(x)\right]_a^b
 \end{gather*}
 Beispiel
 \begin{gather*}
-  \int_0^\frac{1}{2} \frac{1}{\sqrt{1 - x^2}} \cdot dx \gap\gap x = sin(z) \gap\gap dx = cos(z) \cdot dz \\
+  \int_0^\frac{1}{2} \frac{1}{\sqrt{1 - x^2}} \cdot dx \qquad x = sin(z) \qquad dx = cos(z) \cdot dz \\
   \;= \int_0^\frac{\pi}{6} \frac{cos(z)}{\sqrt{1 - sin^2(z)}} \cdot dz = \int_0^\frac{\pi}{6} 1 \cdot dz = \left[z\right]_0^\frac{\pi}{6} = \frac{\pi}{6} \approx 0.524
 \end{gather*}
 \begin{exercise}{AB/23}
   \item [a]
   \begin{gather*}
     \int_0^1 e^x \cdot \sqrt{e^x + 1} \cdot dx \\
-    x(t) = ln(t) \gap\gap t = e^x \gap\gap dx = \frac{1}{t} \cdot dt \\
+    x(t) = ln(t) \qquad t = e^x \qquad dx = \frac{1}{t} \cdot dt \\
     \;= \int_{e^0}^{e^1} e^{ln(t)} \cdot \sqrt{e^{ln(t)} + 1} \cdot \frac{1}{t} \cdot dz = \int_1^e \sqrt{t + 1} \cdot dz \\
     \;= \left[\frac{2}{3} \cdot \sqrt{(t + 1)^3}\right]_1^e \approx 2.8943
   \end{gather*}
   \item [c]
   \begin{gather*}
     \int_1^3 \frac{1}{x} \cdot ln(x^2) \cdot dx \\
-    x(t) = e^t \gap\gap t = ln(x) \gap\gap dx = e^t \cdot dt \\
+    x(t) = e^t \qquad t = ln(x) \qquad dx = e^t \cdot dt \\
     \;= \int_{ln(1)}^{ln(3)} \frac{1}{e^t} \cdot ln(e^{t^2}) \cdot e^t \cdot dt = \int_0^{ln(3)} ln(e^{2t}) \cdot dt = \int_0^{ln(3)} 2t \cdot dt \\
     \;= \left[t^2\right]_0^{ln(3)} = (ln(3))^2 \approx 1.2069
   \end{gather*}
@@ -607,7 +607,7 @@ Beispiel
   \begin{gather*}
     \int_a^b f(x) \cdot dx = \int_{\overline{g}(a)}^{\overline{g}(b)} f(g(z)) \cdot g'(z) \cdot dz \\
     \;= \left[F(g(z))\right]_{\overline{g}(a)}^{\overline{g}(b)} = \left[F(x)\right]_a^b \\\\
-    x = g(z) \gap\Leftrightarrow\gap z = \overline{g}(x) \\
+    x = g(z) \quad\Leftrightarrow\quad z = \overline{g}(x) \\
     \frac{dx}{dz} = g'(z) \\
     dx = g'(z) \cdot dz
   \end{gather*}
@@ -616,16 +616,16 @@ Beispiel
   \item [d]
   \begin{gather*}
     \int_1^2 \frac{1 + ln(x)}{x \cdot (1 - ln(x))} \cdot dx \\
-    x(t) = e^t \gap\gap t = ln(x) \gap\gap dx = e^t \cdot dt \\\\
+    x(t) = e^t \qquad t = ln(x) \qquad dx = e^t \cdot dt \\\\
     \;= \int_{ln(1)}^{ln(2)} \frac{1 + ln(e^t)}{e^t \cdot (1 - ln(e^t))} \cdot e^t \cdot dt = \int_0^{ln(2)} \frac{1 + t}{1 - t} \cdot dt \\
-    z = 1 - t \gap\gap \frac{dz}{dt} = -1 \gap\gap dz = -dt \\\\
+    z = 1 - t \qquad \frac{dz}{dt} = -1 \qquad dz = -dt \\\\
     \;= -\int_{1 - 0}^{1 - ln(2)} \frac{2 - z}{z} \cdot dz = -\int_{1 - 0}^{1 - ln(2)} (\frac{2}{z} - 1) \cdot dz \\
     \;= -\left[2 \cdot ln(z) - z\right]_1^{1 - ln(2)} \approx 1.6696
   \end{gather*}
   \item [g]
   \begin{gather*}
     \int_0^1 \frac{1}{\sqrt{4 - x^2}} \cdot dx \\
-    x(t) = 2 \cdot sin(t) \gap\gap t = asin(\frac{x}{2}) \gap\gap dx = 2 \cdot cos(t) \cdot dt \\\\
+    x(t) = 2 \cdot sin(t) \qquad t = asin(\frac{x}{2}) \qquad dx = 2 \cdot cos(t) \cdot dt \\\\
     \;= \int_{asin(\frac{0}{2})}^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{\sqrt{4 - (2 \cdot sin(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{1 - (sin(t))^2}} \cdot dt \\
     \;= \int_0^{asin(\frac{1}{2})} \frac{2 \cdot cos(t)}{2 \cdot \sqrt{(cos(t))^2}} \cdot dt = \int_0^{asin(\frac{1}{2})} 1 \cdot dt = \left[t\right]_0^{asin(\frac{1}{2})} = \frac{\pi}{6}
   \end{gather*}
@@ -663,14 +663,14 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
   \item [c]
   \begin{gather*}
     y = x^2 - 6x + 8 \\
-    y = 0 \gap\gap L = \{2; 4\} \\
+    y = 0 \qquad L = \{2; 4\} \\
     V = \pi \cdot \int_2^4 (x^2 - 6x + 8)^2 \cdot dx = \pi \cdot \int_2^4 (x^4 - 12x^3 + 52x^2 - 96x + 64) \cdot dx \\
     \;= \pi \cdot \left[\frac{1}{5}x^5 - 3x^4 + \frac{52}{3}x^3 - 48x^2 + 64x\right]_2^4 = \pi \cdot \frac{16}{15}VE \approx 3.3510VE
   \end{gather*}
 \end{exercise}
 \begin{exercise}{197/8}
   \begin{gather*}
-    f(x) = 0.5x + 1 \gap\gap g(x) = 1.5 \cdot \sqrt{x - 1} \gap\gap \left[0; 4\right]
+    f(x) = 0.5x + 1 \qquad g(x) = 1.5 \cdot \sqrt{x - 1} \qquad \left[0; 4\right]
   \end{gather*}
   \item [a]
   \begin{gather*}
@@ -689,8 +689,8 @@ Rotationssymetrische Körper, die man sich dadurch entstanden vorstellen kann, d
 \begin{exercise}{197/9}
   \item [b]
   \begin{gather*}
-    f(x) = 3x^2 - x^3 \gap\gap g(x) = x^2 \\
-    f(x) = g(x) \gap\gap L = \{0; 2\} \\\\
+    f(x) = 3x^2 - x^3 \qquad g(x) = x^2 \\
+    f(x) = g(x) \qquad L = \{0; 2\} \\\\
     V = \pi \cdot ((3x^2 - x^3)^2 - (x^2)^2) \cdot dx = \pi \cdot (9x^4 - 6x^5 + x^6 - x^4) \cdot dx \\
     \;= \pi \left[\frac{8}{5}x^5 - x^6 + \frac{1}{7}x^7\right]_0^2 = \frac{192\pi}{35} \approx 17.2339
   \end{gather*}
@@ -732,7 +732,7 @@ Ein Vektor ist eine Stecke (mit Länge) mit Orientierung (Pfeil).
   \end{tikzpicture}
 \end{gather*}
 \subsection{Darstellung im 3-dimensionalen Koordinatensystem}
-$A(2|3|4) \gap\gap B(-3|1|-2) \gap\gap C(3|0|2)$ \\
+$A(2|3|4) \qquad B(-3|1|-2) \qquad C(3|0|2)$ \\
 Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
 \begin{gather*}
   \begin{tikzpicture}[scale=0.5,tdplot_main_coords]
@@ -789,38 +789,38 @@ Alle Punkte mit $(-2|1|z)$ liegen auf einer Geraden parallel zur $z$-Achse.
   \end{gather*}
   \item [b]
   \begin{gather*}
-    D(-2|-1|0) \gap\gap E(-2|0|3) \gap\gap F(1|0|3) \gap\gap H(-2|-1|3)
+    D(-2|-1|0) \qquad E(-2|0|3) \qquad F(1|0|3) \qquad H(-2|-1|3)
   \end{gather*}
 \end{exercise}
 \begin{exercise}{276/3}
   \begin{gather*}
-    P(2|3|0) \gap\gap Q(4|4|0) \\
-    R(0|3|1) \gap\gap S(0|-2|-1) \\
-    T(2|0|2) \gap\gap U(3|0|-1)
+    P(2|3|0) \qquad Q(4|4|0) \\
+    R(0|3|1) \qquad S(0|-2|-1) \\
+    T(2|0|2) \qquad U(3|0|-1)
   \end{gather*}
 \end{exercise}
 \begin{exercise}{276/10}
   \begin{gather*}
-    A(2|0|0) \gap\gap B(-1|2|-1) \gap\gap C(-2|3|4) \gap\gap D(3|4|-2)
+    A(2|0|0) \qquad B(-1|2|-1) \qquad C(-2|3|4) \qquad D(3|4|-2)
   \end{gather*}
   \item [a]
   \begin{gather*}
-    A'(2|0|0) \gap\gap B'(-1|2|{\color{red}1}) \gap\gap C'(-2|3|{\color{red}-4}) \gap\gap D'(3|4|{\color{red}2})
+    A'(2|0|0) \qquad B'(-1|2|{\color{red}1}) \qquad C'(-2|3|{\color{red}-4}) \qquad D'(3|4|{\color{red}2})
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A'({\color{red}-2}|0|0) \gap\gap B'({\color{red}1}|2|-1) \gap\gap C'({\color{red}2}|3|4) \gap\gap D'({\color{red}-3}|4|-2)
+    A'({\color{red}-2}|0|0) \qquad B'({\color{red}1}|2|-1) \qquad C'({\color{red}2}|3|4) \qquad D'({\color{red}-3}|4|-2)
   \end{gather*}
   \item [c]
   \begin{gather*}
-    A'(2|0|0) \gap\gap B'(-1|{\color{red}-2}|-1) \gap\gap C'(-2|{\color{red}-3}|4) \gap\gap D'(3|{\color{red}-4}|-2)
+    A'(2|0|0) \qquad B'(-1|{\color{red}-2}|-1) \qquad C'(-2|{\color{red}-3}|4) \qquad D'(3|{\color{red}-4}|-2)
   \end{gather*}
 \end{exercise}
 \section{Ortsvektoren und Verschiebungsvektoren}
 $\vv{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$ zum Punkt $A$. $\vv{BC}$ ist ein Verschiebungsvektor, der Punkt $B$ auf Punkt $C$ verschiet, bzw. $B$ mit $C$ verbindet und auf $C$ zeigt. Mit Hilfe des Vektors $\vv{BC}$ lassen sich auch andere Punkte in gleicher Weise verschieben wie Punkt $B$ auf Punkt $C$.
 \begin{gather*}
-  \vv{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \gap\gap P(0|1) \gap Q(4|3) \gap R(1.5|0.5) \\
-  \vv{OP} + \vv{BC} = \vv{OP'} \gap\gap \begin{pmatrix} 0 \\ 1 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix}
+  \vv{BC} = \begin{pmatrix} 3 \\ 2 \end{pmatrix} \qquad P(0|1) \quad Q(4|3) \quad R(1.5|0.5) \\
+  \vv{OP} + \vv{BC} = \vv{OP'} \qquad \begin{pmatrix} 0 \\ 1 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix}
 \end{gather*}
 \begin{tikzpicture}
   \coordinate[label=below left:$P$] (P) at (0,1);
@@ -832,7 +832,7 @@ $\vv{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$
 \end{tikzpicture}
 \subsection{Addition, Subtraktion und Multiplikation mit einer Zahl}
 \begin{gather*}
-  \vv{a} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix}
+  \vv{a} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}2 \\ -3 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}4 \\ 0 \\ -1\end{pmatrix}
 \end{gather*}
 \begin{itemize}
   \item
@@ -870,35 +870,35 @@ $\vv{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$
 \end{itemize}
 \subsubsection{Darstellung eines Vektors durch andere Vektoren (Bsp. Verbindungsvektor)}
 \begin{gather*}
-  \vv{a} = \vv{OA} = \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} \gap\gap \vv{b} = \vv{OB} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} \\
+  \vv{a} = \vv{OA} = \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} \qquad \vv{b} = \vv{OB} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} \\
   \vv{AB} = -\vv{a} + \vv{b} = -\vv{OA} + \vv{OB} = \vv{OB} - \vv{OA} = \begin{pmatrix}-1 \\ 0 \\ 3\end{pmatrix} - \begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}-5 \\ -4 \\ 2\end{pmatrix}
 \end{gather*}
 \begin{exercise}{279/6}
   \item [a]
   \begin{gather*}
-    A(-2|2|3) \gap\gap B(5|5|5) \gap\gap C(9|6|5) \gap\gap D(2|3|3) \\
-    \vv{AB} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \\
-    \vv{AB} = \vv{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+    A(-2|2|3) \qquad B(5|5|5) \qquad C(9|6|5) \qquad D(2|3|3) \\
+    \vv{AB} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \qquad \vv{DC} = \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} \\
+    \vv{AB} = \vv{DC} \quad\Rightarrow\quad \text{Parallelogramm}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(2|0|3) \gap\gap B(4|4|4) \gap\gap C(11|7|9) \gap\gap D(9|3|8) \\
-    \vv{AB} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
-    \vv{AB} = \vv{DC} \gap\Rightarrow\gap \text{Parallelogramm}
+    A(2|0|3) \qquad B(4|4|4) \qquad C(11|7|9) \qquad D(9|3|8) \\
+    \vv{AB} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \qquad \vv{DC} = \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} \\
+    \vv{AB} = \vv{DC} \quad\Rightarrow\quad \text{Parallelogramm}
   \end{gather*}
   \item [c]
   \begin{gather*}
-    A(2|-2|7) \gap\gap B(6|5|1) \gap\gap C(1|-1|1) \gap\gap D(8|0|8) \\
-    \vv{AB} = \begin{pmatrix}4 \\ 7 \\ -6\end{pmatrix} \gap\gap \vv{DC} = \begin{pmatrix}-7 \\ -1 \\ -7\end{pmatrix} \\
-    \vv{AB} \neq \vv{DC} \gap\Rightarrow\gap \text{kein Parallelogramm}
+    A(2|-2|7) \qquad B(6|5|1) \qquad C(1|-1|1) \qquad D(8|0|8) \\
+    \vv{AB} = \begin{pmatrix}4 \\ 7 \\ -6\end{pmatrix} \qquad \vv{DC} = \begin{pmatrix}-7 \\ -1 \\ -7\end{pmatrix} \\
+    \vv{AB} \neq \vv{DC} \quad\Rightarrow\quad \text{kein Parallelogramm}
   \end{gather*}
 \end{exercise}
 \newpage
 \begin{exercise}{279/7}
   \item [a]
   \begin{gather*}
-    A(21|-11|43) \gap\gap B(3|7|-8) \gap\gap C(0|4|5) \\
-  \vv{AB} = \begin{pmatrix}-18 \\ 18 \\ -51\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-3 \\ -3 \\ 13\end{pmatrix} \\
+    A(21|-11|43) \qquad B(3|7|-8) \qquad C(0|4|5) \\
+  \vv{AB} = \begin{pmatrix}-18 \\ 18 \\ -51\end{pmatrix} \qquad \vv{BC} = \begin{pmatrix}-3 \\ -3 \\ 13\end{pmatrix} \\
   \vv{OD_1} = \vv{OA} + \vv{BC} = \begin{pmatrix}18 \\ -14 \\ 56\end{pmatrix} \\
   \vv{OD_2} = \vv{OC} + \vv{AB} = \begin{pmatrix}-18 \\ 22 \\ -46\end{pmatrix} \\
   \vv{OD_3} = \vv{OA} - \vv{BC} = \begin{pmatrix}24 \\ -8 \\ 30\end{pmatrix}
@@ -925,8 +925,8 @@ $\vv{OA}$ ist der Ortsvektor des Punktes $A$. Der Vektor führt vom Ursprung $O$
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(-75|199|-67) \gap\gap B(35|0|-81) \gap\gap C(1|2|3) \\
-    \vv{AB} = \begin{pmatrix}110 \\ -199 \\ 14\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-34 \\ 2 \\ 84\end{pmatrix} \\
+    A(-75|199|-67) \qquad B(35|0|-81) \qquad C(1|2|3) \\
+    \vv{AB} = \begin{pmatrix}110 \\ -199 \\ 14\end{pmatrix} \qquad \vv{BC} = \begin{pmatrix}-34 \\ 2 \\ 84\end{pmatrix} \\
     \vv{OD_1} = \vv{OA} + \vv{BC} = \begin{pmatrix}-109 \\ 201 \\ 17\end{pmatrix} \\
     \vv{OD_2} = \vv{OC} + \vv{AB} = \begin{pmatrix}111 \\ -197 \\ 17\end{pmatrix} \\
     \vv{OD_3} = \vv{OA} - \vv{BC} = \begin{pmatrix}-41 \\ 197 \\ -151\end{pmatrix}
@@ -963,13 +963,13 @@ $M_2$ ... Mittelpunkt des Parallelogramms (mit $D_1$)
 \begin{itemize}
   \item [zu 6a]
   \begin{gather*}
-    \vv{OA} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{OB} = \begin{pmatrix}5 \\ 5 \\ 5\end{pmatrix} \gap\gap \vv{OC} = \begin{pmatrix}9 \\ 6 \\ 5\end{pmatrix} \\
+    \vv{OA} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} \qquad \vv{OB} = \begin{pmatrix}5 \\ 5 \\ 5\end{pmatrix} \qquad \vv{OC} = \begin{pmatrix}9 \\ 6 \\ 5\end{pmatrix} \\
     \vv{OM_1} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} = \begin{pmatrix}1.5 \\ 3.5 \\ 4\end{pmatrix} \\
     \vv{OM_2} = \begin{pmatrix}-2 \\ 2 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}11 \\ 4 \\ 2\end{pmatrix} = \begin{pmatrix}3.5 \\ 4 \\ 4\end{pmatrix}
   \end{gather*}
   \item [zu 6b]
   \begin{gather*}
-    \vv{OA} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \gap\gap \vv{OB} = \begin{pmatrix}4 \\ 4 \\ 4\end{pmatrix} \gap\gap \vv{OC} = \begin{pmatrix}11 \\ 7 \\ 9\end{pmatrix} \\
+    \vv{OA} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \qquad \vv{OB} = \begin{pmatrix}4 \\ 4 \\ 4\end{pmatrix} \qquad \vv{OC} = \begin{pmatrix}11 \\ 7 \\ 9\end{pmatrix} \\
     \vv{OM_1} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}2 \\ 4 \\ 1\end{pmatrix} = \begin{pmatrix}3 \\ 2 \\ 3.5\end{pmatrix} \\
     \vv{OM_2} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}9 \\ 7 \\ 6\end{pmatrix} = \begin{pmatrix}6.5 \\ 3.5 \\ 6\end{pmatrix}
   \end{gather*}
@@ -1104,7 +1104,7 @@ Setze ich mehrere Vektorpfeile, mit Koeffizienten multipliziert, aneinander, so 
 \end{gather*}
 Gerade durch die Punkte $A$ und $B$:
 \begin{gather*}
-  g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} \gap\gap s \in \mathbb{R}
+  g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} \qquad s \in \mathbb{R}
 \end{gather*}
 Parametergleichung einer Geraden $g$:
 \begin{itemize}
@@ -1119,36 +1119,36 @@ Parametergleichung einer Geraden $g$:
   h \colon \vv{x} = \vv{a} + r \cdot \vv{b} \\
   h \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\\\
   \text{Beispiele für Punkte auf $h$} \\
-  \vv{OP_1} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \gap\gap r = 0 \\
-  \vv{OP_2} = \begin{pmatrix}-2 \\ 5 \\ 4\end{pmatrix} \gap\gap r = 1 \\
-  \vv{OP_3} = \begin{pmatrix}-5 \\ 10 \\ 6\end{pmatrix} \gap\gap r = 2 \\
-  \vv{OP_4} = \begin{pmatrix}4 \\ -5 \\ 0\end{pmatrix} \gap\gap r = -1
+  \vv{OP_1} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \qquad r = 0 \\
+  \vv{OP_2} = \begin{pmatrix}-2 \\ 5 \\ 4\end{pmatrix} \qquad r = 1 \\
+  \vv{OP_3} = \begin{pmatrix}-5 \\ 10 \\ 6\end{pmatrix} \qquad r = 2 \\
+  \vv{OP_4} = \begin{pmatrix}4 \\ -5 \\ 0\end{pmatrix} \qquad r = -1
 \end{gather*}
 \begin{gather*}
   \vv{OQ} = \begin{pmatrix}3 \\ 7 \\ -1\end{pmatrix} \in h \\
   \begin{pmatrix}3 \\ 7 \\ -1\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-3 \\ 5 \\ 2\end{pmatrix} \\
   \text{gibt es ein $r$, das alle 3 Gleichungen löst?} \\
-  3 = 1 - 3r \gap\Rightarrow\gap r = -\frac{2}{3} \\
-  7 = 5r \gap\Rightarrow\gap r = \frac{7}{5} \\
-  -1 = 2 + 2r \gap\Rightarrow\gap r = -\frac{3}{2} \\
-  \Rightarrow\gap Q \notin h
+  3 = 1 - 3r \quad\Rightarrow\quad r = -\frac{2}{3} \\
+  7 = 5r \quad\Rightarrow\quad r = \frac{7}{5} \\
+  -1 = 2 + 2r \quad\Rightarrow\quad r = -\frac{3}{2} \\
+  \Rightarrow\quad Q \notin h
 \end{gather*}
 \begin{exercise}{287/2}
   \item [a]
   \begin{gather*}
-    A(1|2|2) \gap\gap B(5|-4|7) \\
+    A(1|2|2) \qquad B(5|-4|7) \\
     g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 2 \\ 2\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix} \\
     g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}5 \\ -4 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ -6 \\ 5\end{pmatrix}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(-3|-2|9) \gap\gap B(0|0|3) \\
+    A(-3|-2|9) \qquad B(0|0|3) \\
     g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}-3 \\ -2 \\ 9\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix} \\
     g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ -6\end{pmatrix}
   \end{gather*}
   \item [c]
   \begin{gather*}
-    A(7|-2|7) \gap\gap B(1|1|1) \\
+    A(7|-2|7) \qquad B(1|1|1) \\
     g \colon \vv{x} = \vv{OA} + s \cdot \vv{AB} = \begin{pmatrix}7 \\ -2 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix} \\
     g \colon \vv{x} = \vv{OB} + s \cdot \vv{AB} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}-6 \\ 3 \\ -6\end{pmatrix}
   \end{gather*}
@@ -1156,18 +1156,18 @@ Parametergleichung einer Geraden $g$:
 \begin{exercise}{287/3}
   \item [c]
   \begin{gather*}
-    X(2|3|-1) \gap\gap g \colon \vv{x} = \begin{pmatrix}7 \\ 0 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}5 \\ -3 \\ 5\end{pmatrix} \\
-    2 = 7 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
-    3 = t \cdot -3 \gap\Rightarrow\gap t = -1 \\
-    -1 = 4 + t \cdot 5 \gap\Rightarrow\gap t = -1 \\
-    \Rightarrow\gap X \in g
+    X(2|3|-1) \qquad g \colon \vv{x} = \begin{pmatrix}7 \\ 0 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}5 \\ -3 \\ 5\end{pmatrix} \\
+    2 = 7 + t \cdot 5 \quad\Rightarrow\quad t = -1 \\
+    3 = t \cdot -3 \quad\Rightarrow\quad t = -1 \\
+    -1 = 4 + t \cdot 5 \quad\Rightarrow\quad t = -1 \\
+    \Rightarrow\quad X \in g
   \end{gather*}
   \item [d]
   \begin{gather*}
-    X(2|-1|-1) \gap\gap g \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 3 \\ 3\end{pmatrix} \\
-    2 = 1 + t \gap\Rightarrow\gap t = 1 \\
-    -1 = t \cdot 3 \gap\Rightarrow\gap t = -\frac{1}{3} \\
-    \Rightarrow\gap X \notin g
+    X(2|-1|-1) \qquad g \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 3 \\ 3\end{pmatrix} \\
+    2 = 1 + t \quad\Rightarrow\quad t = 1 \\
+    -1 = t \cdot 3 \quad\Rightarrow\quad t = -\frac{1}{3} \\
+    \Rightarrow\quad X \notin g
   \end{gather*}
 \end{exercise}
 \begin{exercise}{288/12}
@@ -1175,46 +1175,46 @@ Parametergleichung einer Geraden $g$:
   \begin{itemize}
     \item [$g$]
     \begin{gather*}
-      P_1(2|9|0) \gap\gap P_2(-4|1|0) \gap\gap g \colon \vv{x} = \begin{pmatrix}2 \\ 9 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 4 \\ 0\end{pmatrix}
+      P_1(2|9|0) \qquad P_2(-4|1|0) \qquad g \colon \vv{x} = \begin{pmatrix}2 \\ 9 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 4 \\ 0\end{pmatrix}
     \end{gather*}
     \item [$h$]
     \begin{gather*}
-      H(-4|1|3) \gap\gap P(2|5|-3) \gap\gap h \colon \vv{x} = \begin{pmatrix}-4 \\ 1 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 2 \\ -3\end{pmatrix}
+      H(-4|1|3) \qquad P(2|5|-3) \qquad h \colon \vv{x} = \begin{pmatrix}-4 \\ 1 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 2 \\ -3\end{pmatrix}
     \end{gather*}
     \item [$i$]
     \begin{gather*}
-      P_1(-4|5|3) \gap\gap P_2(-4|9|0) \gap\gap i \colon \vv{x} = \begin{pmatrix}-4 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix}
+      P_1(-4|5|3) \qquad P_2(-4|9|0) \qquad i \colon \vv{x} = \begin{pmatrix}-4 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix}
     \end{gather*}
     \item [$j$]
     \begin{gather*}
-      P_1(-1|1|0) \gap\gap P_2(-1|5|3) \gap\gap j \colon \vv{x} = \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ 3\end{pmatrix}
+      P_1(-1|1|0) \qquad P_2(-1|5|3) \qquad j \colon \vv{x} = \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}0 \\ 4 \\ 3\end{pmatrix}
     \end{gather*}
   \end{itemize}
   \item [b]
   \begin{itemize}
     \item [$g$]
     \begin{gather*}
-      C(-8|11|0) \gap\gap P(-2|5|3) \gap\gap g \colon \vv{x} = \begin{pmatrix}-8 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -2 \\ 1\end{pmatrix}
+      C(-8|11|0) \qquad P(-2|5|3) \qquad g \colon \vv{x} = \begin{pmatrix}-8 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -2 \\ 1\end{pmatrix}
     \end{gather*}
     \item [$h$]
     \begin{gather*}
-      P_1(-2|5|3) \gap\gap P_2(-6|9|3) \gap\gap h \colon \vv{x} = \begin{pmatrix}-2 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix}
+      P_1(-2|5|3) \qquad P_2(-6|9|3) \qquad h \colon \vv{x} = \begin{pmatrix}-2 \\ 5 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix}
     \end{gather*}
     \item [$i$]
     \begin{gather*}
-      B(0|11|0) \gap\gap P(-6|5|3) \gap\gap i \colon \vv{x} = \begin{pmatrix}0 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 1\end{pmatrix}
+      B(0|11|0) \qquad P(-6|5|3) \qquad i \colon \vv{x} = \begin{pmatrix}0 \\ 11 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 1\end{pmatrix}
     \end{gather*}
     \item [$j$]
     \begin{gather*}
-      M(-4|7|0) \gap\gap P(-6|5|3) \gap\gap j \colon \vv{x} = \begin{pmatrix}-4 \\ 7 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 3\end{pmatrix}
+      M(-4|7|0) \qquad P(-6|5|3) \qquad j \colon \vv{x} = \begin{pmatrix}-4 \\ 7 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}-2 \\ -2 \\ 3\end{pmatrix}
     \end{gather*}
   \end{itemize}
 \end{exercise}
 \subsection{Kollinearität}
 \begin{gather*}
-  g \colon \vv{x} = \vv{a} + t \cdot \vv{b} \gap\gap t \in \mathbb{R} \\
-  \text{für $\vv{b}$ gilt: $\vv{b}$ kann durch $\vv{b}' = s \cdot \vv{b}$ ersetzt werden} \gap\gap s \in \mathbb{R} \gap s \neq 0 \\
-  \vv{b}' \parallel \vv{b} \gap\gap \text{$\vv{b}'$ und $\vv{b}$ sind kollinear}
+  g \colon \vv{x} = \vv{a} + t \cdot \vv{b} \qquad t \in \mathbb{R} \\
+  \text{für $\vv{b}$ gilt: $\vv{b}$ kann durch $\vv{b}' = s \cdot \vv{b}$ ersetzt werden} \qquad s \in \mathbb{R} \quad s \neq 0 \\
+  \vv{b}' \parallel \vv{b} \qquad \text{$\vv{b}'$ und $\vv{b}$ sind kollinear}
 \end{gather*}
 Sonderfall: Gerade durch $O$
 \begin{gather*}
@@ -1279,7 +1279,7 @@ Sonderfall: Gerade durch $O$
     9 + 3r = 7 + s \\
     2r = -2 + s \\
     6 + r = 2 + 2s \\
-    \Rightarrow \gap\gap r = 0 \gap\gap s = 2 \\\\
+    \Rightarrow \qquad r = 0 \qquad s = 2 \\\\
     \vv{OS} = \begin{pmatrix}9 \\ 0 \\ 6\end{pmatrix} + 0 \cdot \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} + 2 \cdot \begin{pmatrix}1 \\ 1 \\ 2\end{pmatrix} = \begin{pmatrix}9 \\ 0 \\ 6\end{pmatrix} \\\\
     S(9|0|6)
   \end{gather*}
@@ -1294,9 +1294,9 @@ Sonderfall: Gerade durch $O$
     r = -3 \\
     \Rightarrow \text{identisch oder parallel} \\\\
     \begin{pmatrix}5 \\ 0 \\ 1\end{pmatrix} = \begin{pmatrix}7 \\ 1 \\ 2\end{pmatrix} + t \cdot \begin{pmatrix}-6 \\ -3 \\ 3\end{pmatrix} \\
-    5 = 7 + t \cdot (-6) \gap\Rightarrow\gap t = \frac{1}{3} \\
-    0 = 1 + t \cdot (-3) \gap\Rightarrow\gap t = \frac{1}{3} \\
-    1 = 2 + t \cdot 3 \gap\Rightarrow\gap t = -\frac{1}{3} \\
+    5 = 7 + t \cdot (-6) \quad\Rightarrow\quad t = \frac{1}{3} \\
+    0 = 1 + t \cdot (-3) \quad\Rightarrow\quad t = \frac{1}{3} \\
+    1 = 2 + t \cdot 3 \quad\Rightarrow\quad t = -\frac{1}{3} \\
     \Rightarrow \text{parallel}
   \end{gather*}
   \item [b]
@@ -1306,8 +1306,8 @@ Sonderfall: Gerade durch $O$
     \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} \neq r \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     t_g \cdot \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} = \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + t_h \cdot \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} \\
-    t_g \cdot 2 = 2 + t_h \cdot 0 \gap\Rightarrow\gap t_g = 1 \\
-    t_g \cdot 0 = 3 + t_h \cdot 1 \gap\Rightarrow\gap t_h = -1 \\
+    t_g \cdot 2 = 2 + t_h \cdot 0 \quad\Rightarrow\quad t_g = 1 \\
+    t_g \cdot 0 = 3 + t_h \cdot 1 \quad\Rightarrow\quad t_h = -1 \\
     t_g \cdot 1 \neq 4 + t_h \cdot (-1) \\
     \Rightarrow \text{windschief}
   \end{gather*}
@@ -1332,32 +1332,32 @@ Sonderfall: Gerade durch $O$
 \begin{exercise}{293/10}
   \item [a]
   \begin{gather*}
-    g_a \colon \vv{x} = \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \gap\gap\gap h_a \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\\\
+    g_a \colon \vv{x} = \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \qquad h_a \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\\\
     \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} \neq t \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     \begin{pmatrix}3 \\ a \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ a\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -22 \\ -29\end{pmatrix} \\
     3 - r = 1 + 2s \\
     a + 5r = -22s \\
     3 + 7r = a - 29s \\
-    a = 2 \gap\gap r = 4 \gap\gap s = -1 \\\\
+    a = 2 \qquad r = 4 \qquad s = -1 \\\\
     \vv{OS} = \begin{pmatrix}3 \\ 2 \\ 3\end{pmatrix} + 4 \cdot \begin{pmatrix}-1 \\ 5 \\ 7\end{pmatrix} = \begin{pmatrix}-1 \\ 22 \\ 31\end{pmatrix}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g_a \colon \vv{x} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \gap\gap\gap h_a \colon \vv{x} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\\\
+    g_a \colon \vv{x} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \qquad h_a \colon \vv{x} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\\\
     \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} \neq t \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\
     \Rightarrow \text{nicht parallel} \\\\
     \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} + r \cdot \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ -1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} \\
     3 + 10r = a + 6s \\
     2 + 7r = -1 + 2s \\
     a = 3 - s \\
-    a = 5 \gap\gap r = -1 \gap\gap s = -2 \\\\
+    a = 5 \qquad r = -1 \qquad s = -2 \\\\
     \vv{OS} = \begin{pmatrix}3 \\ 2 \\ 5\end{pmatrix} - \begin{pmatrix}10 \\ 7 \\ 0\end{pmatrix} = \begin{pmatrix}-7 \\ -5 \\ 5\end{pmatrix}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{293/16}
   \begin{gather*}
-    G = 10cm^2 \gap\gap h = 15cm \\
+    G = 10cm^2 \qquad h = 15cm \\
     V_Z = G \cdot h = 150cm^3 \\
     V_K = \frac{1}{3} \cdot G \cdot h = 50cm^3 \\
     V_Z - V_K = 100cm^3 = 0.1L
@@ -1365,7 +1365,7 @@ Sonderfall: Gerade durch $O$
 \end{exercise}
 \section{Abstand zweier Punkte, Vektorlänge, Streckenlänge}
 \begin{gather*}
-  \text{Bsp. } g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \gap\gap r \in \mathbb{R} \colon \left[2;5\right]
+  \text{Bsp. } g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \qquad r \in \mathbb{R} \colon \left[2;5\right]
 \end{gather*}
 \begin{gather*}
   \begin{tikzpicture}[scale=0.5]
@@ -1385,84 +1385,84 @@ Sonderfall: Gerade durch $O$
   \end{tikzpicture}
 \end{gather*}
 \begin{gather*}
-  \vv{OC} = \begin{pmatrix}5 \\ 0 \\ 3\end{pmatrix} \gap\gap \vv{OD} = \begin{pmatrix}11 \\ -3 \\ 3\end{pmatrix} \\
+  \vv{OC} = \begin{pmatrix}5 \\ 0 \\ 3\end{pmatrix} \qquad \vv{OD} = \begin{pmatrix}11 \\ -3 \\ 3\end{pmatrix} \\
   |\overline{CD}| = |\vv{CD}| = \text{Abstand } C \leftrightarrow D \\
   \vv{CD} = \begin{pmatrix}6 \\ -3 \\ 0\end{pmatrix}
 \end{gather*}
 \begin{gather*}
   \textbf{Seitenlängen des Segels (Bsp. S. 294)} \\
   \text{unten} \colon 4m \\
-  \text{links} \colon \sqrt{(5m)^2 + (3m)^2} \gap\text{(Satz des Pythagoras)} \\
+  \text{links} \colon \sqrt{(5m)^2 + (3m)^2} \quad\text{(Satz des Pythagoras)} \\
   \text{rechts} \colon \sqrt{(\sqrt{34}m)^2 + (4m)^2} = \sqrt{(5m)^2 + (3m)^2 + (4m)^2}
 \end{gather*}
 \begin{gather*}
   |\vv{CD}| = \sqrt{6^2 + (-3)^2 + 0^2} = \sqrt{45} \approx 6.71LE
 \end{gather*}
-Die Länge eines Vektors $\begin{pmatrix}a \\ b \\ c\end{pmatrix}$ ist $\Biggl|\begin{pmatrix}a \\ b \\ c\end{pmatrix}\Biggr| = \sqrt{a^2 + b^2 + c^2}$
+Die Länge eines Vektors $\begin{pmatrix}a \\ b \\ c\end{pmatrix}$ ist $\left|\begin{pmatrix}a \\ b \\ c\end{pmatrix}\right| = \sqrt{a^2 + b^2 + c^2}$
 \begin{exercise}{297/2}
   \item [a]
   \begin{gather*}
-    A(0|0|0) \gap\gap B(2|3|-1) \\
+    A(0|0|0) \qquad B(2|3|-1) \\
     \vv{AB} = \begin{pmatrix}2 \\ 3 \\ -1\end{pmatrix} \\
     |\vv{AB}| = \sqrt{2^2 + 3^2 + (-1)^2} = \sqrt{14} \approx 3.74LE
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(2|2|-2) \gap\gap B(0|-1|5) \\
+    A(2|2|-2) \qquad B(0|-1|5) \\
     \vv{AB} = \begin{pmatrix}-2 \\ -3 \\ 7\end{pmatrix} \\
     |\vv{AB}| = \sqrt{(-2)^2 + (-3)^2 + 7^2} = \sqrt{62} \approx 7.87LE
   \end{gather*}
   \item [c]
   \begin{gather*}
-    A(1|5|6) \gap\gap B(1|6|7) \\
+    A(1|5|6) \qquad B(1|6|7) \\
     \vv{AB} = \begin{pmatrix}0 \\ 1 \\ 1\end{pmatrix} \\
     |\vv{AB}| = \sqrt{0^2 + 1^2 + 1^2} = \sqrt{2} \approx 1.41LE
   \end{gather*}
 \end{exercise}
 \subsection{Einheitsvektor}
 Ein Einheitsvektor hat die Länge $1LE$ \\
-Einheitsvektor zu z. B. $\vv{a} = \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix} \gap\gap |\vv{a}| = \sqrt{30}$
+Einheitsvektor zu z. B. $\vv{a} = \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix} \qquad |\vv{a}| = \sqrt{30}$
 \begin{gather*}
   \vv{a_0} = \frac{1}{\sqrt{30}} \cdot \begin{pmatrix}2 \\ 5 \\ 1\end{pmatrix}
 \end{gather*}
 \begin{exercise}{297/8}
   \item [a]
   \begin{gather*}
-    A(1|-2|2) \gap\gap B(3|2|1) \gap\gap C(3|0|3) \\
-    \vv{AB} = \begin{pmatrix}2 \\ 4 \\ -1\end{pmatrix} \gap\gap |\vv{AB}| = \sqrt{2^2 + 4^2 + (-1)^2} = \sqrt{21} \\
-    \vv{AC} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} \gap\gap |\vv{AC}| = \sqrt{2^2 + 2^2 + 1^2} = \sqrt{9} \\
-    \vv{BC} = \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} \gap\gap |\vv{BC}| = \sqrt{0^2 + (-2)^2 + 2^2} = \sqrt{8} \\
-    |\vv{AB}| \neq |\vv{AC}| \neq |\vv{BC}| \gap\Rightarrow\text{nicht gleichschenklig}
+    A(1|-2|2) \qquad B(3|2|1) \qquad C(3|0|3) \\
+    \vv{AB} = \begin{pmatrix}2 \\ 4 \\ -1\end{pmatrix} \qquad |\vv{AB}| = \sqrt{2^2 + 4^2 + (-1)^2} = \sqrt{21} \\
+    \vv{AC} = \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} \qquad |\vv{AC}| = \sqrt{2^2 + 2^2 + 1^2} = \sqrt{9} \\
+    \vv{BC} = \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} \qquad |\vv{BC}| = \sqrt{0^2 + (-2)^2 + 2^2} = \sqrt{8} \\
+    |\vv{AB}| \neq |\vv{AC}| \neq |\vv{BC}| \quad\Rightarrow\text{nicht gleichschenklig}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(7|0|-1) \gap\gap B(5|-3|-1) \gap\gap C(4|0|1) \\
-    \vv{AB} = \begin{pmatrix}-2 \\ -3 \\ 0\end{pmatrix} \gap\gap |\vv{AB}| = \sqrt{(-2)^2 + (-3)^2 + 0^2} = \sqrt{13} \\
-    \vv{AC} = \begin{pmatrix}-3 \\ 0 \\ 2\end{pmatrix} \gap\gap |\vv{AC}| = \sqrt{(-3)^2 + 0^2 + 2^2} = \sqrt{13} \\
-    \vv{BC} = \begin{pmatrix}-1 \\ 3 \\ 2\end{pmatrix} \gap\gap |\vv{BC}| = \sqrt{(-1)^2 + 3^2 + 2^2} = \sqrt{14} \\
-    |\vv{AB}| = |\vv{AC}| \gap\Rightarrow\text{gleichschenklig}
+    A(7|0|-1) \qquad B(5|-3|-1) \qquad C(4|0|1) \\
+    \vv{AB} = \begin{pmatrix}-2 \\ -3 \\ 0\end{pmatrix} \qquad |\vv{AB}| = \sqrt{(-2)^2 + (-3)^2 + 0^2} = \sqrt{13} \\
+    \vv{AC} = \begin{pmatrix}-3 \\ 0 \\ 2\end{pmatrix} \qquad |\vv{AC}| = \sqrt{(-3)^2 + 0^2 + 2^2} = \sqrt{13} \\
+    \vv{BC} = \begin{pmatrix}-1 \\ 3 \\ 2\end{pmatrix} \qquad |\vv{BC}| = \sqrt{(-1)^2 + 3^2 + 2^2} = \sqrt{14} \\
+    |\vv{AB}| = |\vv{AC}| \quad\Rightarrow\text{gleichschenklig}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{297/9}
   \item [a]
   \begin{gather*}
-    A(4|2|-1) \gap\gap B(10|-8|9) \gap\gap C(4|0|1) \\
+    A(4|2|-1) \qquad B(10|-8|9) \qquad C(4|0|1) \\
     \vv{OM_a} = \vv{OB} + \frac{1}{2} \cdot \vv{BC} = \begin{pmatrix}10 \\ -8 \\ 9\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}-6 \\ 8 \\ -8\end{pmatrix} = \begin{pmatrix}7 \\ -4 \\ 5\end{pmatrix} \\
     \vv{OM_b} = \vv{OC} + \frac{1}{2} \cdot \vv{CA} = \begin{pmatrix}4 \\ 0 \\ 1\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}0 \\ 2 \\ -2\end{pmatrix} = \begin{pmatrix}4 \\ 1 \\ 0\end{pmatrix} \\
     \vv{OM_c} = \vv{OA} + \frac{1}{2} \cdot \vv{AB} = \begin{pmatrix}4 \\ 2 \\ -1\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}6 \\ -10 \\ 10\end{pmatrix} = \begin{pmatrix}7 \\ -3 \\ 4\end{pmatrix} \\
-    |\vv{AM_a}| = \Biggl|\begin{pmatrix}3 \\ -6 \\ 6\end{pmatrix}\Biggr| = \sqrt{3^2 + (-6)^2 + 6^2} = \sqrt{81} = 9 \\
-    |\vv{BM_b}| = \Biggl|\begin{pmatrix}-6 \\ 9 \\ -9\end{pmatrix}\Biggr| = \sqrt{(-6)^2 + 9^2 + (-9)^2} = \sqrt{198} \approx 14.07 \\
-    |\vv{CM_c}| = \Biggl|\begin{pmatrix}3 \\ -3 \\ 3\end{pmatrix}\Biggr| = \sqrt{3^2 + (-3)^2 + 3^2} = \sqrt{27} \approx 5.20
+    |\vv{AM_a}| = \left|\begin{pmatrix}3 \\ -6 \\ 6\end{pmatrix}\right| = \sqrt{3^2 + (-6)^2 + 6^2} = \sqrt{81} = 9 \\
+    |\vv{BM_b}| = \left|\begin{pmatrix}-6 \\ 9 \\ -9\end{pmatrix}\right| = \sqrt{(-6)^2 + 9^2 + (-9)^2} = \sqrt{198} \approx 14.07 \\
+    |\vv{CM_c}| = \left|\begin{pmatrix}3 \\ -3 \\ 3\end{pmatrix}\right| = \sqrt{3^2 + (-3)^2 + 3^2} = \sqrt{27} \approx 5.20
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(1|2|-1) \gap\gap B(-1|10|15) \gap\gap C(9|6|-5) \\
+    A(1|2|-1) \qquad B(-1|10|15) \qquad C(9|6|-5) \\
     \vv{OM_a} = \vv{OB} + \frac{1}{2} \cdot \vv{BC} = \begin{pmatrix}-1 \\ 10 \\ 15\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}10 \\ -4 \\ -20\end{pmatrix} = \begin{pmatrix}4 \\ 8 \\ 5\end{pmatrix} \\
     \vv{OM_b} = \vv{OC} + \frac{1}{2} \cdot \vv{CA} = \begin{pmatrix}9 \\ 6 \\ -5\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}-8 \\ -4 \\ 4\end{pmatrix} = \begin{pmatrix}5 \\ 4 \\ -3\end{pmatrix} \\
     \vv{OM_c} = \vv{OA} + \frac{1}{2} \cdot \vv{AB} = \begin{pmatrix}1 \\ 2 \\ -1\end{pmatrix} + \frac{1}{2} \cdot \begin{pmatrix}-2 \\ 8 \\ 16\end{pmatrix} = \begin{pmatrix}0 \\ 6 \\ 7\end{pmatrix} \\
-    |\vv{AM_a}| = \Biggl|\begin{pmatrix}3 \\ 6 \\ 6\end{pmatrix}\Biggr| = \sqrt{3^2 + 6^2 + 6^2} = \sqrt{81} = 9 \\
-    |\vv{BM_b}| = \Biggl|\begin{pmatrix}6 \\ -6 \\ -18\end{pmatrix}\Biggr| = \sqrt{6^2 + (-6)^2 + (-18)^2} = \sqrt{396} \approx 19.90 \\
-    |\vv{CM_c}| = \Biggl|\begin{pmatrix}-9 \\ 0 \\ 12\end{pmatrix}\Biggr| = \sqrt{(-9)^2 + 0^2 + 12^2} = \sqrt{225} = 15
+    |\vv{AM_a}| = \left|\begin{pmatrix}3 \\ 6 \\ 6\end{pmatrix}\right| = \sqrt{3^2 + 6^2 + 6^2} = \sqrt{81} = 9 \\
+    |\vv{BM_b}| = \left|\begin{pmatrix}6 \\ -6 \\ -18\end{pmatrix}\right| = \sqrt{6^2 + (-6)^2 + (-18)^2} = \sqrt{396} \approx 19.90 \\
+    |\vv{CM_c}| = \left|\begin{pmatrix}-9 \\ 0 \\ 12\end{pmatrix}\right| = \sqrt{(-9)^2 + 0^2 + 12^2} = \sqrt{225} = 15
   \end{gather*}
   \item [c]
   \begin{gather*}
@@ -1485,16 +1485,16 @@ Beispiel aus der Physik:
 \end{figure}
 \begin{gather*}
   W = \vv{F} \cdot \vv{s} \\
-  cos(\alpha) = \frac{|\vv{F_s}|}{|\vv{F}|} \gap\Rightarrow\gap |\vv{F_s}| = |\vv{F}| \cdot cos(\alpha) \gap\gap\gap \text{$\vv{F_s}$ ... $\vv{F}$ in Richtung $\vv{s}$} \\
+  cos(\alpha) = \frac{|\vv{F_s}|}{|\vv{F}|} \quad\Rightarrow\quad |\vv{F_s}| = |\vv{F}| \cdot cos(\alpha) \qquad \text{$\vv{F_s}$ ... $\vv{F}$ in Richtung $\vv{s}$} \\
   W = \vv{F} \cdot \vv{s} = |\vv{F}| \cdot cos(\alpha) \cdot |\vv{s}| \\\\
   \vv{a} \cdot \vv{b} = |\vv{a}| \cdot |\vv{b}| \cdot cos(\alpha) = a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 \\
 \end{gather*}
 Beispiel:
 \begin{gather*}
-  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix} \\
+  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix} \\
   \vv{a} \cdot \vv{b} = 1 \cdot (-2) + 2 \cdot 0 + 3 \cdot 3 = 7 \\\\
   \text{Winkel zwischen $\vv{a}$ und $\vv{b}$:} \\
-  7 = \Biggl|\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\Biggr| \cdot \Biggl|\begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix}\Biggr| \cdot cos(\alpha) = \sqrt{14} \cdot \sqrt{13} \cdot cos(\alpha) \\
+  7 = \left|\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right| \cdot \left|\begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix}\right| \cdot cos(\alpha) = \sqrt{14} \cdot \sqrt{13} \cdot cos(\alpha) \\
   \alpha = acos(\frac{7}{\sqrt{14} \cdot \sqrt{13}}) \approx 1.025 \approx 58.73^\circ
 \end{gather*}
 Spezialfall:
@@ -1503,20 +1503,20 @@ Spezialfall:
   \Rightarrow cos(\alpha) = 0 \\
   \Rightarrow \vv{a} \cdot \vv{b} = 0 \\
   \vv{a} \perp \vv{b} \\\\
-  \text{z. B. } \vv{a} = \begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 3 \\ 5\end{pmatrix} \\
+  \text{z. B. } \vv{a} = \begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}3 \\ 3 \\ 5\end{pmatrix} \\
   \vv{a} \cdot \vv{b} = 1 \cdot 3 + (-1) \cdot 3 + 0 \cdot 5 = 0 \\
   \Rightarrow \vv{a} \perp \vv{b}
 \end{gather*}
 \begin{exercise}{321/1}
   \item [a]
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}2 \\ -2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \gap\gap h \colon \vv{x} = \begin{pmatrix}5 \\ -1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} \\
+    g \colon \vv{x} = \begin{pmatrix}2 \\ -2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \qquad h \colon \vv{x} = \begin{pmatrix}5 \\ -1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} \\
     \begin{pmatrix}-5 \\ 1 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 2 \\ 0\end{pmatrix} = 12 \\
     \Rightarrow g \notperp h
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}8 \\ 6 \\ -9\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \gap\gap h \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} \\
+    g \colon \vv{x} = \begin{pmatrix}8 \\ 6 \\ -9\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \qquad h \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} \\
     \begin{pmatrix}2 \\ -9 \\ -4\end{pmatrix} \cdot \begin{pmatrix}5 \\ 2 \\ -2\end{pmatrix} = 0 \\
     \Rightarrow g \perp h
   \end{gather*}
@@ -1525,16 +1525,16 @@ Spezialfall:
 \begin{exercise}{zu 297/8}
   \item [a]
   \begin{gather*}
-    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}2 \\ 4 \\ -1\end{pmatrix} \cdot \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} = 11 \gap\gap\gap |\vv{AB}| \cdot |\vv{AC}| = \sqrt{21} \cdot \sqrt{9} \\
+    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}2 \\ 4 \\ -1\end{pmatrix} \cdot \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} = 11 \qquad |\vv{AB}| \cdot |\vv{AC}| = \sqrt{21} \cdot \sqrt{9} \\
     \alpha = acos(\frac{11}{3\sqrt{21}}) \approx 0.64 \approx 36.86^\circ \\
-    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}-2 \\ -4 \\ 1\end{pmatrix} \cdot \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} = 10 \gap\gap\gap |\vv{BA}| \cdot |\vv{BC}| = \sqrt{21} \cdot \sqrt{8} \\
+    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}-2 \\ -4 \\ 1\end{pmatrix} \cdot \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} = 10 \qquad |\vv{BA}| \cdot |\vv{BC}| = \sqrt{21} \cdot \sqrt{8} \\
     \beta = acos(\frac{10}{\sqrt{21} \cdot \sqrt{8}}) \approx 0.69 \approx 39.51^\circ \\
-    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}-2 \\ -2 \\ -1\end{pmatrix} \cdot \begin{pmatrix}0 \\ 2 \\ -2\end{pmatrix} = -2 \gap\gap\gap |\vv{CA}| \cdot |\vv{CB}| = \sqrt{9} \cdot \sqrt{8} \\
+    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}-2 \\ -2 \\ -1\end{pmatrix} \cdot \begin{pmatrix}0 \\ 2 \\ -2\end{pmatrix} = -2 \qquad |\vv{CA}| \cdot |\vv{CB}| = \sqrt{9} \cdot \sqrt{8} \\
     \gamma = acos(\frac{-2}{3\sqrt{8}}) \approx 1.81 \approx 103.63^\circ
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}-2 \\ -3 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-3 \\ 0 \\ 2\end{pmatrix} = 6 \gap\gap\gap |\vv{AB}| \cdot |\vv{AC}| = \sqrt{13} \cdot \sqrt{13} \\
+    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}-2 \\ -3 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-3 \\ 0 \\ 2\end{pmatrix} = 6 \qquad |\vv{AB}| \cdot |\vv{AC}| = \sqrt{13} \cdot \sqrt{13} \\
     \alpha = acos(\frac{6}{13}) \approx 1.09 \approx 62.51^\circ \\
     \vv{BA} \cdot \vv{BC} = \vv{CA} \cdot \vv{CB} = \begin{pmatrix}2 \\ 3 \\ 0\end{pmatrix} \cdot \begin{pmatrix}-1 \\ 3 \\ 2\end{pmatrix} = 7 \\
     |\vv{BA}| \cdot |\vv{BC}| = |\vv{CA}| \cdot |\vv{CB}| = \sqrt{13} \cdot \sqrt{14} \\
@@ -1545,20 +1545,20 @@ Spezialfall:
 \begin{exercise}{zu 297/9}
   \item [a]
   \begin{gather*}
-    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}6 \\ -10 \\ 10\end{pmatrix} \cdot \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} = 40 \gap\gap\gap |\vv{AB}| \cdot |\vv{AC}| = \sqrt{236} \cdot \sqrt{8} \\
+    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}6 \\ -10 \\ 10\end{pmatrix} \cdot \begin{pmatrix}0 \\ -2 \\ 2\end{pmatrix} = 40 \qquad |\vv{AB}| \cdot |\vv{AC}| = \sqrt{236} \cdot \sqrt{8} \\
     \alpha = acos(\frac{40}{\sqrt{236} \cdot \sqrt{8}}) \approx 0.40 \approx 22.99^\circ \\
-    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}-6 \\ 10 \\ -10\end{pmatrix} \cdot \begin{pmatrix}-6 \\ 8 \\ -8\end{pmatrix} = 196 \gap\gap\gap |\vv{BA}| \cdot |\vv{BC}| = \sqrt{236} \cdot \sqrt{164} \\
+    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}-6 \\ 10 \\ -10\end{pmatrix} \cdot \begin{pmatrix}-6 \\ 8 \\ -8\end{pmatrix} = 196 \qquad |\vv{BA}| \cdot |\vv{BC}| = \sqrt{236} \cdot \sqrt{164} \\
     \beta = acos(\frac{196}{\sqrt{236} \cdot \sqrt{164}}) \approx 0.09 \approx 4.95^\circ \\
-    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}0 \\ 2 \\ -2\end{pmatrix} \cdot \begin{pmatrix}6 \\ -8 \\ 8\end{pmatrix} = -32 \gap\gap\gap |\vv{CA}| \cdot |\vv{CB}| = \sqrt{8} \cdot \sqrt{164} \\
+    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}0 \\ 2 \\ -2\end{pmatrix} \cdot \begin{pmatrix}6 \\ -8 \\ 8\end{pmatrix} = -32 \qquad |\vv{CA}| \cdot |\vv{CB}| = \sqrt{8} \cdot \sqrt{164} \\
     \gamma = acos(\frac{-32}{\sqrt{8} \cdot \sqrt{164}}) \approx 2.65 \approx 152.06^\circ
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}-2 \\ 8 \\ 16\end{pmatrix} \cdot \begin{pmatrix}8 \\ 4 \\ -4\end{pmatrix} = -48 \gap\gap\gap |\vv{AB}| \cdot |\vv{AC}| = \sqrt{324} \cdot \sqrt{96} \\
+    \vv{AB} \cdot \vv{AC} = \begin{pmatrix}-2 \\ 8 \\ 16\end{pmatrix} \cdot \begin{pmatrix}8 \\ 4 \\ -4\end{pmatrix} = -48 \qquad |\vv{AB}| \cdot |\vv{AC}| = \sqrt{324} \cdot \sqrt{96} \\
     \alpha = acos(\frac{-48}{\sqrt{324} \cdot \sqrt{96}}) \approx 1.85 \approx 105.79^\circ \\
-    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}2 \\ -8 \\ -16\end{pmatrix} \cdot \begin{pmatrix}10 \\ -4 \\ -20\end{pmatrix} = 372 \gap\gap\gap |\vv{BA}| \cdot |\vv{BC}| = \sqrt{324} \cdot \sqrt{516} \\
+    \vv{BA} \cdot \vv{BC} = \begin{pmatrix}2 \\ -8 \\ -16\end{pmatrix} \cdot \begin{pmatrix}10 \\ -4 \\ -20\end{pmatrix} = 372 \qquad |\vv{BA}| \cdot |\vv{BC}| = \sqrt{324} \cdot \sqrt{516} \\
     \beta = acos(\frac{372}{\sqrt{324} \cdot \sqrt{516}}) \approx 0.43 \approx 24.52^\circ \\
-    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}-8 \\ -4 \\ 4\end{pmatrix} \cdot \begin{pmatrix}-10 \\ 4 \\ 20\end{pmatrix} = 144 \gap\gap\gap |\vv{CA}| \cdot |\vv{CB}| = \sqrt{96} \cdot \sqrt{516} \\
+    \vv{CA} \cdot \vv{CB} = \begin{pmatrix}-8 \\ -4 \\ 4\end{pmatrix} \cdot \begin{pmatrix}-10 \\ 4 \\ 20\end{pmatrix} = 144 \qquad |\vv{CA}| \cdot |\vv{CB}| = \sqrt{96} \cdot \sqrt{516} \\
     \gamma = acos(\frac{144}{\sqrt{96} \cdot \sqrt{516}}) \approx 0.87 \approx 49.68^\circ
   \end{gather*}
 \end{exercise}
@@ -1566,21 +1566,21 @@ Spezialfall:
 \begin{exercise}{321/2}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}2 \\ 3 \\ 0\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}b_1 \\ -4 \\ 3\end{pmatrix} \\
+    \vv{a} = \begin{pmatrix}2 \\ 3 \\ 0\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}b_1 \\ -4 \\ 3\end{pmatrix} \\
     \vv{a} \cdot \vv{b} = 0 \\
-    2b_1 - 12 + 0 = 0 \gap\Rightarrow\gap b_1 = 6
+    2b_1 - 12 + 0 = 0 \quad\Rightarrow\quad b_1 = 6
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ a_2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}2 \\ -1 \\ 1\end{pmatrix} \\
+    \vv{a} = \begin{pmatrix}1 \\ a_2 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}2 \\ -1 \\ 1\end{pmatrix} \\
     \vv{a} \cdot \vv{b} = 0 \\
-    2 - a_2 + 3 = 0 \gap\Rightarrow\gap a_2 = 5
+    2 - a_2 + 3 = 0 \quad\Rightarrow\quad a_2 = 5
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}-1 \\ 4 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 0 \\ b_3\end{pmatrix} \\
+    \vv{a} = \begin{pmatrix}-1 \\ 4 \\ 2\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}3 \\ 0 \\ b_3\end{pmatrix} \\
     \vv{a} \cdot \vv{b} = 0 \\
-    -3 + 0 + 2b_3 = 0 \gap\Rightarrow\gap b_3 = 1.5
+    -3 + 0 + 2b_3 = 0 \quad\Rightarrow\quad b_3 = 1.5
   \end{gather*}
 \end{exercise}
 \begin{exercise}{321/3}
@@ -1596,60 +1596,60 @@ Spezialfall:
 \begin{exercise}{322/8}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
-    \text{\Rmnum{1}} \gap \vv{a} \cdot \vv{c} = 1c_1 + 2c_2 + 3c_3 = 0 \\
-    \text{\Rmnum{2}} \gap \vv{b} \cdot \vv{c} = 2c_1 + 0c_2 + 3c_3 = 0 \gap\Rightarrow\gap c_1 = -\frac{3}{2}c_3 \\
+    \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}2 \\ 0 \\ 3\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
+    \text{\Rmnum{1}} \quad \vv{a} \cdot \vv{c} = 1c_1 + 2c_2 + 3c_3 = 0 \\
+    \text{\Rmnum{2}} \quad \vv{b} \cdot \vv{c} = 2c_1 + 0c_2 + 3c_3 = 0 \quad\Rightarrow\quad c_1 = -\frac{3}{2}c_3 \\
     \text{wähle willkürlich } c_3 = 2 \Rightarrow c_1 = -3 \\
     \text{setze $c_1$ und $c_3$ in \Rmnum{1} ein} \\
-    -3 + 2c_2 + 6 = 0 \gap\Rightarrow\gap c_2 = -\frac{3}{2} \\\\
-    \vv{c} = r \cdot \begin{pmatrix}-3 \\ -\frac{3}{2} \\ 2\end{pmatrix} \gap\gap r \in \mathbb{R} \setminus \{0\}
+    -3 + 2c_2 + 6 = 0 \quad\Rightarrow\quad c_2 = -\frac{3}{2} \\\\
+    \vv{c} = r \cdot \begin{pmatrix}-3 \\ -\frac{3}{2} \\ 2\end{pmatrix} \qquad r \in \mathbb{R} \setminus \{0\}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}2 \\ 3 \\ -1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}5 \\ -1 \\ -2\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
-    \text{\Rmnum{1}} \gap \vv{a} \cdot \vv{c} = 2c_1 + 3c_2 - c_3 = 0 \\
-    \text{\Rmnum{2}} \gap \vv{b} \cdot \vv{c} = 5c_1 - c_2 - 2c_3 = 0 \\
-    \text{\Rmnum{1}} = \frac{1}{2} \cdot \text{\Rmnum{2}} \gap\Rightarrow\gap c_1 = 7c_2 \\
+    \vv{a} = \begin{pmatrix}2 \\ 3 \\ -1\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}5 \\ -1 \\ -2\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
+    \text{\Rmnum{1}} \quad \vv{a} \cdot \vv{c} = 2c_1 + 3c_2 - c_3 = 0 \\
+    \text{\Rmnum{2}} \quad \vv{b} \cdot \vv{c} = 5c_1 - c_2 - 2c_3 = 0 \\
+    \text{\Rmnum{1}} = \frac{1}{2} \cdot \text{\Rmnum{2}} \quad\Rightarrow\quad c_1 = 7c_2 \\
     \text{wähle willkürlich } c_2 = 1 \Rightarrow c_1 = 7 \\
     \text{setze $c_1$ und $c_2$ in \Rmnum{1} ein} \\
-    14 + 3 - c_3 = 0 \gap\Rightarrow\gap c_3 = 17 \\\\
-    \vv{c} = r \cdot \begin{pmatrix}7 \\ 1 \\ 17\end{pmatrix} \gap\gap r \in \mathbb{R} \setminus \{0\}
+    14 + 3 - c_3 = 0 \quad\Rightarrow\quad c_3 = 17 \\\\
+    \vv{c} = r \cdot \begin{pmatrix}7 \\ 1 \\ 17\end{pmatrix} \qquad r \in \mathbb{R} \setminus \{0\}
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ 2 \\ 5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}4 \\ -1 \\ 5\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
-    \text{\Rmnum{1}} \gap \vv{a} \cdot \vv{c} = c_1 + 2c_2 + 5c_3 = 0 \\
-    \text{\Rmnum{2}} \gap \vv{b} \cdot \vv{c} = 4c_1 - c_2 + 5c_3 = 0 \\
-    \text{\Rmnum{1}} = \text{\Rmnum{2}} \gap\Rightarrow\gap c_1 = c_2 \\
+    \vv{a} = \begin{pmatrix}1 \\ 2 \\ 5\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}4 \\ -1 \\ 5\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}c_1 \\ c_2 \\ c_3\end{pmatrix} \\
+    \text{\Rmnum{1}} \quad \vv{a} \cdot \vv{c} = c_1 + 2c_2 + 5c_3 = 0 \\
+    \text{\Rmnum{2}} \quad \vv{b} \cdot \vv{c} = 4c_1 - c_2 + 5c_3 = 0 \\
+    \text{\Rmnum{1}} = \text{\Rmnum{2}} \quad\Rightarrow\quad c_1 = c_2 \\
     \text{wähle willkürlich } c_1 = 5 \Rightarrow c_2 = 5 \\
     \text{setze $c_1$ und $c_2$ in \Rmnum{1} ein} \\
-    5 + 10 + 5c_3 = 0 \gap\Rightarrow\gap c_3 = -3 \\\\
-  \vv{c} = r \cdot \begin{pmatrix}5 \\ 5 \\ -3\end{pmatrix} \gap\gap r \in \mathbb{R} \setminus \{0\}
+    5 + 10 + 5c_3 = 0 \quad\Rightarrow\quad c_3 = -3 \\\\
+  \vv{c} = r \cdot \begin{pmatrix}5 \\ 5 \\ -3\end{pmatrix} \qquad r \in \mathbb{R} \setminus \{0\}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{322/9}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ b_2 \\ b_3\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}c_1 \\ 1 \\ 4\end{pmatrix} \\
-    \vv{a} \cdot \vv{c} = c_1 + 0 + 8 = 0 \gap\Rightarrow\gap c_1 = -8 \\
-    \vv{a} \cdot \vv{b} = 3 + 0 + 2b_3 = 0 \gap\Rightarrow\gap b_3 = -1.5 \\
-    \vv{b} \cdot \vv{c} = -24 + b_2 - 6 = 0 \gap\Rightarrow\gap b_2 = 30 \\
-    \vv{a} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 30 \\ -1.5\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}-8 \\ 1 \\ 4\end{pmatrix}
+    \vv{a} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}3 \\ b_2 \\ b_3\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}c_1 \\ 1 \\ 4\end{pmatrix} \\
+    \vv{a} \cdot \vv{c} = c_1 + 0 + 8 = 0 \quad\Rightarrow\quad c_1 = -8 \\
+    \vv{a} \cdot \vv{b} = 3 + 0 + 2b_3 = 0 \quad\Rightarrow\quad b_3 = -1.5 \\
+    \vv{b} \cdot \vv{c} = -24 + b_2 - 6 = 0 \quad\Rightarrow\quad b_2 = 30 \\
+    \vv{a} = \begin{pmatrix}1 \\ 0 \\ 2\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}3 \\ 30 \\ -1.5\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}-8 \\ 1 \\ 4\end{pmatrix}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}b_1 \\ b_2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}c_1 \\ 2 \\ -5\end{pmatrix} \\
-    \vv{a} \cdot \vv{c} = c_1 + 2 - 5 = 0 \gap\Rightarrow\gap c_1 = 3 \\
-    \text{\Rmnum{1}} \gap \vv{a} \cdot \vv{b} = b_1 + b_2 + 1 = 0 \\
-    \text{\Rmnum{2}} \gap \vv{b} \cdot \vv{c} = 3b_1 + 2b_2 - 5 = 0 \\
-    \Rightarrow\gap b_1 = 7 \gap\gap b_2 = -8 \gap\gap \text{(Einsetzungsverfahren)} \\
-    \vv{a} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}7 \\ -8 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}3 \\ 2 \\ -5\end{pmatrix}
+    \vv{a} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}b_1 \\ b_2 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}c_1 \\ 2 \\ -5\end{pmatrix} \\
+    \vv{a} \cdot \vv{c} = c_1 + 2 - 5 = 0 \quad\Rightarrow\quad c_1 = 3 \\
+    \text{\Rmnum{1}} \quad \vv{a} \cdot \vv{b} = b_1 + b_2 + 1 = 0 \\
+    \text{\Rmnum{2}} \quad \vv{b} \cdot \vv{c} = 3b_1 + 2b_2 - 5 = 0 \\
+    \Rightarrow\quad b_1 = 7 \qquad b_2 = -8 \qquad \text{(Einsetzungsverfahren)} \\
+    \vv{a} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}7 \\ -8 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}3 \\ 2 \\ -5\end{pmatrix}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{366/7}
   \item [a]
   \begin{gather*}
-    A(2|-2|-2) \gap\gap B(-2|5.5|-2) \gap\gap C(-6|2|4) \gap\gap D(1|-2|1)
+    A(2|-2|-2) \qquad B(-2|5.5|-2) \qquad C(-6|2|4) \qquad D(1|-2|1)
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=0.7]
@@ -1672,7 +1672,7 @@ Spezialfall:
     \end{tikzpicture}
   \end{gather*}
   \begin{gather*}
-    \vv{AB} = \begin{pmatrix}-4 \\ 7.5 \\ 0\end{pmatrix} \gap\gap \vv{BC} = \begin{pmatrix}-4 \\ -3.5 \\ 6\end{pmatrix} \gap\gap \vv{CD} = \begin{pmatrix}7 \\ -4 \\ -3\end{pmatrix} \gap\gap \vv{DA} = \begin{pmatrix}1 \\ 0 \\ -3\end{pmatrix} \\
+    \vv{AB} = \begin{pmatrix}-4 \\ 7.5 \\ 0\end{pmatrix} \qquad \vv{BC} = \begin{pmatrix}-4 \\ -3.5 \\ 6\end{pmatrix} \qquad \vv{CD} = \begin{pmatrix}7 \\ -4 \\ -3\end{pmatrix} \qquad \vv{DA} = \begin{pmatrix}1 \\ 0 \\ -3\end{pmatrix} \\
   \end{gather*}
   \begin{gather*}
     \alpha = acos(\frac{\vv{AB} \cdot \vv{AD}}{|\vv{AB}| \cdot |\vv{AD}|}) = acos(\frac{4}{\sqrt{72.25} \cdot \sqrt{10}}) \approx 1.42 \approx 81.44^\circ \\
@@ -1689,26 +1689,26 @@ Spezialfall:
 \begin{exercise}{366/3}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} \gap\gap \alpha = 90^\circ \\
-    \alpha = 90^\circ \gap\Rightarrow\gap \vv{a} \cdot \vv{b} = 0 = 2a - 1 \gap\Rightarrow\gap a = \frac{1}{2}
+    \vv{a} = \begin{pmatrix}3 \\ 2 \\ a\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} \qquad \alpha = 90^\circ \\
+    \alpha = 90^\circ \quad\Rightarrow\quad \vv{a} \cdot \vv{b} = 0 = 2a - 1 \quad\Rightarrow\quad a = \frac{1}{2}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}\sqrt{3} \\ b \\ 0\end{pmatrix} \gap\gap \alpha = 30^\circ \\
-    \vv{a} \cdot \vv{b} = b \gap\gap |\vv{a}| \cdot |\vv{b}| = \sqrt{3 + b^2} \\
-    \alpha = 30^\circ = acos(\frac{\sqrt{3}}{2}) \gap\Rightarrow\gap \frac{b}{\sqrt{3 + b^2}} = \frac{\sqrt{3}}{2} \gap\Rightarrow\gap b = 3
+    \vv{a} = \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}\sqrt{3} \\ b \\ 0\end{pmatrix} \qquad \alpha = 30^\circ \\
+    \vv{a} \cdot \vv{b} = b \qquad |\vv{a}| \cdot |\vv{b}| = \sqrt{3 + b^2} \\
+    \alpha = 30^\circ = acos(\frac{\sqrt{3}}{2}) \quad\Rightarrow\quad \frac{b}{\sqrt{3 + b^2}} = \frac{\sqrt{3}}{2} \quad\Rightarrow\quad b = 3
   \end{gather*}
   \item [c]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}0 \\ 0.5 \\ 0.5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}1 \\ 0 \\ c\end{pmatrix} \gap\gap \alpha = 60^\circ \\
-    \vv{a} \cdot \vv{b} = \frac{c}{2} \gap\gap |\vv{a}| \cdot |\vv{b}| = \sqrt{0.5} \cdot \sqrt{1 + c^2} \\
-    \alpha = 30^\circ = acos(\frac{1}{2}) \gap\Rightarrow\gap \frac{c}{2 \cdot \sqrt{0.5} \cdot \sqrt{1 + c^2}} = \frac{1}{2} \gap\Rightarrow\gap c = 1
+    \vv{a} = \begin{pmatrix}0 \\ 0.5 \\ 0.5\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}1 \\ 0 \\ c\end{pmatrix} \qquad \alpha = 60^\circ \\
+    \vv{a} \cdot \vv{b} = \frac{c}{2} \qquad |\vv{a}| \cdot |\vv{b}| = \sqrt{0.5} \cdot \sqrt{1 + c^2} \\
+    \alpha = 30^\circ = acos(\frac{1}{2}) \quad\Rightarrow\quad \frac{c}{2 \cdot \sqrt{0.5} \cdot \sqrt{1 + c^2}} = \frac{1}{2} \quad\Rightarrow\quad c = 1
   \end{gather*}
 \end{exercise}
 \begin{exercise}{366/4}
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-1 \\ 5\end{pmatrix} \\
-    \vv{a} \cdot \vv{b} = 13 \gap\gap |\vv{a}| \cdot |\vv{b}| = \sqrt{13} \cdot \sqrt{26} \\
+    \vv{a} = \begin{pmatrix}2 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-1 \\ 5\end{pmatrix} \\
+    \vv{a} \cdot \vv{b} = 13 \qquad |\vv{a}| \cdot |\vv{b}| = \sqrt{13} \cdot \sqrt{26} \\
     \alpha_{a,b} = \alpha_{-a,-b} = acos(\frac{13}{\sqrt{13} \cdot \sqrt{26}}) = 45^\circ \\
     \alpha_{-a,b} = \alpha_{a,-b} = 180^\circ - 45^\circ = 135^\circ
   \end{gather*}
@@ -1717,17 +1717,17 @@ Spezialfall:
 Beispiel
 \begin{gather*}
   \text{Vektorraum } V_1 = \left\{\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \subset \mathbb{R}^3 \\\\
-  \text{Prüfe}\gap \vv{a} + \vv{b} \in V_1 \colon \gap \begin{pmatrix}a_1 \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a_2 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a_1 + a_2 \\ 0 \\ 0\end{pmatrix} \\
-  \text{Nullvektor}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
-  \text{Gegenvektor}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}-a \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} \\
-  \text{Kommutativgesetz}\gap \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
-  \text{Assoziativgesetz}\gap \left(\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix}\right) + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \left(\begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix}\right)
+  \text{Prüfe}\quad \vv{a} + \vv{b} \in V_1 \colon \quad \begin{pmatrix}a_1 \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a_2 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a_1 + a_2 \\ 0 \\ 0\end{pmatrix} \\
+  \text{Nullvektor}\quad \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
+  \text{Gegenvektor}\quad \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}-a \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix} \\
+  \text{Kommutativgesetz}\quad \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \\
+  \text{Assoziativgesetz}\quad \left(\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}b \\ 0 \\ 0\end{pmatrix}\right) + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} + \left(\begin{pmatrix}b \\ 0 \\ 0\end{pmatrix} + \begin{pmatrix}c \\ 0 \\ 0\end{pmatrix}\right)
 \end{gather*}
 \begin{gather*}
   V_2 = \left\{\begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R} \right\} \subset \mathbb{R}^3 \\\\
   \text{Abgeschlossenheit} \colon \\
-  \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}c^2 \\ c \\ 0\end{pmatrix} \gap\gap \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}a^2 + b^2 \\ a + b \\ 0\end{pmatrix} \not\in V_2 \\
-  \text{z. B.}\gap a = 3, b = 5 \gap\gap \begin{pmatrix}9 \\ 3 \\ 0\end{pmatrix} + \begin{pmatrix}25 \\ 5 \\ 0\end{pmatrix} = \begin{pmatrix}34 \\ 8 \\ 0\end{pmatrix} \not\in V_2 \\\\
+  \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}c^2 \\ c \\ 0\end{pmatrix} \qquad \begin{pmatrix}a^2 \\ a \\ 0\end{pmatrix} + \begin{pmatrix}b^2 \\ b \\ 0\end{pmatrix} = \begin{pmatrix}a^2 + b^2 \\ a + b \\ 0\end{pmatrix} \not\in V_2 \\
+  \text{z. B.}\quad a = 3, b = 5 \qquad \begin{pmatrix}9 \\ 3 \\ 0\end{pmatrix} + \begin{pmatrix}25 \\ 5 \\ 0\end{pmatrix} = \begin{pmatrix}34 \\ 8 \\ 0\end{pmatrix} \not\in V_2 \\\\
   \left[\begin{pmatrix}(a + b)^2 \\ a + b \\ c\end{pmatrix}\right] \in V_2 \\\\
   \Rightarrow \text{$V_2$ ist kein Vektorraum, da er nicht abgeschlossen ist}
 \end{gather*}
@@ -1735,7 +1735,7 @@ Beispiel
   \item [b]
   \begin{gather*}
     V = \left\{\begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \\
-    \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} + \begin{pmatrix}b \\ 2b \\ 3b\end{pmatrix} = \begin{pmatrix}a + b \\ 2(a + b) \\ 3(a + b)\end{pmatrix} \in V \gap\gap\gap k \cdot \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} = \begin{pmatrix}ak \\ 2ak \\ 3ak\end{pmatrix} \in V \\
+    \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} + \begin{pmatrix}b \\ 2b \\ 3b\end{pmatrix} = \begin{pmatrix}a + b \\ 2(a + b) \\ 3(a + b)\end{pmatrix} \in V \qquad k \cdot \begin{pmatrix}a \\ 2a \\ 3a\end{pmatrix} = \begin{pmatrix}ak \\ 2ak \\ 3ak\end{pmatrix} \in V \\
     \Rightarrow \text{$V$ ist ein Vektorraum}
   \end{gather*}
   \item [c]
@@ -1753,15 +1753,15 @@ Die Basis eines Vektorraums ist ein Satz von Vektoren mit den Eigenschaften:
 \end{itemize}
 Beispiel
 \begin{gather*}
-  V = \mathbb{R}^3 \gap\gap\gap Basis_1 = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}\right\} \\\\
+  V = \mathbb{R}^3 \qquad Basis_1 = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}\right\} \\\\
   \text{z. B. } \begin{pmatrix}2 \\ -3 \\ 4\end{pmatrix} = 2 \cdot \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix} + (-3) \cdot \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} + 4 \cdot \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix} \\\\
   Basis_2 = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 1\end{pmatrix}; \begin{pmatrix}0 \\ -1 \\ 1\end{pmatrix}\right\} \\\\
-  M = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix}\right\} \gap\gap \text{$M$ ist keine Basis}
+  M = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}; \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}; \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix}\right\} \qquad \text{$M$ ist keine Basis}
 \end{gather*}
 Die Mindestzahl von Vektoren der Basis heißt Dimension des Vektorraums. $\mathbb{R}^3$ ist ein 3-dimensionaler Vektorraum.
 \begin{gather*}
-  V_1 = \left\{\begin{pmatrix}1a \\ 2a \\ 3a\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \gap\gap Basis = \left\{\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right\} \gap\text{(1-dim.)} \\
-  V_2s = \left\{\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \gap\gap Basis = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}\right\} \gap\text{(1-dim.)}
+  V_1 = \left\{\begin{pmatrix}1a \\ 2a \\ 3a\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \qquad Basis = \left\{\begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right\} \quad\text{(1-dim.)} \\
+  V_2s = \left\{\begin{pmatrix}a \\ 0 \\ 0\end{pmatrix} \Bigm| a \in \mathbb{R}\right\} \qquad Basis = \left\{\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}\right\} \quad\text{(1-dim.)}
 \end{gather*}
 \newpage
 \begin{exercise}{301/3}
@@ -1793,10 +1793,10 @@ Die Mindestzahl von Vektoren der Basis heißt Dimension des Vektorraums. $\mathb
 \section{Lineare Abhängigkeit, Unabhängigkeit}
 Beispiele
 \begin{gather*}
-  \vv{a} = \begin{pmatrix}1 \\ -3 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-4 \\ 12 \\ -8\end{pmatrix} \\
-  -4\vv{a} = \vv{b} \gap\text{oder}\gap 4\vv{a} + \vv{b} = 0 \\
+  \vv{a} = \begin{pmatrix}1 \\ -3 \\ 2\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-4 \\ 12 \\ -8\end{pmatrix} \\
+  -4\vv{a} = \vv{b} \quad\text{oder}\quad 4\vv{a} + \vv{b} = 0 \\
   \text{$\vv{a}$, $\vv{b}$ sind linear abhängig; geometrisch formuliert: $\vv{a}$, $\vv{b}$ sind kollinear} \\\\
-  \vv{a} = \begin{pmatrix}2 \\ 1 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-1 \\ 0 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}1 \\ 2 \\ 9\end{pmatrix} \\
+  \vv{a} = \begin{pmatrix}2 \\ 1 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-1 \\ 0 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}1 \\ 2 \\ 9\end{pmatrix} \\
   \text{$(\vv{a}, \vv{b})$, $(\vv{a}, \vv{c})$, $(\vv{b}, \vv{c})$ sind jeweils linear unabhängig} \\
   \text{$(\vv{a}, \vv{b}, \vv{c})$ sind linear abhängig, denn $2\vv{a} + 3\vv{b} = \vv{c}$ oder $2\vv{a} + 3\vv{b} - \vv{c} = \vv{0}$}
 \end{gather*}
@@ -1811,17 +1811,17 @@ Allgemein gilt für 3 Vektoren $\vv{a}$, $\vv{b}$, $\vv{c}$
 einfachere Prüfung:
 \begin{gather*}
   \text{gilt} \\
-  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \gap\gap\gap r \neq 0 \lor s \neq 0 \lor t \neq 0 \\
+  r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \qquad r \neq 0 \lor s \neq 0 \lor t \neq 0 \\
   \text{dann sind $\vv{a}, \vv{b}, \vv{c}$ linear abhängig, andernfalls linear unabhängig}
 \end{gather*}
 Prüfe auf lineare Abhängigkeit
 \begin{gather*}
-  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-2 \\ 2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}3 \\ -1 \\ 1\end{pmatrix} \\
+  \vv{a} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-2 \\ 2 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}3 \\ -1 \\ 1\end{pmatrix} \\
   r \cdot \vv{a} + s \cdot \vv{b} + t \cdot \vv{c} = \vv{0} \\\\
-  \text{\Rmnum{1}} \gap r - 2s + 3t = 0 \\
-  \text{\Rmnum{2}} \gap 2r + 2s - t = 0 \\
-  \text{\Rmnum{3}} \gap 3r + s + t = 0 \\\\
-  L = \{(0, 0, 0)\} \gap\Rightarrow\gap \text{$\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ ist linear unabhängig}
+  \text{\Rmnum{1}} \quad r - 2s + 3t = 0 \\
+  \text{\Rmnum{2}} \quad 2r + 2s - t = 0 \\
+  \text{\Rmnum{3}} \quad 3r + s + t = 0 \\\\
+  L = \{(0, 0, 0)\} \quad\Rightarrow\quad \text{$\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ ist linear unabhängig}
 \end{gather*} \\
 Ist $\left\{\vv{a}; \vv{b}; \vv{c}\right\}$ eine Basis des $\mathbb{R}^3$? \\\\
 Das meint: \\
@@ -1837,7 +1837,7 @@ Löse dazu:
     7r + s + 3t = 0 \\
     -r - 2s -6t = 0 \\
     3r + s + 3t = 0 \\
-    L = \{(0, 0, 0); (0, k, -\frac{k}{3})\} \gap\Rightarrow\gap \text{linear abhängig}
+    L = \{(0, 0, 0); (0, k, -\frac{k}{3})\} \quad\Rightarrow\quad \text{linear abhängig}
   \end{gather*}
   Die letzten beiden Vektoren sind kollinear. Der erste Vektor, der nicht kollinear zu den anderen beiden ist, lässt sich daher nicht durch eine Linearkombination der anderen beiden darstellen.
 \end{exercise}
@@ -1855,7 +1855,7 @@ Da $\Bigl|\left\{\vv{a}; \vv{b}; \vv{c}\right\}\Bigr| = 3$ ist der $\mathbb{R}^3
     r - 4s - 7t = 0 \\
     r - 2s - 2t = 0 \\
     r + 2s + 8t = 0 \\\\
-    L = \{(0, 0, 0); (-6k, -5k, 2k)\} \gap\Rightarrow\gap \text{linear abhängig}
+    L = \{(0, 0, 0); (-6k, -5k, 2k)\} \quad\Rightarrow\quad \text{linear abhängig}
   \end{gather*}
   \item [d]
   \begin{gather*}
@@ -1863,7 +1863,7 @@ Da $\Bigl|\left\{\vv{a}; \vv{b}; \vv{c}\right\}\Bigr| = 3$ ist der $\mathbb{R}^3
     4r + s - 2t = 0 \\
     -r + 4s + 3t = 0 \\
     2r + s - t = 0 \\\\
-    L = \{(0, 0, 0)\} \gap\Rightarrow\gap \text{linear unabhängig}
+    L = \{(0, 0, 0)\} \quad\Rightarrow\quad \text{linear unabhängig}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{304/6}
@@ -1873,7 +1873,7 @@ Da $\Bigl|\left\{\vv{a}; \vv{b}; \vv{c}\right\}\Bigr| = 3$ ist der $\mathbb{R}^3
     3r + s = 2 \\
     -2r + 2s = -8 \\\\
     a = 5.5 \\
-    r = 1.5 \gap\gap s = -2.5
+    r = 1.5 \qquad s = -2.5
   \end{gather*}
 \end{exercise}
 \section{Wiederholung: Geometrie, Geraden}
@@ -1908,13 +1908,13 @@ Da $\Bigl|\left\{\vv{a}; \vv{b}; \vv{c}\right\}\Bigr| = 3$ ist der $\mathbb{R}^3
   \begin{gather*}
     \vv{x} = \begin{pmatrix}2 \\ 3 \\ 7\end{pmatrix} + r \cdot \begin{pmatrix}-2 \\ 5 \\ -1\end{pmatrix} \\\\
     \text{$x_1$-$x_2$-Ebene} \\
-    x_3 = 0 \gap\Rightarrow\gap r = 7 \\
+    x_3 = 0 \quad\Rightarrow\quad r = 7 \\
     R(-12|38|0) \\\\
     \text{$x_2$-$x_3$-Ebene} \\
-    x_1 = 0 \gap\Rightarrow\gap r = 1 \\
+    x_1 = 0 \quad\Rightarrow\quad r = 1 \\
     S(0|8|6) \\\\
     \text{$x_1$-$x_3$-Ebene} \\
-    x_2 = 0 \gap\Rightarrow\gap r = -\frac{3}{5} \\
+    x_2 = 0 \quad\Rightarrow\quad r = -\frac{3}{5} \\
     T(3.2|0|7.6)
   \end{gather*}
   \item [c]
@@ -1948,29 +1948,29 @@ Punktprobe:
 \begin{gather*}
   P \in E \; ? \\
   \text{$\vv{p}$ ist Orstvektor von $P$} \\
-  \vv{p} = \vv{a} + r \cdot \vv{b} + s \cdot \vv{c} \gap\Rightarrow\gap \text{$3x2$ LGS} \\
+  \vv{p} = \vv{a} + r \cdot \vv{b} + s \cdot \vv{c} \quad\Rightarrow\quad \text{$3x2$ LGS} \\
   \text{wenn eindeutig lösbar, dann $P \in E$}
 \end{gather*}
 \begin{exercise}{318/5}
   \item [a]
   \begin{gather*}
-    A(0|1|-1) \gap\gap B(2|3|5) \gap\gap C(-1|3|-1) \gap\gap D(2|2|2) \\
+    A(0|1|-1) \qquad B(2|3|5) \qquad C(-1|3|-1) \qquad D(2|2|2) \\
     E: \vv{x} = \vv{OA} + r \cdot \vv{AB} + s \cdot \vv{AC} = \begin{pmatrix}0 \\ 1 \\ -1\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 2 \\ 6\end{pmatrix} + s \cdot \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \\
     D \in E \; ? \\
-    \text{\Rmnum{1}} \gap 2 = 2r - s \\
-    \text{\Rmnum{2}} \gap 2 = 1 + 2r + 2s \\
-    \text{\Rmnum{3}} \gap 2 = -1 + 6r \\\\
-    L = \{\} \gap\Rightarrow\gap \text{keine Ebene}
+    \text{\Rmnum{1}} \quad 2 = 2r - s \\
+    \text{\Rmnum{2}} \quad 2 = 1 + 2r + 2s \\
+    \text{\Rmnum{3}} \quad 2 = -1 + 6r \\\\
+    L = \{\} \quad\Rightarrow\quad \text{keine Ebene}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(3|0|2) \gap\gap B(5|1|9) \gap\gap C(6|2|7) \gap\gap D(8|3|14) \\
+    A(3|0|2) \qquad B(5|1|9) \qquad C(6|2|7) \qquad D(8|3|14) \\
     E: \vv{x} = \vv{OA} + r \cdot \vv{AB} + s \cdot \vv{AC} = \begin{pmatrix}3 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 1 \\ 7\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 2 \\ 5\end{pmatrix} \\
     D \in E \; ? \\
-    \text{\Rmnum{1}} \gap 8 = 3 + 2r + 3s \\
-    \text{\Rmnum{2}} \gap 3 = r + 2s \\
-    \text{\Rmnum{3}} \gap 14 = 2 + 7r + 5s \\
-    L = \{(1, 1)\} \gap\Rightarrow\gap \text{Ebene}
+    \text{\Rmnum{1}} \quad 8 = 3 + 2r + 3s \\
+    \text{\Rmnum{2}} \quad 3 = r + 2s \\
+    \text{\Rmnum{3}} \quad 14 = 2 + 7r + 5s \\
+    L = \{(1, 1)\} \quad\Rightarrow\quad \text{Ebene}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{319/10}
@@ -1996,14 +1996,14 @@ Punktprobe:
 \end{exercise}
 \section{Sonderfälle}
 \begin{gather*}
-  E \colon \vv{x} = \vv{a} + r \cdot \vv{b} + s \cdot \vv{c} \gap\gap\gap r, s \in \mathbb{R}
+  E \colon \vv{x} = \vv{a} + r \cdot \vv{b} + s \cdot \vv{c} \qquad r, s \in \mathbb{R}
 \end{gather*}
 $\{\vv{a}; \vv{b}; \vv{c}\}$ sind in der Regel linear unabhängig, d. h. nicht komplanar. Im Sonderfall sind $\{\vv{a}; \vv{b}; \vv{c}\}$ komplanar. Das bedeutet, dass E durch den Ursprung $O$ verläuft. Im Sonderfall darf ich $E$ so schreiben:
 \begin{gather*}
   E: \vv{x} = r \cdot \vv{b} + s \cdot \vv{c}
 \end{gather*}
 \begin{gather*}
-  g \colon \vv{x} = \vv{d} + r \cdot \vv{e} \gap\gap\gap r \in \mathbb{R}
+  g \colon \vv{x} = \vv{d} + r \cdot \vv{e} \qquad r \in \mathbb{R}
 \end{gather*}
 $\{\vv{d}; \vv{e}\}$ sind normalerweise nicht kollinear. Im Sonderfall, $g$ verläuft durch $O$, sind sie kollinear:
 \begin{gather*}
@@ -2012,31 +2012,31 @@ $\{\vv{d}; \vv{e}\}$ sind normalerweise nicht kollinear. Im Sonderfall, $g$ verl
 \begin{exercise}{322/14}
   \item [a]
   \begin{gather*}
-    E \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ 3 \\ 2\end{pmatrix} \gap\gap\gap g \colon \vv{x} = \begin{pmatrix}3 \\ 3 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} \\
-    \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} = 0 \gap\gap\gap \begin{pmatrix}4 \\ 3 \\ 2\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} = 0 \\
-    \Rightarrow\gap \text{orthogonal}
+    E \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ 3 \\ 2\end{pmatrix} \qquad g \colon \vv{x} = \begin{pmatrix}3 \\ 3 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} \\
+    \begin{pmatrix}2 \\ 3 \\ 4\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} = 0 \qquad \begin{pmatrix}4 \\ 3 \\ 2\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 1\end{pmatrix} = 0 \\
+    \Rightarrow\quad \text{orthogonal}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    E \colon \vv{x} = r \cdot \begin{pmatrix}-2 \\ 3 \\ 4\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ 3 \\ 3\end{pmatrix} \gap\gap\gap g \colon \vv{x} = t \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} \\
-    \begin{pmatrix}-2 \\ 3 \\ 4\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} = 0 \gap\gap\gap \begin{pmatrix}4 \\ 3 \\ 3\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} = 4 \\
-    \Rightarrow\gap \text{nicht orthogonal}
+    E \colon \vv{x} = r \cdot \begin{pmatrix}-2 \\ 3 \\ 4\end{pmatrix} + s \cdot \begin{pmatrix}4 \\ 3 \\ 3\end{pmatrix} \qquad g \colon \vv{x} = t \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} \\
+    \begin{pmatrix}-2 \\ 3 \\ 4\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} = 0 \qquad \begin{pmatrix}4 \\ 3 \\ 3\end{pmatrix} \cdot \begin{pmatrix}1 \\ -2 \\ 2\end{pmatrix} = 4 \\
+    \Rightarrow\quad \text{nicht orthogonal}
   \end{gather*}
 \end{exercise}
 \begin{exercise}{322/15}
   \begin{gather*}
     E \colon \vv{x} = \begin{pmatrix}3 \\ 1 \\ 4\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 5\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} \\\\
     \begin{pmatrix}2 \\ -1 \\ 5\end{pmatrix} \cdot \begin{pmatrix}x \\ y \\ z\end{pmatrix} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} \cdot \begin{pmatrix}x \\ y \\ z\end{pmatrix} = 0 \\
-    2x - y + 5z = x + z = 0 \gap\gap\gap L = \{(k;-3k;-k)\} \\\\
+    2x - y + 5z = x + z = 0 \qquad L = \{(k;-3k;-k)\} \\\\
     g \colon \vv{x} = \begin{pmatrix}3 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}k \\ -3k \\ -k\end{pmatrix} \\
-    g \colon \vv{x} = \begin{pmatrix}3 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ -3 \\ -1\end{pmatrix} \gap\gap \text{für $k = 1$}
+    g \colon \vv{x} = \begin{pmatrix}3 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ -3 \\ -1\end{pmatrix} \qquad \text{für $k = 1$}
   \end{gather*}
 \end{exercise}
 \section{Kreuzprodukt}
 \begin{gather*}
   \vv{a} \times \vv{b} = \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix} \times \begin{pmatrix}b_1 \\ b_2 \\ b_3\end{pmatrix} = \begin{pmatrix}a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1\end{pmatrix} \\\\
-  \vv{a} \cdot \vv{x} = 0 \gap\gap\gap \text{\Rmnum{1}} \gap a_1x_1 + a_2x_2 + a_3x_3 = 0 \\
-  \vv{b} \cdot \vv{x} = 0 \gap\gap\gap \text{\Rmnum{2}} \gap b_1x_1 + b_2x_2 + b_3x_3 = 0 \\\\
+  \vv{a} \cdot \vv{x} = 0 \qquad \text{\Rmnum{1}} \quad a_1x_1 + a_2x_2 + a_3x_3 = 0 \\
+  \vv{b} \cdot \vv{x} = 0 \qquad \text{\Rmnum{2}} \quad b_1x_1 + b_2x_2 + b_3x_3 = 0 \\\\
   b_1 \cdot \text{\Rmnum{1}} - a_1 \cdot \text{\Rmnum{2}} \\
   \text{\Rmnum{1}} a_1x_1 + a_2x_2 + a_3x_3 = 0 \\
   \text{\Rmnum{2}} 0 + (b_1a_2 - a_1b_2)x_2 + (b_1a_3-a_1b_3)x_3 = 0 \\\\
@@ -2071,7 +2071,7 @@ Das Kreuzprodukt $\vv{a} \times \vv{b}$ ergibt einen Vektor als Ergebnis. Die L�
 \begin{exercise}{373/1}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}2 \\ 1 \\ 5\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}-1 \\ 5 \\ 0\end{pmatrix} \\\\
+    \vv{a} = \begin{pmatrix}2 \\ 1 \\ 5\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}3 \\ 2 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}-1 \\ 5 \\ 0\end{pmatrix} \\\\
     \vv{a} \times \vv{b} = \begin{pmatrix}1 \cdot 1 - 5 \cdot 2 \\ 5 \cdot 3 - 2 \cdot 1 \\ 2 \cdot 2 - 1 \cdot 3\end{pmatrix} = \begin{pmatrix}-9 \\ 13 \\ 1\end{pmatrix} \\
     \vv{b} \times \vv{c} = \begin{pmatrix}2 \cdot 0 - 1 \cdot 5 \\ 1 \cdot (-1) - 3 \cdot 0 \\ 3 \cdot 5 - 2 \cdot (-1)\end{pmatrix} = \begin{pmatrix}-5 \\ -1 \\ 17\end{pmatrix} \\
     \vv{c} \times \vv{a} = \begin{pmatrix}5 \cdot 5 - 0 \cdot 1 \\ 0 \cdot 2 - (-1) \cdot 5 \\ -1 \cdot 1 - 5 \cdot 2\end{pmatrix} = \begin{pmatrix}25 \\ 5 \\ -11\end{pmatrix}
@@ -2079,7 +2079,7 @@ Das Kreuzprodukt $\vv{a} \times \vv{b}$ ergibt einen Vektor als Ergebnis. Die L�
 \end{exercise}
 \newpage
 \begin{gather*}
-  \vv{a} \times \vv{b} = \vv{c} \gap\gap\gap \vv{b} \times \vv{a} = -\vv{c}
+  \vv{a} \times \vv{b} = \vv{c} \qquad \vv{b} \times \vv{a} = -\vv{c}
 \end{gather*}
 $\vv{a}$, $\vv{b}$, $\vv{c}$ bilden ein Rechtssystem (rechte Hand)
 \begin{figure}[H]
@@ -2089,16 +2089,16 @@ $\vv{a}$, $\vv{b}$, $\vv{c}$ bilden ein Rechtssystem (rechte Hand)
 \begin{exercise}{373/3}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}3 \\ 2 \\ -1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} \\
+    \vv{a} = \begin{pmatrix}3 \\ 2 \\ -1\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} \\
     \vv{a} \times \vv{b} = \begin{pmatrix}2 \cdot 0 - (-1) \cdot 1 \\ -1 \cdot 1 - 3 \cdot 0 \\ 3 \cdot 1 - 2 \cdot 1\end{pmatrix} = \begin{pmatrix}1 \\ -1 \\ 1\end{pmatrix} \\
-    \Biggl|\begin{pmatrix}1 \\ -1 \\ 1\end{pmatrix}\Biggr| = \sqrt{1^2 + (-1)^2 + 1^2} = \sqrt{3} \\
+    \left|\begin{pmatrix}1 \\ -1 \\ 1\end{pmatrix}\right| = \sqrt{1^2 + (-1)^2 + 1^2} = \sqrt{3} \\
     A_P = \sqrt{3}FE \approx 1.732FE
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}5 \\ -2 \\ 2\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}8 \\ 9 \\ -2\end{pmatrix} \\
+    \vv{a} = \begin{pmatrix}5 \\ -2 \\ 2\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}8 \\ 9 \\ -2\end{pmatrix} \\
     \vv{a} \times \vv{b} = \begin{pmatrix}-2 \cdot (-2) - 2 \cdot 9 \\ 2 \cdot 8 - 5 \cdot (-2) \\ 5 \cdot 9 - (-2) \cdot 8\end{pmatrix} = \begin{pmatrix}-14 \\ 26 \\ 61\end{pmatrix} \\
-    \Biggl|\begin{pmatrix}-14 \\ 26 \\ 61\end{pmatrix}\Biggr| = \sqrt{(-14)^2 + 26^2 + 61^2} = \sqrt{4593} \\
+    \left|\begin{pmatrix}-14 \\ 26 \\ 61\end{pmatrix}\right| = \sqrt{(-14)^2 + 26^2 + 61^2} = \sqrt{4593} \\
     A_P = \sqrt{4593}FE \approx 67.772FE
   \end{gather*}
 \end{exercise}
@@ -2108,25 +2108,25 @@ $|\vv{a} \times \vv{b}| = |\vv{a}| \cdot |\vv{b}| \cdot sin(\alpha)$
 \begin{gather*}
   V_{Spat} = G \cdot h = |\vv{a} \times \vv{b}| \cdot h \\
   \;= |\vv{a} \times \vv{b}| \cdot |\vv{c}| \cdot cos(\alpha) \\
-  \;= |(\vv{a} \times \vv{b}) \cdot \vv{c}| \gap\gap \text{(Spatprodukt)}
+  \;= |(\vv{a} \times \vv{b}) \cdot \vv{c}| \qquad \text{(Spatprodukt)}
 \end{gather*}
 Anwendung: Berechne das Volumen von Spat und Pyramiden
 \begin{gather*}
   V_{Spat} = |(\vv{a} \times \vv{b}) \cdot \vv{c}| \\
-  V_{Pyramide} = \frac{1}{3} \cdot |(\vv{a} \times \vv{b}) \cdot \vv{c}| \gap\gap \text{(Grundseite: Parallelogramm des Spats)} \\
+  V_{Pyramide} = \frac{1}{3} \cdot |(\vv{a} \times \vv{b}) \cdot \vv{c}| \qquad \text{(Grundseite: Parallelogramm des Spats)} \\
   V_{Pyramide,dreiseitig} = \frac{1}{6} \cdot |(\vv{a} \times \vv{b}) \cdot \vv{c}|
 \end{gather*}
 \begin{exercise}{374/6}
   \item [a]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}-1 \\ 5 \\ 6\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}8 \\ 2 \\ 1\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix} \\
-    V_S = \Biggl|\begin{pmatrix}-1 \\ 5 \\ 6\end{pmatrix} \times \begin{pmatrix}8 \\ 2 \\ 1\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix}\Biggr| = \Biggl|\begin{pmatrix}-7 \\ 49 \\ -42\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix}\Biggr| = 196 \\
+    \vv{a} = \begin{pmatrix}-1 \\ 5 \\ 6\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}8 \\ 2 \\ 1\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix} \\
+    V_S = \left|\begin{pmatrix}-1 \\ 5 \\ 6\end{pmatrix} \times \begin{pmatrix}8 \\ 2 \\ 1\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix}\right| = \left|\begin{pmatrix}-7 \\ 49 \\ -42\end{pmatrix} \cdot \begin{pmatrix}-2 \\ 0 \\ 5\end{pmatrix}\right| = 196 \\
     V_P = \frac{1}{6} \cdot 196 = 32.\overline{6}
   \end{gather*}
   \item [b]
   \begin{gather*}
-    \vv{a} = \begin{pmatrix}1 \\ 7 \\ 1\end{pmatrix} \gap\gap \vv{b} = \begin{pmatrix}-8 \\ 8 \\ 18\end{pmatrix} \gap\gap \vv{c} = \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix} \\
-    V_S = \Biggl|\begin{pmatrix}1 \\ 7 \\ 1\end{pmatrix} \times \begin{pmatrix}-8 \\ 8 \\ 18\end{pmatrix} \cdot \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix}\Biggr| = \Biggl|\begin{pmatrix}118 \\ -26 \\ 64\end{pmatrix} \cdot \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix}\Biggr| = 902 \\
+    \vv{a} = \begin{pmatrix}1 \\ 7 \\ 1\end{pmatrix} \qquad \vv{b} = \begin{pmatrix}-8 \\ 8 \\ 18\end{pmatrix} \qquad \vv{c} = \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix} \\
+    V_S = \left|\begin{pmatrix}1 \\ 7 \\ 1\end{pmatrix} \times \begin{pmatrix}-8 \\ 8 \\ 18\end{pmatrix} \cdot \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix}\right| = \left|\begin{pmatrix}118 \\ -26 \\ 64\end{pmatrix} \cdot \begin{pmatrix}7 \\ 2 \\ 2\end{pmatrix}\right| = 902 \\
     V_P = \frac{1}{6} \cdot 902 = 150.\overline{3}
   \end{gather*}
 \end{exercise}
@@ -2167,20 +2167,20 @@ gegeben:
   \text{Bilde } |\vv{b} \times \vv{AP}| = A_{Parallelogramm} \\
   |\vv{b}| \cdot |\vv{h}| = A_{Parallelogramm} \\\\
   |\vv{b} \times \vv{AP}| = |\vv{b}| \cdot |\vv{h}| \\
-  \;\Rightarrow\gap \frac{|\vv{b} \times \vv{AP}|}{|\vv{b}|} = |\vv{h}|
+  \;\Rightarrow\quad \frac{|\vv{b} \times \vv{AP}|}{|\vv{b}|} = |\vv{h}|
 \end{gather*}
 $|\vv{h}|$ ist der gesuchte Abstand von Punkt $P$ zur Geraden $g$.
 \begin{exercise}{373/5}
   \item [c]
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \gap\gap\gap R(-2|-1|1) \\
-    \vv{PR} = \begin{pmatrix}-3 \\ -2 \\ 1\end{pmatrix} \gap\gap \vv{u} = \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \\
-    |\vv{h}| = \frac{|\vv{u} \times \vv{PR}|}{|\vv{u}|} = \frac{\Biggl|\begin{pmatrix}-1 \\ 1 \\ -1\end{pmatrix}\Biggr|}{\Biggl|\begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix}\Biggr|} = \frac{\sqrt{3}}{\sqrt{6}} = \sqrt{\frac{1}{2}} \approx 0.7071
+    g \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \qquad R(-2|-1|1) \\
+    \vv{PR} = \begin{pmatrix}-3 \\ -2 \\ 1\end{pmatrix} \qquad \vv{u} = \begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix} \\
+    |\vv{h}| = \frac{|\vv{u} \times \vv{PR}|}{|\vv{u}|} = \frac{\left|\begin{pmatrix}-1 \\ 1 \\ -1\end{pmatrix}\right|}{\left|\begin{pmatrix}2 \\ 1 \\ -1\end{pmatrix}\right|} = \frac{\sqrt{3}}{\sqrt{6}} = \sqrt{\frac{1}{2}} \approx 0.7071
   \end{gather*}
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}2 \\ 3 \\ 2\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix} \gap\gap\gap R(1|2|-3) \\
-    \vv{PR} = \begin{pmatrix}-1 \\ -1 \\ -5\end{pmatrix} \gap\gap \vv{u} = \begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix} \\
-    |\vv{h}| = \frac{|\vv{u} \times \vv{PR}|}{|\vv{u}|} = \frac{\Biggl|\begin{pmatrix}-9 \\ -16 \\ -5\end{pmatrix}\Biggr|}{\Biggl|\begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix}\Biggr|} = \frac{\sqrt{362}}{\sqrt{49}} \approx 2.7180
+    g \colon \vv{x} = \begin{pmatrix}2 \\ 3 \\ 2\end{pmatrix} + t \cdot \begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix} \qquad R(1|2|-3) \\
+    \vv{PR} = \begin{pmatrix}-1 \\ -1 \\ -5\end{pmatrix} \qquad \vv{u} = \begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix} \\
+    |\vv{h}| = \frac{|\vv{u} \times \vv{PR}|}{|\vv{u}|} = \frac{\left|\begin{pmatrix}-9 \\ -16 \\ -5\end{pmatrix}\right|}{\left|\begin{pmatrix}2 \\ -3 \\ -6\end{pmatrix}\right|} = \frac{\sqrt{362}}{\sqrt{49}} \approx 2.7180
   \end{gather*}
 \end{exercise}
 \section{Ebenendarstellung}
@@ -2197,21 +2197,21 @@ $\vv{AX}$ ... Verbindungsvektor, der in der Ebene liegt \\\\
 Punkte $X$ der Ebene sind diejenigen, deren Verbindungsvektoren $\vv{AX}$ orthogonal zu $\vv{h}$ stehen. \\\\
 z. B.
 \begin{gather*}
-  \Biggl(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\Biggr) \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \\\\
+  \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right) \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \\\\
   \text{Beispiellösung } x_1 = \begin{pmatrix}5 \\ 0 \\ 4\end{pmatrix} \\\\
-  \text{Punktprobe } P(2|1|1) \gap P \in E ? \\
-  \begin{pmatrix}2 - 1 \\ 1 - 2 \\ 1 - 3\end{pmatrix} \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \gap\gap -1 + 0 - 8 = -9 \neq 0 \gap\Rightarrow\gap P \not\in E
+  \text{Punktprobe } P(2|1|1) \quad P \in E ? \\
+  \begin{pmatrix}2 - 1 \\ 1 - 2 \\ 1 - 3\end{pmatrix} \cdot \begin{pmatrix}-1 \\ 0 \\ 4\end{pmatrix} = 0 \qquad -1 + 0 - 8 = -9 \neq 0 \quad\Rightarrow\quad P \not\in E
 \end{gather*}
 Normalengleichung aus $A(1|0|5)$, $B(0|2|1)$, $C(4|5|6)$
 \begin{gather*}
   E \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 2 \\ -4\end{pmatrix} + s \cdot \begin{pmatrix}3 \\ 5 \\ 1\end{pmatrix} \\
   \vv{n} = \vv{AB} \times \vv{AC} = \begin{pmatrix}-1 \\ 2 \\ -4\end{pmatrix} \times \begin{pmatrix}3 \\ 5 \\ 1\end{pmatrix} = \begin{pmatrix}22 \\ -11 \\ -11\end{pmatrix} \\
-  E \colon \Biggl(\vv{x} - \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix}  \Biggr) \cdot \begin{pmatrix}22 \\ -11 \\ -11\end{pmatrix} = 0
+  E \colon \left(\vv{x} - \begin{pmatrix}1 \\ 0 \\ 5\end{pmatrix}  \right) \cdot \begin{pmatrix}22 \\ -11 \\ -11\end{pmatrix} = 0
 \end{gather*}
 \subsection{Koordinatenform}
 Berechne das Skalarprodukt in der Normalengleichung mit $\vv{x} = \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix}$
 \begin{gather*}
-  E \colon \Biggl(\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} - \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix}\Biggr) \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} = 0 \\
+  E \colon \left(\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} - \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix}\right) \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} = 0 \\
   \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} - \begin{pmatrix}a_1 \\ a_2 \\ a_3\end{pmatrix} \cdot \begin{pmatrix}n_1 \\ n_2 \\ n_3\end{pmatrix} = 0 \\
   (n_1 \cdot x_1 + n_2 \cdot x_2 + n_3 \cdot x_3) - (a_1 \cdot n_1 + a_2 \cdot n_2 + a_3 \cdot n_3) = 0 \\\\
   \text{z. B. } 22x_1 - 11x_2 - 11x_3 = -33 \\
@@ -2230,13 +2230,13 @@ Betrache die Koordinatenform als eine Gleichung für drei Variablen $x_1$, $x_2$
   \item Finde eine Lösung $\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix}$, z. B. $\begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix}$
 \end{enumerate}
 \begin{gather*}
-  E \colon \Biggl(\vv{x} - \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix}\Biggr) \cdot \begin{pmatrix}5 \\ -1 \\ 3\end{pmatrix} = 0
+  E \colon \left(\vv{x} - \begin{pmatrix}0 \\ 0 \\ 3\end{pmatrix}\right) \cdot \begin{pmatrix}5 \\ -1 \\ 3\end{pmatrix} = 0
 \end{gather*}
 \subsubsection{Sonderfälle}
 \begin{itemize}
   \item
   \begin{gather*}
-    E \colon x_3 = 5 \gap\rightarrow\gap \vv{n} = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}
+    E \colon x_3 = 5 \quad\rightarrow\quad \vv{n} = \begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}
   \end{gather*}
   Punkte der Ebene haben $x_3 = 5$; $x_1$, $x_2$ sind beliebige Koordinaten.
   \begin{gather*}
@@ -2255,21 +2255,21 @@ Betrache die Koordinatenform als eine Gleichung für drei Variablen $x_1$, $x_2$
   \end{gather*}
   \item [a]
   \begin{gather*}
-    A(1|1|1) \gap\gap B(1|0|1) \gap\gap C(0|1|1) \\
-    \vv{AB} = \begin{pmatrix}0 \\ -1 \\ 0\end{pmatrix} \gap\gap \vv{AC} = \begin{pmatrix}-1 \\ 0 \\ 0\end{pmatrix} \\
+    A(1|1|1) \qquad B(1|0|1) \qquad C(0|1|1) \\
+    \vv{AB} = \begin{pmatrix}0 \\ -1 \\ 0\end{pmatrix} \qquad \vv{AC} = \begin{pmatrix}-1 \\ 0 \\ 0\end{pmatrix} \\
     \vv{n} = \vv{AB} \times \vv{AC} = \begin{pmatrix}0 \\ 0 \\ -1\end{pmatrix} \\\\
-    E \colon \Biggl(\vv{x} - \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix}\Biggr) \cdot \begin{pmatrix}0 \\ 0 \\ -1\end{pmatrix} = 0 \\
+    E \colon \left(\vv{x} - \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix}\right) \cdot \begin{pmatrix}0 \\ 0 \\ -1\end{pmatrix} = 0 \\
     E \colon -x_3 = 0 + 0 - 1 = -1 \\\\
-    D \in E ? \gap\gap -x_3 = -3 \neq -1 \gap\gap \Rightarrow\gap D \not\in E
+    D \in E ? \qquad -x_3 = -3 \neq -1 \qquad \Rightarrow\quad D \not\in E
   \end{gather*}
   \item [b]
   \begin{gather*}
-    A(-1|2|0) \gap\gap B(-3|1|1) \gap\gap C(1|-1|-1) \\
-    \vv{AB} = \begin{pmatrix}-2 \\ -1 \\ 1\end{pmatrix} \gap\gap \vv{AC} = \begin{pmatrix}2 \\ -3 \\ -1\end{pmatrix} \\
+    A(-1|2|0) \qquad B(-3|1|1) \qquad C(1|-1|-1) \\
+    \vv{AB} = \begin{pmatrix}-2 \\ -1 \\ 1\end{pmatrix} \qquad \vv{AC} = \begin{pmatrix}2 \\ -3 \\ -1\end{pmatrix} \\
     \vv{n} = \vv{AB} \times \vv{AC} = \begin{pmatrix}4 \\ 0 \\ 8\end{pmatrix} \\\\
-    E \colon \Biggl(\vv{x} - \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix}\Biggr) \cdot \begin{pmatrix}4 \\ 0 \\ 8\end{pmatrix} = 0 \\
+    E \colon \left(\vv{x} - \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix}\right) \cdot \begin{pmatrix}4 \\ 0 \\ 8\end{pmatrix} = 0 \\
     E \colon 4x_1 + 8x_3 = -4 + 0 + 0 = -4 \\\\
-    D \in E? \gap\gap 4x_1 + 8x_3 = -28 + 24 = -4 \gap\gap \Rightarrow\gap D \in E
+    D \in E? \qquad 4x_1 + 8x_3 = -28 + 24 = -4 \qquad \Rightarrow\quad D \in E
   \end{gather*}
 \end{exercise}
 \subsection{Ebenen zeichnen}
@@ -2278,15 +2278,15 @@ Schnitt mit der ...
 \begin{itemize}
   \item [] $x_1$-Achse:
   \begin{gather*}
-    x_2 = x_3 = 0 \gap\Rightarrow\gap 2x_1 = 12 \gap x_1 = 6 \gap P(6|0|0)
+    x_2 = x_3 = 0 \quad\Rightarrow\quad 2x_1 = 12 \quad x_1 = 6 \quad P(6|0|0)
   \end{gather*}
   \item [] $x_2$-Achse:
   \begin{gather*}
-    x_1 = x_3 = 0 \gap\Rightarrow\gap -3x_2 = 12 \gap x_2 = -4 \gap Q(0|-4|0)
+    x_1 = x_3 = 0 \quad\Rightarrow\quad -3x_2 = 12 \quad x_2 = -4 \quad Q(0|-4|0)
   \end{gather*}
   \item [] $x_3$-Achse:
   \begin{gather*}
-    x_1 = x_2 = 0 \gap\Rightarrow\gap 5x_3 = 12 \gap x_3 = 2.4 \gap R(0|0|2.4)
+    x_1 = x_2 = 0 \quad\Rightarrow\quad 5x_3 = 12 \quad x_3 = 2.4 \quad R(0|0|2.4)
   \end{gather*}
 \end{itemize}
 $P$, $Q$, $R$ heißen Spurpunkte. \\
@@ -2313,26 +2313,26 @@ Spezialfälle
 \begin{itemize}
   \item
   \begin{gather*}
-    3x_1 + 6x_3 = 18 \gap\gap P(6|0|0) \gap R(0|0|3) \gap Q(0|\infty|0)
+    3x_1 + 6x_3 = 18 \qquad P(6|0|0) \quad R(0|0|3) \quad Q(0|\infty|0)
   \end{gather*}
   Kein Schnitt mit der $x_2$-Achse, verläuft parallel zur $x_2$-Achse.
   \item
   \begin{gather*}
-    2x_1 = 5 \gap\gap P(2.5|0|0)
+    2x_1 = 5 \qquad P(2.5|0|0)
   \end{gather*}
   Kein Schnitt mit der $x_2$- und $x_3$-Achse, verläuft parallel zur $x_2x_3$-Ebene.
 \end{itemize}
 \begin{exercise}{328/3}
   Fig. 1
   \begin{gather*}
-    P(2|0|0) \gap\gap Q(0|5|0) \gap\gap R(0|0|3) \\
-    15x_1 = 30 \gap\gap 6x_2 = 30 \gap\gap 10x_3 = 30 \\
+    P(2|0|0) \qquad Q(0|5|0) \qquad R(0|0|3) \\
+    15x_1 = 30 \qquad 6x_2 = 30 \qquad 10x_3 = 30 \\
     E \colon 15x_1 + 6x_2 + 10x_3 = 30
   \end{gather*}
   Fig. 2
   \begin{gather*}
-    P(1|0|0) \gap\gap Q(0|4|0) \gap\gap R(0|0|-1.5) \\
-    12x_1 = 12 \gap\gap 3x_2 = 12 \gap\gap -8x_3 = 12 \\
+    P(1|0|0) \qquad Q(0|4|0) \qquad R(0|0|-1.5) \\
+    12x_1 = 12 \qquad 3x_2 = 12 \qquad -8x_3 = 12 \\
     E \colon 12x_1 + 3x_2 - 8x_3 = 12
   \end{gather*}
 \end{exercise}
@@ -2340,9 +2340,9 @@ Spezialfälle
   \item [a]
   \begin{gather*}
     E \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} \\
-    \vv{n} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \times \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} = \begin{pmatrix}6 \\ 3 \\ -2\end{pmatrix} \gap\gap\gap \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \cdot \vv{n} = 6 \\
+    \vv{n} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \times \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} = \begin{pmatrix}6 \\ 3 \\ -2\end{pmatrix} \qquad \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} \cdot \vv{n} = 6 \\
     E \colon 6x_1 + 3x_2 - 2x_3 = 6 \\
-    P(1|0|0) \gap\gap Q(0|2|0) \gap\gap R(0|0|-3)
+    P(1|0|0) \qquad Q(0|2|0) \qquad R(0|0|-3)
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=1.7]
@@ -2362,9 +2362,9 @@ Spezialfälle
   \item [b]
   \begin{gather*}
     E \colon \vv{x} = \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}5 \\ 0 \\ 5\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} \\
-    \vv{n} = \begin{pmatrix}5 \\ 0 \\ 5\end{pmatrix} \times \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} = \begin{pmatrix}-5 \\ -20 \\ 5\end{pmatrix} \gap\gap\gap \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \cdot \vv{n} = -20 \\
+    \vv{n} = \begin{pmatrix}5 \\ 0 \\ 5\end{pmatrix} \times \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} = \begin{pmatrix}-5 \\ -20 \\ 5\end{pmatrix} \qquad \begin{pmatrix}1 \\ 1 \\ 1\end{pmatrix} \cdot \vv{n} = -20 \\
     E \colon -5x_1 - 20x_2 + 5x_3 = -20 \\
-    P(4|0|0) \gap\gap Q(0|1|0) \gap\gap R(0|0|-4)
+    P(4|0|0) \qquad Q(0|1|0) \qquad R(0|0|-4)
   \end{gather*}
   \begin{gather*}
     \begin{tikzpicture}[scale=1.7]
@@ -2391,8 +2391,8 @@ Spezialfälle
   \end{gather*}
   Fig. 4
   \begin{gather*}
-    P(1|0|0) \gap\gap Q(0|5|0) \\
-    5x_1 = 5 \gap\gap x_2 = 5 \\
+    P(1|0|0) \qquad Q(0|5|0) \\
+    5x_1 = 5 \qquad x_2 = 5 \\
     E \colon 5x_1 + x_2 = 5 \\
     \text{parallel zur $x_3$-Ebene}
   \end{gather*}
@@ -2409,7 +2409,7 @@ Beispiel:
   g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} = \begin{pmatrix}1 + 2r \\ 2 - r \\ 3\end{pmatrix} = \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} \\\\
   \text{$g$ in $E$ eingesetzt} \\
   2 \cdot (1 + 2r) - (2 - r) + 3 \cdot 3 = 16 \\
-  \Rightarrow\gap r = \frac{7}{5} \\
+  \Rightarrow\quad r = \frac{7}{5} \\
   \text{Schnittpunkt } \vv{OS} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + \frac{7}{5} \cdot \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} = \begin{pmatrix}3.8 \\ 0.6 \\ 3\end{pmatrix}
 \end{gather*}
 \begin{itemize}
@@ -2425,7 +2425,7 @@ Beispiel:
   \begin{gather*}
     E \colon 2x_1 + 4x_2 + 6x_3 = 16 \\\\
     2 \cdot (4 + t) + 4 \cdot (6 + 2t) + 6 \cdot (2 + 3t) = 16 \\
-    \Rightarrow\gap t = -1 \\\\
+    \Rightarrow\quad t = -1 \\\\
     \begin{pmatrix}4 \\ 6 \\ 2\end{pmatrix} - 1 \cdot \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} = \begin{pmatrix}3 \\ 4 \\ -1\end{pmatrix} \\\\
     S(3|4|-1)
   \end{gather*}
@@ -2441,58 +2441,58 @@ Beispiel:
 \begin{exercise}{330/2}
   \item [a]
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}-2 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}7 \\ 8 \\ 6\end{pmatrix} \gap\gap E \colon \vv{x} = \begin{pmatrix}1 \\ 4 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ -1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} \\\\
+    g \colon \vv{x} = \begin{pmatrix}-2 \\ 1 \\ 4\end{pmatrix} + t \cdot \begin{pmatrix}7 \\ 8 \\ 6\end{pmatrix} \qquad E \colon \vv{x} = \begin{pmatrix}1 \\ 4 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ -1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} \\\\
     -2 + 7t = 1 + s \\
     1 + 8t = 4 - r \\
     4 + 6t = 3 + r + 3s \\
-    t = 1 \gap\gap r = -5 \gap\gap s = 4 \\\\
+    t = 1 \qquad r = -5 \qquad s = 4 \\\\
     \begin{pmatrix}-2 \\ 1 \\ 4\end{pmatrix} + 1 \cdot \begin{pmatrix}7 \\ 8 \\ 6\end{pmatrix} = \begin{pmatrix}5 \\ 9 \\ 10\end{pmatrix} \\\\
     S(5|9|10)
   \end{gather*}
   \item [b]
   \begin{gather*}
-    g \colon \vv{x} = \begin{pmatrix}22 \\ -18 \\ -7\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ 1 \\ -5\end{pmatrix} \gap\gap E \colon \vv{x} = \begin{pmatrix}2 \\ 1 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}4 \\ -7 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix} \\\\
+    g \colon \vv{x} = \begin{pmatrix}22 \\ -18 \\ -7\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ 1 \\ -5\end{pmatrix} \qquad E \colon \vv{x} = \begin{pmatrix}2 \\ 1 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}4 \\ -7 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 4 \\ -3\end{pmatrix} \\\\
     22 + 4t = 2 + 4r \\
     -18 + t = 1 - 7r + 4s \\
     -7 - 5t = r - 3s \\\\
-    t = r - 5 \gap\gap s = 2r - 6 \\\\
+    t = r - 5 \qquad s = 2r - 6 \\\\
     g \in E
   \end{gather*}
   \item [c]
   \begin{gather*}
-    g \colon \vv{x} = t \cdot \begin{pmatrix}-1 \\ -1 \\ -1\end{pmatrix} \gap\gap E \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 0 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 2 \\ 0\end{pmatrix} \\\\
+    g \colon \vv{x} = t \cdot \begin{pmatrix}-1 \\ -1 \\ -1\end{pmatrix} \qquad E \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 0 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 2 \\ 0\end{pmatrix} \\\\
     -t = 2r \\
     -t = 2s \\
     -t = 2 \\\\
-    t = -2 \gap\gap r = 1 \gap\gap s = 1 \\\\
+    t = -2 \qquad r = 1 \qquad s = 1 \\\\
     -2 \cdot \begin{pmatrix}-1 \\ -1 \\ -1\end{pmatrix} = \begin{pmatrix}2 \\ 2 \\ 2\end{pmatrix} \\\\
     S(2|2|2)
   \end{gather*}
 \end{exercise}
 \subsection{Schnittwinkel}
 \begin{gather*}
-  g \colon \vv{x} = \vv{a} + r \cdot \vv{b} \gap\gap h \colon \vv{x} = \vv{c} + s \cdot \vv{d} \\\\
+  g \colon \vv{x} = \vv{a} + r \cdot \vv{b} \qquad h \colon \vv{x} = \vv{c} + s \cdot \vv{d} \\\\
   \vv{b} \cdot \vv{d} = |\vv{b}| \cdot |\vv{d}| \cdot cos(\alpha) \\
-  \alpha = acos\left(\frac{\vv{b} \cdot \vv{d}}{|\vv{b}| \cdot |\vv{d}|}\right) \gap\gap \alpha < 90^\circ \\\\
-  \alpha = acos\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \gap\gap \beta = asin\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \gap\gap \beta = 90^\circ - \alpha
+  \alpha = acos\left(\frac{\vv{b} \cdot \vv{d}}{|\vv{b}| \cdot |\vv{d}|}\right) \qquad \alpha < 90^\circ \\\\
+  \alpha = acos\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \qquad \beta = asin\left(\frac{\vv{n} \cdot \vv{b}}{|\vv{n}| \cdot |\vv{b}|}\right) \qquad \beta = 90^\circ - \alpha
 \end{gather*}
 \section{Wiederholung}
 \begin{exercise}{344/7}
   \begin{gather*}
-    g_a \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 + 2a \\ -1 + 5a \\ 1 + 3a\end{pmatrix} \gap\gap a \in \mathbb{R} \\
+    g_a \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 + 2a \\ -1 + 5a \\ 1 + 3a\end{pmatrix} \qquad a \in \mathbb{R} \\
     P(1|0|2),\; Q(2|0|3),\; R(0|2|2) \in E
   \end{gather*}
   \item [a]
   \begin{gather*}
-    \vv{PQ} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} \gap\gap \vv{PR} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \\
-    \vv{n} = \vv{PQ} \times \vv{PR} = \begin{pmatrix}-2 \\ -1 \\ 2\end{pmatrix} \gap\gap \vv{OP} \cdot \vv{n} = 2 \\
+    \vv{PQ} = \begin{pmatrix}1 \\ 0 \\ 1\end{pmatrix} \qquad \vv{PR} = \begin{pmatrix}-1 \\ 2 \\ 0\end{pmatrix} \\
+    \vv{n} = \vv{PQ} \times \vv{PR} = \begin{pmatrix}-2 \\ -1 \\ 2\end{pmatrix} \qquad \vv{OP} \cdot \vv{n} = 2 \\
     E \colon -2x_1 - x_2 + 2x_3 = 2 \\\\
-    g_0 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} \gap\gap g_1 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} \\\\
-    g_0 = E \gap\gap -2(2 + 4t) - (7 - t) + 2(3 + t) = 2 \gap\Rightarrow\gap t = -\frac{7}{5} \\
-    g_1 = E \gap\gap -2(2 + 6t) - (7 + 4t) + 2(3 + 4t) = 2 \gap\Rightarrow\gap t = \frac{-7}{8} \\\\
+    g_0 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} \qquad g_1 \colon \vv{x} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} + t \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} \\\\
+    g_0 = E \qquad -2(2 + 4t) - (7 - t) + 2(3 + t) = 2 \quad\Rightarrow\quad t = -\frac{7}{5} \\
+    g_1 = E \qquad -2(2 + 6t) - (7 + 4t) + 2(3 + 4t) = 2 \quad\Rightarrow\quad t = \frac{-7}{8} \\\\
   \end{gather*}
   \begin{gather*}
-    \vv{OS_0} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{5} \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} = \begin{pmatrix}-3.6 \\ 8.4 \\ 1.6\end{pmatrix} \gap\gap \vv{OS_1} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{8} \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} = \begin{pmatrix}-3.25 \\ 3.5 \\ -0.5\end{pmatrix} \\
+    \vv{OS_0} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{5} \cdot \begin{pmatrix}4 \\ -1 \\ 1\end{pmatrix} = \begin{pmatrix}-3.6 \\ 8.4 \\ 1.6\end{pmatrix} \qquad \vv{OS_1} = \begin{pmatrix}2 \\ 7 \\ 3\end{pmatrix} - \frac{7}{8} \cdot \begin{pmatrix}6 \\ 4 \\ 4\end{pmatrix} = \begin{pmatrix}-3.25 \\ 3.5 \\ -0.5\end{pmatrix} \\
     \vv{S_0S_1} = \begin{pmatrix}0.35 \\ -4.9 \\ -2.1\end{pmatrix} \\\\
     h \colon \vv{x} = \begin{pmatrix}-3.6 \\ 8.4 \\ 1.6\end{pmatrix} + t \cdot \begin{pmatrix}0.35 \\ -4.9 \\ -2.1\end{pmatrix}
   \end{gather*}
@@ -2502,31 +2502,31 @@ Beispiel:
     0.35t = 4 + 2a \\
     -4.9t = -1 + 5a \\
     -2.1t = 1 + 3a \\\\
-    \Rightarrow\gap a = -\frac{5}{3} \gap\gap (t \approx 1.905)
+    \Rightarrow\quad a = -\frac{5}{3} \qquad (t \approx 1.905)
   \end{gather*}
 \end{exercise}
 \begin{exercise}{326/15}
   \item [a]
   \begin{gather*}
-    2t = 0 \gap\Rightarrow\gap t = 0 \\
-    4 = 0 \gap\Rightarrow\gap \text{keine Lösung} \\
-    t = 0 \gap\Rightarrow\gap t = 0 \\\\
-    \Rightarrow\gap t = 0
+    2t = 0 \quad\Rightarrow\quad t = 0 \\
+    4 = 0 \quad\Rightarrow\quad \text{keine Lösung} \\
+    t = 0 \quad\Rightarrow\quad t = 0 \\\\
+    \Rightarrow\quad t = 0
   \end{gather*}
   \item [b]
   \begin{gather*}
-    t - 1 = 0 \gap\Rightarrow\gap t = 1 \\
-    t^2 - 1 = 0 \gap\Rightarrow\gap t = \pm1 \\
-    t + 1 = 0 \gap\Rightarrow\gap t = -1 \\\\
-    \Rightarrow\gap t = \pm1
+    t - 1 = 0 \quad\Rightarrow\quad t = 1 \\
+    t^2 - 1 = 0 \quad\Rightarrow\quad t = \pm1 \\
+    t + 1 = 0 \quad\Rightarrow\quad t = -1 \\\\
+    \Rightarrow\quad t = \pm1
   \end{gather*}
 \end{exercise}
 \begin{exercise}{374/7}
   \item [b]
   \begin{gather*}
-    A(1|-2|12) \gap\gap B(11|3|5) \gap\gap C(3|5|8) \gap\gap D(19|4|4) \\
-    \vv{AB} = \begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \gap\gap \vv{AC} = \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \gap\gap \vv{AD} = \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix} \\
-    V = \frac{1}{6} \cdot |\vv{AB} \times \vv{AC} \cdot \vv{AD}| = \frac{1}{6} \cdot \Biggl|\begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \times \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\Biggr| \\
-    \;= \frac{1}{6} \cdot \Biggl|\begin{pmatrix}29 \\ 26 \\ 60\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\Biggr| = \frac{1}{6} \cdot |198| = 33
+    A(1|-2|12) \qquad B(11|3|5) \qquad C(3|5|8) \qquad D(19|4|4) \\
+    \vv{AB} = \begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \qquad \vv{AC} = \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \qquad \vv{AD} = \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix} \\
+    V = \frac{1}{6} \cdot |\vv{AB} \times \vv{AC} \cdot \vv{AD}| = \frac{1}{6} \cdot \left|\begin{pmatrix}10 \\ 5 \\ -7\end{pmatrix} \times \begin{pmatrix}2 \\ 7 \\ -4\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\right| \\
+    \;= \frac{1}{6} \cdot \left|\begin{pmatrix}29 \\ 26 \\ 60\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\right| = \frac{1}{6} \cdot |198| = 33
   \end{gather*}
 \end{exercise}
