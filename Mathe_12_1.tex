@@ -2531,3 +2531,31 @@ Beispiel:
     \;= \frac{1}{6} \cdot \left|\begin{pmatrix}29 \\ 26 \\ 60\end{pmatrix} \cdot \begin{pmatrix}18 \\ 6 \\ -8\end{pmatrix}\right| = \frac{1}{6} \cdot |198| = 33
   \end{gather*}
 \end{exercise}
+\section{Lage Ebene $\leftrightarrow$ Ebene}
+3 Fälle sind möglich:
+\begin{itemize}
+  \item 2 Ebenen schneiden sich in einer Geraden (Normalenvektoren sind nicht kollinear)
+  \begin{gather*}
+    2x_1 - x_2 = 7 \qquad \vv{n} = \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \\
+    5x_2 + x_3 = 5 \qquad \vv{n} = \begin{pmatrix}0 \\ 5 \\ 1\end{pmatrix}
+  \end{gather*}
+  \item 2 Ebenen sind parallel (kollineare Normalenvektoren)
+  \begin{gather*}
+    2x_1 - x_2 = 7 \qquad \vv{n} = \begin{pmatrix}2 \\ -1 \\ 0\end{pmatrix} \\
+    10x_1 - 5x_2 = 1 \qquad \vv{n} = \begin{pmatrix}10 \\ -5 \\ 0\end{pmatrix}
+  \end{gather*}
+  \item 2 Ebenen sind identisch (Koordinatengleichungen lassen sich ineinander umformen)
+  \begin{gather*}
+    2x_1 - x_2 = 7 \equ \cdot 5 \\
+    10x_1 - 5x_2 = 35
+  \end{gather*}
+\end{itemize}
+\begin{gather*}
+  E \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ 1 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}-1 \\ 0 \\ 5\end{pmatrix} = \begin{pmatrix}1 - s \\ 2 + r \\ 3 + 3r + 5s\end{pmatrix} = \begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix} \\
+  F \colon \vv{x} = x_1 - x_2 + 3x_3 = 5 \\\\
+  \text{setze $E$ in $F$ ein} \\
+  1 - s - (2 + r) + 3 \cdot (3 + 3r + 5s) = 5 \\
+  8r + 14s = -3 \\
+  r = -\frac{3}{8} - \frac{14}{8}s \\\\
+  g \colon \vv{x} = \begin{pmatrix}1 - s \\ 2 - \frac{3}{8} - \frac{14}{8}s \\[0.4em] 3 + 3 \cdot (-\frac{3}{8} - \frac{14}{8}s) + 5s\end{pmatrix} = \begin{pmatrix}1 \\ \frac{13}{8} \\[0.4em] \frac{15}{8}\end{pmatrix} + s \cdot \begin{pmatrix}-1 \\ -\frac{7}{4} \\[0.4em] -\frac{1}{4}\end{pmatrix}
+\end{gather*}
