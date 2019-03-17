@@ -2559,3 +2559,27 @@ Beispiel:
   r = -\frac{3}{8} - \frac{14}{8}s \\\\
   g \colon \vv{x} = \begin{pmatrix}1 - s \\ 2 - \frac{3}{8} - \frac{14}{8}s \\[0.4em] 3 + 3 \cdot (-\frac{3}{8} - \frac{14}{8}s) + 5s\end{pmatrix} = \begin{pmatrix}1 \\ \frac{13}{8} \\[0.4em] \frac{15}{8}\end{pmatrix} + s \cdot \begin{pmatrix}-1 \\ -\frac{7}{4} \\[0.4em] -\frac{1}{4}\end{pmatrix}
 \end{gather*}
+\begin{exercise}{333/2}
+  \item [a]
+  \begin{gather*}
+    E_1 \colon x_1 - x_2 + 2x_3 = 7 \qquad E_2 \colon 6x_1 + x_2 - x_3 = -7 \\\\
+    x_3 = 3.5 - 0.5x_1 + 0.5x_3 \\
+    E_1 \colon \vv{x} = \begin{pmatrix}0 \\ 0 \\ 3.5\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 0 \\ -0.5\end{pmatrix} + s \cdot \begin{pmatrix}0 \\ 1 \\ 0.5\end{pmatrix} = \begin{pmatrix}r \\ s \\ 3.5 - 0.5r + 0.5s\end{pmatrix} \\\\
+    \text{$E_1$ in $E_2$ einsetzen:} \\
+    6r + s - (3.5 - 0.5r + 0.5s) = -7 \\
+    s = -7 - 13r \\\\
+    g \colon \vv{x} = \begin{pmatrix}r \\ -7 - 13r \\ -7r\end{pmatrix} = \begin{pmatrix}0 \\ -7 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ -13 \\ -7\end{pmatrix}
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{334/3}
+  \item [a]
+  \begin{gather*}
+    E_1 \colon \vv{x} = \begin{pmatrix}1 \\ 0 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} \qquad E_2 \colon \vv{x} = \begin{pmatrix}2 \\ 3 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ 1 \\ 1\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ 0 \\ 1\end{pmatrix} \\\\
+    E_2 \colon x_1 + 2x_2 - 2x_3 = 4 \\\\
+    \text{$E_1$ in $E_2$ einsetzen:} \\
+    1 + r + s + 2s - 2 \cdot 3 = 4 \\
+    r = 9 - 3s \\\\
+    g \colon \vv{x} = \begin{pmatrix}10 - 2s \\ s \\ 3\end{pmatrix} = \begin{pmatrix}10 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 1 \\ 0\end{pmatrix}
+  \end{gather*}
+\end{exercise}
