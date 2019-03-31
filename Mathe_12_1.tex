@@ -2629,3 +2629,35 @@ Hessesche Normalenform (HNF)
   \;= |\vv{AP_{\vv{n}}}| \cdot 1 \\
   \;= d
 \end{gather*}
+\newpage
+\begin{exercise}{353/1}
+  \item [a]
+  \begin{gather*}
+    E \colon 3x_2 + 4x_3 = 0 \qquad A(3|-1|7) \qquad B(6|8|19) \qquad C(-3|-3|-4) \\
+    E \colon \left(\vv{x} - \begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix}\right) \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} = 0 \\\\
+    g_A \colon \vv{x} = \begin{pmatrix}3 \\ -1 \\ 7\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} \qquad \begin{pmatrix}3 \\ -1 + 3r \\ 7 + 4r\end{pmatrix} \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} = 0 \\
+    \vv{OS} = \begin{pmatrix}3 \\ -4 \\ 3\end{pmatrix} \qquad r = -1 \qquad |\vv{AS}| = \left|\begin{pmatrix}3 - 3 \\ -4 + 1 \\ -3 + 7\end{pmatrix}\right| = 5 \\\\
+    g_B \colon \vv{x} = \begin{pmatrix}6 \\ 8 \\ 19\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} \qquad \begin{pmatrix}6 \\ 8 + 3r \\ 19 + 4r\end{pmatrix} \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} = 0 \\
+    \vv{OS} = \begin{pmatrix}6 \\ -4 \\ 3\end{pmatrix} \qquad r = -4 \qquad |\vv{AS}| = \left|\begin{pmatrix}6 - 6 \\ -4 - 8  \\ 3 - 19\end{pmatrix}\right| = 20 \\\\
+    g_C \colon \vv{x} = \begin{pmatrix}-3 \\ -3 \\ -4\end{pmatrix} + r \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} \qquad \begin{pmatrix}-3 \\ -3 + 3r \\ -4 + 4r\end{pmatrix} \cdot \begin{pmatrix}0 \\ 3 \\ 4\end{pmatrix} = 0 \\
+    \vv{OS} = \begin{pmatrix}-3 \\ 0 \\ 0\end{pmatrix} \qquad r = 1 \qquad |\vv{AS}| = \left|\begin{pmatrix}-3 + 3 \\ 0 + 3 \\ 0 + 4\end{pmatrix}\right| = 5
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    E \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2.5 \\ 3.5\end{pmatrix}\right) \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix} = 0 \\
+    A(-2|0|3) \qquad B(13|8.5|-0.5) \qquad C(-33|-20|14.25) \\
+    \vv{n_0} = \frac{1}{14} \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix} \qquad E_0 \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2.5 \\ 3.5\end{pmatrix}\right) \cdot \frac{1}{14} \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix} = 0 \\\\
+    \left|\left(\begin{pmatrix}-2 \\ 0 \\ 3\end{pmatrix} - \begin{pmatrix}1 \\ 2.5 \\ 3.5\end{pmatrix}\right) \cdot \frac{1}{14} \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix}\right| = 3.5 \\
+    \left|\left(\begin{pmatrix}13 \\ 8.5 \\ -0.5\end{pmatrix} - \begin{pmatrix}1 \\ 2.5 \\ 3.5\end{pmatrix}\right) \cdot \frac{1}{14} \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix}\right| = 14 \\
+    \left|\left(\begin{pmatrix}-33 \\ -20 \\ 14.25\end{pmatrix} - \begin{pmatrix}1 \\ 2.5 \\ 3.5\end{pmatrix}\right) \cdot \frac{1}{14} \cdot \begin{pmatrix}12 \\ 6 \\ -4\end{pmatrix}\right| \approx -41.857
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    E \colon \vv{x} = \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix} + r \cdot \begin{pmatrix}5 \\ 5 \\ -1\end{pmatrix} + s \cdot \begin{pmatrix}-1 \\ 0 \\ 0\end{pmatrix} \qquad E \colon \left(\vv{x} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix} = 0 \\
+    A(2|4|13) \qquad B(8|-6|-11) \qquad C(3|-2|9) \\
+    \vv{n_0} = \sqrt{26} \qquad E_0 \colon \left(\vv{x} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \frac{1}{\sqrt{26}} \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix} = 0 \\\\
+    \left|\left(\begin{pmatrix}2 \\ 4 \\ 13\end{pmatrix} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \frac{1}{\sqrt{26}} \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix}\right| \approx 15.297 \\
+    \left|\left(\begin{pmatrix}8 \\ -6 \\ -11\end{pmatrix} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \frac{1}{\sqrt{26}} \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix}\right| \approx 10.198 \\
+    \left|\left(\begin{pmatrix}3 \\ -2 \\ 9\end{pmatrix} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \frac{1}{\sqrt{26}} \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix}\right| \approx 10.198
+  \end{gather*}
+\end{exercise}
