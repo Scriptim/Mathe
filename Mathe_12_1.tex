@@ -2583,3 +2583,49 @@ Beispiel:
     g \colon \vv{x} = \begin{pmatrix}10 - 2s \\ s \\ 3\end{pmatrix} = \begin{pmatrix}10 \\ 0 \\ 3\end{pmatrix} + s \cdot \begin{pmatrix}-2 \\ 1 \\ 0\end{pmatrix}
   \end{gather*}
 \end{exercise}
+\section{Abstand Ebene $\leftrightarrow$ Punkt}
+Fußlotpunkt-Methode
+\begin{gather*}
+  E \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right) \cdot \begin{pmatrix}1 \\ 0 \\ 4\end{pmatrix} = 0 \qquad P(8|-3|0) \\\\
+  \text{orthogonale Gerade durch Punkt $P$} \\
+  g \colon \vv{x} = \begin{pmatrix}8 \\ -3 \\ 0\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 0 \\ 4\end{pmatrix} \\\\
+  \text{Schnittpunkt $g \leftrightarrow E$} \\
+  \text{$g$ in $E$} \quad \begin{pmatrix}8 + r - 1 \\ -3 - 2 \\ 0 + 4r - 3\end{pmatrix} \cdot \begin{pmatrix}1 \\ 0 \\ 4\end{pmatrix} = 0 \\
+  \vv{OS} = \begin{pmatrix}\frac{141}{17} \\ -3 \\ \frac{20}{17}\end{pmatrix} \qquad r = \frac{5}{17} \\\\
+  \text{Abstand $P \leftrightarrow E$ ist $|\vv{PS}|$} \\
+  d(P, E) = 1.21LE
+\end{gather*} \\
+Hessesche Normalenform (HNF)
+\begin{gather*}
+  E_0 \cdot \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right) \cdot \underbrace{\frac{1}{\sqrt{17}} \cdot \begin{pmatrix}1 \\ 0 \\ 4\end{pmatrix}}_{\mathclap{\text{Normaleneinheitsvektor $\vv{n_0} \quad |\vv{n_0}| = 1$}}} = 0 \\\\
+  \text{setze $P$ für $\vv{x}$ in $E_0$ ein} \\
+  \left|\left(\begin{pmatrix}8 \\ -3 \\ 0\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right) \cdot \frac{1}{\sqrt{17}} \cdot \begin{pmatrix}1 \\ 0 \\ 4\end{pmatrix}\right| = d \\\\
+  d(P, E) = 1.21LE
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}[scale=2]
+    \coordinate[label=below:$A$] (A) at (0,0);
+    \coordinate[label=below:$S$] (S) at (-3,0);
+    \coordinate[label=above left:$P$] (P) at (-3,3);
+    \draw[ultra thick] (-5,0) -- (2,0);
+    \node[above right] at (-5,0) {$E$};
+    \draw (A) -- (P);
+    \draw[color=red] (P) -- (S);
+    \draw[arrows={-triangle 45}] (A) -- (0,1);
+    \node[below right] at (0,1) {$\vv{n_0}$};
+    \draw[arrows={-triangle 45}] (A) -- (0,3);
+    \node[below right] at (0,3) {$\vv{AP}_{\vv{n}}$};
+    \draw[dashed,lightgray] (P) -- (0,3);
+    \draw[arrows={-triangle 45}] (A) -- (0,4);
+    \node[below right] at (0,4) {$\vv{n}$};
+    \draw (0,0.5) arc (90:135:0.5);
+    \node at (-0.15,0.35) {$\alpha$};
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  \vv{a} \cdot \vv{b} = |\vv{a}| \cdot |\vv{b}| \cdot cos(\alpha) \\
+  \;= |\vv{a_b}| \cdot |\vv{b}| \\\\
+  \vv{AP} \cdot \vv{n_0} = |\vv{AP_{\vv{n}}}| \cdot |\vv{n_0}| \\
+  \;= |\vv{AP_{\vv{n}}}| \cdot 1 \\
+  \;= d
+\end{gather*}
