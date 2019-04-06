@@ -2661,3 +2661,50 @@ Hessesche Normalenform (HNF)
     \left|\left(\begin{pmatrix}3 \\ -2 \\ 9\end{pmatrix} - \begin{pmatrix}2 \\ 1 \\ -2\end{pmatrix}\right) \cdot \frac{1}{\sqrt{26}} \cdot \begin{pmatrix}0 \\ 1 \\ 5\end{pmatrix}\right| \approx 10.198
   \end{gather*}
 \end{exercise}
+\subsection{HNF - Koordinatenform}
+\begin{gather*}
+  E \colon n_1x_1 + n_2x_2 + n_3x_3 - \underbrace{(n_1a_1 + n_2a_2 + n_3a_3)}_b = 0 \\
+  n_1x_1 + n_2x_2 + n_3x_3 = b \\\\
+  \text{HNF:} \\
+  E \colon \frac{1}{|\vv{n}|} \cdot (n_1x_1 + n_2x_2 + n_3x_3 - b) = 0 \qquad d(P, E) = \left|(\vv{p} - \vv{a}) \cdot \frac{\vv{n}}{|\vv{n}|}\right| = d \\
+  \left|\frac{1}{|\vv{n}|} \cdot (n_1p_1 + n_2p_2 + n_3p_3 - b)\right| = d \\\\
+  \text{Beispiel} \\
+  E \colon 3x_1 + 4x_3 = 15 \\
+  \vv{n} = \begin{pmatrix}3 \\ 0 \\ 4\end{pmatrix} \qquad |\vv{n}| = 5 \\
+  E \colon \frac{1}{5} \cdot (3x_1 + 4x_3) = \frac{1}{5} \cdot 15 \\
+  \frac{3}{5}x_1 + \frac{4}{5}x_3 = 3 \\\\
+  \text{Abstand von $E$ zum Ursprung $O$} \\
+  d(O, E) = \left|\frac{3}{5} \cdot 0 + \frac{4}{5} \cdot 0 - 3\right| = |-3| = 3 \\\\
+  \text{Sind $\vv{n}$ und $\vv{p}$ im gleichen Halbraum, so gilt $\vv{n} \cdot \vv{p} > 0$, sonst $\vv{n} \cdot \vv{p} < 0$} \\
+  \text{Ausnahme: $\vv{p} \in E \Rightarrow \vv{n} \cdot \vv{p} = 0$} \\\\
+  \text{Parallele Ebenen zu $E$ im Abstand $5LE$} \\
+  F \colon \frac{3}{5}x_1 + \frac{4}{5}x_2 = -2 \\
+  G \colon \frac{3}{5}x_1 + \frac{4}{5}x_2 = 8
+\end{gather*}
+\newpage
+\begin{exercise}{357/5}
+  \begin{gather*}
+    A(3|2|-1) \qquad B(4|4|0) \qquad C(7|3|2)
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    E \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 4\end{pmatrix}\right) \cdot \begin{pmatrix}10 \\ -11 \\ 2\end{pmatrix} = 0 \qquad E_0 \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 4\end{pmatrix}\right) \cdot \frac{1}{15} \cdot \begin{pmatrix}10 \\ -11 \\ 2\end{pmatrix} = 0 \\\\
+    d(A, E) = \left|\left(\begin{pmatrix}3 \\ 2 \\ -1\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 4\end{pmatrix}\right) \cdot \frac{1}{15} \cdot \begin{pmatrix}10 \\ -11 \\ 2\end{pmatrix}\right| = \frac{2}{3} \\
+    d(B, E) = \left|\left(\begin{pmatrix}4 \\ 4 \\ 0\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 4\end{pmatrix}\right) \cdot \frac{1}{15} \cdot \begin{pmatrix}10 \\ -11 \\ 2\end{pmatrix}\right| = 0 \\
+    d(C, E) = \left|\left(\begin{pmatrix}7 \\ 3 \\ 2\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 4\end{pmatrix}\right) \cdot \frac{1}{15} \cdot \begin{pmatrix}10 \\ -11 \\ 2\end{pmatrix}\right| = 3
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    E \colon 3x_1 + 5x_2 - x_3 = 20 \qquad |\vv{n}| = \sqrt{35} \\\\
+    d(A, E) = \left|\frac{1}{\sqrt{35}} \cdot (3 \cdot 3 + 5 \cdot 2 - 1 \cdot (-1) - 20)\right| = 0 \\
+    d(B, E) = \left|\frac{1}{\sqrt{35}} \cdot (3 \cdot 4 + 5 \cdot 4 - 1 \cdot 0 - 20)\right| \approx 2.0284 \\
+    d(C, E) = \left|\frac{1}{\sqrt{35}} \cdot (3 \cdot 7 + 5 \cdot 3 - 1 \cdot 2 - 20)\right| \approx 2.3664
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    E \colon x_1 = 4 \\\\
+    d(A, E) = |a_1 - x_1| = |3 - 4| = 1 \\
+    d(B, E) = |b_1 - x_1| = |4 - 4| = 0 \\
+    d(C, E) = |c_1 - x_1| = |7 - 4| = 3
+  \end{gather*}
+\end{exercise}
