@@ -2741,3 +2741,56 @@ Hessesche Normalenform (HNF)
     M(0|0|1.1196)
   \end{gather*}
 \end{exercise}
+\section{Abstand Gerade $\leftrightarrow$ Punkt}
+\begin{gather*}
+  g \colon \vv{x} = \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix} \qquad P(0|1|4) \qquad P \not\in g \\\\
+  \text{Hilfsebene $E$ orthogonal zu $g$ durch $P$} \\
+  E \colon \left(\vv{x} - \begin{pmatrix}0 \\ 1 \\ 4\end{pmatrix} \right) \cdot \begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix} = 0 \qquad x_1 - x_2 = -1 \\\\
+  \text{Suche Schnittpunkt $S$ von $E$ und $g$} \\
+  \text{$S$ ist der nächstliegende Punkt auf $g$, von $P$ aus gesehen} \\\\
+  \text{$g$ in $E$ eingesetzt} \\
+  1 + r - 2 + r = -1 \quad\Rightarrow\quad r = 0 \\
+  S(1|2|3) \\\\
+  \text{$|\vv{SP}|$ ist der gesuchte Abstand $d$ zwischen $P$ und $g$} \\
+  d = \sqrt{3}
+\end{gather*}
+\subsection{Abstandsbestimmung als Optimierungsaufgabe}
+\begin{gather*}
+  \text{HB: } f = \vv{XP} = min. \qquad\text{(Koordinante von $P$, Parameter $r$, ...)} \\
+  \text{NB: } g \colon \vv{x} = \begin{pmatrix}1 + r \\ 2 - r \\ 3\end{pmatrix} \qquad P(0|1|4) \\
+  \text{ZF: } f(r) = |\vv{XP}| = (-1 - r)^2 + (-1 + r)^2 + 1^2 = 2r^2 + 3 \\
+  f'(r) = 4r \qquad f''(r) = 4 \\\\
+  \text{n. B.: } f'(r) = 0 \quad\Rightarrow\quad r = 0 \\
+  \text{h. B.: } f''(0) = 4 > 0 \quad\Rightarrow\quad TP \\\\
+  \text{setze $r = 0$ in $g$ ein} \\
+  S(1|2|3)
+\end{gather*}
+\begin{exercise}{359/1}
+  \item [b]
+  \begin{gather*}
+    R(-2|-6|1) \qquad g \colon \vv{x} = \begin{pmatrix}5 \\ 9 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}3 \\ 2 \\ 2\end{pmatrix} \\
+    E \colon \left(\vv{x} - \begin{pmatrix}-2 \\ -6 \\ 1\end{pmatrix}\right) \cdot \begin{pmatrix}3 \\ 2 \\ 2\end{pmatrix} = 0 \qquad 3x_1 + 2x_2 + 2x_3 = -16 \\
+    3(5 + 3t) + 2(9 + 2t) + 2(1 + 2t) = -16 \quad\Rightarrow\quad t = -3 \\
+    S(-4|3|-5) \\
+    |\vv{SR}| = \left|\begin{pmatrix}2 \\ -9 \\ 6\end{pmatrix}\right| = 11
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{359/2}
+  \item [a]
+  \begin{gather*}
+    A(1|1|1) \qquad B(7|4|7) \qquad C(5|6|-1) \\
+    \vv{AB} = \begin{pmatrix}6 \\ 3 \\ 6\end{pmatrix} \qquad \vv{AC} = \begin{pmatrix}4 \\ 5 \\ -2\end{pmatrix} \\
+    A = \frac{1}{2} \cdot |\vv{AB} \times \vv{AC}| = \frac{1}{2} \cdot \left|\begin{pmatrix}-36 \\ 36 \\ 18\end{pmatrix}\right| = 27
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{359/3}
+  \item [a]
+  \begin{gather*}
+    \vv{x} = \begin{pmatrix}-5 \\ 6 \\ 8\end{pmatrix} + t \cdot \begin{pmatrix}1 \\ 0 \\ -2\end{pmatrix} \qquad \vv{x} = \begin{pmatrix}6 \\ 4 \\ 1\end{pmatrix} + t \cdot \begin{pmatrix}-1 \\ 0 \\ 2\end{pmatrix} \\
+    E \colon \left(\vv{x} - \begin{pmatrix}-5 \\ 6 \\ 8\end{pmatrix}\right) \cdot \begin{pmatrix}-1 \\ 0 \\ 2\end{pmatrix} = 0 \qquad -x_1 + 2x_3 = 21 \\
+    -(6 - t) + 2(1 + 2t) = 21 \quad\Rightarrow\quad t = 5 \\
+    S(1|4|11) \\
+    P(-5|6|8) \qquad |\vv{SP}| = \left|\begin{pmatrix}-6 \\ 2 \\ -3\end{pmatrix}\right| \approx 7
+  \end{gather*}
+\end{exercise}
