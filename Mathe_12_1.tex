@@ -2858,3 +2858,30 @@ Hessesche Normalenform (HNF)
     d(P, g) = \left|\begin{pmatrix}0 \\ 0 \\ 4\end{pmatrix} - \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix}\right| = \sqrt{18} \approx 4.2426 \qquad [d] = cm
   \end{gather*}
 \end{exercise}
+\section{Abstand windschiefer Geraden}
+Beispiel
+\begin{gather*}
+  g \colon \vv{x} = \begin{pmatrix}7 \\ 7 \\ 4\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ -2 \\ 6\end{pmatrix} \qquad h \colon \vv{x} = \begin{pmatrix}-3 \\ 0 \\ 5\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ -3\end{pmatrix} \qquad g \leftrightarrow h \text{ windschief} \\\\
+  \text{Hilfsebene } E \colon \vv{x} = \begin{pmatrix}7 \\ 7 \\ 4\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ -2 \\ 6\end{pmatrix} + s \cdot \begin{pmatrix}1 \\ 0 \\ -3\end{pmatrix} \\
+  \text{Der gesuchte Abstand $d(g, h)$ ist der Abstand $d((-3|0|5), E)$} \\\\
+  E \colon 6x_1 + 9x_2 + 2x_3 = 113 \qquad |\vv{n}| = \left|\begin{pmatrix}6 \\ 9 \\ 2\end{pmatrix}\right| = 11 \\
+  d((-3|0|5), E) = \left|\frac{1}{11} \cdot (6 \cdot (-3) + 9 \cdot 0 + 2 \cdot 5 - 113)\right| = 11
+\end{gather*}
+\begin{exercise}{363/6}
+  \begin{gather*}
+    A(-9|3|-3) \qquad B(-3|-6|0) \qquad C(-7|5|5) \qquad D(4|8|0) \\\\
+    g_{AC} \colon \vv{x} = \vv{OA} + r \cdot \vv{AC} = \begin{pmatrix}-9 \\ 3 \\ -3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 2 \\ 8\end{pmatrix} \\
+    g_{BD} \colon \vv{x} = \vv{OB} + s \cdot \vv{BD} = \begin{pmatrix}-3 \\ -6 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}7 \\ 14 \\ 0\end{pmatrix} \\
+    E \colon \vv{x} = \begin{pmatrix}-9 \\ 3 \\ -3\end{pmatrix} + r \cdot \begin{pmatrix}2 \\ 2 \\ 8\end{pmatrix} + s \cdot \begin{pmatrix}7 \\ 14 \\ 0\end{pmatrix} \qquad -8x_1 + 4x_2 + x_3 = 81 \qquad |\vv{n}| = 9 \\
+    d(g_{AC}, g_{BD}) = d(B, E) = \left|\frac{1}{9} \cdot (-8 \cdot (-3) + 4 \cdot (-6) + 1 \cdot 0 - 81)\right| = 9 \\\\
+  \end{gather*}
+  \begin{gather*}
+    \vv{OT} = \vv{OA} + \frac{1}{2} \cdot \vv{AD} = \begin{pmatrix}-2.5 \\ 5.5 \\ -1.5\end{pmatrix} \qquad \vv{OU} = \vv{OA} + \frac{1}{2} \cdot \vv{AC} = \begin{pmatrix}-8 \\ 4 \\ 1\end{pmatrix} \\
+    g_{TU} \colon \vv{x} = \vv{OU} + r \cdot \vv{TU} = \begin{pmatrix}-8 \\ 4 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}-5.5 \\ -1.5 \\ 2.5\end{pmatrix} \\
+    \vv{OR} = \vv{OC} + \frac{1}{2} \cdot \vv{CD} = \begin{pmatrix}-1.5 \\ 6.5 \\ 2.5\end{pmatrix} \qquad \vv{OS} = \vv{OB} + \frac{1}{2} \cdot \vv{BD} = \begin{pmatrix}0.5 \\ 1 \\ 0\end{pmatrix} \\
+    g_{RS} \colon \vv{x} = \vv{OS} + s \cdot \vv{RS} = \begin{pmatrix}0.5 \\ 1 \\ 0\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -5.5 \\ -2.5\end{pmatrix} \\
+    E \colon \vv{x} = \begin{pmatrix}-8 \\ 4 \\ 1\end{pmatrix} + r \cdot \begin{pmatrix}-5.5 \\ -1.5 \\ 2.5\end{pmatrix} + s \cdot \begin{pmatrix}2 \\ -5.5 \\ -2.5\end{pmatrix} \\
+    E \colon 17.5x_1 - 8.75x_2 + 33.25x_3 = -141.75 \qquad |\vv{n}| = \sqrt{1488.375} \\
+    d(g_{TU}, g_{RS}) = d(R, E) = \left|\frac{1}{\sqrt{1488.375}} \cdot (17.5 \cdot 0.5 - 8.75 + 141.75)\right|
+  \end{gather*}
+\end{exercise}
