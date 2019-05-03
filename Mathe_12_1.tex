@@ -2933,3 +2933,36 @@ Beispiel
     G_0(-3.5|-2|-1) \qquad H_0(-3.5|2|-1) \qquad |\vv{G_0H_0}| = 4 \qquad (= \frac{1}{2} \cdot |\vv{AD}|)
   \end{gather*}
 \end{exercise}
+\section{Kreise und Kugeln}
+\begin{gather*}
+  f(x) = y = \sqrt{16 - x^2} \\\\
+  \text{Definitionsbereich:}\quad D = \left[-4;4\right] \\
+  \text{Ableitung:}\quad f'(x) = \frac{1}{2} \cdot (16 - x^2)^{-\frac{1}{2}} \cdot (-2x) = -\frac{x}{\sqrt{16 - x^2}} \\
+  \text{Extrema:}\quad f'(x) = 0 \qquad L = \{0\} \qquad P(0|4) \\
+  \text{Steigung am Rand von $D$:}\quad \lim\limits_{x \to -4} f'(x) = \infty \qquad \lim\limits_{x \to 4} f'(x) = -\infty
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymin=-1,
+      ymax=5,
+      ]
+      \addplot[
+      domain=-4:4,
+      samples=100
+      ]{sqrt(16 - x^2)};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  y = \sqrt{16 - (x - 2)} + 1 \equ -1 \\
+  y - 1 = \sqrt{16 - (x - 2)^2} \equ ()^2 \\
+  (y - 1)^2 = 16 - (x - 2)^2 \equ + (x - 2)^2 \\
+  (x - 2)^2 + (y - 1)^2 = 16 \\\\
+  \left(\begin{pmatrix}x \\ y\end{pmatrix} - \begin{pmatrix}mx \\ my\end{pmatrix}\right)^2 = r^2 \qquad \text{(Kreisgleichung in $\mathbb{R}^2$)} \\
+  \left(\begin{pmatrix}x \\ y \\ z\end{pmatrix} - \begin{pmatrix}mx \\ my \\ mz\end{pmatrix}\right)^2 = r^2 \qquad \text{(Kugelgleichung in $\mathbb{R}^3$)} \\\\
+  (\vv{x} - \vv{m})^2 = r^2 \\\\
+  \text{z. B. } \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 3\end{pmatrix}\right)^2 = 25 \\
+  \text{Kugel mit Mittelpunkt $M(1|2|3)$ und Radius $r = 5$}
+\end{gather*}
