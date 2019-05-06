@@ -2992,3 +2992,43 @@ Beispiel
     \Rightarrow \text{keine Kugel}
   \end{gather*}
 \end{exercise}
+\subsection{Kugeln, Geraden, Abstände}
+\begin{gather*}
+  k_a \colon (\vv{x} - \vv{m_a})^2 = r_a^2 \\
+  k_b \colon (\vv{x} - \vv{m_b})^2 = r_b^2 \\\\
+  \text{Berührpunkt:} \\
+  |\vv{m_a} - \vv{m_b}| = r_a + r_b \\
+  \text{Schnitt:} \\
+  |\vv{m_a} - \vv{m_b}| < r_a + r_b \qquad \text{wenn } |\vv{m_a} - \vv{m_b}| > r_a \text{ und } > r_b \\
+  \qquad \text{(Mittelpunkte liegen außerhalb der jeweils anderen Kugel)} \\
+  |\vv{m_a} - \vv{m_b}| > |r_a - r_b| \qquad \text{wenn } |\vv{m_a} - \vv{m_b}| < r_a \text{ oder } < r_b \\
+  \qquad \text{(mindestens ein Mittelpunkt liegt innerhalb der anderen Kugel)}
+\end{gather*}
+\begin{exercise}{377/7}
+  \item [a]
+  \begin{gather*}
+    k_1 \colon x_1^2 + x_2^2 + 6x_1 - 4x_2 = 12 \qquad k_2 \colon x_1^2 + x_2^2 + 6x_1 - 18x_2 + 86 = 0 \\\\
+    k_1 \colon (x_1 + 3)^2 + (x_2 - 2)^2 = 25 \qquad M_1(-3|2) \quad r_1 = 5 \\
+    k_2 \colon (x_1 + 3)^2 + (x_2 - 9)^2 = 4 \qquad M_2(-3|9) \quad r_2 = 2 \\
+    |\vv{M_1M_2}| = r_1 + r_2 = 7 \\
+    \Rightarrow\quad \text{Berührpunkt bei } (-3|7)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    k_1 \colon x_1^2 + x_2^2 - 6x_1 + 8x_2 = 0 \qquad k_2 \colon x_1^2 + x_2^2 - 4x_1 + 6x_2 = -9 \\\\
+    k_1 \colon (x_1 - 3)^2 + (x_2 + 4)^2 = 25 \qquad M_1(3|-4) \quad r_1 = 5 \\
+    k_2 \colon (x_1 - 2)^2 + (x_2 + 3)^2 = 4 \qquad M_2(2|-3) \quad r_2 = 2 \\
+    |\vv{M_1M_2}| = \sqrt{2} < r_1 \text{ und } < r_2 \\
+    |\vv{M_1M_2}| = \sqrt{2} < |r_1 - r_2| = 3 \\
+    \Rightarrow\quad \text{$k_2$ liegt vollständig innerhalb von $k_1$}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    k_1 \colon x_1^2 + x_2^2 + 2x_1 = 19 \qquad k_2 \colon x_1^2 - 6x_1 + x_2^2 - 8x_2 = -21 \\\\
+    k_1 \colon (x_1 + 1)^2 + x_2^2 = 20 \qquad M_1(-1|0) \quad r_1 = \sqrt{20} \\
+    k_2 \colon (x_1 - 3)^2 + (x_2 - 4)^2 = 4 \qquad M_2(3|4) \quad r_2 = 2 \\
+    |\vv{M_1M_2}| = \sqrt{32} > r_1 \text{ und } > r_2 \\
+    |\vv{M_1M_2}| = \sqrt{32} < r_1 + r_2 = \sqrt{20} + 2 \\
+    \Rightarrow\quad \text{Schnitt}
+  \end{gather*}
+\end{exercise}
