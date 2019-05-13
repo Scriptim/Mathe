@@ -2992,7 +2992,7 @@ Beispiel
     \Rightarrow \text{keine Kugel}
   \end{gather*}
 \end{exercise}
-\subsection{Kugeln, Geraden, Abstände}
+\subsection{Kugeln, Geraden, Ebenen, Abstände}
 \begin{gather*}
   k_a \colon (\vv{x} - \vv{m_a})^2 = r_a^2 \\
   k_b \colon (\vv{x} - \vv{m_b})^2 = r_b^2 \\\\
@@ -3059,3 +3059,25 @@ Beispiel
     |\vv{m_1} - \vv{m_2}| = 2 \cdot \sqrt{34} < r_1 + r_2 = 12
   \end{gather*}
 \end{exercise}
+\subsubsection{Kugel $\leftrightarrow$ Gerade}
+\begin{gather*}
+  k \colon \left(\vv{x} - \begin{pmatrix}2 \\ -1 \\ 5\end{pmatrix}\right)^2 = 36 \qquad g \colon \vv{x} = \begin{pmatrix}3 \\ -9 \\ 10\end{pmatrix} + r \cdot \begin{pmatrix}1 \\ 4 \\ -1\end{pmatrix} \\\\
+  \text{setze $g$ in $k$ ein} \\
+  \begin{pmatrix}3 + r - 2 \\ -9 + 4r + 1 \\ 10 - r - 5\end{pmatrix}^2 = 36 \\
+  (r + 1)^2 + (4r - 8)^2 + (-r + 5)^2 - 36 = 0 \\
+  r^2 - 4r + 3 = 0 \\
+  r_{1/2} = \frac{4 \pm \sqrt{16 - 12}}{2} \qquad r_1 = 3 \quad r_2 = 1 \\
+  Q(6|3|7) \qquad R(4|-1|9) \quad\Rightarrow\text{2 Schnittpunkte}
+\end{gather*}
+\subsubsection{Kugel $\leftrightarrow$ Ebene}
+\begin{gather*}
+  k \colon \left(\vv{x} - \begin{pmatrix}2 \\ -1 \\ 3\end{pmatrix}\right)^2 = 64 \qquad E \colon -2x_1 + x_2 + 2x_3 = 19 \\\\
+  \text{Abstand $M \leftrightarrow E$} \\
+  |\vv{n}| = \sqrt{(-2)^2 + 1^2 + 2^2} = 3 \\
+  d(M, E) = \frac{1}{3} \cdot \left|(-2 \cdot 2 - 1 + 2 \cdot 3 - 19)\right| = 6 \\\\
+  d = 6 < r = 8 \quad\Rightarrow\text{Schnittkreis} \\\\
+  \text{Radius des Schnittkreises $r'$} \\
+  r' = \sqrt{r^2 - d^2} = \sqrt{8^2 - 6^2} = \sqrt{28} \approx 5.2915 \\\\
+  \text{Mittelpunkt des Schnittkreises $M'$} \\
+  \;\text{= Fußlotpunkt des Mittelpunkts $M$ auf der Ebene $E$}
+\end{gather*}
