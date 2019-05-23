@@ -3081,3 +3081,50 @@ Beispiel
   \text{Mittelpunkt des Schnittkreises $M'$} \\
   \;\text{= Fußlotpunkt des Mittelpunkts $M$ auf der Ebene $E$}
 \end{gather*}
+\subsection{Kugel $\leftrightarrow$ Kugel, Tangentialebene}
+\begin{gather*}
+  k_1 \colon \left(\vv{x} - \begin{pmatrix}1 \\ 3 \\ 9\end{pmatrix}\right)^2 = 49 \qquad k_2 \colon \left(\vv{x} - \begin{pmatrix}2 \\ -1 \\ 5\end{pmatrix}\right) \\
+  |r_1 - r_2| = |7 - 4| < |\vv{M_1M_2}| = \sqrt{33} < r_1 + r_2 = 7 + 4 \quad\Rightarrow\text{Schnitt} \\\\
+  k_1 \colon x_1^2 - 2x_1 + 1 + x_2^2 - 6x_2 + 9 + x_3^2 - 18x_3 + 81 = 49 \\
+  k_2 \colon x_1^2 - 4x_1 + 4 + x_2^2 + 2x_2 + 1 + x_3^2 - 10x_3 + 25 = 16 \\
+  k_1 - k_2 \colon 2x_1 - 3 - 8x_2 + 8 - 8x_3 + 56 = 33 \\\\
+  \text{Schnittebene } E \colon 2x_1 - 8x_2 - 8x_3 = -28 \\
+  \text{Schnittkreismittelpunkt } M^*(2|-1|5) \\
+  \text{Schnittkreisradius } r^* = 4
+\end{gather*}
+\subsubsection{spezielle Darstellung einer Tangentialebene an die Kugel $k$ im Berührpunkt $B$}
+\begin{gather*}
+  k \colon (\vv{x} - \vv{m})^2 = (\vv{x} - \vv{m}) \cdot (\vv{x} - \vv{m}) = r^2 \\
+  \text{Tangentialebene in } B \colon (\vv{x} - \vv{m}) \cdot (\vv{b} - \vv{m}) = r^2
+\end{gather*}
+\begin{exercise}{386/22}
+  \item [a]
+  \begin{gather*}
+    P(5|2|1) \qquad Q(6|2|-1) \qquad k \colon \left(\vv{x} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right)^2 = 9 \\\\
+    \left(\begin{pmatrix}5 \\ 2 \\ 1\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right) \cdot \left(\begin{pmatrix}b_1 \\ b_2 \\ b_3\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right) = 4b_1 - 4 + b_3 = 9 \\
+    \left(\begin{pmatrix}6 \\ 2 \\ -1\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right) \cdot \left(\begin{pmatrix}b_1 \\ b_2 \\ b_3\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right) = 5b_1 - 5 - b_3 = 9 \\
+    \left(\begin{pmatrix}b_1 \\ b_2 \\ b_3\end{pmatrix} - \begin{pmatrix}1 \\ 2 \\ 0\end{pmatrix}\right)^2 = b_1^2 - 2b_1 + 1 + b_2^2 - 4b_2 + 4 + b_3^2 = 9
+  \end{gather*}
+  \begin{gather*}
+    L = \{(3, 0, 1), (3, 4, 1)\} \qquad B_1(3|0|1) \quad B_2(3|4|1) \\\\
+    E_1 \colon \left(\vv{x} - \vv{OP}\right) \cdot \vv{MB_1} = \left(\vv{x} - \begin{pmatrix}5 \\ 2 \\ 1\end{pmatrix}\right) \cdot \begin{pmatrix}2 \\ -2 \\ 1\end{pmatrix} = 0 \\
+    E_2 \colon \left(\vv{x} - \vv{OP}\right) \cdot \vv{MB_2} = \left(\vv{x} - \begin{pmatrix}5 \\ 2 \\ 1\end{pmatrix}\right) \cdot \begin{pmatrix}2 \\ 2 \\ 1\end{pmatrix} = 0
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{386/20}
+  \item [b]
+  \begin{gather*}
+    k_1 \colon \left(\vv{x} - \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix}\right)^2 = 625 \qquad k_2 \colon \left(\vv{x} - \begin{pmatrix}-5 \\ 4 \\ -2\end{pmatrix}\right)^2 = 625 \\\\
+    k_1 \colon x_1^2 - 14x_1 + 49 + x_2^2 + 4x_2 + 4 + x_3^2 - 4x_3 + 4 = 625 \\
+    k_2 \colon x_1^2 + 10x_1 + 25 + x_2^2 - 8x_2 + 16 + x_3^2 + 4x_3 + 4 = 625 \\
+    k_1 - k_2 \colon -24x_1 + 12x_2 - 8x_3 + 12 = 0 \\
+    E \colon -6x_1 + 3x_2 - 2x_3 + 3 = 0 \\\\
+    g \colon \vv{x} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} + r \cdot \begin{pmatrix}-6 \\ 3 \\ -2\end{pmatrix} \\
+    -6 \cdot (7 - 6r) + 3 \cdot (-2 + 3r) - 2 \cdot (2 - 2r) + 3 = -49r - 49 = 0 \\
+    \Rightarrow r = -1 \\\\
+    \vv{OM'} = \begin{pmatrix}7 \\ -2 \\ 2\end{pmatrix} - \begin{pmatrix}6 \\ -3 \\ 2\end{pmatrix} = \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix} \\\\
+    |\vv{n}| = \sqrt{(-6)^2 + 3^2 + (-2)^2} = \sqrt{49} = 7 \\
+    d(M_1, E) = \frac{1}{7} \cdot |-6 \cdot 7 + 3 \cdot (-2) - 2 \cdot 2 + 3| = 7 \\
+    r' = \sqrt{625 - 7^2} = 24
+  \end{gather*}
+\end{exercise}
