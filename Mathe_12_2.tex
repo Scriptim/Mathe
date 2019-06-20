@@ -1047,3 +1047,197 @@ Beispiel: Würfeln mit zwei Würfeln
     \item [$\rightarrow$] Die Wahrscheinlichkeit $W = 1$ ist verteilt auf die einzelnen Ereignisse.
   \end{itemize}
 \end{itemize}
+\section{Mehrstufige Zufallsversuche - Baumdiagramme}
+\textbf{Beispiel: ``Mensch ärgere dich nicht'', ich sitze im Haus (mit Zurücklegen)}
+\begin{gather*}
+  \begin{tikzpicture}[grow=down]
+    \tikzstyle{level 1} = [level distance=2.5cm, sibling distance=6.8cm]
+    \tikzstyle{level 2} = [level distance=2.5cm, sibling distance=3.4cm]
+    \tikzstyle{level 3} = [level distance=2.5cm, sibling distance=1.7cm]
+    \tikzstyle{leaf} = [text width=4em, text centered]
+    \node {würfeln}
+      child {
+        node {Sechs}
+        child {
+          node {Sechs}
+          child {
+            node[leaf] {Sechs $(6, 6, 6)$}
+            edge from parent
+            node[above left] {$\frac{1}{6}$}
+          }
+          child {
+            node[leaf] {keine Sechs $(6, 6, \overline{6})$}
+            edge from parent
+            node[above right] {$\frac{5}{6}$}
+          }
+          edge from parent
+          node[above left] {$\frac{1}{6}$}
+        }
+        child {
+          node {keine Sechs}
+          child {
+            node[leaf] {Sechs $(6, \overline{6}, 6)$}
+            edge from parent
+            node[above left] {$\frac{1}{6}$}
+          }
+          child {
+            node[leaf] {keine Sechs $(6, \overline{6}, \overline{6})$}
+            edge from parent
+            node[above right] {$\frac{5}{6}$}
+          }
+          edge from parent
+          node[above right] {$\frac{5}{6}$}
+        }
+        edge from parent
+        node[above left] {$\frac{1}{6}$}
+      }
+      child {
+        node {keine Sechs}
+        child {
+          node {Sechs}
+          child {
+            node[leaf] {Sechs $(\overline{6}, 6, 6)$}
+            edge from parent
+            node[above left] {$\frac{1}{6}$}
+          }
+          child {
+            node[leaf] {keine Sechs $(\overline{6}, 6, \overline{6})$}
+            edge from parent
+            node[above right] {$\frac{5}{6}$}
+          }
+          edge from parent
+          node[above left] {$\frac{1}{6}$}
+        }
+        child {
+          node {keine Sechs}
+          child {
+            node[leaf] {Sechs $(\overline{6}, \overline{6}, 6)$}
+            edge from parent
+            node[above left] {$\frac{1}{6}$}
+          }
+          child {
+            node[leaf] {keine Sechs $(\overline{6}, \overline{6}, \overline{6})$}
+            edge from parent
+            node[above right] {$\frac{5}{6}$}
+          }
+          edge from parent
+          node[above right] {$\frac{5}{6}$}
+        }
+        edge from parent
+        node[above right] {$\frac{5}{6}$}
+      };
+    \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  S = \{(6, 6, 6), (6, 6, \overline{6}), ...\} \quad \text{(Ergebnismenge)} \\
+  |S| = 2^3 = 8
+\end{gather*}
+Jeder Pfad führt zu einem Ergebnis $e$ \\
+Jeder Pfad besteht hier aus $3$ Zweigen (dreistufig) \\\\
+Die Pfadwahrscheinlichkeit ist das Produkt der Zweige $w$ entlang des Pfades, \\
+z. B. $P((6, \overline{6}, \overline{6})) = \frac{1}{6} \cdot \frac{5}{6} \cdot \frac{5}{6} = \frac{25}{216}$ \\\\
+$E_1$: genau zwei Sechsen bei drei Würfen \\
+Ereignis $E_1$ besteht aus drei Ergebnissen ($(6, 6, \overline{6})$, $(6, \overline{6}, 6)$, $(\overline{6}, 6, 6)$) \\
+Die Wahrscheinlichkeit von $E_1$ ist die Summe der Wahrscheinlichkeiten der Ergebnisse
+$P(E_1) = \frac{1}{6} \cdot \frac{1}{6} \cdot \frac{5}{6} + \frac{1}{6} \cdot \frac{5}{6} \cdot \frac{1}{6} + \frac{5}{6} \cdot \frac{1}{6} \cdot \frac{1}{6} = \frac{15}{216} = \frac{5}{72}$ \\
+\textbf{Beispiel: 3 Züge ohne Zurücklegen (anfangs $2$ rote, $3$ gelbe Kugeln)}
+\begin{gather*}
+  \begin{tikzpicture}[grow=down]
+    \tikzstyle{level 1} = [level distance=2.5cm, sibling distance=6cm]
+    \tikzstyle{level 2} = [level distance=2.5cm, sibling distance=3cm]
+    \tikzstyle{level 3} = [level distance=2.5cm, sibling distance=1.5cm]
+    \node {ziehen}
+      child {
+        node {rot}
+        child {
+          node {rot}
+          child {
+            node {rot}
+            edge from parent
+            node[above left] {$0$}
+          }
+          child {
+            node {gelb}
+            edge from parent
+            node[above right] {$1$}
+          }
+          edge from parent
+          node[above left] {$\frac{1}{4}$}
+        }
+        child {
+          node {gelb}
+          child {
+            node {rot}
+            edge from parent
+            node[above left] {$\frac{1}{3}$}
+          }
+          child {
+            node {gelb}
+            edge from parent
+            node[above right] {$\frac{2}{3}$}
+          }
+          edge from parent
+          node[above right] {$\frac{3}{4}$}
+        }
+        edge from parent
+        node[above left] {$\frac{2}{5}$}
+      }
+      child {
+        node {gelb}
+        child {
+          node {rot}
+          child {
+            node {rot}
+            edge from parent
+            node[above left] {$\frac{1}{3}$}
+          }
+          child {
+            node {gelb}
+            edge from parent
+            node[above right] {$\frac{2}{3}$}
+          }
+          edge from parent
+          node[above left] {$\frac{2}{4}$}
+        }
+        child {
+          node {gelb}
+          child {
+            node {rot}
+            edge from parent
+            node[above left] {$\frac{2}{3}$}
+          }
+          child {
+            node {gelb}
+            edge from parent
+            node[above right] {$\frac{1}{3}$}
+          }
+          edge from parent
+          node[above right] {$\frac{2}{4}$}
+        }
+        edge from parent
+        node[above right] {$\frac{3}{5}$}
+      };
+    \end{tikzpicture}
+\end{gather*}
+\begin{exercise}{455/1}
+  \item [a]
+  \begin{gather*}
+    \text{m. Z.} \quad P((r, r)) = \frac{4}{7} \cdot \frac{4}{7} = \frac{16}{49} \\
+    \text{o. Z.} \quad P((r, r)) = \frac{4}{7} \cdot \frac{3}{6} = \frac{2}{7}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \text{m. Z.} \quad P((r, b)) = 2 \cdot \frac{4}{7} \cdot \frac{3}{7} = \frac{24}{49} \\
+    \text{o. Z.} \quad P((r, b)) = \frac{4}{7} \cdot \frac{3}{6} + \frac{3}{7} \cdot \frac{4}{6} = \frac{4}{7}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \text{m. Z.} \quad P((r, r), (r, b)) = \frac{16}{49} + \frac{24}{49} = \frac{40}{49} \\
+    \text{o. Z.} \quad P((r, r), (r, b)) = \frac{2}{7} + \frac{4}{7} = \frac{6}{7}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    \text{m. Z.} \quad P((r, r), (r, b)) = \frac{40}{49} \\
+    \text{o. Z.} \quad P((r, r), (r, b)) = \frac{6}{7}
+  \end{gather*}
+\end{exercise}
