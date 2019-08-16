@@ -65,3 +65,28 @@
     P = \frac{43}{49} \cdot \frac{42}{48} \cdot \frac{41}{47} \cdot \frac{40}{46} \cdot \frac{39}{45} \cdot \frac{38}{44} \approx 0.436
   \end{gather*}
 \end{exercise}
+\begin{exercise}{456/10}
+  \item [a]
+  \begin{gather*}
+    \text{Anteil nach $10$ Tagen: } 0.85^{10} \approx 0.197 \\
+    0.85^t = 0.5 \quad\Rightarrow\quad t = log_{0.85}(0.5) \approx 4.265
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    (1 - p)^8 = 0.5 \quad\Rightarrow\quad p = 1 - \sqrt[8]{(0.5)} \approx 0.083
+  \end{gather*}
+\end{exercise}
+\section{Abzählverfahren}
+Bis auf Weiteres gilt: Die Zufallsversuche sind Laplace-Versuche. \\
+Anzahl der Ergebnisse $N \quad\Rightarrow\quad P = \frac{1}{N} \quad\text{(Ergebniswahrscheinlichkeit)}$ \\\\
+Ziehe $k$ mal aus einer Urne mit $n$ unterscheidbaren Kugeln:
+\begin{itemize}
+  \item mit Zurücklegen unter Beachtung der Reihenfolge
+  \begin{gather*}
+    N = n^k
+  \end{gather*}
+  \item ohne Zurücklegen unter Beachtung der Reihenfolge
+  \begin{gather*}
+    N = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot \underbrace{(n - k + 1)}_{\mathclap{\text{übrige Kugeln vor dem $k$-ten Zug}}} = \frac{n!}{(n - k)!}
+  \end{gather*}
+\end{itemize}
