@@ -81,12 +81,26 @@ Bis auf Weiteres gilt: Die Zufallsversuche sind Laplace-Versuche. \\
 Anzahl der Ergebnisse $N \quad\Rightarrow\quad P = \frac{1}{N} \quad\text{(Ergebniswahrscheinlichkeit)}$ \\\\
 Ziehe $k$ mal aus einer Urne mit $n$ unterscheidbaren Kugeln:
 \begin{itemize}
-  \item mit Zurücklegen unter Beachtung der Reihenfolge
+  \item mit Zurücklegen, unter Beachtung der Reihenfolge
   \begin{gather*}
     N = n^k
   \end{gather*}
-  \item ohne Zurücklegen unter Beachtung der Reihenfolge
+  \item ohne Zurücklegen, unter Beachtung der Reihenfolge
   \begin{gather*}
     N = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot \underbrace{(n - k + 1)}_{\mathclap{\text{übrige Kugeln vor dem $k$-ten Zug}}} = \frac{n!}{(n - k)!}
   \end{gather*}
+  \item ohne Zurücklegen, ohne Beachtung der Reihenfolge \\\\
+  Es werden jeweils $k!$ (Permutationen) Ergebnisse zu einem Ereignis zusammengefasst:
+  \begin{gather*}
+    N = \frac{n!}{(n - k)! \cdot k!} = \begin{pmatrix}n \\ k\end{pmatrix} \text{ (Binomialkoeffizient)}
+  \end{gather*} \\
+  Die Wahrscheinlichkeit für einen 6er im Lotto:
+  \begin{gather*}
+    p = \frac{1}{\begin{pmatrix}49 \\ 6\end{pmatrix}} \approx \frac{1}{14000000}
+  \end{gather*}
+  Die Wahrscheinlichkeit für einen 4er im Lotto (``Lottoproblem''):
+  \begin{gather*}
+    p = \frac{\begin{pmatrix}6 \\ 4\end{pmatrix} \cdot \begin{pmatrix}43 \\ 2\end{pmatrix}}{\begin{pmatrix}49 \\ 6\end{pmatrix}} = \frac{13545}{\begin{pmatrix}49 \\ 6\end{pmatrix}} \approx \frac{1}{1000}
+  \end{gather*}
+  \qquad (Wähle $4$ aus den $6$ Richtigen und $2$ aus den $43$ Falschen)
 \end{itemize}
