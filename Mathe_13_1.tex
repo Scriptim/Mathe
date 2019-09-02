@@ -261,3 +261,49 @@ Ziehe $k$ mal aus einer Urne mit $n$ unterscheidbaren Kugeln:
     Erw = 1 - (10 \cdot p_3 + 1000 \cdot p_4) \approx 0.19
   \end{gather*}
 \end{exercise}
+\section{Bedingte Wahrscheinlichkeit}
+Aus einer Urne mit $6$ roten und $4$ blauen Kugeln werden $2$ Kugeln ohne Zurücklegen gezogen.
+\begin{gather*}
+  \begin{tikzpicture}[grow=down]
+    \tikzstyle{level 1} = [level distance=2.5cm, sibling distance=6cm]
+    \tikzstyle{level 2} = [level distance=2.5cm, sibling distance=3cm]
+    \tikzstyle{level 3} = [level distance=2.5cm, sibling distance=1.5cm]
+    \node {1. Zug}
+      child {
+        node {2. Zug}
+        child {
+          node {$({\color{blue}b}, {\color{blue}b})$}
+          edge from parent
+          node[above left] {\color{blue}$\frac{3}{9}$}
+        }
+        child {
+          node {$({\color{blue}b}, {\color{red}r})$}
+          edge from parent
+          node[above right] {\color{red}$\frac{6}{9}$}
+        }
+        edge from parent
+        node[above left] {\color{blue}$\frac{4}{10}$}
+      }
+      child {
+        node {2. Zug}
+        child {
+          node {$({\color{red}r}, {\color{blue}b})$}
+          edge from parent
+          node[above left] {\color{blue}$\frac{4}{9}$}
+        }
+        child {
+          node {$({\color{red}r}, {\color{red}r})$}
+          edge from parent
+          node[above right] {\color{red}$\frac{5}{9}$}
+        }
+        edge from parent
+        node[above right] {\color{red}$\frac{6}{10}$}
+      };
+    \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  E \colon \text{rot im ersten Zug} \qquad P(E) = \frac{6}{10} \\
+  F \colon \text{rot im zweiten Zug} \qquad P(F) = \frac{4}{10} \cdot \frac{6}{9} + \frac{6}{10} \cdot \frac{5}{9} = \frac{3}{5} \\\\
+  P_E(F) = \frac{5}{9} \qquad \text{Wahrscheinlichkeit für Ereignis $F$, unter der Voraussetzung,} \\
+  \qquad\qquad\qquad\quad\text{dass Ereignis $E$ zurvor eingetreten ist}
+\end{gather*}
