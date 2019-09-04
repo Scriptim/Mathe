@@ -307,3 +307,56 @@ Aus einer Urne mit $6$ roten und $4$ blauen Kugeln werden $2$ Kugeln ohne Zurüc
   P_E(F) = \frac{5}{9} \qquad \text{Wahrscheinlichkeit für Ereignis $F$, unter der Voraussetzung,} \\
   \qquad\qquad\qquad\quad\text{dass Ereignis $E$ zurvor eingetreten ist}
 \end{gather*}
+\subsection{Statistische Unabhängigkeit}
+Wenn gilt, dass $P_E(F) = P(F)$, dann sagt man die Ereignisse $E$ und $F$ sind statistisch unbhängig.
+\begin{gather*}
+  E \colon \text{rot im ersten Zug} \qquad P(E) = \frac{6}{10} \\
+  F \colon \text{rot im zweiten Zug} \qquad P(F) = \frac{3}{5} \\\\
+  P_E(F) = \frac{5}{9} \neq P(F) = \frac{3}{5}
+\end{gather*}
+Die Wahrscheinlichkeit, dass rot im zweiten Zug gezogen wird unter der Bedingung, dass rot schon im ersten Zug gezogen wurde, ist ungleich der Wahrscheinlichkeit, dass allgemein rot im zweiten Zug gezogen wird. \\
+$E$ und $F$ sind statistisch abhängig. \\
+\begin{gather*}
+  \overline{E} \colon \text{blau im ersten Zug} \\
+  \overline{F} \colon \text{blau im zweiten Zug} \\\\
+  P_{\overline{E}}(F) = \frac{6}{9} \neq P(F) = \frac{3}{5} \\
+  P_E(\overline{F}) = \frac{4}{9} \neq P(\overline{F}) = \frac{2}{5} \\
+  P_{\overline{E}}(\overline{F}) = \frac{3}{9} \neq P(\overline{F}) = \frac{2}{5}
+\end{gather*}
+\begin{exercise}{475/1}
+  \item [a]
+  \begin{gather*}
+    P = 0.98^4 \approx 0.9224
+  \end{gather*}
+  \item [b]
+  Wenn bei einem Fahrzeug eine Panne auftritt, besteht die Möglichkeit, dass dies auf ein besonders anfälliges Fahrzeugteil oder einen Produktionsfehler zurückzuführen ist, welches/r sich auch in den anderen drei Fahrzeugen befindet.
+\end{exercise}
+\newpage
+\begin{exercise}{475/2}
+  \item [a]
+  \begin{gather*}
+    P(E) = \frac{3}{5} \qquad P(F) = \frac{2}{5} \\
+    E \cap F = \{(a_1, h_1), (a_1, h_2), (a_2, h_1), ..., (a_3, h_2)\} \qquad |E \cap F| = 6 \\
+    P(E \cap F) = \frac{|E \cap F|}{5^2} = P(E) \cdot P(F) = \frac{6}{25}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    P(E) = \frac{3}{5} \qquad P(F) = \frac{3}{5} \cdot \frac{2}{4} + \frac{2}{5} \cdot \frac{1}{4} = 0.34 \\
+    P(E \cap F) = \frac{3}{5} \cdot \frac{2}{4} = 0.3 \neq P(E) \cdot P(F) = 0.204 \\
+    P_E(F) = \frac{2}{4} = \frac{1}{2}
+  \end{gather*}
+\end{exercise}
+\subsubsection{Vierfelder-Tafel}
+\begin{gather*}
+  E \colon \text{Raucher} \qquad \overline{E} \colon \text{Nichtraucher} \\
+  F \colon \text{mit Gewicht zufrieden} \qquad \overline{F} \colon \text{mit Gewicht unzufrieden}
+\end{gather*}
+\begin{tabular}{c|c|c|c}
+  & $F$ & $\overline{F}$ & \\ \hline
+  $E$ & $P(E \cap F)$ & $P(E \cap \overline{F})$ & $P(E)$ \\ \hline
+  $\overline{E}$ & $P(\overline{E} \cap F)$ & $P(\overline{E} \cap \overline{F})$ & $P(\overline{E})$ \\ \hline
+  & $P(F)$ & $P(\overline{F})$ & $100\%$
+\end{tabular}
+\begin{gather*}
+  P_E(F) = \frac{P(E \cap F)}{P(E)}
+\end{gather*}
