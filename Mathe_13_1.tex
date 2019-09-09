@@ -367,3 +367,54 @@ $E$ und $F$ sind statistisch abhängig. \\
     P(\text{V. h.} \cap \text{S. h.}) \neq P(\text{V. h}) \cdot P(\text{S. h.}) \quad\Rightarrow\quad \text{statistisch abhängig}
   \end{gather*}
 \end{exercise}
+\subsection{Der Satz von Bayes}
+\begin{gather*}
+  \begin{tikzpicture}[grow=down]
+    \tikzstyle{level 1} = [level distance=2.5cm, sibling distance=4cm]
+    \tikzstyle{level 2} = [level distance=2.5cm, sibling distance=2cm]
+    \tikzstyle{level 3} = [level distance=2.5cm, sibling distance=1cm]
+    \node {}
+      child {
+        node {$K$}
+        child {
+          node {$T$}
+          edge from parent
+          node[above left] {$0.9$}
+        }
+        child {
+          node {$\overline{T}$}
+          edge from parent
+          node[above right] {$0.1$}
+        }
+        edge from parent
+        node[above left] {$0.0001$}
+      }
+      child {
+        node {$\overline{K}$}
+        child {
+          node {$T$}
+          edge from parent
+          node[above left] {$0.02$}
+        }
+        child {
+          node {$\overline{T}$}
+          edge from parent
+          node[above right] {$0.98$}
+        }
+        edge from parent
+        node[above right] {$0.9999$}
+      };
+    \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  P_K(T) = 0.90 \colon \text{Sensitivität des Tests} \\
+  P_{\overline{K}}(\overline{T}) = 0.98 \colon \text{Spezifität des Tests} \\\\
+  K \colon \text{krank} \qquad T \colon \text{positiver Test} \\
+  P_T(K) \colon \text{Wahrscheinlichkeit, krank zu sein, wenn der Test positiv ausfällt} \\\\
+  P_T(K) = \frac{P(K \cap T)}{P(T)} = \frac{P(K) \cdot P_K(T)}{P(K) \cdot P_K(T) + P(\overline{K}) \cdot P_{\overline{K}}(T)} \\\\
+  P(K) \cdot P_K(T) = P(T) \cdot P_T(K) \\
+  P(T) = P(K) \cdot P_K(T) + P(\overline{K}) \cdot P_{\overline{K}}(T) \\
+  \; = 0.0001 \cdot 0.9 + 0.9999 \cdot 0.02 \\
+  \;= 0.00009 + 0.02 \\
+  \;= 0.02009
+\end{gather*}
