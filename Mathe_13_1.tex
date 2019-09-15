@@ -458,3 +458,37 @@ $E$ und $F$ sind statistisch abhängig. \\
     P_\text{pünktlich}(\text{Bahn}) = \frac{0.5\overline{3}}{0.6} = 88.\overline{8}\%
   \end{gather*}
 \end{exercise}
+\begin{exercise}{479/5}
+  \begin{gather*}
+    P_{\text{krank}}(\text{negativ}) = 0.0001 \quad P_{\text{gesund}}(\text{positiv}) = 0.001 \\
+    P(\text{krank}) = \frac{100}{1100000} = 0.000\overline{09}
+  \end{gather*}
+  \begin{tabular}{c|c|c|c}
+    & krank & gesund & \\ \hline
+    positiv & $9.09 \cdot 10^{-5}$ & $9.99\overline{90} \cdot 10^{-4}$ & $0.0010908\overline{09}$ \\ \hline
+    negativ & $9.\overline{09} \cdot 10^{-9}$ & $0.998909\overline{18}$ & $0.989091\overline{09}$ \\ \hline
+    & $0.000\overline{09}$ & $0.999\overline{90}$ & $100\%$
+  \end{tabular}
+  \begin{gather*}
+    P_{\text{positiv}}(\text{krank}) = \frac{P(\text{krank} \cap \text{positiv})}{P(\text{positiv})} = \frac{9.09 \cdot 10^{-5}}{0.0010908\overline{09}} \approx 8.33\%
+  \end{gather*}
+\end{exercise}
+\newpage
+\begin{exercise}{479/6}
+  \item [a]
+  \begin{gather*}
+    B_1 = \{w_1, w_2, s_1, ... s_5\} \qquad B_2 = \{w_1, ..., w_4, s_1, ..., s_4\} \\\\
+    P(B_1) = P(B_2) = \frac{1}{2} \\
+    P_{B_1}(w) = \frac{2}{7} \qquad P_{B_1}(s) = \frac{5}{7} \qquad P_{B_2}(w) = P_{B_2}(s) = \frac{1}{2} \\
+    P(s) = P(B_1) \cdot P_{B_1}(s) + P(B_2) \cdot P_{B_2}(s) = \frac{17}{28} \\\\
+    P_s(B_1) = \frac{P(B_1) \cdot P_{B_1}(s)}{P(s)} \approx 58.82\% \\
+    P_s(B_2) = \frac{P(B_2) \cdot P_{B_2}(s)}{P(s)} \approx 41.18\%
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    P_{B_1}((s, s)) = \frac{5}{7} \cdot \frac{4}{6} = \frac{10}{21} \qquad P_{B_2}((s, s)) = \frac{1}{2} \cdot \frac{3}{7} = \frac{3}{14} \\
+    P((s, s)) = P(B_1) \cdot P_{B_1}((s, s)) + P(B_2) \cdot P_{B_2}((s, s)) = \frac{29}{84} \\\\
+    P_{(s, s)}(B_1) = \frac{P(B_1) \cdot P_{B_1}(s, s)}{P(s, s)} \approx 68.97\% \\
+    P_{(s, s)}(B_2) = \frac{P(B_2) \cdot P_{B_2}(s, s)}{P(s, s)} \approx 31.03\%
+  \end{gather*}
+\end{exercise}
