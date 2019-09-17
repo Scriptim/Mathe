@@ -492,3 +492,28 @@ $E$ und $F$ sind statistisch abhängig. \\
     P_{(s, s)}(B_2) = \frac{P(B_2) \cdot P_{B_2}(s, s)}{P(s, s)} \approx 31.03\%
   \end{gather*}
 \end{exercise}
+\section{Zufallsgrößen - Erwartungswert, Standardabweichung}
+Eine Zufallsgröße (eigentlich eine Funktion) weist jedem Element (Ergebnis) der Ergebnismenge $S$ eine Zahl oder einen Wert zu. \\\\
+Beispiel: Losbude. Die Urne enthält $1000$ Lose, darunter $50$ Trostpreise (Wert $1.50€$), $5$ größere Preise (Wert $4€$) und $1$ Hauptgewinn (Wert $10€$). Jedes Los kostet $1€$. \\
+Die Zufallsgröße $X$ hat vier Werte (Niete, Trostpreis, größerer Preis, Hauptgewinn) also $x_1$, $x_2$, $x_3$, $x_4$. Die Zufallsgröße zerlegt die Ergebnismenge vollständig und ohne Überlappung in Ereignisse. \\\\
+Wahrscheinlichkeitsverteilung: Notiere zu jedem Wert, den eine Zufallsgröße annehmen kann, die Wahrscheinlichkeit
+\begin{gather*}
+  P(X = x_1) = \frac{944}{1000} \qquad P(X = x_2) = \frac{50}{1000} \\
+  P(X = x_3) = \frac{5}{1000} \qquad P(X = x_4) = \frac{1}{1000}
+\end{gather*}
+Erwartungswert
+\begin{gather*}
+  \text{durchschnittlicher Bruttogewinn ohne Lospreis (Sicht des Spielers):} \\
+  \mu = 0€ \cdot \frac{944}{1000} + 1.50€ \cdot \frac{50}{1000} + 4€ \cdot \frac{5}{1000} + 10€ \cdot \frac{1}{1000} = 0.105€ \\\\
+  \text{durchschnittlicher Erlös, Nettogewinn inkl. Lospreis (Sicht der Losbude):} \\
+  \mu = 1€ \cdot 1 - 0€ \cdot \frac{944}{1000} - 1.50€ \cdot \frac{50}{1000} - 4€ \cdot \frac{5}{1000} - 10€ \cdot \frac{1}{1000} = 0.895€ \\\\
+  \text{allgemein:} \\
+  \mu = P(X = x_1) \cdot x_1 + P(X = x_2) \cdot x_2 + ... = \sum_{i = 1}^n P(X = x_i) \cdot x_i
+\end{gather*}
+Standardabweichung (mittl. Schwankungsbreite um den Erwartungswert herum)
+\begin{gather*}
+  \sigma = \sqrt{P(X = x_1) \cdot (x_1 - \mu)^2 + P(X = x_2) \cdot (x_2 - \mu)^2 + ...} \\
+  \;= \sqrt{\sum_{i = 1}^n P(X = x_2) \cdot (x_i - \mu)^2} \\
+  \;= \sqrt{\frac{944}{1000} \cdot (-0.105€)^2 + \frac{50}{1000} \cdot (1.395€)^2 + \frac{5}{1000} \cdot (3.895€)^2 + \frac{1}{1000} \cdot (9.895€)^2} \\
+  \;\approx 0.5305€
+\end{gather*}
