@@ -619,3 +619,57 @@ Notiere ich zu unserem Beispiel die Wahrscheinlichkeiten für $k = 0$ Treffer, $
     \end{axis}
   \end{tikzpicture}
 \end{gather*}
+\begin{exercise}{499/3}
+  \begin{gather*}
+    n = 8 \qquad p = \frac{1}{3} \qquad B(8, \frac{1}{3}, k) = (\frac{1}{3})^k \cdot (\frac{2}{3})^{8 - k} \cdot \begin{pmatrix}8 \\ k\end{pmatrix}
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    k = 4 \qquad B(8, \frac{1}{3}, 4) \approx 17.07\%
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    k \geq 4 \qquad \sum_{k = 4}^8 B(8, \frac{1}{3}, k) \approx 25.86\%
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    k \leq 3 \qquad \sum_{k = 0}^3 B(8, \frac{1}{3}, k) \approx 74.14\%
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    k > 4 \qquad \sum_{k = 5}^8 B(8, \frac{1}{3}, k) \approx 8.79\%
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{500/6}
+  \begin{gather*}
+    n = 6 \qquad p_G = \frac{3}{4} \qquad p_R = \frac{1}{4}
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    k = 2,\;p_G \qquad B(6, \frac{3}{4}, 2) \approx 3.30\%
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    k = 2,\;p_R \qquad B(6, \frac{1}{4}, 2) \approx 29.66\%
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    k \leq 2,\;p_G \qquad \sum_{k = 0}^2 B(6, \frac{3}{4}, k) \approx 3.76\%
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    k \geq 2,\;p_R \qquad \sum_{k = 2}^6 B(6, \frac{1}{4}, k) \approx 46.61\%
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{500/7}
+  \item [a]
+  \begin{gather*}
+    n = 10 \qquad p = 0.8 \qquad k \geq 8 \\
+    P = \sum_{k = 8}^{10} B(10, 0.8, k) \approx 67.78\%
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    n = 7 \qquad p = 0.75 \qquad k = 5 \text{ oder } 6 \\
+    P = B(7, 0.75, 5) + B(7, 0.75, 6) \approx 62.29\%
+  \end{gather*}
+\end{exercise}
