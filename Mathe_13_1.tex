@@ -575,3 +575,47 @@ Standardabweichung (mittl. Schwankungsbreite um den Erwartungswert herum)
     \sigma = \sqrt{(3 - 4.125)^2 \cdot \frac{1}{4} + (4 - 4.125)^2 \cdot \frac{3}{8} + (5 - 4.125)^2 \cdot \frac{3}{8}} \approx 0.781
   \end{gather*}
 \end{exercise}
+\subsection{Bernoulli-Experiment, Binomialverteilung}
+Ein Bernoulli-Experiment hat $2$ Versuchsausgänge (Treffer, Niete).
+$$P(\text{Treffer}) = p \qquad P(\text{Niete}) = q = 1 - p$$
+Eine Folge von Bernoulli-Experimenten heißt Bernoulli-Kette. \\\\
+Frage: Wie viele Treffer $k$ kommen bei einer Bernoulli-Kette der Länge $n$ vor? \\\\
+Beispiel: Würfle $10$ mal; wie wahrscheinlich sind $3$ Sechser?
+\begin{gather*}
+  n = 10 \qquad p = \frac{1}{6} \qquad k = 3 \\
+  P(\text{ein Pfad}) = (\frac{1}{6})^3 \cdot (\frac{5}{6})^7 \qquad \text{Anzahl der Pfade mit $3$ Treffern: } \begin{pmatrix}10 \\ 3\end{pmatrix} \\
+  P(\text{$3$ Sechser, $10$ Würfe}) = (\frac{1}{6})^3 \cdot (\frac{5}{6})^7 \cdot \begin{pmatrix}10 \\ 3\end{pmatrix} \approx 0.1550
+\end{gather*}
+Allgemein gilt:
+\begin{gather*}
+  P(k, n, p) = p^k \cdot (1 - p)^{n - k} \cdot \begin{pmatrix}n \\ k\end{pmatrix}
+\end{gather*}
+Schreibweise:
+\begin{gather*}
+  P(k, n, p) \qquad\Rightarrow\qquad B(n, p, k) \quad\text{oder}\quad B_{n; p}(k)
+\end{gather*}
+Notiere ich zu unserem Beispiel die Wahrscheinlichkeiten für $k = 0$ Treffer, $k = 1$ Treffer, ..., $k = 10$ Treffer, so ist das die Wahrscheinlichkeitsverteilung einer Bernoulli-Kette mit $n = 10$ Versuchen. Man nennt diese Wahrscheinlichkeitsverteilung Binomialverteilung. \\
+\begin{gather*}
+  B(0, 10, \frac{1}{6}) \approx 0.16151 \qquad B(1, 10, \frac{1}{6}) \approx 0.32301 \\
+  B(2, 10, \frac{1}{6}) \approx 0.29071 \qquad B(3, 10, \frac{1}{6}) \approx 0.15504 \\
+  B(4, 10, \frac{1}{6}) \approx 5.4265 \cdot 10^{-2} \qquad B(5, 10, \frac{1}{6}) \approx 1.3024 \cdot 10^{-2} \\
+  B(6, 10, \frac{1}{6}) \approx 2.1706 \cdot 10^{-3} \qquad B(7, 10, \frac{1}{6}) \approx 2.4807 \cdot 10^{-4} \\
+  B(8, 10, \frac{1}{6}) \approx 1.8605 \cdot 10^{-5} \qquad B(9, 10, \frac{1}{6}) \approx 8.2691 \cdot 10^{-7} \\
+  B(10, 10, \frac{1}{6}) \approx 1.6538 \cdot 10^{-8}
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      xlabel=$k$,
+      ylabel=$B$,
+      xtick={0, ..., 10}
+      ]
+      \addplot+[
+      scatter src=explicit
+      ] coordinates {
+      (0,0.16151) (1,0.32301) (2,0.29071) (3,0.15504) (4,5.4265e-2) (5,1.3024e-2) (6,2.1706e-3) (7,2.4807e-4) (8,1.8605e-5) (9,8.2691e-7) (10,1.6538e-8)
+      };
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
