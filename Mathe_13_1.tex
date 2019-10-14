@@ -729,3 +729,65 @@ Notiere ich zu unserem Beispiel die Wahrscheinlichkeiten für $k = 0$ Treffer, $
     \text{\Rmnum{5}} \colon B_{16;0.9}(12 \leq X \leq 15) \approx 0.79769
   \end{gather*}
 \end{exercise}
+\begin{exercise}{504/5}
+  \begin{gather*}
+    p = 0.03 \\\\
+    \text{A} \colon \quad n = 10 \qquad k = 0 \\
+    B_{10;0.03}(X = 0) \approx 0.73742 \\\\
+    \text{B} \colon \quad n = 20 \qquad k \geq 1 \\
+    B_{20;0.03}(X \geq 1) = 1 - B_{20;0.03}(X = 0) \approx 0.45621 \\\\
+    \text{C} \colon \quad n = 50 \qquad k > 1 \\
+    B_{50;0.03}(X > 1) = 1 - (B_{50;0.03}(X = 0) + B_{50;0.03}(X = 1)) \approx 0.44472
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{504/6}
+  \begin{gather*}
+    n = 10 \qquad p = 0.7 \\
+    B_{10;0.7}(k) = 0.7^k \cdot 0.3^{10 - k} \cdot \begin{pmatrix}10 \\ k\end{pmatrix}
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    P(X = 4) \approx 0.03676 \\
+    P(X \leq 9) \approx 0.97175 \\
+    P(X < 8) = P(X \leq 7) \approx 0.61722
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    P(X \geq 9) = 1 - P(X \leq 8) \approx 0.14931
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    P(X \geq 8) = 1 - P(X \leq 7) \approx 0.38278 \\
+    P(6 \leq X \leq 9) = P(X \leq 9) - P(X \leq 5) = 0.82148
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{508/6}
+  \begin{gather*}
+    n = 100 \qquad p = \frac{1}{6} \\
+    B_{100;\frac{1}{6}}(k) = (\frac{1}{6})^k \cdot (\frac{5}{6})^{100 - k} \cdot \begin{pmatrix}100 \\ k\end{pmatrix}
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    B_{100;\frac{1}{6}}(X = 15) \approx 0.10024
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    B_{100;\frac{1}{6}}(X \geq 25) \approx 0.02170
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    B_{100;\frac{1}{6}}(15 \leq X \leq 25) \approx 0.70070
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{508/7}
+  \begin{gather*}
+    p = 0.05 \qquad n = 20 \qquad k \geq 2 \\
+    B_{20;0.05}(X \geq 2) \approx 0.26416
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{508/8}
+  \begin{gather*}
+    p = \frac{1}{3} \qquad n = 100 \qquad k > 33 \\
+    B_{100;\frac{1}{3}}(X > 33) \approx 0.48120
+  \end{gather*}
+\end{exercise}
