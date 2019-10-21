@@ -791,3 +791,72 @@ Notiere ich zu unserem Beispiel die Wahrscheinlichkeiten für $k = 0$ Treffer, $
     B_{100;\frac{1}{3}}(X > 33) \approx 0.48120
   \end{gather*}
 \end{exercise}
+\subsection{Anwendungen der Binomialverteilung}
+S. 509, Bsp. 2
+\begin{gather*}
+  P(k \geq 1) \geq 0.90 \\
+  P(k = 0) < 0.10 \\
+  0.96^n < 0.10 \equ log \\
+  n \cdot log(0.96) < log(0.10) \equ \colon log(0.96) < 0 \\
+  n > \frac{log(0.10)}{log(0.96)} \\
+  n > 56.4... \qquad \text{also } n = 57
+\end{gather*}
+\begin{exercise}{510/3}
+  \begin{gather*}
+    n = 50 \qquad p = 0.9
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    P(X > 48) \approx 0.03379
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    P(X \leq 46) \approx 0.74971
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    n = 51 \\
+    P(X > 48) \approx 0.10393 \\
+    \Rightarrow \text{auch bei $51$ Buchungen ist eine Überbuchung unwahrscheinlich}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{511/5}
+  \item [a]
+  \begin{gather*}
+    p = \frac{1}{6} \\
+    P(X \geq 1) \geq 0.99 \\
+    P(X = 0) < 0.01 \\
+    (\frac{5}{6})^n < 0.01 \equ log; \colon log(\frac{5}{6}) < 0 \\
+    n > \frac{log(0.01)}{log(\frac{5}{6})} \approx 25.3 \\
+    \Rightarrow n = 26
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    p = \frac{3}{6} = \frac{1}{2} \\
+    P(X \geq 1) \geq 0.99 \\
+    P(X = 0) < 0.01 \\
+    (\frac{1}{2})^n < 0.01 \equ log; \colon log(\frac{1}{2}) < 0 \\
+    n > \frac{log(0.01)}{log(\frac{1}{2})} \approx 6.6 \\
+    \Rightarrow n = 7
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{511/6}
+  \item [a]
+  \begin{gather*}
+    n = 5 \qquad r = 1 \\
+    P(X \geq 1) \geq 0.75 \\
+    P(X = 0) < 0.25 \\
+    (1 - p)^5 < 0.25 \equ ()^\frac{1}{5} \\
+    1 - p < 0.25^\frac{1}{5} \equ -1; \cdot (-1) \\
+    p > -(0.25^\frac{1}{5} - 1) \approx 0.24214
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    n = 100 \qquad r = 1 \\
+    P(X \geq 1) \geq 0.75 \\
+    P(X = 0) < 0.25 \\
+    (1 - p)^100 < 0.25 \equ ()^\frac{1}{100} \\
+    1 - p < 0.25^\frac{1}{100} \equ -1; \cdot (-1) \\
+    p > -(0.25^\frac{1}{100} - 1) \approx 0.01377
+  \end{gather*}
+\end{exercise}
