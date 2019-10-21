@@ -882,3 +882,57 @@ S. 509, Bsp. 2
     \Rightarrow n = 45
   \end{gather*}
 \end{exercise}
+\subsection{Erwartungswert $\mu$, Standardabweichung $\sigma$}
+Für alle Binomialverteilungen gilt:
+\begin{gather*}
+  \mu = n \cdot p \qquad \sigma = \sqrt{n \cdot p \cdot (1 - p)}
+\end{gather*}
+\begin{exercise}{515/6}
+  \item [a]
+  \begin{gather*}
+    n = 3 \qquad p \text{ beliebig} \\\\
+    \mu = P(X = x_0) \cdot x_0 + P(X = x_1) \cdot x_1 + \cdots \\
+    \sigma = \sqrt{P(X = x_1) \cdot (x_0 - \mu)^2 + P(X = x_1) \cdot (x_1 - \mu)^2 + \dots} \\\\
+    P(X = k) = p^k \cdot (1 - p)^{n - k} \cdot \begin{pmatrix}n \\ k\end{pmatrix} \\\\
+    \mu = P(X = 0) \cdot 0 + P(X = 1) \cdot 1 + P(X = 2) \cdot 2 + P(X = 3) \cdot 3 \\
+    \;= 0 + p \cdot (1 - p)^2 \cdot 3 + p^2 \cdot (1 - p) \cdot 6 + p^3 \cdot 3 \\
+    \;= 3 \cdot p \cdot ((1 - p)^2 + p \cdot (1 - p) \cdot 2 + p^2) \\
+    \;= 3 \cdot p \cdot (p^2 - 2p + 1 + 2p - 2p^2 + p^2) \\
+    \;= 3 \cdot p = n \cdot p
+  \end{gather*}
+  \begin{gather*}
+    \sigma = \sqrt{
+      \begin{aligned}
+        &P(X = 0) \cdot (0 - 3p)^2 + P(X = 1) \cdot (1 - 3p)^2 \\
+        &+ P(X = 2) \cdot (2 - 3p)^2 + P(X = 3) \cdot (3 - 3p)^2
+      \end{aligned}
+    } \\
+    \;= \sqrt{
+      \begin{aligned}
+        &(1 - p)^3 \cdot 9p^2 + 3p \cdot (1 - p)^2 \cdot (1 - 3p)^2 \\
+        &+ 3p^2 \cdot (1 - p) \cdot (2 - 3p)^2 + p^3 \cdot (3 - 3p)^2
+      \end{aligned}
+    } \\
+    \;= \sqrt{
+      \begin{aligned}
+        &9p^2 \cdot (1 - p)^3 + 27p^3 \cdot (1 - p)^2 - 18p^2 \cdot (1 - p)^2 + 3p \cdot (1 - p)^2 \\
+        &+ 27p^4 \cdot (1 - p) - 36p^3 \cdot (1 - p) + 12p^2 \cdot (1 - p) + 9p^5 - 18p^4 + 9p^3
+      \end{aligned}
+    } \\
+    \;= \sqrt{
+      \begin{aligned}
+        &3 \cdot p \cdot (3p \cdot (1 - p)^3 + 9p^2 \cdot (1 - p)^2 - 6p \cdot (1 - p)^2 + (1 - p)^2 \\
+        &9p^3 \cdot (1 - p) - 12p^2 \cdot (1 - p) + 4p \cdot (1 - p) + 3p^4 - 6p^3 + 3p^2)
+      \end{aligned}
+    } \\
+    \;= \sqrt{
+      \begin{aligned}
+        &3 \cdot p \cdot (-3p^4 + 9p^3 - 9p^2 + 3p + 9p^4 - 18p^3 + 9p^2 \\
+        &- 6p^3 + 12p^2 - 6p + p^2 - 2p + 1 \\
+        &+ 9p^3 - 9p^4 + 12p^3 - 12p^2 + 4p - 4p^2 \\
+        &+ 3p^4 - 6p^3 + 3p^2)
+      \end{aligned}
+    } \\
+    \;= \sqrt{3 \cdot p \cdot (1 - p)} = \sqrt{n \cdot p \cdot (1 - p)}
+  \end{gather*}
+\end{exercise}
