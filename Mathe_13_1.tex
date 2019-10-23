@@ -984,3 +984,21 @@ Für alle Binomialverteilungen gilt:
     P_{2\sigma} = P(10 \leq X \leq 24) = P(X \leq 24) - P(X \leq 9) \approx 0.95700
   \end{gather*}
 \end{exercise}
+\subsection{\texorpdfstring{$\sigma$}{Sigma}-Umgebung}
+Alle Binomialverteilungen sind ähnlich in dem Sinne:
+\begin{itemize}
+  \item Der Erwartungswert $\mu$ wird mit größter Wahrscheinlichkeit getroffen.
+  \item Die Wahrscheinlichkeit verteilt sich in der Nähe des Erwartungswerts $\mu$ in gleicher Weise. \\\\
+  Es gilt: $P(\mu - \sigma \leq X \leq \mu + \sigma) \approx 68.3\%$ \qquad ($1\sigma$-Umgebung um $\mu$)
+  \begin{gather*}
+    \text{Beispiel} \\
+    n = 100 \qquad p = 0.5 \\
+    \mu = 50 \qquad \sigma = 5 \\\\
+    P_\sigma = P(\mu - \sigma \leq X \leq \mu + \sigma) \approx 68.3\% \qquad \text{($1\sigma$-Umgebung)} \\
+    \;= P(45 \leq X \leq 55) \approx 72.87\% \\\\
+    P_{2\sigma} = P(\mu - 2\sigma \leq X \leq \mu + 2\sigma) \approx 95.4\% \qquad \text{($2\sigma$-Umgebung)} \\
+    \;= P(40 \leq X \leq 60) \approx 96.8\% \\\\
+    P_{3\sigma} = P(\mu - 3\sigma \leq X \leq \mu + 3\sigma) \approx 99.7\% \qquad \text{($3\sigma$-Umgebung)} \\
+    \;= P(35 \leq X \leq 65) \approx 99.8\%
+  \end{gather*}
+\end{itemize}
