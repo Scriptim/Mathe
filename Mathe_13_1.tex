@@ -1117,6 +1117,80 @@ Alle Binomialverteilungen sind ähnlich in dem Sinne:
   a^{x_2 - x_1} = \frac{y_2}{y_1} \equ ()^\frac{1}{x_2 - x_1} \\
   a = (\frac{y_2}{y_1})^\frac{1}{x_2 - x_1}
 \end{gather*}
+\subsection*{Kurvendiskussion: Extrema}
+\begin{gather*}
+  f(x) = x^8 \qquad f'(x) = 8x^7 \qquad f''(x) = 56x^6 \\
+  f'(0) = 0 \qquad f''(0) = 0
+\end{gather*}
+Umgebungsuntersuchung: Untersuche $x$ links und rechts des gefundenen Kandidaten $x_0 = 0 \Rightarrow x_1 = -1;\; x_2 = 1$ mit Hilfe von $f'(x)$:
+\begin{gather*}
+  f'(-1) = -8 \qquad f'(0) = 0 \qquad f'(1) = 8 \qquad \text{also } TP(0|0)
+\end{gather*}
+\subsubsection*{AB Exponentialfunktionen}
+\begin{exercise}{AB/3}
+  \begin{gather*}
+    f_a(x) = \frac{1}{2}x + ae^{-x} \qquad a > 0
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    f_a'(x) = \frac{1}{2} - ae^{-x} = 0 \quad\Rightarrow\quad x = -ln(\frac{1}{2a}) \\\\
+    f_a''(x) = ae^{-x} \qquad f_a''(-ln(\frac{1}{2a})) = ae^{ln(\frac{1}{2a})} = \frac{1}{2} > 0 \\\\
+    TP(-ln(\frac{1}{2a})|f_a(-ln(\frac{1}{2a})) = \frac{ln(2a) + 1}{2})
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \frac{ln(2a) + 1}{2} = 0 \quad\Rightarrow\quad a = e^{-1 - ln(2)} = \frac{1}{2e} \quad\Rightarrow\quad TP(-1|0) \\\\
+    \frac{ln(2a) + 1}{2} = \frac{1}{2} \quad\Rightarrow\quad a = e^{-ln(2)} = \frac{1}{2} \quad\Rightarrow\quad TP(0|\frac{1}{2})
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        scale only axis,
+        axis lines=middle,
+        xlabel=$x$,
+        ylabel=$f_a(x)$
+        ]
+        \addplot[
+        domain=-3:7,
+        samples=100,
+        color=red
+        ]{1/2 * x + 1/2 * e^-x}
+        node [pos=0, right] {$a = \frac{1}{2}$};
+        \addplot[
+        domain=-3:7,
+        samples=100,
+        color=blue
+        ]{1/2 * x + 2 * e^-x}
+        node [pos=0.1, right] {$a = 2$};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f_a(0) = \frac{1}{2} \cdot 0 + ae^{-0} = a \quad\Rightarrow\quad P_a(0|a)
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f_a(0) = a \qquad f_a'(0) = \frac{1}{2} - ae^{-0} = \frac{1}{2} - a \\
+    t_a(x) = f_a'(0) \cdot x + f_a(0) = (\frac{1}{2} - a) \cdot x + a \\\\
+    t_{a_1}(x_Q) = t_{a_2}(x_Q) \\
+    (\frac{1}{2} - a_1) \cdot x_Q + a_1 = (\frac{1}{2} - a_2) \cdot x_Q + a_2\\
+    \frac{1}{2} - a_1 + a_1 = \frac{1}{2} - a_2 + a_2 \qquad \text{für } x_Q = 1 \\
+    \frac{1}{2} = \frac{1}{2} \qquad\Rightarrow\quad Q(1|\frac{1}{2})
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{AB/32}
+  \begin{gather*}
+    f_a(x) = e^{2x} - a \cdot e^x \\
+    f_a'(x) = 2 \cdot e^{2x} - a \cdot e^x \\
+    f_a''(x) = 4 \cdot e^{2x} - a \cdot e^x = 0 \quad\Rightarrow\quad x = ln(\frac{a}{4}) \\
+    f_a'''(x) = 8 \cdot e^{2x} - a \cdot e^x \\
+    f_a'''(ln(\frac{a}{4})) = \frac{a^2}{4} > 0 \quad\Rightarrow\quad RLWP(ln(\frac{a}{4})|f_a(ln(\frac{a}{4})) = -\frac{3a^2}{16}) \\\\
+    x = ln(\frac{a}{4}) \quad\Rightarrow\quad a = 4e^x \\
+    y = -\frac{3 \cdot (4e^x)^2}{16} = -3e^{2x}
+  \end{gather*}
+\end{exercise}
 \newpage
 
 
