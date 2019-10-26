@@ -1002,3 +1002,121 @@ Alle Binomialverteilungen sind ähnlich in dem Sinne:
     \;= P(35 \leq X \leq 65) \approx 99.8\%
   \end{gather*}
 \end{itemize}
+\newpage
+\section*{Einschub: Analysis (Wiederholung)}
+\subsection*{Ableitungen}
+\begin{gather*}
+  f(x) = g \cdot h \qquad f'(x) = g' \cdot h + g \cdot h' \qquad \text{Produktregel} \\
+  f(x) = g(h(x)) \qquad f'(x) = g'(h(x)) \cdot h'(x) \qquad \text{Kettenregel} \\
+  f(x) = \frac{g}{h} \qquad f'(x) = \frac{g' \cdot h - g \cdot h'}{h^2} \qquad \text{Quotientenregel}
+\end{gather*}
+\begin{exercise}{135/4}
+  \item [a]
+  \begin{gather*}
+    f(x) = 0.25 \cdot sin(2x + \pi) \\
+    f'(x) = 0.25 \cdot cos(2x + \pi) \cdot 2 = -0.5 \cdot cos(2x)
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{2}{3} \cdot sin(\pi - 3x) \\
+    f'(x) = \frac{2}{3} \cdot cos(\pi - 3x) \cdot (-3) = 2 \cdot cos(3x)
+  \end{gather*}
+  \item [e]
+  \begin{gather*}
+    f(x) = \sqrt{3x} = \sqrt{3} \cdot \sqrt{x} \\
+    f'(x) = \frac{1}{2 \cdot \sqrt{3x}} \cdot 3 = \frac{3}{2 \cdot \sqrt{3x}}
+  \end{gather*}
+  \item [h]
+  \begin{gather*}
+    f(x) = \sqrt{7x^2 - 5} \\
+    f'(x) = 0.5 \cdot \frac{1}{\sqrt{7x^2 - 5}} \cdot 14x = \frac{7x}{\sqrt{7x^2 - 5}}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{138/1}
+  \item [a]
+  \begin{gather*}
+    f(x) = x \cdot sin(x) \\
+    f'(x) = sin(x) + x \cdot cos(x)
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = (2x - 3) \cdot \sqrt{x} \\
+    f'(x) = 2 \cdot \sqrt{x} + (2x - 3) \cdot \frac{1}{2 \cdot \sqrt{x}} = \frac{3 \cdot (2x - 1)}{2 \cdot \sqrt{x}}
+  \end{gather*}
+  \item [g]
+  \begin{gather*}
+    f(x) = \frac{2}{x} \cdot cos(x) \\
+    f'(x) = -\frac{2}{x^2} \cdot cos(x) + \frac{2}{x} \cdot (-sin(x)) = \frac{-2 \cdot (cos(x) + sin(x) \cdot x)}{x^2}
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = \frac{1}{\sqrt{x}} \cdot cos(x) \\
+    f'(x) = -\frac{1}{2 \cdot \sqrt{x^3}} \cdot cos(x) + \frac{1}{\sqrt{x}} \cdot (-sin(x)) = \frac{-cos(x) - 2x \cdot sin(x)}{2 \cdot \sqrt{x^3}}
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{140/3}
+  \item [a]
+  \begin{gather*}
+    l(x) = \frac{x^2 - 1}{(x + 4)^2} \qquad ((x + 4)^2)' = 2 \cdot (x + 4) \\
+    l'(x) = \frac{2x \cdot (x + 4)^2 - (x^2 - 1) \cdot 2 \cdot (x + 4)}{((x + 4)^2)^2} \\
+    \;= \frac{2x \cdot (x + 4) - 2 \cdot (x^2 - 1)}{(x + 4)^3} = \frac{2x^2 + 8x - 2x^2 - 2}{(x + 4)^3} \\
+    \;= \frac{8x - 2}{(x + 4)^3}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    m(x) = \frac{sin(3x)}{x - 1} \qquad (sin(3x))' = 3 \cdot cos(3x) \\
+    m'(x) = \frac{3 \cdot cos(3x) \cdot (x - 1) - sin(3x) \cdot 1}{(x - 1)^2} \\
+    \;= \frac{3 \cdot cos(3x) \cdot (x - 1) - sin(3x)}{(x - 1)^2}
+  \end{gather*}
+\end{exercise}
+\subsection*{Exponentialfunktionen}
+\begin{exercise}{232/3}
+  \item [b]
+  \begin{gather*}
+    \frac{f(1) - f(0)}{f(0)} = \frac{20}{236} \approx 0.08475 \qquad\qquad 2002 \longrightarrow 2003 \\
+    \frac{f(2) - f(1)}{f(1)} = \frac{35}{256} \approx 0.13672 \qquad\qquad 2003 \longrightarrow 2004 \\
+    \frac{f(3) - f(2)}{f(2)} = \frac{81}{291} \approx 0.27835 \qquad\qquad 2004 \longrightarrow 2005 \\
+    \frac{f(4) - f(3)}{f(3)} = \frac{82}{372} \approx 0.22043 \qquad\qquad 2005 \longrightarrow 2006 \\
+    \frac{f(5) - f(4)}{f(4)} = \frac{106}{454} \approx 0.23348 \qquad\qquad 2006 \longrightarrow 2007 \\\\
+    a \approx \frac{0.08475 + 0.13672 + 0.27835 + 0.22043 + 0.23348}{5} \approx 0.19075 \\\\ % 0.19074506238282347949
+    f(x) = 236 \cdot 1.19075^x = 236 \cdot e^{x \cdot ln(1.19075)} \approx 236 \cdot e^{0.17457x}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        scale only axis,
+        axis lines=middle,
+        xlabel=$x$,
+        ylabel=$f(x)$
+        ]
+        \addplot[
+        domain=0:5,
+        samples=20,
+        color=red
+        ]{210 * 1.19075^x};
+        \addplot[
+        mark=square,
+        color=blue,
+        only marks
+        ]coordinates {(0,236)(1,256)(2,291)(3,372)(4,454)(5,560)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \begin{gather*}
+    f(13) = 236 \cdot 1.19075^{13} \approx 2283 \qquad\qquad (2015)
+  \end{gather*}
+\end{exercise}
+\subsubsection*{Besprechung}
+\begin{gather*}
+  (x_1|y_1) \qquad (x_2|y_2) \\
+  y = c \cdot a^x \\\\
+  y_1 = c \cdot a^{x_1} \qquad y_2 = c \cdot a^{x_2} \\
+  c = y_1 \cdot a^{-x_1} \qquad c = y_2 \cdot a^{-x_2} \\\\
+  y_1 \cdot a^{-x_1} = y_2 \cdot a^{-x_2} \equ \colon y_1; \colon a^{-x_2} \\
+  a^{-x_1} \cdot a^{-x_2} = \frac{y_2}{y_1} \\
+  a^{x_2 - x_1} = \frac{y_2}{y_1} \equ ()^\frac{1}{x_2 - x_1} \\
+  a = (\frac{y_2}{y_1})^\frac{1}{x_2 - x_1}
+\end{gather*}
+\newpage
+
+
