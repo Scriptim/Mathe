@@ -1191,6 +1191,54 @@ Umgebungsuntersuchung: Untersuche $x$ links und rechts des gefundenen Kandidaten
     y = -\frac{3 \cdot (4e^x)^2}{16} = -3e^{2x}
   \end{gather*}
 \end{exercise}
+\begin{exercise}{AB/6}
+  \begin{gather*}
+    f(x) = (3 - x) \cdot e^x
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    f(x) = (3 - x) \cdot e^x = 0 \qquad\Rightarrow\quad x = 3 \\\\
+    f'(x) = (2 - x) \cdot e^x = 0 \qquad\Rightarrow\quad x = 2 \\
+    f''(x) = (1 - x) \cdot e^x \qquad f''(2) = -\frac{1}{e} < 0 \\
+    \Rightarrow\quad HP(2|f(2) = e^2) \\\\
+    f''(x) = (1 - x) \cdot e^x = 0 \qquad\Rightarrow\quad x = 1 \\
+    f'''(x) = -x \cdot e^x \qquad f'''(1) = -e < 0 \\
+    \Rightarrow\quad LRWP(1|f(1) = 2e)
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        scale only axis,
+        axis lines=middle,
+        xlabel=$x$,
+        ylabel=$f(x)$
+        ]
+        \addplot[
+        domain=-1:3,
+        samples=100,
+        color=red
+        ]{(3 - x) * e^x};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    A(x) = \frac{1}{2} \cdot x \cdot f(x) = \frac{1}{2} \cdot x \cdot (3 - x) \cdot e^x = \frac{3x - x^2}{2} \\
+    A'(x) = \frac{1}{2} \cdot e^x \cdot (-x^2 + x + 3) = 0 \\
+    -x^2 + x + 3 = 0 \quad\Rightarrow\quad x_{1/2} = \frac{1}{2} \cdot (1 \pm \sqrt{13}) \\
+    x_1 \approx 2.30278 \qquad (x_2 \approx -1.30278) \\\\
+    P(2.30278|f(2.30278) \approx 6.97357)
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    f(x) = (3 - x) \cdot e^x \qquad f'(x) = (2 - x) \cdot e^x \qquad f''(x) = (1 - x) \cdot e^x \\
+    F(X) = (4 - x) \cdot e^x
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    A_{ges} = \int_0^3 f(x) \cdot dx = F(3) - F(0) = e^3 - 4 \approx 16.08554 \\
+    A_{Teil} = \frac{1}{2} \cdot 3 \cdot 3 = 4.5 \\
+    \frac{A_{ges} - A_{Teil}}{A_{ges}} \approx 0.72025 \approx 72\%
+  \end{gather*}
+\end{exercise}
 \newpage
-
-
