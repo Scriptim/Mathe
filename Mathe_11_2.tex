@@ -829,7 +829,7 @@ $$f(x) = y = a \cdot sin(b(x - c)) + d$$
 \begin{gather*}
   k(x) = f(x) \cdot g(x) \\
   k'(x) = \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x)}{h} \\
-  \;= \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) {\color{red}- f(x \cdot g(x + h) + f(x) \cdot g(x + h)} - f(x) \cdot g(x)}{h} \\
+  \;= \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) {\color{red}- f(x) \cdot g(x + h) + f(x) \cdot g(x + h)} - f(x) \cdot g(x)}{h} \\
   \;= \lim\limits_{h \to 0} \frac{{\color{blue}[f(x + h) - f(x)]} \cdot g(x + h) + f(x) \cdot {\color{violet}[g(x + h) - g(x)]}}{h} \\
   \;= \boldsymbol{{\color{blue}f'(x)} \cdot g(x) + f(x) \cdot {\color{violet}g'(x)}}
 \end{gather*}
