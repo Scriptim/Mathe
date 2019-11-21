@@ -1283,3 +1283,41 @@ Mache den Zufallsversuch: $k = 73$
 \end{gather*}
 Ich nehme die Alternative $H_1$ als wahr an, da sie im Annahmebereich von $H_1$ (Ablehnungsbereich von $H_0$) liegt. Der mögliche Fehler dieser Entscheidung ist höchstens $5\%$ (Signifikanzniveau). Genauer ist der mögliche Fehler (Fehler 1. Art) die Wahrscheinlichkeit $P(k \geq 60) \approx 2.84\%$. \\
 Rechtsseitiger Signifikanztest, da der Annahmebereich von $H_1$ rechts liegt (große $k$).
+\begin{exercise}{522/1}
+  \item [a]
+  \begin{gather*}
+    \text{r-T: } p_0 = 0.5 \quad n = 50 \quad \alpha = 5\% \\
+    H_0 \colon p = p_0 \qquad H_1 \colon p > p_0 \\
+    \mu = 50 \cdot 0.5 = 25 \qquad \sigma = \sqrt{50 \cdot 0.5 \cdot (1 - 0.5)} \approx 3.53553 \\
+    \mu + 1.64 \cdot \sigma \approx 30.79828 \approx 31 \\
+    \text{Annahmebereiche: } \quad H_0 \colon [0; 31] \qquad H_1 \colon [32; 50] \\
+    P(X \geq 32) \approx 3.25\%
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \text{l-T: } p_0 = 0.5 \quad n = 50 \quad \alpha = 5\% \\
+    H_0 \colon p = p_0 \qquad H_1 \colon p < p_0 \\
+    \mu = 50 \cdot 0.5 = 25 \qquad \sigma = \sqrt{50 \cdot 0.5 \cdot (1 - 0.5)} \approx 3.53553 \\
+    \mu - 1.64 \cdot \sigma \approx 19.20172 \approx 19 \\
+    \text{Annahmebereiche: } \quad H_0 \colon [19; 50] \qquad H_1 \colon [0; 18] \\
+    P(X \leq 18) \approx 3.25\%
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{522/2}
+  \item [a]
+  \begin{gather*}
+    \text{r-T: } p_0 = \frac{2}{3} \quad \alpha = 5\% \quad n = 25 \quad k = 20 \\
+    H_0 \colon p \leq p_0 \qquad H_1 \colon p > p_0 \\
+    \mu = 25 \cdot \frac{2}{3} = 16\frac{2}{3} \qquad \sigma = \sqrt{25 \cdot \frac{2}{3} \cdot (1 - \frac{2}{3})} \approx 2.35702 \\
+    \mu + 1.64 \cdot \sigma \approx 20.53218 \approx 21 \\
+    \text{Annahmebereich: } [0; 21] \quad\Rightarrow\quad \text{$H_0$ angenommen}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    \text{l-T: } p_0 = 0.5 \quad \alpha = 1\% \quad n = 25 \quad k = 10 \\
+    H_0 \colon p \geq p_0 \qquad H_1 \colon p < p_0 \\
+    \mu = 25 \cdot 0.5 = 12.5 \qquad \sigma = \sqrt{25 \cdot 0.5 \cdot (1 - 0.5)} = 2.5 \\
+    \mu - 2.33 \cdot \sigma = 6.675 \approx 6 \\
+    \text{Annahmebereich: } [6; 25] \quad\Rightarrow\quad \text{$H_0$ angenommen}
+  \end{gather*}
+\end{exercise}
