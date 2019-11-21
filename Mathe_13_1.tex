@@ -1266,3 +1266,20 @@ Alle Binomialverteilungen sind ähnlich:
     P(1 \leq X \leq 4) = P(4) - P(0) \approx 0.83022
   \end{gather*}
 \end{exercise}
+\subsection{Signifikanztest (einseitig)}
+Beispiel: Eine verbeulte Münze wird wiederholt geworfen. Dabei kommt der Verdacht auf, dass ``Zahl'' häufiger als ``Kopf'' fällt. Um den Verdacht zu erhärten, mache ich einen Signifikanztest:
+\begin{gather*}
+  100\text{ Würfe:} \quad n = 100 \\
+  \text{Null-Hypothese: } H_0 \colon p = 0.5 \qquad P(\text{``Zahl''}) \\
+  \text{Alternative: } H_1 \colon p > 0.5 \\
+  \text{Signifikanzniveau: } 5\%
+\end{gather*}
+Mache den Zufallsversuch: $k = 73$
+\begin{gather*}
+  \mu = 100 \cdot 0.5 = 50 \qquad \sigma = \sqrt{100 \cdot 0.5 \cdot (1 - 0.5)} = 5 \\\\
+  \text{Signifikanzniveau } 5\% \quad\Rightarrow\quad 1.64 \cdot \sigma = 8.2 \\
+  \text{Annahmebereich für $H_0$ ist } [0; 59] \\
+  \text{Annahmebereich für $H_1$ ist } [60; 100]
+\end{gather*}
+Ich nehme die Alternative $H_1$ als wahr an, da sie im Annahmebereich von $H_1$ (Ablehnungsbereich von $H_0$) liegt. Der mögliche Fehler dieser Entscheidung ist höchstens $5\%$ (Signifikanzniveau). Genauer ist der mögliche Fehler (Fehler 1. Art) die Wahrscheinlichkeit $P(k \geq 60) \approx 2.84\%$. \\
+Rechtsseitiger Signifikanztest, da der Annahmebereich von $H_1$ rechts liegt (große $k$).
