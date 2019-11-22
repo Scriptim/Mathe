@@ -1321,3 +1321,24 @@ Rechtsseitiger Signifikanztest, da der Annahmebereich von $H_1$ rechts liegt (gr
     \text{Annahmebereich: } [6; 25] \quad\Rightarrow\quad \text{$H_0$ angenommen}
   \end{gather*}
 \end{exercise}
+\subsubsection{Mögliche Fehler beim Testen}
+\begin{itemize}
+  \item Annahme $H_0$ $\rightarrow$ $H_0$ ist wahr
+  \item Annahme $H_0$ $\rightarrow$ $H_0$ ist unwahr (Was ist aber wahr?) \\\\
+  Aufgrund des Testergebnisses nehme ich einen neuen ``vernünftigen'' Wert für $p$ an. \\\\
+  Beispiel (verbeulte Münze):
+  \begin{gather*}
+    H_0 \colon p = 0.5 \qquad H_1 \colon p > 0.5 \qquad \alpha = 5\% \\
+    n = 100 \qquad \mu = 50 \qquad \sigma = 5 \\
+    \text{Annahmebereich für $H_0$: } [0; 59] \\
+    \text{Test ergibt $k = 59$, also nehme ich $H_0$ an.} \\
+    \text{``vernünftige'' Annahme, z. B. } p = 0.65 \\\\
+    \text{möglicher Fehler: } P_{0.65}(X \in [0; 59]) \approx 12.50\%
+  \end{gather*}
+  Fehler 2. Art
+  \item Annahme $H_1$ $\rightarrow$ $H_1$ ist wahr
+  \item Annahme $H_1$ $\rightarrow$ $H_1$ ist unwahr \\\\
+  möglicher Fehler höchstens das Signifikanzniveau \\
+  $\rightarrow$ genauer: $P(\text{Annahmebereich von $H_1$})$ \\\\
+  Fehler 1. Art
+\end{itemize}
