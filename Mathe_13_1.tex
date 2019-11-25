@@ -1381,3 +1381,55 @@ Rechtsseitiger Signifikanztest, da der Annahmebereich von $H_1$ rechts liegt (gr
     p = 0.9 \qquad P_{0.9}(X \leq 59) \approx 0.00\%
   \end{gather*}
 \end{exercise}
+\subsection{Näherung durch die Normalverteilung}
+ab $\sigma = 3$ darf man nähern
+\begin{gather*}
+  P(x = k) = B_{n; p}(k) \approx \varphi_{\mu; \sigma}(x) \\
+  P(a \leq k \leq b) = F_{n; p}(b) - F_{n; p}(a) \approx \int_{x_1}^{x_2} \varphi(x) \cdot dx \\
+  \;= \Phi(b + \frac{1}{2}) - \Phi(a - \frac{1}{2}) = \Phi(\underbrace{\frac{b + \frac{1}{2} - \mu}{\sigma}}_{x_2}) - \Phi(\underbrace{\frac{a - \frac{1}{2} - \mu}{\sigma}}_{x_1}) \\\\
+  \text{Beispiel:} \\
+  n = 460 \qquad p = 0.35 \\
+  \mu = 460 \cdot 0.35 = 161 \qquad \sigma \approx 10.22986 \\\\
+  a = 150 \qquad b = 180 \\
+  x_1 \approx \frac{150 - \frac{1}{2} - 161}{10.22986} \approx -1.12416 \qquad x_2 \approx \frac{180 + \frac{1}{2} - 161}{10.22986} \approx 1.90618 \\\\
+  P(150 \leq k \leq 180) \approx \Phi(1.91) - \Phi(-1.03) = 97.19\% - 13.14\% = 84.05\% \\
+  \text{(wahrer Wert: $84.07\%$)}
+\end{gather*}
+\begin{exercise}{545/9}
+  \begin{gather*}
+    n = 100 \qquad p = 0.7 \\
+    \mu = 100 \cdot 0.7 = 70 \qquad \sigma = \sqrt{100 \cdot 0.7 \cdot (1 - 0.7)} \approx 4.58258
+  \end{gather*}
+  \item [a]
+  \begin{gather*}
+    P(X > 75) \\
+    a = 76 \qquad b = 100 \\
+    x_1 \approx \frac{76 - \frac{1}{2} - \mu}{\sigma} \approx 1.20020 \\
+    P(76 \leq k \leq 100) \approx 1 - \Phi(1.20) \approx 1 - 88.49\% = 11.51\% \\
+    \text{(wahrer Wert: $11.36\%$)}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    P(X \geq 40) \\
+    a = 40 \qquad b = 100 \\
+    x_1 \approx \frac{40 - \frac{1}{2} - \mu}{\sigma} \approx -6.65565 \\
+    P(40 \leq k \leq 100) \approx 1 - \Phi(-6.65565) \approx 1 - 0 = 100.00\% \\
+    \text{(wahrer Wert: $100.00\%$)}
+  \end{gather*}
+  \item [c]
+  \begin{gather*}
+    P(65 \leq X \leq 85) \\
+    a = 65 \qquad b = 85 \\
+    x_1 \approx \frac{65 - \frac{1}{2} - \mu}{\sigma} \approx -1.20020 \qquad x_2 \approx \frac{85 + \frac{1}{2} - \mu}{\sigma} \approx 3.38238 \\
+    P(65 \leq k \leq 85) \approx \Phi(3.38) - \Phi(-1.20) \approx 99.96\% - 11.51\% = 88.45\% \\
+    \text{(wahrer Wert: $88.38\%$)}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    P(X \geq 80) \\
+    a = 80 \qquad b = 100 \\
+    x_1 \approx \frac{80 - \frac{1}{2} - \mu}{\sigma} \approx 2.07307 \\
+    P(80 \leq k \leq 100) \approx 1 - \Phi(2.07) \approx 1 - 98.07\% = 1.93\% \\
+    \text{(wahrer Wert: $1.65\%$)}
+  \end{gather*}
+\end{exercise}
