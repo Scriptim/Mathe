@@ -1385,7 +1385,7 @@ Rechtsseitiger Signifikanztest, da der Annahmebereich von $H_1$ rechts liegt (gr
 ab $\sigma = 3$ darf man nähern
 \begin{gather*}
   P(x = k) = B_{n; p}(k) \approx \varphi_{\mu; \sigma}(x) \\
-  P(a \leq k \leq b) = F_{n; p}(b) - F_{n; p}(a) \approx \int_{x_1}^{x_2} \varphi(x) \cdot dx \\
+  P(a \leq k \leq b) = F_{n; p}(b) - F_{n; p}(a - 1) \approx \int_{x_1}^{x_2} \varphi(x) \cdot dx \\
   \;= \Phi(b + \frac{1}{2}) - \Phi(a - \frac{1}{2}) = \Phi(\underbrace{\frac{b + \frac{1}{2} - \mu}{\sigma}}_{x_2}) - \Phi(\underbrace{\frac{a - \frac{1}{2} - \mu}{\sigma}}_{x_1}) \\\\
   \text{Beispiel:} \\
   n = 460 \qquad p = 0.35 \\
