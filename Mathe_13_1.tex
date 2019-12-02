@@ -1433,3 +1433,32 @@ ab $\sigma = 3$ darf man nähern
     \text{(wahrer Wert: $1.65\%$)}
   \end{gather*}
 \end{exercise}
+
+\chapter{Rationale Funktionen}
+\begin{gather*}
+  \text{rationale Funktionen}
+  \begin{cases}
+    \text{ganzrationale Funktionen} \\
+    \text{gebrochenrationale Funktionen}
+  \end{cases}
+\end{gather*}
+Beispiel:
+\begin{gather*}
+  f(x) = \frac{x - 1}{x - 2} \qquad D = \mathbb{R}\setminus{2}
+\end{gather*}
+Bei $x = 2$ liegt ein Pol mit Vorzeichenwechsel (VZW $- \rightarrow +$) vor. Ein Pol ist eine Unendlichkeitsstelle. Der Graph hat eine waagerechte Asymptote $y = 1$, d. h. eine Gerade, an die sich der Funktionsgraph anschmiegt. Zu jedem Pol gibt es eine senkrechte Asymptote, hier mit der Gleichung $x = 2$.
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymin=-10,
+      ymax=10
+      ]
+      \addplot[
+      domain=-10:10,
+      samples=201,
+      unbounded coords=jump
+      ]{(x - 1)/(x - 2)};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
