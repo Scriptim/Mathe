@@ -1462,3 +1462,83 @@ Bei $x = 2$ liegt ein Pol mit Vorzeichenwechsel (VZW $- \rightarrow +$) vor. Ein
     \end{axis}
   \end{tikzpicture}
 \end{gather*}
+\newpage
+\begin{exercise}{209/3}
+  \item [a]
+  \begin{gather*}
+    f(x) = \frac{1}{x - 3} \qquad D = \mathbb{R}\setminus\{3\}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymin=-10,
+        ymax=10
+        ]
+        \addplot[
+        domain=-10:10,
+        samples=201,
+        unbounded coords=jump
+        ]{1/(x - 3)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{2}{x + 3} \qquad D = \mathbb{R}\setminus\{-3\}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymin=-10,
+        ymax=10
+        ]
+        \addplot[
+        domain=-10:10,
+        samples=201,
+        unbounded coords=jump
+        ]{2/(x + 3)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \newpage
+  \item [c]
+  \begin{gather*}
+    f(x) = \frac{1}{2x - 3} \qquad D = \mathbb{R}\setminus\{1.5\}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymin=-10,
+        ymax=10
+        ]
+        \addplot[
+        domain=-10:10,
+        samples=201,
+        unbounded coords=jump
+        ]{1/(2 * x - 3)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+  \item [d]
+  \begin{gather*}
+    f(x) = \frac{x}{1 + x} \qquad D = \mathbb{R}\setminus\{-1\}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymin=-10,
+        ymax=10
+        ]
+        \addplot[
+        domain=-10:10,
+        samples=201,
+        unbounded coords=jump
+        ]{x / (1 + x)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
