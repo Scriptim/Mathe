@@ -1542,3 +1542,94 @@ Bei $x = 2$ liegt ein Pol mit Vorzeichenwechsel (VZW $- \rightarrow +$) vor. Ein
     \end{tikzpicture}
   \end{gather*}
 \end{exercise}
+\section{Asymptoten, Kurvendiskussion}
+\subsection{Asymptoten}
+Beispiele:
+\begin{gather*}
+  f(x) = \frac{x}{x^2 - 4} \qquad \lim\limits_{x \to \pm\infty} f(x) = 0 \qquad y = 0 \text{ ist Asymptote} \\
+  g(x) = \frac{2x - 3}{x + 1} \qquad \lim\limits_{x \to \pm\infty} g(x) = 2 \qquad y = 2 \text{ ist Asymptote} \\
+  h(x) = \frac{x^2 - 4}{x + 5} \qquad \lim\limits_{x \to \pm\infty} h(x) = \pm\infty \qquad y = x - 5 \text{ ist Asymptotenfunktion (s. u.)}
+\end{gather*}
+Polynomdivision zur Ermittlung der Asymptote: \\
+\polylongdiv[style=C]{x^2 - 4}{x + 5} \\\\
+ganzrationaler Teil $x - 5$ bestimmt das Verhalten für $x \to \pm\infty$ \\
+gebrochenrationaler Teil $\frac{21}{x + 5}$ enthält die Polstellen
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymin=-40,
+      ymax=30
+      ]
+      \addplot[
+      domain=-30:30,
+      samples=301,
+      unbounded coords=jump
+      ]{(x^2 - 4) / (x + 5)};
+      \addplot[
+      domain=-30:30,
+      color=red,
+      unbounded coords=jump
+      ]{(x - 5};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\newpage
+\begin{gather*}
+  i(x) = \frac{x^3 - 2x^2 + 5x - 7}{x - 1}
+\end{gather*}
+\polylongdiv[style=C]{x^3 - 2 * x^2 + 5 * x - 7}{x - 1} \\\\
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymin=-10,
+      ymax=20
+      ]
+      \addplot[
+      samples=201,
+      unbounded coords=jump
+      ]{(x^3 - 2 * x^2 + 5 * x - 7) / (x - 1)};
+      \addplot[
+      color=red,
+      samples=201,
+      unbounded coords=jump
+      ]{(x^2 - x + 4};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\subsection{Nullstellen von Zähler- bzw. Nennerpolynom}
+\begin{gather*}
+  f(x) = \frac{x \cdot (x - 2)}{x - 2} = x \qquad D = \mathbb{R}\setminus\{2\} \\
+  f*(x) = \begin{cases}
+    x & \text{für $x \neq 2$} \\
+    2 & \text{für $x = 2$}
+  \end{cases} \\
+  \text{gemeinsame Nullstelle des Zähler- und Nennerpolynoms}
+\end{gather*}
+\begin{gather*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      axis lines=middle,
+      ymin=-1,
+      ymax=4
+      ]
+      \addplot[
+      samples=301,
+      unbounded coords=jump,
+      ]{(x * (x - 2)) / (x - 2)};
+      \addplot[
+      mark=square,
+      ]coordinates {(2,2)};
+    \end{axis}
+  \end{tikzpicture}
+\end{gather*}
+\begin{gather*}
+  g(x) = \frac{1}{x - 2} \qquad \text{NS des Nenners $\Rightarrow$ Polstelle} \\
+  \text{Grad der Nullstelle ungerade: Pol mit Vorzeichenwechsel} \\
+  \text{Grad der Nullstelle gerade: Pol ohne Vorzeichenwechsel}
+\end{gather*}
+\begin{gather*}
+  h(x) = \frac{1 \cdot (x - 2)}{x - 2} = \frac{1}{x - 2} \\
+  \text{trotz gemeinsamer Nullstelle Pol mit Vorzeichenwechsel bei $x - 2$}
+\end{gather*}
