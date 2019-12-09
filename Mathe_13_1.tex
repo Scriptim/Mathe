@@ -1633,3 +1633,58 @@ gebrochenrationaler Teil $\frac{21}{x + 5}$ enthält die Polstellen
   h(x) = \frac{1 \cdot (x - 2)}{x - 2} = \frac{1}{x - 2} \\
   \text{trotz gemeinsamer Nullstelle Pol mit Vorzeichenwechsel bei $x - 2$}
 \end{gather*}
+\begin{exercise}{212/1}
+  \item [i]
+  \begin{gather*}
+    f(x) = \frac{x^2 + 9}{x + 2} \qquad D = \mathbb{R}\setminus\{-2\} \\
+    \text{Nullstellen: } \{\} \\
+    \text{Polstellen: } \{-2\} \text{ (mit VZW)} \\
+    \text{Achsenschnittpunkte: } S_y(0|f(9) = 4.5) \\
+    \text{senkr. Asymptoten: } x = -2
+  \end{gather*}
+  \item [j]
+  \begin{gather*}
+    f(x) = \frac{x - 2}{x^2 + 2x + 1} \qquad D = \mathbb{R}\setminus\{-1\} \\
+    \text{Nullstellen: } \{2\} \\
+    \text{Polstellen: } \{-1\} \text{ (ohne VZW)} \\
+    \text{Achsenschnittpunkte: } S_x(2|0),\;S_y(0|f(0) = -2) \\
+    \text{senkr. Asymptoten: } x = -1
+  \end{gather*}
+  \item [k]
+  \begin{gather*}
+    f(x) = \frac{x^2 - x}{x^2 - x - 6} \qquad D = \mathbb{R}\setminus\{-2, 3\} \\
+    \text{Nullstellen: } \{0, 1\} \\
+    \text{Polstellen: } \{-2, 3\} \text{ (mit VZW)} \\
+    \text{Achsenschnittpunkte: } S_x(0|0),\;S_x(1|0)\;S_y(0|f(0) = 0) \\
+    \text{senkr. Asymptoten: } x = -2,\;x = 3
+  \end{gather*}
+\end{exercise}
+\begin{exercise}{221/1}
+  \item [b]
+  \begin{gather*}
+    f(x) = \frac{2 - x^2}{x^2 - 9} \\
+    \text{Definitionsmenge: } \mathbb{R}\setminus\{\pm 3\} \\
+    \text{Symmetrie: } f(-x) = f(x) \quad\Rightarrow\quad \text{achsensymmetrisch zur $y$-Achse} \\
+    \text{Polstellen, senkr. Asymptoten: } x = 3,\;x = -3 \quad\text{(mit VZW)} \\
+    \text{Grenzverhalten: } \lim\limits_{x \to \pm\infty} f(x) = -1 \\
+    \text{Nullstellen: } \{\pm\sqrt{2}\} \\
+    \text{Ableitungen: } f'(x) = \frac{14x}{(x^2 - 9)^2},\;f''(x) = \frac{42(x^2 + 3)}{(x^2 - 9)^3} \\
+    \text{Extremstellen: } TP(0|-\frac{2}{9}) \\
+    \text{Wendestellen: } \{\}
+  \end{gather*}
+  \begin{gather*}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis lines=middle,
+        ymin=-2,
+        ymax=3
+        ]
+        \addplot[
+        domain=-15:15,
+        samples=301,
+        unbounded coords=jump,
+        ]{(2 - x^2)/(x^2 - 9)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{gather*}
+\end{exercise}
